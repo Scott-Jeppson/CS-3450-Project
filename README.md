@@ -9,15 +9,11 @@ model, it allows users to:
 - **Analyze** historical traffic trends in a clear and concise format.
 - **Optimize** traffic flow efficiency through data-driven decision-making.
 
----
-
 ## Table of Contents
 1. [Tech Stack](#tech-stack)
 2. [Architecture](#architecture)
 3. [Features](#features)
 4. [Usage](#usage)
-
----
 
 ## Tech Stack
 The Smart Transit Optimizer is built with the following technologies:
@@ -26,8 +22,6 @@ The Smart Transit Optimizer is built with the following technologies:
 - **Database:** PostgreSQL
 - **Simulation:** SUMO
 - **Containerization:** Docker
-
----
 
 ## Architecture
 The Smart Transit Optimizer is built using a microservices architecture to ensure scalability, flexibility, and 
@@ -42,8 +36,6 @@ and handles user interactions.
 communication, and manages database interactions.
 - **Database:** Stores critical data for the system such as route configurations, simulations results, etc.
 - **Simulation:** Runs traffic flow simulations based on real-time input data and proposed route changes.
-
---- 
 
 ## Features
 
@@ -60,8 +52,6 @@ communication, and manages database interactions.
 - Traffic route and light optimization AI model
 - Adaptive traffic patterns for emergency response vehicles
 - Trouble ticket system
-
----
 
 ## Usage
 
