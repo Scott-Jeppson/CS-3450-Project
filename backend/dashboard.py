@@ -1,17 +1,13 @@
+import os
 from quart import Quart
 from quart_cors import cors
-import yaml
-import os
+from dotenv import load_dotenv
 
 from routes.user_routes import register_user_routes
 
-base_path = os.path.dirname(os.path.abspath(__file__))
-config_path = os.path.abspath(os.path.join(base_path, 'config.yml'))
+load_dotenv()
 
-with open(config_path, 'r') as file:
-    data = yaml.safe_load(file)
-
-app_secret = data["General"]["APP_SECRET"]
+app_secret = os.getenv("APP_SECRET")
 
 app = Quart(__name__)
 app = cors(
@@ -31,7 +27,7 @@ app = cors(
         "Origin",
         "Accept"
     ],
-        expose_headers=[
+    expose_headers=[
         "Content-Type", 
         "Authorization", 
         "Set-Cookie",
