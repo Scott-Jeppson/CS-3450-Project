@@ -1,22 +1,18 @@
+import os
 from quart import Quart
 from quart_cors import cors
-import yaml
-import os
+from dotenv import load_dotenv
 
 from routes.user_routes import register_user_routes
 
-base_path = os.path.dirname(os.path.abspath(__file__))
-config_path = os.path.abspath(os.path.join(base_path, 'config.yml'))
+load_dotenv()
 
-with open(config_path, 'r') as file:
-    data = yaml.safe_load(file)
-
-app_secret = data["General"]["APP_SECRET"]
+app_secret = os.getenv("APP_SECRET")
 
 app = Quart(__name__)
 app = cors(
     app,
-    allow_origin=["http://127.0.0.1:5173", "http://localhost:5173", "http://127.0.0.1:5001"],
+    allow_origin=["http://127.0.0.1:5173", "http://localhost:5173", "http://127.0.0.1:8080"],
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
     allow_headers=[
@@ -31,7 +27,7 @@ app = cors(
         "Origin",
         "Accept"
     ],
-        expose_headers=[
+    expose_headers=[
         "Content-Type", 
         "Authorization", 
         "Set-Cookie",
@@ -53,4 +49,4 @@ async def register_routes():
 
 if __name__ == "__main__":
     app.before_serving(register_routes)
-    app.run(host='0.0.0.0', port=5001, debug=True)
+    app.run(host='0.0.0.0', port=8080, debug=True)
