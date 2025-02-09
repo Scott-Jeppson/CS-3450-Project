@@ -1,5 +1,5 @@
 import os
-from quart import Quart
+from quart import Quart, jsonify
 from quart_cors import cors
 from dotenv import load_dotenv
 
@@ -12,7 +12,7 @@ app_secret = os.getenv("APP_SECRET")
 app = Quart(__name__)
 app = cors(
     app,
-    allow_origin=["http://127.0.0.1:5173", "http://localhost:5173", "http://127.0.0.1:8080"],
+    allow_origin=["http://127.0.0.1:5173", "http://localhost:5173", "http://127.0.0.1:5000"],
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
     allow_headers=[
@@ -46,10 +46,12 @@ app.config.update(
 
 async def register_routes():
     await register_user_routes(app)
-
-if __name__ == "__main__":
-    host = os.getenv("HOST", "0.0.0.0")  # Change to "127.0.0.1" if needed
-    port = int(os.getenv("PORT", 8080))
     
-    # Run Quart on the specified port
-    app.run(host=host, port=port, debug=True)
+# test route to test connection between frontend and backend
+@app.route('/hello')
+async def hello():
+    return jsonify({"message": "Hello, World!"})
+
+if __name__ == '__main__':
+    app.before_serving(register_routes())
+    app.run(host="0.0.0.0", port=5000, debug=True)

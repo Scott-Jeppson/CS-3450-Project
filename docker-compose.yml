@@ -6,13 +6,14 @@ services:
     build: ./backend
     container_name: backend
     ports:
-      - "8080:8080"
+      - "5000:5000"
     volumes:
       - ./backend:/app
     env_file:
       - ./backend/.env
     environment:
       - QUART_ENV=development
+    command: ["python", "dashboard.py"]
 
   frontend:
     build:
