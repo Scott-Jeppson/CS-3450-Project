@@ -48,5 +48,8 @@ async def register_routes():
     await register_user_routes(app)
 
 if __name__ == "__main__":
-    app.before_serving(register_routes)
-    app.run(host='0.0.0.0', port=8080, debug=True)
+    host = os.getenv("HOST", "0.0.0.0")  # Change to "127.0.0.1" if needed
+    port = int(os.getenv("PORT", 8080))
+    
+    # Run Quart on the specified port
+    app.run(host=host, port=port, debug=True)
