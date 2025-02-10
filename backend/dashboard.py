@@ -49,4 +49,4 @@ async def register_routes():
 
 if __name__ == '__main__':
     app.before_serving(register_routes)
-    app.run(host="127.0.0.1", port=5000, debug=True)
+    app.run(host="127.0.0.1", port=8080, debug=True)
