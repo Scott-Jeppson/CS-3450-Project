@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000";
+const API_URL = "http://localhost:8080";
 
 // this fucntion fetches a test message "Hello, World!" to test the connection between the frontend and the backend
 export async function getHelloWorld() {

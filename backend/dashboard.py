@@ -12,7 +12,7 @@ app_secret = os.getenv("APP_SECRET")
 app = Quart(__name__)
 app = cors(
     app,
-    allow_origin=["http://127.0.0.1:5173", "http://localhost:5173", "http://127.0.0.1:5000"],
+    allow_origin=["http://127.0.0.1:5173", "http://localhost:5173", "http://127.0.0.1:8080"],
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
     allow_headers=[
