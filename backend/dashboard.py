@@ -4,6 +4,7 @@ from quart_cors import cors
 from dotenv import load_dotenv
 
 from routes.user_routes import register_user_routes
+from routes.test_routes import register_test_routes
 
 load_dotenv()
 
@@ -45,6 +46,7 @@ app.config.update(
 )
 
 async def register_routes():
+    await register_test_routes(app)
     await register_user_routes(app)
 
 if __name__ == '__main__':

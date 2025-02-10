@@ -1,6 +1,6 @@
 from quart import jsonify
 
-async def register_user_routes(app):
+async def register_test_routes(app):
 
     @app.route("/hello", methods=["GET"])
     async def users():
