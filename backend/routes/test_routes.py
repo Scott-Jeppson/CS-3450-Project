@@ -3,7 +3,7 @@ from quart import jsonify
 async def register_test_routes(app):
 
     @app.route("/hello", methods=["GET"])
-    async def users():
+    async def test():
         try:
             return jsonify({"message": "Hello, World!"}), 200
         except Exception as e:
