@@ -45,10 +45,17 @@ app.config.update(
     CORS_SUPPORTS_CREDENTIALS=True
 )
 
-async def register_routes():
+@app.before_serving
+async def startup():
     await register_test_routes(app)
     await register_user_routes(app)
 
-if __name__ == '__main__':
-    app.before_serving(register_routes)
-    app.run(host="127.0.0.1", port=8080, debug=True)
+if __name__ == "__main__":
+    import hypercorn.asyncio
+    import asyncio
+    from hypercorn.config import Config
+
+    config = Config()
+    config.bind = ["0.0.0.0:8080"]
+
+    asyncio.run(hypercorn.asyncio.serve(app, config))
