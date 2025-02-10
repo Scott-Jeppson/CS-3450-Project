@@ -35,6 +35,9 @@ and handles user interactions.
 - **Backend:** Processes traffic data, facilitates communication between the frontend and other services, handles API
 communication, and manages database interactions.
 - **Database:** Stores critical data for the system such as route configurations, simulations results, etc.
+	- We will use two databases, one that comes form the Utah Valley transit authority through an API. We won't be
+		able to edit this database, so a secondary one will be necessary to store any data that the program
+		will create that we want to keep track of (logs, past simulation results, user data).
 - **Simulation:** Runs traffic flow simulations based on real-time input data and proposed route changes.
 
 ## Features
