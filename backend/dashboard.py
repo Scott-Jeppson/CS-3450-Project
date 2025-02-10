@@ -1,5 +1,5 @@
 import os
-from quart import Quart, jsonify
+from quart import Quart
 from quart_cors import cors
 from dotenv import load_dotenv
 
@@ -46,12 +46,7 @@ app.config.update(
 
 async def register_routes():
     await register_user_routes(app)
-    
-# test route to test connection between frontend and backend
-@app.route('/hello')
-async def hello():
-    return jsonify({"message": "Hello, World!"})
 
 if __name__ == '__main__':
-    app.before_serving(register_routes())
+    app.before_serving(register_routes)
     app.run(host="0.0.0.0", port=5000, debug=True)
