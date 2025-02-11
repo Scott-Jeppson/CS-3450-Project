@@ -9,6 +9,7 @@
     --dark-grey: #bab9b9;
     --light-lavender: #d2b7d1;
     --light-charcoal: #5e6162;
+    --bg-disabled: #f1ebf1;
 }
 
 /* Mobile First */
@@ -48,9 +49,6 @@ h4 {
     line-height: 130%;
 }
 
-
-
-
 /* Tablet size */
 @media (min-width: 768px) and (max-width: 1024px) {
     h1 {
@@ -73,7 +71,6 @@ h4 {
         font-size: 14px;
     }
 }
-
 
 /* Desktop Size */
 @media (min-width: 1025px) {
