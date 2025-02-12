@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { getHelloWorld } from "../api";
+import traffic_pic from "../traffic_pic.jpg"; 
 
 const Home = () => {
     const [testMessage, setTestMessage] = useState("");
@@ -14,8 +15,13 @@ const Home = () => {
 
     return (
         <div>
-            <h1>Home Page</h1>
-            <h2>Backend Response: {testMessage}</h2>
+            <div className='navbar'>
+                <h2>Smart Transit</h2>
+                <h4>Backend Response: {testMessage}</h4>
+            </div>
+            <div>
+                <img src={traffic_pic} alt="Traffic at night" width="100%" height="flex"></img>
+            </div>
         </div>
     );
 };
