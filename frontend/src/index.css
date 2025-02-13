@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Optional: ensures that padding and border are included in width/height */
+  }
+
 /* Entire file is for global styles */
 #root {
     --purple: #500866;
@@ -96,14 +102,3 @@ h4 {
         font-size: 14px;
     }
 }
-
-.navbar {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    background-color: var(--light-purple);
-    color: var(--white);
-  }
