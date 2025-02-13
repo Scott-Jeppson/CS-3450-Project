@@ -36,3 +36,4 @@ frontend/*.sw?
 frontend/bun.lockb
 tsconfig.node.tsbuildinfo
 tsconfig.app.tsbuildinfo
+.idea/
