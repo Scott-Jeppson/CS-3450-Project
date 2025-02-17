@@ -12,6 +12,7 @@
     --light-purple: #9a6585;
     --white: #ffffff;
     --bg-disabled: #f1ebf1;
+    --error-red: #b00030;
     width: 100%;
     height: 100vh;
 }
