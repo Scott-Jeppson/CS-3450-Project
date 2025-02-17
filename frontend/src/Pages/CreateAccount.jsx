@@ -6,7 +6,7 @@ import './signin.css';
 const CreateAccount = () => {
 
     return (
-        <div style={{ width: "100%", height: "100vh", backgroundColor: "var(--charcoal)" }}>
+        <div className="page-div" style={{ backgroundColor: "var(--charcoal)" }}>
             <Navbar/>
             <div className="login-form">
                 <div className="login-container">
