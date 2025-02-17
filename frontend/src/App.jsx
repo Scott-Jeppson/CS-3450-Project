@@ -11,12 +11,8 @@ function App() {
   return (
     <BrowserRouter>
         <Routes>
-            <Route path="/" element={<Home />} />
-        </Routes>
-        <Routes>
+            <Route index element={<Home />} />
             <Route path="/signin" element={<SignIn />} />
-        </Routes>
-        <Routes>
             <Route path="/createaccount" element={<CreateAccount />} />
         </Routes>
     </BrowserRouter>
