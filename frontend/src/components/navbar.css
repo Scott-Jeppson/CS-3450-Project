@@ -7,8 +7,19 @@
     background-color: var(--light-purple);
     color: var(--white);
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+    #navbar {
+        height: 50px;
+    }
+}
+@media (min-width: 1025px) {
+    #navbar {
+        height: 60px;
+    }
+}
+
 #nav-button {
-    margin-right: 20px;
+    margin-right: 40px;
     padding: 4px 10px;
     text-decoration: none;
     border-radius: 12px;
@@ -21,22 +32,12 @@
 #nav-button:active {
     transform: scale(0.9);
 }
+
 #nav-brand {
-    margin-left: 20px;
+    margin-left: 40px;
     font-weight: bold;
     text-decoration: none;
 }
 #nav-brand:hover {
     color: inherit;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    #navbar {
-        height: 50px;
-    }
-}
-@media (min-width: 1025px) {
-    #navbar {
-        height: 60px;
-    }
 }
