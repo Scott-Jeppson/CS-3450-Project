@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Optional: ensures that padding and border are included in width/height */
-  }
-
 /* Entire file is for global styles */
 #root {
     --purple: #500866;
@@ -18,6 +12,8 @@
     --light-purple: #9a6585;
     --white: #ffffff;
     --bg-disabled: #f1ebf1;
+    width: 100%;
+    height: 100vh;
 }
 
 /* Mobile First */
@@ -25,6 +21,7 @@ body {
     font-family: "Nunito Sans", sans-serif;
     font-size: 18px;
     line-height: 140%;
+    margin: 0;
 }
 body.italic {
     font-style: italic;
