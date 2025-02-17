@@ -27,4 +27,22 @@ async def register_user_routes(app):
             return jsonify({"message": "User registered successfully"}), 201
         except Exception as e:
             return jsonify({"error": f"An error occurred: {str(e)}"}), 500
-        
+    
+    @app.rpute("/signin", methods=["POST"])
+    async def sign_in():
+        try:
+            data = await request.get_json()
+            email = data.get("email")
+            password = data.get("password")
+
+            if not all([email, password]):
+                return jsonify({"error": "Missing required fields"}), 400
+
+            conn = await asyncpg.connect(user='db_user', password='db_password',
+                                         database='db_name', host='127.0.0.1')
+            user = await conn.fetchrow('''SELECT * FROM users WHERE email = $1 AND password = $2''', email, password)
+            await conn.close()
+
+            return jsonify({"message": "User signed in successfully"}), 200
+        except Exception as e:
+            return jsonify({"error": f"An error occurred: {str(e)}"}), 500
