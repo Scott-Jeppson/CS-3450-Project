@@ -15,10 +15,10 @@ function Navbar() {
         }, []);
 
     return (
-        <div className='navbar'>
+        <div id='navbar'>
             <h2>StreamLine</h2>
             <h4>Backend Response: {testMessage}</h4>
-            <Link to="/signin">Sign In</Link>
+            <Link id="sign-in" to="/signin">Sign In</Link>
         </div>
     );
 }
