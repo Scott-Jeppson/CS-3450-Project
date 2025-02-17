@@ -32,6 +32,9 @@
 #nav-button:active {
     transform: scale(0.9);
 }
+#nav-button:focus {
+    outline: 3px solid var(--purple);
+}
 
 #nav-brand {
     margin-left: 40px;
@@ -40,4 +43,10 @@
 }
 #nav-brand:hover {
     color: inherit;
+}
+#nav-brand:focus {
+    outline: 3px solid var(--purple);
+}
+h2 {
+    margin: 0px;
 }
