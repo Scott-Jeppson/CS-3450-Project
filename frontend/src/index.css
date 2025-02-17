@@ -23,6 +23,12 @@ body {
     line-height: 140%;
     margin: 0;
 }
+.page-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 body.italic {
     font-style: italic;
 }
