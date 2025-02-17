@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
 import traffic_pic from "../traffic_pic.jpg";
 import Navbar from "../components/navbar.jsx";
+import './home.css';
 
 const Home = () => {
 
     return (
-        <div className="page-div" style={{ backgroundColor: "var(--lavender)" }}>
+        <div className="page-div" id="home-page">
             <Navbar/>
             <div>
-                <img src={traffic_pic} alt="Traffic at night" width="100%" height="100%" style={{ opacity: 0.7 }}></img>
+                <img src={traffic_pic} id="traffic-pic"></img>
             </div>
         </div>
     );
