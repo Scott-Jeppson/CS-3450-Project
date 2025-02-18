@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Navbar from "../components/navbar.jsx";
 import './signin.css';
 
-const CreateAccount = () => {
+const CreateAccount = ({ setIsLoggedIn }) => {
     const [accountData, setAccountData] = useState({
         firstName: "",
         lastName: "",
@@ -59,6 +59,7 @@ const CreateAccount = () => {
                 const loginResult = await loginResponse.json();
                 if (loginResponse.ok){
                     localStorage.setItem("loginToken", loginResult.token);
+                    setIsLoggedIn(true);
                     window.location.href = "/dashboard";
                 }
                 else{
