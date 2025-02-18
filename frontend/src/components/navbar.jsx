@@ -24,7 +24,7 @@ function Navbar({ isLoggedIn, setIsLoggedIn }) {
             {isLoggedIn ? (
                     <Link to="/" id="nav-button" onClick={handleLogout}>Log Out</Link>
                 ) : (
-                    <Link to="/SignIn" id="nav-button">Sign In</Link>
+                    <Link to="/signin" id="nav-button">Sign In</Link>
                 )
             }
         </nav>
