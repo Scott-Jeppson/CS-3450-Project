@@ -6,6 +6,7 @@
     justify-content: space-between;
     background-color: var(--light-purple);
     color: var(--white);
+    z-index: 10;
 }
 #navbar-logged-in {
     width: 100%;
