@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from "../components/navbar.jsx";
 import './home.css';
 
-const Home = () => {
+const Home = ({ isLoggedIn, setIsLoggedIn }) => {
     const navigate = useNavigate();
 
     const handleSignInClick = () => {
@@ -16,7 +16,7 @@ const Home = () => {
 
     return (
         <div className="page-div" id="home-page">
-            <Navbar/>
+            <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
             <div id="main-content">
                 <div id="welcome-box">
                     <h1>Welcome to StreamLine!</h1>

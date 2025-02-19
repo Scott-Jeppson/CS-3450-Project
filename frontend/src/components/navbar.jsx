@@ -1,27 +1,33 @@
 import './navbar.css';
-import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
-import { getHelloWorld } from "../api";
+import React, { useEffect, useState } from "react";
 
-function Navbar() {
-    const [testMessage, setTestMessage] = useState("");
+function Navbar({ isLoggedIn, setIsLoggedIn }) {
 
-    {/* Kept for now to show that the backend is connected*/}
-    useEffect(() => {
-            async function fetchMessage() {
-                const testData = await getHelloWorld();
-                setTestMessage(testData.message);
-            }
-            fetchMessage();
-        }, []);
+    const handleLogout = () => {
+        // Clear the login token from localStorage and set isLoggedIn to false
+        localStorage.removeItem('loginToken');
+        setIsLoggedIn(false);
+    };
 
     return (
-        <div id='navbar'>
-            <Link to="/" id="nav-brand"><h2>StreamLine</h2></Link>
-            {/* Kept for now to show that the backend is connected*/}
-            <h4>Backend Response: {testMessage}</h4>
-            <Link to="/SignIn" id="nav-button">Sign In</Link>
-        </div>
+        <nav id={isLoggedIn ? "navbar-logged-in" : "navbar"}>
+            <div id="nav-brand">
+                <Link to="/">
+                    <img id="logo" src={isLoggedIn ? "src/assets/Logo-White-Text-Purple-Background.svg" :
+                        "src/assets/Logo-Light-Purple-Circle.svg"} />
+                </Link>
+                <Link to="/" id="nav-name">
+                    <h2>StreamLine</h2>
+                </Link>
+            </div>
+            {isLoggedIn ? (
+                    <Link to="/" id="nav-button" onClick={handleLogout}>Log Out</Link>
+                ) : (
+                    <Link to="/signin" id="nav-button">Sign In</Link>
+                )
+            }
+        </nav>
     );
 }
 
