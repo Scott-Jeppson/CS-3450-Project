@@ -1,8 +1,6 @@
 from quart import jsonify, request
 import asyncpg
 
-USERS = ["Alice", "Bob", "Charlie", "David", "Eve"]
-
 async def register_user_routes(app):
 
     @app.route("/createaccount", methods=["POST"])
@@ -17,11 +15,8 @@ async def register_user_routes(app):
             if not all([first_name, last_name, email, password]):
                 return jsonify({"error": "Missing required fields"}), 400
 
-            conn = await asyncpg.connect(user='db_user', password='db_password',
-                                         database='db_name', host='127.0.0.1')
-            await conn.execute('''
-                INSERT INTO users(first_name, last_name, email, password) VALUES($1, $2, $3, $4)
-            ''', first_name, last_name, email, password)
+            conn = await asyncpg.connect(user='db_user', password='db_password', database='db_name', host='127.0.0.1')
+            await conn.execute('INSERT INTO users(first_name, last_name, email, password) VALUES($1, $2, $3, $4)', first_name, last_name, email, password)
             await conn.close()
 
             return jsonify({"message": "User registered successfully"}), 201
@@ -38,9 +33,8 @@ async def register_user_routes(app):
             if not all([email, password]):
                 return jsonify({"error": "Missing required fields"}), 400
 
-            conn = await asyncpg.connect(user='db_user', password='db_password',
-                                         database='db_name', host='127.0.0.1')
-            user = await conn.fetchrow('''SELECT * FROM users WHERE email = $1 AND password = $2''', email, password)
+            conn = await asyncpg.connect(user='db_user', password='db_password', database='db_name', host='127.0.0.1')
+            user = await conn.fetchrow('SELECT * FROM users WHERE email = $1 AND password = $2', email, password)
             await conn.close()
 
             return jsonify({"message": "User signed in successfully"}), 200

@@ -1,0 +1,3 @@
+User Routes:
+- Use a single database pool instead of connecting to the Postgres database every single account creation/sign in attempt.
+- Store session tokens and/or cookies into the browser so that you aren’t signed out instantly every single refresh.
