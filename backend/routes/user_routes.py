@@ -21,8 +21,7 @@ async def register_user_routes(app):
             salt = secrets.token_hex(16)
             password_hash = hashlib.sha256((password + salt).encode()).hexdigest()
 
-            conn = await asyncpg.connect(user='db_user', password='db_password',
-                                         database='db_name', host='127.0.0.1')
+            conn = await asyncpg.connect(user='db_user', password='db_password', database='db_name', host='127.0.0.1')
             await conn.execute('''
                 INSERT INTO users(first_name, last_name, email, password_hash, salt) VALUES($1, $2, $3, $4, $5)
             ''', first_name, last_name, email, password_hash, salt)
@@ -52,8 +51,7 @@ async def register_user_routes(app):
             
             password_hash = hashlib.sha256((password + salt).encode()).hexdigest()
 
-            conn = await asyncpg.connect(user='db_user', password='db_password',
-                                         database='db_name', host='127.0.0.1')
+            conn = await asyncpg.connect(user='db_user', password='db_password', database='db_name', host='127.0.0.1')
             user = await conn.fetchrow('''SELECT * FROM users WHERE email = $1 AND password_hash = $2''', email, password_hash)
             if not user:
                 print("Invalid credentials")
