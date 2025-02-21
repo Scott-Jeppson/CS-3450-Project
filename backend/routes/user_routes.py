@@ -33,7 +33,7 @@ async def register_user_routes(app):
             print(f"An error occurred: {str(e)}")
             return jsonify({"error": f"An error occurred: {str(e)}"}), 500
     
-    @app.rpute("/signin", methods=["POST"])
+    @app.route("/signin", methods=["POST"])
     async def sign_in():
         try:
             data = await request.get_json()
