@@ -1,7 +1,6 @@
-from quart import jsonify, request
-import asyncpg
 import hashlib
 import secrets
+from quart import jsonify, request, session
 
 async def register_user_routes(app):
 
@@ -21,11 +20,11 @@ async def register_user_routes(app):
             salt = secrets.token_hex(16)
             password_hash = hashlib.sha256((password + salt).encode()).hexdigest()
 
-            conn = await asyncpg.connect(user='db_user', password='db_password', database='db_name', host='127.0.0.1')
-            await conn.execute('''
-                INSERT INTO users(first_name, last_name, email, password_hash, salt) VALUES($1, $2, $3, $4, $5)
-            ''', first_name, last_name, email, password_hash, salt)
-            await conn.close()
+            async with app.db_pool.acquire() as conn:
+                await conn.execute(
+                    'INSERT INTO users(first_name, last_name, email, password_hash, salt) VALUES($1, $2, $3, $4, $5)',
+                    first_name, last_name, email, password_hash, salt
+                )
             
             print("User registered successfully")
             return jsonify({"message": "User registered successfully"}), 201
@@ -44,22 +43,38 @@ async def register_user_routes(app):
                 print("Missing required fields")
                 return jsonify({"error": "Missing required fields"}), 400
 
-            salt = await conn.fetchrow('''SELECT salt FROM users WHERE email = $1''', email)
-            if not salt:
-                print("User not found (missing salt)")
-                return jsonify({"error": "User not found"}), 404
-            
-            password_hash = hashlib.sha256((password + salt).encode()).hexdigest()
+            async with app.db_pool.acquire() as conn:
+                salt_record = await conn.fetchrow('SELECT salt FROM users WHERE email = $1', email)
+                if not salt_record:
+                    print("User not found (missing salt)")
+                    return jsonify({"error": "User not found"}), 404
+                
+                salt = salt_record['salt']
+                password_hash = hashlib.sha256((password + salt).encode()).hexdigest()
 
-            conn = await asyncpg.connect(user='db_user', password='db_password', database='db_name', host='127.0.0.1')
-            user = await conn.fetchrow('''SELECT * FROM users WHERE email = $1 AND password_hash = $2''', email, password_hash)
-            if not user:
-                print("Invalid credentials")
-                return jsonify({"error": "Invalid credentials"}), 401
-            await conn.close()
+                user = await conn.fetchrow('SELECT * FROM users WHERE email = $1 AND password_hash = $2', email, password_hash)
+                if not user:
+                    print("Invalid credentials")
+                    return jsonify({"error": "Invalid credentials"}), 401
+
+            session['user_id'] = user['id']
+            session['email'] = user['email']
 
             print("User signed in successfully")
             return jsonify({"message": "User signed in successfully"}), 200
         except Exception as e:
             print(f"An error occurred: {str(e)}")
             return jsonify({"error": f"An error occurred: {str(e)}"}), 500
+
+    @app.route("/protected", methods=["GET"])
+    async def protected_route():
+        if 'user_id' not in session:
+            return jsonify({"error": "Unauthorized"}), 401
+        
+        return jsonify({"message": "This is a protected route"})
+
+    @app.route("/signout", methods=["POST"])
+    async def sign_out():
+        session.clear()
+        
+        return jsonify({"message": "User signed out successfully"}), 200
