@@ -1,0 +1,108 @@
+/* Entire file is for global styles */
+#root {
+    --purple: #500866;
+    --black: #000000;
+    --grey: #d8d8d8;
+    --lavender: #b395b2;
+    --charcoal: #494b4c;
+    --light-black: #3c3aa;
+    --dark-grey: #bab9b9;
+    --light-lavender: #d2b7d1;
+    --light-charcoal: #5e6162;
+    --light-purple: #9a6585;
+    --white: #ffffff;
+    --bg-disabled: #f1ebf1;
+    --error-red: #b00030;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Mobile First */
+body {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    line-height: 140%;
+    margin: 0;
+}
+.page-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+body.italic {
+    font-style: italic;
+}
+body.bold {
+    font-weight: 700;
+}
+body.caption {
+    font-size: 16px;
+    line-height: 150%;
+}
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 110%;
+}
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 115%;
+}
+h3 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 120%;
+}
+h4 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+/* Tablet size */
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 38px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 26px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    body {
+        font-size: 16px;
+        line-height: 130%;
+    }
+    body.caption {
+        font-size: 14px;
+    }
+}
+
+/* Desktop Size */
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 44px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+    body {
+        font-size: 18px;
+        line-height: 130%;
+    }
+    body.caption {
+        font-size: 14px;
+    }
+}

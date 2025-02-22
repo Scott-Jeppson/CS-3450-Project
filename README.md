@@ -22,6 +22,7 @@ The Smart Transit Optimizer is built with the following technologies:
 - **Database:** PostgreSQL
 - **Simulation:** SUMO
 - **Containerization:** Docker
+- **Optimization:** Ray (RLlib)
 
 ## Architecture
 The Smart Transit Optimizer is built using a microservices architecture to ensure scalability, flexibility, and 

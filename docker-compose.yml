@@ -1,7 +1,6 @@
-version: '3.8'
-
 volumes:
   frontend_node_modules:
+  database_data:
 
 services:
   backend:
@@ -29,3 +28,15 @@ services:
     environment:
       - CHOKIDAR_USEPOLLING=true
     command: ["npm", "run", "dev"]
+  
+  database:
+    image: postgres:latest
+    container_name: database
+    env_file:
+      - ./database/.env
+    volumes:
+      - database_data:/var/lib/postgresql/data
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+      - ./database/test_data.sql:/docker-entrypoint-initdb.d/test_data.sql
+    ports:
+      - "5432:5432"
