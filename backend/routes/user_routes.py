@@ -21,10 +21,7 @@ async def register_user_routes(app):
             password_hash = hashlib.sha256((password + salt).encode()).hexdigest()
 
             async with app.db_pool.acquire() as conn:
-                await conn.execute(
-                    'INSERT INTO users(first_name, last_name, email, password_hash, salt) VALUES($1, $2, $3, $4, $5)',
-                    first_name, last_name, email, password_hash, salt
-                )
+                await conn.execute('INSERT INTO users(first_name, last_name, email, password_hash, salt) VALUES($1, $2, $3, $4, $5)', first_name, last_name, email, password_hash, salt)
             
             print("User registered successfully")
             return jsonify({"message": "User registered successfully"}), 201
