@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-02-22 16:39:59 by Eclipse SUMO netconvert Version 1.22.0
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <type-files value="${SUMO_HOME}\data\typemap\osmNetconvert.typ.xml,${SUMO_HOME}\data\typemap\osmNetconvertAerialway.typ.xml"/>
+        <osm-files value="osm_bbox.osm.xml.gz"/>
+    </input>
+
+    <output>
+        <output-file value="osm.net.xml.gz"/>
+        <output.street-names value="true"/>
+        <output.original-names value="true"/>
+        <ptstop-output value="osm_stops.add.xml"/>
+        <ptline-output value="osm_ptlines.xml"/>
+    </output>
+
+    <projection>
+        <proj.utm value="true"/>
+    </projection>
+
+    <processing>
+        <geometry.remove value="true"/>
+        <roundabouts.guess value="true"/>
+    </processing>
+
+    <tls_building>
+        <tls.discard-simple value="true"/>
+        <tls.join value="true"/>
+        <tls.guess-signals value="true"/>
+        <tls.default-type value="actuated"/>
+    </tls_building>
+
+    <ramp_guessing>
+        <ramps.guess value="true"/>
+    </ramp_guessing>
+
+    <junctions>
+        <junctions.join value="true"/>
+        <junctions.corner-detail value="5"/>
+    </junctions>
+
+    <railway>
+        <railway.topology.repair value="true"/>
+    </railway>
+
+</netconvertConfiguration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <busStop id="-3020209235" name="Orem Central" lane="-298119547#2_0" startPos="62.26" endPos="262.26" friendlyPos="true">
+        <access lane="-463704562#0_0" pos="67.63" length="26.25" friendlyPos="1"/>
+        <access lane="463704562#0_0" pos="7.59" length="21.45" friendlyPos="1"/>
+        <access lane="908255821#0_0" pos="2.97" length="23.36" friendlyPos="1"/>
+        <access lane="908255821#1_0" pos="0.00" length="25.29" friendlyPos="1"/>
+        <access lane="908255828#0_0" pos="10.96" length="8.20" friendlyPos="1"/>
+    </busStop>
+    <busStop id="11361153248" name="Vineyard Station (Bay A)" lane="1095494532#2_0" startPos="51.58" endPos="66.58" friendlyPos="true" lines="834"/>
+    <busStop id="11361153248@9499501" name="Vineyard Station (Bay A)" lane="1095494532#2_0" startPos="51.58" endPos="66.58" friendlyPos="true" lines="834"/>
+    <busStop id="3020209235" name="Orem Central" lane="100198877_0" startPos="1323.42" endPos="1523.42" friendlyPos="true" lines="750">
+        <access lane="-463704562#0_0" pos="67.63" length="26.25" friendlyPos="1"/>
+        <access lane="463704562#0_0" pos="7.59" length="21.45" friendlyPos="1"/>
+        <access lane="908255821#0_0" pos="2.97" length="23.36" friendlyPos="1"/>
+        <access lane="908255821#1_0" pos="0.00" length="25.29" friendlyPos="1"/>
+        <access lane="908255828#0_0" pos="10.96" length="8.20" friendlyPos="1"/>
+    </busStop>
+    <busStop id="3020209244" name="Orem Central" lane="762329402#0_0" startPos="1502.93" endPos="1702.93" friendlyPos="true" lines="750">
+        <access lane="1326180649#2_0" pos="62.01" length="31.52" friendlyPos="1"/>
+        <access lane="1326180649#4_0" pos="79.13" length="17.80" friendlyPos="1"/>
+        <access lane="1326180649#5_0" pos="0.00" length="21.03" friendlyPos="1"/>
+        <access lane="1326180650#0_0" pos="0.20" length="18.22" friendlyPos="1"/>
+        <access lane="1326180650#1_0" pos="0.20" length="12.74" friendlyPos="1"/>
+    </busStop>
+    <busStop id="6863882459" name="University Place Station (WB)" lane="776681829#5_0" startPos="84.28" endPos="99.28" friendlyPos="true" lines="862 880"/>
+    <busStop id="6977275478" lane="362127372#11_0" startPos="18.63" endPos="33.63" friendlyPos="true"/>
+    <busStop id="9246780410" name="University Place Station (EB)" lane="684673675#6_0" startPos="25.04" endPos="40.04" friendlyPos="true"/>
+    <busStop id="9932488269" name="Orem Central Station" lane="1225221152#1_0" startPos="76.76" endPos="91.76" friendlyPos="true">
+        <access lane="-463704558#0_0" pos="15.13" length="31.12" friendlyPos="1"/>
+        <access lane="1095496254#1_0" pos="13.45" length="21.06" friendlyPos="1"/>
+        <access lane="1095496257#1_0" pos="0.00" length="21.47" friendlyPos="1"/>
+        <access lane="1326181743_0" pos="13.16" length="21.46" friendlyPos="1"/>
+        <access lane="463704566#4_0" pos="5.45" length="24.45" friendlyPos="1"/>
+    </busStop>
+    <busStop id="9932488270" name="Orem Central Station" lane="1225221152#1_0" startPos="27.74" endPos="42.74" friendlyPos="true" lines="UVX">
+        <access lane="1326180649#3_0" pos="35.18" length="10.48" friendlyPos="1"/>
+        <access lane="1326180649#4_0" pos="21.71" length="18.50" friendlyPos="1"/>
+        <access lane="463704566#3_0" pos="30.07" length="46.55" friendlyPos="1"/>
+        <access lane="463704566#4_0" pos="19.22" length="26.28" friendlyPos="1"/>
+        <access lane="908255828#1_0" pos="13.35" length="40.92" friendlyPos="1"/>
+    </busStop>
+    <busStop id="9932488271" name="Orem Central Station (Bay E)" lane="1225221152#1_0" startPos="9.93" endPos="24.93" friendlyPos="true" lines="831">
+        <access lane="1326180649#3_0" pos="17.37" length="10.16" friendlyPos="1"/>
+        <access lane="1326180649#4_0" pos="39.52" length="18.52" friendlyPos="1"/>
+        <access lane="1326180655#2_0" pos="10.73" length="30.44" friendlyPos="1"/>
+        <access lane="1326180657#1_0" pos="0.00" length="30.21" friendlyPos="1"/>
+        <access lane="463704566#4_0" pos="37.03" length="26.17" friendlyPos="1"/>
+    </busStop>
+    <busStop id="9932488272" name="Orem Central Station (Bay F)" lane="463704557#1_0" startPos="97.35" endPos="112.35" friendlyPos="true" lines="862">
+        <access lane="1326180649#2_0" pos="69.28" length="10.49" friendlyPos="1"/>
+        <access lane="1326180649#3_0" pos="0.00" length="17.12" friendlyPos="1"/>
+        <access lane="1326180649#4_0" pos="68.04" length="16.54" friendlyPos="1"/>
+        <access lane="1326180655#2_0" pos="10.73" length="10.61" friendlyPos="1"/>
+        <access lane="1326180657#1_0" pos="0.00" length="10.82" friendlyPos="1"/>
+    </busStop>
+    <busStop id="9932488273" name="Orem Central Station" lane="463704557#1_0" startPos="78.45" endPos="93.45" friendlyPos="true">
+        <access lane="1326180649#2_0" pos="46.79" length="9.14" friendlyPos="1"/>
+        <access lane="1326180649#4_0" pos="81.69" length="30.00" friendlyPos="1"/>
+        <access lane="1326180649#5_0" pos="10.93" length="17.92" friendlyPos="1"/>
+        <access lane="1326180650#0_0" pos="0.00" length="28.34" friendlyPos="1"/>
+        <access lane="463704566#1_0" pos="26.47" length="26.00" friendlyPos="1"/>
+    </busStop>
+    <busStop id="9932488274" name="Orem Central Station" lane="463704557#1_0" startPos="51.43" endPos="66.43" friendlyPos="true">
+        <access lane="1326180648_0" pos="159.67" length="40.33" friendlyPos="1"/>
+        <access lane="1326180649#1_0" pos="0.20" length="35.65" friendlyPos="1"/>
+        <access lane="1326180649#2_0" pos="19.77" length="8.98" friendlyPos="1"/>
+        <access lane="1326180649#5_0" pos="37.95" length="17.94" friendlyPos="1"/>
+        <access lane="463704566#1_0" pos="53.50" length="25.51" friendlyPos="1"/>
+    </busStop>
+    <busStop id="9932608366" name="UVU Station" lane="477393514_0" startPos="37.47" endPos="52.47" friendlyPos="true" lines="805 807 822 831"/>
+    <busStop id="9932608367" name="UVU Station" lane="477393511_0" startPos="112.29" endPos="127.29" friendlyPos="true" lines="806 805"/>
+    <busStop id="9932608378" name="University Pkwy / 400 W (EB)" lane="144350639#1_0" startPos="11.49" endPos="26.49" friendlyPos="true"/>
+    <busStop id="9932608379" name="University Pkwy @ 50 E" lane="144350634#1_0" startPos="66.69" endPos="81.69" friendlyPos="true"/>
+    <busStop id="9932608380" name="University Pkwy / Main St (WB)" lane="144350638#1_0" startPos="40.36" endPos="55.36" friendlyPos="true"/>
+    <busStop id="9932608385" name="University Place" lane="1036897385#1_0" startPos="396.13" endPos="411.13" friendlyPos="true">
+        <access lane="1274889775#1_0" pos="1.64" length="26.08" friendlyPos="1"/>
+        <access lane="1274889775#2_0" pos="0.00" length="26.14" friendlyPos="1"/>
+        <access lane="1274889776#1_0" pos="0.00" length="31.09" friendlyPos="1"/>
+        <access lane="684673675#2_0" pos="272.96" length="21.77" friendlyPos="1"/>
+        <access lane="776681829#5_0" pos="14.87" length="26.44" friendlyPos="1"/>
+    </busStop>
+    <busStop id="9932608386" name="University Place" lane="884914055#8_0" startPos="23.08" endPos="38.08" friendlyPos="true" lines="UVX">
+        <access lane="-1124249275#0_0" pos="30.80" length="28.70" friendlyPos="1"/>
+        <access lane="1124249272#2_0" pos="196.33" length="25.70" friendlyPos="1"/>
+        <access lane="1274750812#0_0" pos="248.86" length="46.25" friendlyPos="1"/>
+        <access lane="684673675#2_0" pos="257.37" length="34.91" friendlyPos="1"/>
+        <access lane="776681829#5_0" pos="30.68" length="13.57" friendlyPos="1"/>
+    </busStop>
+    <busStop id="9932608387" name="Lakeview" lane="1001839223#6_0" startPos="317.22" endPos="332.22" friendlyPos="true">
+        <access lane="1036114787_0" pos="18.79" length="5.93" friendlyPos="1"/>
+        <access lane="144350638#6_0" pos="190.55" length="17.82" friendlyPos="1"/>
+        <access lane="144350639#1_0" pos="18.91" length="25.93" friendlyPos="1"/>
+        <access lane="690034231#3_0" pos="0.20" length="32.13" friendlyPos="1"/>
+        <access lane="690034231#4_0" pos="0.00" length="32.15" friendlyPos="1"/>
+    </busStop>
+    <busStop id="9932608388" name="Lakeview" lane="882705687#1_0" startPos="29.47" endPos="44.47" friendlyPos="true">
+        <access lane="1036114787_0" pos="36.63" length="5.77" friendlyPos="1"/>
+        <access lane="144350638#6_0" pos="172.42" length="29.68" friendlyPos="1"/>
+        <access lane="144350639#1_0" pos="36.93" length="13.99" friendlyPos="1"/>
+        <access lane="690034226#1_0" pos="34.21" length="46.54" friendlyPos="1"/>
+        <access lane="690034228#3_0" pos="36.98" length="29.06" friendlyPos="1"/>
+    </busStop>
+    <busStop id="9932608389" name="Main Street" lane="1001619396#1_0" startPos="20.60" endPos="35.60" friendlyPos="true">
+        <access lane="-39277239#1_0" pos="10.30" length="42.17" friendlyPos="1"/>
+        <access lane="1036894568_0" pos="28.16" length="6.38" friendlyPos="1"/>
+        <access lane="1303033086#1_0" pos="28.57" length="30.89" friendlyPos="1"/>
+        <access lane="144350634#1_0" pos="28.14" length="16.79" friendlyPos="1"/>
+        <access lane="231243103#11_0" pos="129.41" length="37.57" friendlyPos="1"/>
+    </busStop>
+    <busStop id="9932608390" name="Main Street" lane="1001839221_0" startPos="29.13" endPos="44.13" friendlyPos="true">
+        <access lane="1036894567#1_0" pos="4.26" length="19.74" friendlyPos="1"/>
+        <access lane="1036894567#2_0" pos="0.00" length="19.39" friendlyPos="1"/>
+        <access lane="1036894567#3_0" pos="0.00" length="20.74" friendlyPos="1"/>
+        <access lane="1036894567#4_0" pos="0.00" length="24.64" friendlyPos="1"/>
+        <access lane="1036894568_0" pos="10.18" length="5.95" friendlyPos="1"/>
+    </busStop>
+</additional>

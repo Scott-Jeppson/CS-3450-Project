@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-02-22 16:40:04.772550 by $Id: ptlines2flows.py v1_3_1+0313-ccb31df3eb jakob.erdmann@dlr.de 2019-09-02 13:26:32 +0200 $ v1_20_0+0000-96efa4d36d6
+<configuration>
+    <net-file value="\\wsl.localhost\Ubuntu\home\ramm\sumo\tools\2025-02-22-16-39-31\osm.net.xml.gz"/>
+    <ptlines-file value="\\wsl.localhost\Ubuntu\home\ramm\sumo\tools\2025-02-22-16-39-31\osm_ptlines.xml"/>
+    <ptstops-file value="\\wsl.localhost\Ubuntu\home\ramm\sumo\tools\2025-02-22-16-39-31\osm_stops.add.xml"/>
+    <output-file value="\\wsl.localhost\Ubuntu\home\ramm\sumo\tools\2025-02-22-16-39-31\osm_pt.rou.xml"/>
+    <stopinfos-file value="\\wsl.localhost\Ubuntu\home\ramm\sumo\tools\2025-02-22-16-39-31\stopinfos.xml"/>
+    <routes-file value="\\wsl.localhost\Ubuntu\home\ramm\sumo\tools\2025-02-22-16-39-31\vehroutes.xml"/>
+    <trips-file value="\\wsl.localhost\Ubuntu\home\ramm\sumo\tools\2025-02-22-16-39-31\trips.trips.xml"/>
+    <min-stops value="0"/>
+    <extend-to-fringe value="True"/>
+    <random-begin value="True"/>
+    <seed value="42"/>
+    <ignore-errors value="True"/>
+    <vtype-prefix value="pt_"/>
+    <verbose value="True"/>
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="pt_bus" vClass="bus" speedFactor="0.95"/>
+    <vType id="pt_tram" vClass="tram" speedFactor="1.0"/>
+    <vType id="pt_train" vClass="rail"/>
+    <vType id="pt_subway" vClass="subway"/>
+    <vType id="pt_light_rail" vClass="rail_urban"/>
+    <vType id="pt_monorail" vClass="rail_urban"/>
+    <vType id="pt_trolleybus" vClass="bus" speedFactor="0.95"/>
+    <vType id="pt_minibus" vClass="bus" speedFactor="0.95"/>
+    <vType id="pt_share_taxi" vClass="taxi" speedFactor="0.95"/>
+    <vType id="pt_aerialway" vClass="cable_car" length="2.5" width="2" personCapacity="4"/>
+    <vType id="pt_ferry" vClass="ship"/>
+    <trip id="0_bus_UVX:0" type="pt_bus" depart="3.0" departLane="best" from="884914055#0" to="1225221152#1">
+        <stop busStop="9932608386" duration="30"/>  <!-- University Place -->
+    </trip>
+    <trip id="1_bus_UVX:1" type="pt_bus" depart="15.0" departLane="best" from="1225221152#1" to="1001839206#8">
+        <stop busStop="9932488270" duration="30"/>  <!-- Orem Central Station -->
+    </trip>
+    <trip id="2_bus_831:0" type="pt_bus" depart="15.0" departLane="best" from="1225221152#1" to="-229097623#1">
+        <stop busStop="9932488271" duration="30"/>  <!-- Orem Central Station (Bay E) -->
+    </trip>
+    <trip id="3_bus_805:0" type="pt_bus" depart="17.0" departLane="best" from="28223368" to="477393514">
+        <stop busStop="9932608366" duration="30"/>  <!-- UVU Station -->
+    </trip>
+    <trip id="4_bus_806:0" type="pt_bus" depart="52.0" departLane="best" from="477393511" to="1029860281">
+        <stop busStop="9932608367" duration="30"/>  <!-- UVU Station -->
+    </trip>
+    <trip id="5_bus_807:0" type="pt_bus" depart="119.0" departLane="best" from="477393514" to="-10241949#0">
+        <stop busStop="9932608366" duration="30"/>  <!-- UVU Station -->
+    </trip>
+    <trip id="6_bus_822:0" type="pt_bus" depart="131.0" departLane="best" from="477393514" to="1001839216#1">
+        <stop busStop="9932608366" duration="30"/>  <!-- UVU Station -->
+    </trip>
+    <trip id="7_bus_834:0" type="pt_bus" depart="132.0" departLane="best" from="1095494532#2" to="-790916845">
+        <stop busStop="11361153248" duration="30"/>  <!-- Vineyard Station (Bay A) -->
+    </trip>
+    <trip id="8_bus_862:0" type="pt_bus" depart="133.0" departLane="best" from="776681829#5" to="463704557#1">
+        <stop busStop="6863882459" duration="30"/>  <!-- University Place Station (WB) -->
+    </trip>
+    <trip id="9_bus_880:0" type="pt_bus" depart="165.0" departLane="best" from="776681829#5" to="36973354#7">
+        <stop busStop="6863882459" duration="30"/>  <!-- University Place Station (WB) -->
+    </trip>
+    <trip id="10_bus_880:1" type="pt_bus" depart="253.0" departLane="best" from="175387010#0" to="776681829#5">
+        <stop busStop="6863882459" duration="30"/>  <!-- University Place Station (WB) -->
+    </trip>
+    <trip id="11_bus_862:1" type="pt_bus" depart="303.0" departLane="best" from="463704557#1" to="776681829#5">
+        <stop busStop="9932488272" duration="30"/>  <!-- Orem Central Station (Bay F) -->
+    </trip>
+    <trip id="12_bus_807:1" type="pt_bus" depart="326.0" departLane="best" from="10241949#0" to="477393511">
+        <stop busStop="9932608367" duration="30"/>  <!-- UVU Station -->
+    </trip>
+    <trip id="13_train_750:0" type="pt_train" depart="353.0" departLane="best" from="100198877" to="100198877">
+        <stop busStop="3020209235" duration="30"/>  <!-- Orem Central -->
+    </trip>
+    <trip id="14_bus_806:1" type="pt_bus" depart="383.0" departLane="best" from="10231109" to="477393514">
+        <stop busStop="9932608366" duration="30"/>  <!-- UVU Station -->
+    </trip>
+    <trip id="15_bus_831:1" type="pt_bus" depart="389.0" departLane="best" from="229097623#1" to="1225221152#1">
+        <stop busStop="9932608366" duration="30"/>  <!-- UVU Station -->
+    </trip>
+    <trip id="16_train_750:1" type="pt_train" depart="406.0" departLane="best" from="762329402#0" to="-298119548#0">
+        <stop busStop="3020209244" duration="30"/>  <!-- Orem Central -->
+    </trip>
+    <trip id="17_bus_805:1" type="pt_bus" depart="441.0" departLane="best" from="477393511" to="27940509">
+        <stop busStop="9932608367" duration="30"/>  <!-- UVU Station -->
+    </trip>
+    <trip id="18_bus_834:1" type="pt_bus" depart="485.0" departLane="best" from="790916845" to="1095494532#2">
+        <stop busStop="11361153248@9499501" duration="30"/>  <!-- Vineyard Station (Bay A) -->
+    </trip>
+    <trip id="19_bus_822:1" type="pt_bus" depart="535.0" departLane="best" from="1001839212" to="477393511">
+        <stop busStop="9932608367" duration="30"/>  <!-- UVU Station -->
+    </trip>
+</routes>

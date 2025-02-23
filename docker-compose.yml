@@ -1,5 +1,6 @@
 volumes:
   frontend_node_modules:
+  sumo_config:
 
 services:
   backend:
@@ -27,3 +28,10 @@ services:
     environment:
       - CHOKIDAR_USEPOLLING=true
     command: ["npm", "run", "dev"]
+  sumo:
+    container_name: sumo
+    build:
+      context: ./sumo
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
