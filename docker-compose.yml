@@ -1,6 +1,7 @@
 volumes:
   frontend_node_modules:
   sumo_config:
+  database_data:
 
 services:
   backend:
@@ -28,6 +29,7 @@ services:
     environment:
       - CHOKIDAR_USEPOLLING=true
     command: ["npm", "run", "dev"]
+
   sumo:
     container_name: sumo
     build:
@@ -35,3 +37,15 @@ services:
       dockerfile: Dockerfile
     ports:
       - "5000:5000"
+
+  database:
+    image: postgres:latest
+    container_name: database
+    env_file:
+      - ./database/.env
+    volumes:
+      - database_data:/var/lib/postgresql/data
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+      - ./database/test_data.sql:/docker-entrypoint-initdb.d/test_data.sql
+    ports:
+      - "5432:5432"
