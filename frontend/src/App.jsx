@@ -34,7 +34,6 @@ function App() {
             <Route index element={<Home isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
             <Route path="/signin" element={<SignIn />} />
             <Route path="/createaccount" element={<CreateAccount isLoggedIn={setIsLoggedIn} />} />
-            <Route path="/test" element={<Test />} />
         </Routes>
     </BrowserRouter>
   );

@@ -1,11 +1,16 @@
 import hashlib
 import secrets
-from quart import jsonify, request, session
+from quart import jsonify, request, session, Blueprint
+from quart_cors import cors
+
 
 async def register_user_routes(app):
+    app = cors(app)
+    user_routes = Blueprint('user_routes',__name__)
 
-    @app.route("/createaccount", methods=["POST"])
+    @user_routes.route("/api/createaccount", methods=["POST"])
     async def create_account():
+        print("HELO")
         try:
             data = await request.get_json()
             first_name = data.get("user_first")
@@ -29,7 +34,7 @@ async def register_user_routes(app):
             print(f"An error occurred: {str(e)}")
             return jsonify({"error": f"An error occurred: {str(e)}"}), 500
     
-    @app.route("/signin", methods=["POST"])
+    @user_routes.route("/api/signin", methods=["POST"])
     async def sign_in():
         try:
             data = await request.get_json()
@@ -63,15 +68,16 @@ async def register_user_routes(app):
             print(f"An error occurred: {str(e)}")
             return jsonify({"error": f"An error occurred: {str(e)}"}), 500
 
-    @app.route("/protected", methods=["GET"])
+    @user_routes.route("/api/protected", methods=["GET"])
     async def protected_route():
         if 'user_id' not in session:
             return jsonify({"error": "Unauthorized"}), 401
         
         return jsonify({"message": "This is a protected route"})
 
-    @app.route("/signout", methods=["POST"])
+    @user_routes.route("/api/signout", methods=["POST"])
     async def sign_out():
         session.clear()
         
         return jsonify({"message": "User signed out successfully"}), 200
+    app.register_blueprint(user_routes)

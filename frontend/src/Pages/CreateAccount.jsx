@@ -40,23 +40,34 @@ const CreateAccount = ({ setIsLoggedIn }) => {
         e.preventDefault();
         if (!validateAccount()) return;
         try {
-            const response = await fetch("http://localhost:5173/api/create-account", {
+            alert("Handling Submit")
+            const response = await fetch("http://localhost:8080/api/createaccount", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(formData),
+                body: JSON.stringify({
+                    user_first: accountData.firstName,
+                    user_last: accountData.lastName,
+                    user_email: accountData.email,
+                    user_password: accountData.password
+                }),
             });
+            alert("HERE");
             const result = await response.json();
+            alert("HERE2");
             if (response.ok) {
+                alert("Response OKAY")
                 //Automatically log user in or just clear form and notify them the account was created???
-                const loginResponse = await fetch("http://localhost:5173/api/login",{
+                const loginResponse = await fetch("http://localhost:8080/api/login",{
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
-                        email: formData.email,
-                        password: formData.password
+                        email: accountData.email,
+                        password: accountData.password
                     }),
                 });
+                alert("HERE3");
                 const loginResult = await loginResponse.json();
+                alert("HERE4");
                 if (loginResponse.ok){
                     localStorage.setItem("loginToken", loginResult.token);
                     setIsLoggedIn(true);
@@ -68,7 +79,8 @@ const CreateAccount = ({ setIsLoggedIn }) => {
             } else {
                 setMessage(result.message || "Error creating account.");
             }
-        } catch (error) {
+        } 
+        catch (error) {
             setMessage("Network error. Please try again later.");
         }
     };
@@ -108,7 +120,7 @@ const CreateAccount = ({ setIsLoggedIn }) => {
                         <div width="100%" style={{ color: "var(--white)", textAlign: "center" }}>
                             Already have an account? <Link to ="/signin">Sign In</Link>
                         </div>
-                        <button type="submit" class="submit-button">Submit</button>
+                        <button type="submit" className="submit-button">Submit</button>
                     </form>
                 </div>
             </div>
