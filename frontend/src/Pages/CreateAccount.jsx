@@ -67,7 +67,7 @@ const CreateAccount = ({ setIsLoggedIn }) => {
                 if (loginResponse.ok){
                     localStorage.setItem("loginToken", loginResult.token);
                     setIsLoggedIn(true);
-                    navigate('/dashboard');;
+                    navigate('/dashboard');
                 }
                 else{
                     setMessage(loginResult.message || "Error logging in.");
