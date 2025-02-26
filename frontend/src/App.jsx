@@ -5,7 +5,6 @@ import SignIn from './Pages/SignIn.jsx';
 import CreateAccount from './Pages/CreateAccount.jsx';
 import Dashboard from './Pages/Dashboard.jsx';
 import Test from './Pages/Test.jsx';
-import Dashboard from './Pages/Dashboard.jsx';
 
 // Main component of the app where the routing and global state management is defined
 function App() {
