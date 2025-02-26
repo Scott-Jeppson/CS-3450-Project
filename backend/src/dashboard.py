@@ -2,7 +2,7 @@ import os
 import asyncpg
 import asyncio
 import hypercorn.asyncio
-from quart import Quart
+from quart import Quart, jsonify
 from quart_cors import cors
 from dotenv import load_dotenv
 from hypercorn.config import Config
@@ -61,12 +61,12 @@ async def create_db_pool():
                 user=POSTGRES_USER,
                 password=POSTGRES_PASSWORD,
                 database=POSTGRES_DB,
-                host='localhost',
+                host='database',
                 port=5432)
         except Exception as e:
             print(f"Connection failed: {e}, {retry} attempts remaining.")
             await asyncio.sleep(10)
-            retries-=1
+            retry-=1
     raise Exception(f"Database connection failed after {retry+1} attempts.")
 
 @app.before_serving

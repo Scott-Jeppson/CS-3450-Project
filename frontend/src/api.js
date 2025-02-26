@@ -3,7 +3,7 @@ const API_URL = "http://localhost:8080";
 // this fucntion fetches a test message "Hello, World!" to test the connection between the frontend and the backend
 export async function getHelloWorld() {
     try {
-        const response = await fetch(`${API_URL}/hello`);
+        const response = await fetch(`${API_URL}/test`);
         if (!response.ok) {
             throw new Error(`HTTP error: ${response.status}`);
         }

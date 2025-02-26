@@ -113,7 +113,7 @@ h4 {
 @media (min-width: 1025px) {
     #welcome-box {
         width: 600px;
-        height: 600px;
+        height: 80vh;
         padding: 45px;
     }
     h4 {
