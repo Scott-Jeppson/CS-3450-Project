@@ -11,6 +11,9 @@ from routes.user_routes import register_user_routes
 from routes.test_routes import register_test_routes
 
 load_dotenv()
+POSTGRES_USER = os.getenv("POSTGRES_USER")
+POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD")
+POSTGRES_DB = os.getenv("POSTGRES_DB")
 
 app_secret = os.getenv("APP_SECRET")
 
@@ -19,7 +22,7 @@ app.secret_key = app_secret
 
 app = cors(
     app,
-    allow_origin=["http://127.0.0.1:5173", "http://localhost:5173", "http://127.0.0.1:8080"],
+    allow_origin=["http://localhost:5432", "http://localhost:5173", "http://localhost:8080"],
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
     allow_headers=[
@@ -51,18 +54,26 @@ app.config.update(
 )
 
 async def create_db_pool():
-    return await asyncpg.create_pool(
-        user='db_user',
-        password='db_password',
-        database='db_name',
-        host='127.0.0.1'
-    )
+    retry = 3
+    while retry>=0:
+        try:
+            return await asyncpg.create_pool(
+                user=POSTGRES_USER,
+                password=POSTGRES_PASSWORD,
+                database=POSTGRES_DB,
+                host='localhost',
+                port=5432)
+        except Exception as e:
+            print(f"Connection failed: {e}, {retry} attempts remaining.")
+            await asyncio.sleep(10)
+            retries-=1
+    raise Exception(f"Database connection failed after {retry+1} attempts.")
 
 @app.before_serving
 async def startup():
     app.db_pool = await create_db_pool()
 
-    await register_test_routes(app)
+    #await register_test_routes(app)
     await register_user_routes(app)
 
 if __name__ == "__main__":

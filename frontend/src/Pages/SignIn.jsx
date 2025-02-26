@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Navbar from "../components/navbar.jsx";
 import './signin.css';
 
-const SignIn = () => {
+const SignIn = ({ isLoggedIn, setIsLoggedIn }) => {
 
     return (
         <div className="page-div" style={{ backgroundColor: "var(--charcoal)" }}>
