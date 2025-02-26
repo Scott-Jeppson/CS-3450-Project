@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import Navbar from "../components/navbar.jsx";
 import './signin.css';
+import { useNavigate } from 'react-router-dom';
 
 const CreateAccount = ({ setIsLoggedIn }) => {
+    const navigate = useNavigate();
     const [accountData, setAccountData] = useState({
         firstName: "",
         lastName: "",
@@ -40,7 +42,6 @@ const CreateAccount = ({ setIsLoggedIn }) => {
         e.preventDefault();
         if (!validateAccount()) return;
         try {
-            alert("Handling Submit")
             const response = await fetch("http://localhost:8080/api/createaccount", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -51,30 +52,25 @@ const CreateAccount = ({ setIsLoggedIn }) => {
                     user_password: accountData.password
                 }),
             });
-            alert("HERE");
             const result = await response.json();
-            alert("HERE2");
             if (response.ok) {
-                alert("Response OKAY")
                 //Automatically log user in or just clear form and notify them the account was created???
-                const loginResponse = await fetch("http://localhost:8080/api/login",{
+                const loginResponse = await fetch("http://localhost:8080/api/signin",{
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
-                        email: accountData.email,
-                        password: accountData.password
+                        user_email: accountData.email,
+                        user_password: accountData.password
                     }),
                 });
-                alert("HERE3");
                 const loginResult = await loginResponse.json();
-                alert("HERE4");
                 if (loginResponse.ok){
                     localStorage.setItem("loginToken", loginResult.token);
                     setIsLoggedIn(true);
-                    window.location.href = "/dashboard";
+                    navigate('/dashboard');;
                 }
                 else{
-                    setMessage(loginResult.message || "Error loggin in.");
+                    setMessage(loginResult.message || "Error logging in.");
                 }
             } else {
                 setMessage(result.message || "Error creating account.");

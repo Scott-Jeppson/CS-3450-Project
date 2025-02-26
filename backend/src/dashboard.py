@@ -54,13 +54,20 @@ app.config.update(
 )
 
 async def create_db_pool():
-    return await asyncpg.create_pool(
-        user=POSTGRES_USER,
-        password=POSTGRES_PASSWORD,
-        database=POSTGRES_DB,
-        host='database',
-        port=5432
-    )
+    retry = 3
+    while retry>=0:
+        try:
+            return await asyncpg.create_pool(
+                user=POSTGRES_USER,
+                password=POSTGRES_PASSWORD,
+                database=POSTGRES_DB,
+                host='localhost',
+                port=5432)
+        except Exception as e:
+            print(f"Connection failed: {e}, {retry} attempts remaining.")
+            await asyncio.sleep(10)
+            retries-=1
+    raise Exception(f"Database connection failed after {retry+1} attempts.")
 
 @app.before_serving
 async def startup():

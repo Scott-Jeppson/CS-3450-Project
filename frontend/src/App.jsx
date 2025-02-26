@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Home from './Pages/Home.jsx';
 import SignIn from './Pages/SignIn.jsx';
 import CreateAccount from './Pages/CreateAccount.jsx';
+import Dashboard from './Pages/Dashboard.jsx';
 import Test from './Pages/Test.jsx';
 
 // Main component of the app where the routing and global state management is defined
@@ -34,6 +35,7 @@ function App() {
             <Route index element={<Home isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
             <Route path="/signin" element={<SignIn />} />
             <Route path="/createaccount" element={<CreateAccount isLoggedIn={setIsLoggedIn} />} />
+            <Route path="/dashboard" element={<Dashboard isLoggedIn={setIsLoggedIn}/>}/>
         </Routes>
     </BrowserRouter>
   );
