@@ -17,4 +17,4 @@ EXPOSE 8080
 ENV PYTHONUNBUFFERED=1
 
 # Set default command to run Quart
-CMD ["python", "dashboard.py"]
+CMD ["python", "src/dashboard.py"]

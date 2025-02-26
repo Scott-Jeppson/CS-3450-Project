@@ -14,7 +14,9 @@ services:
       - ./backend/.env
     environment:
       - QUART_ENV=development
-    command: ["hypercorn", "dashboard:app", "--bind", "0.0.0.0:8080", "--workers", "1"]
+    command: ["hypercorn", "src/dashboard:app", "--bind", "0.0.0.0:8080", "--workers", "1"]
+    depends_on:
+      - database
 
   frontend:
     build:
@@ -28,6 +30,8 @@ services:
     environment:
       - CHOKIDAR_USEPOLLING=true
     command: ["npm", "run", "dev"]
+    depends_on:
+      - backend
   
   database:
     image: postgres:latest
@@ -40,3 +44,4 @@ services:
       - ./database/test_data.sql:/docker-entrypoint-initdb.d/test_data.sql
     ports:
       - "5432:5432"
+    

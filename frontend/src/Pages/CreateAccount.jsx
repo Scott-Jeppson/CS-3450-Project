@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import Navbar from "../components/navbar.jsx";
 import './signin.css';
+import { useNavigate } from 'react-router-dom';
 
 const CreateAccount = ({ setIsLoggedIn }) => {
+    const navigate = useNavigate();
     const [accountData, setAccountData] = useState({
         firstName: "",
         lastName: "",
@@ -40,35 +42,41 @@ const CreateAccount = ({ setIsLoggedIn }) => {
         e.preventDefault();
         if (!validateAccount()) return;
         try {
-            const response = await fetch("http://localhost:5173/api/create-account", {
+            const response = await fetch("http://localhost:8080/api/createaccount", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(formData),
+                body: JSON.stringify({
+                    user_first: accountData.firstName,
+                    user_last: accountData.lastName,
+                    user_email: accountData.email,
+                    user_password: accountData.password
+                }),
             });
             const result = await response.json();
             if (response.ok) {
                 //Automatically log user in or just clear form and notify them the account was created???
-                const loginResponse = await fetch("http://localhost:5173/api/login",{
+                const loginResponse = await fetch("http://localhost:8080/api/signin",{
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
-                        email: formData.email,
-                        password: formData.password
+                        user_email: accountData.email,
+                        user_password: accountData.password
                     }),
                 });
                 const loginResult = await loginResponse.json();
                 if (loginResponse.ok){
                     localStorage.setItem("loginToken", loginResult.token);
                     setIsLoggedIn(true);
-                    window.location.href = "/dashboard";
+                    navigate('/dashboard');;
                 }
                 else{
-                    setMessage(loginResult.message || "Error loggin in.");
+                    setMessage(loginResult.message || "Error logging in.");
                 }
             } else {
                 setMessage(result.message || "Error creating account.");
             }
-        } catch (error) {
+        } 
+        catch (error) {
             setMessage("Network error. Please try again later.");
         }
     };
@@ -108,7 +116,7 @@ const CreateAccount = ({ setIsLoggedIn }) => {
                         <div width="100%" style={{ color: "var(--white)", textAlign: "center" }}>
                             Already have an account? <Link to ="/signin">Sign In</Link>
                         </div>
-                        <button type="submit" class="submit-button">Submit</button>
+                        <button type="submit" className="submit-button">Submit</button>
                     </form>
                 </div>
             </div>
