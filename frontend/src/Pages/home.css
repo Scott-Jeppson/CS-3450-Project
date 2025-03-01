@@ -18,8 +18,8 @@
 }
 
 #welcome-box {
-    height: 400px;
     width: 400px;
+    height: clamp(340px, 75%, 400px);
     background-color: rgb(154, 101, 133, 0.9);
     opacity: 1.0;
     box-sizing: border-box;
@@ -100,7 +100,7 @@ h4 {
 @media (min-width: 768px) and (max-width: 1024px) {
     #welcome-box {
         width: 500px;
-        height: 500px;
+        height: clamp(400px, 70%, 500px);
         padding: 30px;
     }
     h4 {
@@ -113,7 +113,7 @@ h4 {
 @media (min-width: 1025px) {
     #welcome-box {
         width: 600px;
-        height: 600px;
+        height: clamp(475px, 70%, 600px);
         padding: 45px;
     }
     h4 {
