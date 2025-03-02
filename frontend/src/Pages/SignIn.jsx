@@ -4,7 +4,7 @@ import Navbar from "../components/navbar.jsx";
 import './signin.css';
 import { useNavigate } from 'react-router-dom';
 
-const SignIn = ({ setIsLoggedIn }) => {
+const SignIn = ({ isLoggedIn, setIsLoggedIn }) => {
     const navigate = useNavigate();
 
     const [accountData, setAccountData] = useState({
@@ -61,7 +61,7 @@ const SignIn = ({ setIsLoggedIn }) => {
 
     return (
         <div className="page-div" style={{ backgroundColor: "var(--charcoal)" }}>
-            <Navbar/>
+            <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
             <div className="login-form">
                 <div className="login-container">
                     <h3>Sign In</h3>

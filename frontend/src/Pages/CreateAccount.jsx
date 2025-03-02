@@ -4,7 +4,7 @@ import Navbar from "../components/navbar.jsx";
 import './signin.css';
 import { useNavigate } from 'react-router-dom';
 
-const CreateAccount = ({ setIsLoggedIn }) => {
+const CreateAccount = ({ isLoggedIn, setIsLoggedIn }) => {
     const navigate = useNavigate();
     const [accountData, setAccountData] = useState({
         firstName: "",
@@ -82,7 +82,7 @@ const CreateAccount = ({ setIsLoggedIn }) => {
     };
     return (
         <div className="page-div" style={{ backgroundColor: "var(--charcoal)" }}>
-            <Navbar/>
+            <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
             <div className="login-form">
                 <div className="login-container">
                     <h3>Create Account</h3>
