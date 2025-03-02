@@ -38,7 +38,8 @@ services:
     image: camcottle341/smarttransit:latest
     ports:
       - "5000:5000"
-
+    volumes:
+      - ./sumo/templates:/sumo/templates
     depends_on:
       - backend
   
