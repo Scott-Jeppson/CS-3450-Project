@@ -31,11 +31,11 @@ function Navbar({ isLoggedIn, setIsLoggedIn }) {
     return (
         <nav id={isLoggedIn ? "navbar-logged-in" : "navbar"}>
             <div id="nav-brand">
-                <Link to="/">
+                <Link to={isLoggedIn ? "/dashboard" : "/"}>
                     <img id="logo" src={isLoggedIn ? "src/assets/Logo-White-Text-Purple-Background.svg" :
                         "src/assets/Logo-Light-Purple-Circle.svg"} />
                 </Link>
-                <Link to="/" id="nav-name">
+                <Link to={isLoggedIn ? "/dashboard" : "/"} id="nav-name">
                     <h2>StreamLine</h2>
                 </Link>
             </div>
