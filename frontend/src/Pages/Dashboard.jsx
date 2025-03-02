@@ -7,9 +7,9 @@ const Dashboard = ({ isLoggedIn, setIsLoggedIn }) => {
     const navigate = useNavigate();
 
     return (
-        <div className="page-div" id="dashboard-page" style={{ backgroundColor: "var(--grey)" }}>
+        <div className="page-div" style={{ backgroundColor: "var(--grey)" }}>
             <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
-            <div>
+            <div id="main-content">
                 {isLoggedIn ? (
                         <SumoSim />
                     ) : (
