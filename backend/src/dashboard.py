@@ -54,7 +54,8 @@ app.config.update(
 )
 
 async def create_db_pool():
-    retry = 3
+    retries = 3
+    retry = retries
     while retry>=0:
         try:
             return await asyncpg.create_pool(
@@ -67,7 +68,7 @@ async def create_db_pool():
             print(f"Connection failed: {e}, {retry} attempts remaining.")
             await asyncio.sleep(10)
             retry-=1
-    raise Exception(f"Database connection failed after {retry+1} attempts.")
+    raise Exception(f"Database connection failed after {retries} attempts.")
 
 @app.before_serving
 async def startup():
