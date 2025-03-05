@@ -1,8 +1,61 @@
 #main-content {
+    /* height: 100%; */
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-screen {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+}
+
+.info-screen {
+    display: flex;
+    flex-direction: column; 
+    height: 100vh;
+    width: 100%;
+}
+
+.toolbar {
+    width: 20%;
+    /* height: 100vh; */
+}
+
+.stats {
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+}
+
+.stats-items {
     height: 100%;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: var(--light-purple);
+    border-radius: 12px;
+    margin: 15px;
+    font-weight: bold;
+}
+
+.tools {
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+}
+
+.tools-items {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: var(--lavender);
+    border-radius: 12px;
+    margin: 15px;
+    font-weight: bold;
 }
