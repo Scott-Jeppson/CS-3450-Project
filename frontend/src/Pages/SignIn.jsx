@@ -65,22 +65,22 @@ const SignIn = ({ isLoggedIn, setIsLoggedIn }) => {
             <div className="login-form">
                 <div className="login-container">
                     <h3>Sign In</h3>
-                    {errorMessage && <p style={{color:"white", textAlign:"center", backgroundColor: "var(--error-red)"}}>{errorMessage}</p>}
+                    {errorMessage && <p aria-live="assertive" role="alert" style={{color:"white", textAlign:"center", backgroundColor: "var(--error-red)"}}>{errorMessage}</p>}
                     <form onSubmit={handleSubmit}>
                         <div className="login-input">
                             <label htmlFor="email">Email</label>
-                            <input type="email" id="email" name="email" value={accountData.email} onChange={handleChange} />
-                            {errors.email && <p className="error">{errors.email}</p>}
+                            <input type="email" id="email" name="email" aria-required="true" value={accountData.email} onChange={handleChange} />
+                            {errors.email && <p className="error" aria-live="assertive">{errors.email}</p>}
                         </div>
                         <div className="login-input">
                             <label htmlFor="password">Password</label>
-                            <input type="password" id="password" name="password" value={accountData.password} onChange={handleChange} />
-                            {errors.password && <p className="error">{errors.password}</p>}
+                            <input type="password" id="password" name="password" aria-required="true" value={accountData.password} onChange={handleChange} />
+                            {errors.password && <p className="error" aria-live="assertive">{errors.password}</p>}
                         </div>
                         <div width="100%" style={{ color: "var(--white)", textAlign: "center" }}>
-                            Don't have an account? <Link to ="/createaccount">Create Account</Link>
+                            Don't have an account? <Link to="/createaccount" aria-label="Create an account">Create Account</Link>
                         </div>
-                        <button type="submit" className="submit-button">Submit</button>
+                        <button type="submit" aria-label="submit" className="submit-button">Submit</button>
                     </form>
                 </div>
             </div>
