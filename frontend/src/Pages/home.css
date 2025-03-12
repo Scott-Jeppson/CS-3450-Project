@@ -72,6 +72,8 @@ h4 {
 
 .home-button {
     width: 100%;
+    font-weight: bold;
+    font-size: 1rem;
     background-color: var(--grey);
     color: var(--charcoal);
     border-radius: 20px;

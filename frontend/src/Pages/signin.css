@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: center;
     background-color: var(--charcoal);
-    color: var(--white);
     height: 100%;
 }
 
@@ -14,6 +13,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: var(--white);
 }
 
 .login-input {
@@ -43,9 +43,7 @@ input {
 }
 
 input:focus {
-    border-color: var(--purple);
-    background-color: var(--white);
-    outline: none;
+    outline: 5px solid var(--purple);
 }
 
 input::placeholder {
@@ -53,21 +51,30 @@ input::placeholder {
     font-style: italic;
 }
 
-button {
+.submit-button {
     all: unset;
-    text-align: center;
     height: 30px;
     width: 150px;
     color: var(--purple);
     background-color: var(--white);
     border-radius: 12px;
     font-weight: bold;
-    margin: 10px;
+    margin: 35px;
+    cursor: pointer;
+    transition: transform 0.4s ease, background-color 0.5s ease;
 }
 
-button:hover {
+.submit-button:hover {
     color: var(--white);
     background-color: var(--purple);
+}
+
+.submit-button:active {
+    transform: scale(0.9);
+}
+
+.submit-button:focus {
+    outline: 5px solid var(--purple);
 }
 
 a {
@@ -76,4 +83,8 @@ a {
 
 a:hover {
     color: var(--purple);
+}
+
+a:focus {
+    outline: 3px solid var(--purple);
 }
