@@ -72,6 +72,7 @@ h4 {
 
 .home-button {
     width: 100%;
+    font-family: "Nunito Sans", sans-serif;
     font-weight: bold;
     font-size: 1rem;
     background-color: var(--grey);
