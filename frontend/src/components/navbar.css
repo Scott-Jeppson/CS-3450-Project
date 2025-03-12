@@ -44,16 +44,11 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
+    text-decoration: none;
+    color: inherit;
 }
 #nav-brand:focus {
     outline: 3px solid var(--purple);
-}
-#nav-name{
-    font-weight: bold;
-    text-decoration: none;
-}
-#nav-name:hover {
-    color: inherit;
 }
 h2 {
     margin: 0px;
