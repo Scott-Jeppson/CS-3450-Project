@@ -1,5 +1,6 @@
 import hashlib
 import secrets
+import asyncpg
 from quart import jsonify, request, session, Blueprint
 from quart_cors import cors
 
@@ -24,14 +25,17 @@ async def register_user_routes(app):
             salt = secrets.token_hex(16)
             password_hash = hashlib.sha256((password + salt).encode()).hexdigest()
 
-            async with app.db_pool.acquire() as conn:
-                await conn.execute('INSERT INTO user_information(first_name, last_name, email, password_hash, salt) VALUES($1, $2, $3, $4, $5)', first_name, last_name, email, password_hash, salt)
+            try:
+                async with app.db_pool.acquire() as conn:
+                    await conn.execute('INSERT INTO user_information(first_name, last_name, email, password_hash, salt) VALUES($1, $2, $3, $4, $5)', first_name, last_name, email, password_hash, salt)
+            except asyncpg.exceptions.UniqueViolationError:
+                return jsonify({"error": "Account with this username already exists, please sign in."}), 400
             
             print("User registered successfully")
             return jsonify({"message": "User registered successfully"}), 201
         except Exception as e:
-            print(f"An error occurred: {str(e)}")
-            return jsonify({"error": f"An error occurred: {str(e)}"}), 500
+            # print(f"An error occurred: {str(e)}")
+            # return jsonify({"error": f"An error occurred here: {str(e)}"}), 500
     
     @user_routes.route("/api/signin", methods=["POST"])
     async def sign_in():

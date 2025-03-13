@@ -73,7 +73,7 @@ const CreateAccount = ({ isLoggedIn, setIsLoggedIn }) => {
                     setMessage(loginResult.message || "Error logging in.");
                 }
             } else {
-                setMessage(result.message || "Error creating account.");
+                setMessage(result.error || "Error creating account.");
             }
         } 
         catch (error) {
