@@ -33,9 +33,10 @@ function App() {
     <BrowserRouter>
         <Routes>
             <Route index element={<Home isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
-            <Route path="/signin" element={<SignIn />} />
-            <Route path="/createaccount" element={<CreateAccount isLoggedIn={setIsLoggedIn} />} />
-            <Route path="/dashboard" element={<Dashboard isLoggedIn={setIsLoggedIn}/>}/>
+            <Route path="/signin" element={<SignIn isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
+            <Route path="/createaccount" element={<CreateAccount isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
+            <Route path="/dashboard" element={<Dashboard isLoggedIn={isLoggedIn}/>}/>
+            <Route path="/test" element={<Test/>}/>
         </Routes>
     </BrowserRouter>
   );

@@ -17,7 +17,7 @@ const Home = ({ isLoggedIn, setIsLoggedIn }) => {
     return (
         <div className="page-div" id="home-page">
             <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
-            <div id="main-content">
+            <main id="main-content">
                 <div id="welcome-box">
                     <h1>Welcome to StreamLine!</h1>
                     <p> StreamLine is a traffic simulation and optimization tool designed to help traffic managers in
@@ -26,10 +26,10 @@ const Home = ({ isLoggedIn, setIsLoggedIn }) => {
                     <div className="divider">
                       <h4>Please sign in to continue:</h4>
                     </div>
-                    <button className="home-button" onClick={handleSignInClick}>Sign In</button>
-                    <button className="home-button" onClick={handleCreateAccountClick}>Create Account</button>
+                    <button className="home-button" aria-label="Sign in" onClick={handleSignInClick}>Sign In</button>
+                    <button className="home-button" aria-label="Create account" onClick={handleCreateAccountClick}>Create Account</button>
                 </div>
-            </div>
+            </main>
         </div>
     );
 }
