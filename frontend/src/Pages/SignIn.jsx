@@ -51,7 +51,7 @@ const SignIn = ({ isLoggedIn, setIsLoggedIn }) => {
                 navigate('/dashboard');
             }
             else{
-                setMessage(loginResult.message || "Error logging in.");
+                setMessage(result.error || "Error logging in.");
             }
         }
         catch (error) {
