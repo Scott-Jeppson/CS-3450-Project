@@ -4,7 +4,6 @@ import Home from './Pages/Home.jsx';
 import SignIn from './Pages/SignIn.jsx';
 import CreateAccount from './Pages/CreateAccount.jsx';
 import Dashboard from './Pages/Dashboard.jsx';
-import Test from './Pages/Test.jsx';
 
 // Main component of the app where the routing and global state management is defined
 function App() {
@@ -36,7 +35,6 @@ function App() {
             <Route path="/signin" element={<SignIn isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
             <Route path="/createaccount" element={<CreateAccount isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
             <Route path="/dashboard" element={<Dashboard isLoggedIn={isLoggedIn}/>}/>
-            <Route path="/test" element={<Test/>}/>
         </Routes>
     </BrowserRouter>
   );
