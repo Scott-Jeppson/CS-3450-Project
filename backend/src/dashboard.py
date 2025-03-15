@@ -84,7 +84,7 @@ async def create_db_pool():
                 secret = json.loads(decoded_binary_secret)
             db_user = urllib.parse.quote(secret['username'])
             db_password = urllib.parse.quote(secret['password'])
-            db_host = secret.get('host', 'streamline-database.c7uksqqmixju.us-east-2.rds.amazonaws.com')
+            db_host = secret.get('host', 'streamline-database.c1m8wacs089y.us-west-2.rds.amazonaws.com')
             db_port=secret.get('port', 5432)
             db_name = secret.get('name', 'streamline-database')
             return await asyncpg.create_pool(
