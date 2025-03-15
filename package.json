@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "aws-sdk": "^2.1692.0",
+    "boto3": "^0.0.1",
     "react-router-dom": "^7.1.5"
   }
 }

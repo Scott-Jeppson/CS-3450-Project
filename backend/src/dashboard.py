@@ -6,14 +6,29 @@ from quart import Quart, jsonify
 from quart_cors import cors
 from dotenv import load_dotenv
 from hypercorn.config import Config
+import base64
+import urllib.parse
 
 from routes.user_routes import register_user_routes
 from routes.test_routes import register_test_routes
 
+import boto3
+from botocore.exceptions import ClientError
+import json
+
 load_dotenv()
-POSTGRES_USER = os.getenv("POSTGRES_USER")
-POSTGRES_PASSWORD = os.getenv("POSTGRES_PASSWORD")
-POSTGRES_DB = os.getenv("POSTGRES_DB")
+aws_access_key = os.getenv("AWS_ACCESS_KEY_ID")
+aws_secret_key = os.getenv("AWS_SECRET_ACCESS_KEY")
+secret_name=os.getenv("DB_SECRET_NAME")
+region_name=os.getenv("AWS_REGION")
+    # Create a Secrets Manager client
+session = boto3.session.Session()
+client = session.client(
+    service_name='secretsmanager',
+    region_name=region_name,
+    aws_access_key_id=aws_access_key,
+    aws_secret_access_key=aws_secret_key
+)
 
 app_secret = os.getenv("APP_SECRET")
 
@@ -58,12 +73,26 @@ async def create_db_pool():
     retry = retries
     while retry>=0:
         try:
+            try:
+                response = client.get_secret_value(SecretId=secret_name)
+            except ClientError as e:
+                print(e)
+            if 'SecretString' in response:
+                secret = json.loads(response['SecretString'])
+            else:
+                decoded_binary_secret = base64.b64decode(response['SecretBinary'])
+                secret = json.loads(decoded_binary_secret)
+            db_user = urllib.parse.quote(secret['username'])
+            db_password = urllib.parse.quote(secret['password'])
+            db_host = secret.get('host', 'streamline-database.c7uksqqmixju.us-east-2.rds.amazonaws.com')
+            db_port=secret.get('port', 5432)
+            db_name = secret.get('name', 'streamline-database')
             return await asyncpg.create_pool(
-                user=POSTGRES_USER,
-                password=POSTGRES_PASSWORD,
-                database=POSTGRES_DB,
-                host='database',
-                port=5432)
+                user=db_user,
+                password=db_password,
+                database=db_name,
+                host=db_host,
+                port=db_port)
         except Exception as e:
             print(f"Connection failed: {e}, {retry} attempts remaining.")
             await asyncio.sleep(10)

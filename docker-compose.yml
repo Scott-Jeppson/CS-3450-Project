@@ -46,12 +46,6 @@ services:
   database:
     image: postgres:latest
     container_name: database
-    # env_file:
-    #   - ./database/.env
-    environment:
-      POSTGRES_USER: myuser
-      POSTGRES_PASSWORD: mypassword
-      POSTGRES_DB: mydatabase
     volumes:
       - database_data:/var/lib/postgresql/data
       - ./database/schema.sql:/docker-entrypoint-initdb.d/schema.sql
