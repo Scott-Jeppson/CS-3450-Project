@@ -17,8 +17,6 @@ services:
       - QUART_ENV=development
       - PYTHONPATH=/app/src
     command: ["hypercorn", "src.dashboard:app", "--bind", "0.0.0.0:8080", "--workers", "1"]
-    depends_on:
-      - database
 
   frontend:
     build:
@@ -42,13 +40,3 @@ services:
       - ./sumo/templates:/sumo/templates
     depends_on:
       - backend
-  
-  database:
-    image: postgres:latest
-    container_name: database
-    volumes:
-      - database_data:/var/lib/postgresql/data
-      - ./database/schema.sql:/docker-entrypoint-initdb.d/schema.sql
-    ports:
-      - "5432:5432"
-    
