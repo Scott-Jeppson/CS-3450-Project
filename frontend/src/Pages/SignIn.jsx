@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import Navbar from "../components/navbar.jsx";
 import './signin.css';
@@ -51,7 +51,7 @@ const SignIn = ({ isLoggedIn, setIsLoggedIn }) => {
                 navigate('/dashboard');
             }
             else{
-                setMessage(loginResult.message || "Error logging in.");
+                setMessage(result.error || "Error logging in.");
             }
         }
         catch (error) {

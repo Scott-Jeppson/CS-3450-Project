@@ -8,24 +8,6 @@ function Navbar({ isLoggedIn, setIsLoggedIn }) {
         // Clear the login token from localStorage and set isLoggedIn to false
         localStorage.removeItem('loginToken');
         setIsLoggedIn(false);
-        /*try{
-            const response = await fetch("/api/signout",{
-                method: "POST",
-                credentials: "include",
-            });
-            if (response.ok){
-                localStorage.removeItem('loginToken');
-                setIsLoggedIn(false);
-                alert("Logged out");
-                window.location.href = "/signin";
-            }
-            else{
-                alert("Logout failed");
-            }
-        }catch (error){
-            console.log("Error: ", error);
-            alert("Failed logging out");
-        }*/
     };
 
     return (
