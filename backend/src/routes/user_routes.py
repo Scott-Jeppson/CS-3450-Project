@@ -34,8 +34,8 @@ async def register_user_routes(app):
             print("User registered successfully")
             return jsonify({"message": "User registered successfully"}), 201
         except Exception as e:
-            # print(f"An error occurred: {str(e)}")
-            # return jsonify({"error": f"An error occurred here: {str(e)}"}), 500
+            print(f"An error occurred: {str(e)}")
+            return jsonify({"error": f"An error occurred here: {str(e)}"}), 500
     
     @user_routes.route("/api/signin", methods=["POST"])
     async def sign_in():
