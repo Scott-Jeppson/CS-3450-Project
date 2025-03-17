@@ -33,20 +33,20 @@ const Dashboard = ({ isLoggedIn, setIsLoggedIn }) => {
                             </div>
                             <div className="info-screen">
                                 <div className="stats">
-                                    <div className="stats-items">10%</div>
+                                    {/* <div className="stats-items">10%</div>
                                     <div className="stats-items">20%</div>
                                     <div className="stats-items">30%</div>
-                                    <div className="stats-items">40%</div>
+                                    <div className="stats-items">40%</div> */}
                                 </div>
                                 <div className="tools">
                                     <SumoSim />
-                                    <div className="tools-items">Tool 1</div>
-                                    <div className="tools-items">Tool 2</div>
+                                    {/* <div className="tools-items">Tool 1</div>
+                                    <div className="tools-items">Tool 2</div> */}
                                 </div>
-                                <div className="tools">
+                                {/* <div className="tools">
                                     <SumoSim />
                                     <div className="tools-items">Tool 3</div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     ) : (
