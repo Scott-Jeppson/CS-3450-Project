@@ -61,6 +61,7 @@ input::placeholder {
     font-weight: bold;
     margin: 35px;
     cursor: pointer;
+    outline: none;
     transition: transform 0.4s ease, background-color 0.5s ease;
 }
 
@@ -70,10 +71,11 @@ input::placeholder {
 }
 
 .submit-button:active {
+    outline: none;
     transform: scale(0.9);
 }
 
-.submit-button:focus {
+.submit-button:focus-visible {
     outline: 5px solid var(--purple);
 }
 

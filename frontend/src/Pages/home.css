@@ -91,7 +91,7 @@ h4 {
     cursor: pointer;
 }
 
-.home-button:focus{
+.home-button:focus-visible{
     outline: 3px solid var(--purple);
 }
 
