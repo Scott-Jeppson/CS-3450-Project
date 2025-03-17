@@ -23,9 +23,9 @@ GRANT ALL PRIVILEGES ON DATABASE mydatabase TO myuser;
 
 CREATE TABLE user_information (
     "id" SERIAL PRIMARY KEY,
-    "first_name" VARCHAR(255),
-    "last_name" VARCHAR(255),
-    "email" VARCHAR(255),
-    "password_hash" VARCHAR(255),
-    "salt" VARCHAR(255)
+    "first_name" VARCHAR(255) NOT NULL,
+    "last_name" VARCHAR(255) NOT NULL,
+    "email" VARCHAR(255) NOT NULL UNIQUE,
+    "password_hash" VARCHAR(255) NOT NULL,
+    "salt" VARCHAR(255) NOT NULL
 );
