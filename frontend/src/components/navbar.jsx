@@ -18,12 +18,17 @@ function Navbar({ isLoggedIn, setIsLoggedIn }) {
                 />
                 <h2 id="nav-name">StreamLine</h2>
             </Link>
+            <div>
+            {isLoggedIn && (
+                <Link to="/sumo" id="nav-button" aria-label="Sumo">Sumo</Link>
+            )}
             {isLoggedIn ? (
                     <Link to="/" id="nav-button" aria-label="Log out" onClick={handleLogout}>Log Out</Link>
                 ) : (
                     <Link to="/signin" id="nav-button" aria-label="Sign in">Sign In</Link>
                 )
             }
+            </div>
         </nav>
     );
 }

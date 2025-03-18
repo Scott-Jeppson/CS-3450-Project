@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from "../components/navbar.jsx";
 import SumoSim from "../components/SumoSim.jsx";
 import Toolbar from "../components/toolbar.jsx";
+import { useState } from "react";
 import "./dashboard.css";
 
 const Dashboard = ({ isLoggedIn, setIsLoggedIn }) => {
