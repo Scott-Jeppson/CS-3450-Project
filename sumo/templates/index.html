@@ -28,7 +28,7 @@
         const map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/streets-v11',
-            center: [-2.233086, 53.466022], // Initialize with a central point
+            center: [-111.672020, 40.296440], // Initialize with a central point
             zoom: 15
         });
 
@@ -40,7 +40,7 @@
                 if (!markers[vehicle.id]) {
                     const el = document.createElement('div');
                     el.className = 'car-marker';
-                    el.innerHTML = `<img src="/static/car-icon.PNG" alt="Car Icon">`;
+                    el.innerHTML = `<img src="/static/bus-icon.png" alt="Car Icon">`;
                     markers[vehicle.id] = new mapboxgl.Marker(el)
                         .setLngLat([vehicle.x, vehicle.y])
                         .addTo(map);

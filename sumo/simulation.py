@@ -12,7 +12,7 @@ socketio = SocketIO(app, async_mode='threading')
 
 # Configurations
 SUMO_BINARY = "sumo"  # or "sumo-gui" for the GUI version
-SUMO_CFG_FILE = "sumo_config/osm.sumocfg" # path to sumo config file
+SUMO_CFG_FILE = "OremConfig/osm.sumocfg" # path to sumo config file
 
 def sumo_simulation():
     # start SUMO simulation
