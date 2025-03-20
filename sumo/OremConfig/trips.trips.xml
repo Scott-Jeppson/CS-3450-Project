@@ -11,7 +11,7 @@
     <trips-file value="/home/cam/sumo/tools/2025-03-18-15-30-49/trips.trips.xml"/>
     <min-stops value="0"/>
     <extend-to-fringe value="True"/>
-    <random-begin value="True"/>
+    <random-begin value="False"/>
     <seed value="42"/>
     <ignore-errors value="True"/>
     <vtype-prefix value="pt_"/>
