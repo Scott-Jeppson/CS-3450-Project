@@ -34,7 +34,7 @@ function Toolbar({ isLoggedIn, setIsLoggedIn }) {
 
     return (
         <>
-            <button id="toggle-drawer" onClick={toggleToolbar}>☰</button>
+            <button id="toggle-drawer" onClick={toggleToolbar} aria-expanded={!isToolbarCollapsed} aria-label="Menu">☰</button>
 
             <div className={`toolbar ${isToolbarCollapsed ? 'collapsed' : ''}`} ref={toolbarRef}>
                 <Link to="/" className="drawer-link" aria-label="Home">Home</Link>
