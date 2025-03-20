@@ -1,25 +1,16 @@
-#main-content {
-    /* height: 100%; */
-    width: 100%;
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
-    overflow-y: hidden;
-}
-
-.dashboard-screen {
-    display: flex;
-    flex-direction: row;
+#main-content-dashboard {
     height: 100%;
     width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
 }
 
-.info-screen {
-    display: flex;
-    flex-direction: column; 
-    /* height: 100vh; */
-    overflow-y: auto;
+.sumo-sim {
+    height: 40%;
     width: 100%;
 }
 
@@ -43,6 +34,7 @@
 .tools {
     /* height: 30%; */
     height: 300px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     margin: 15px;
@@ -56,20 +48,4 @@
     border-radius: 12px;
     margin: 15px;
     font-weight: bold;
-}
-
-.toggle-btn {
-    background-color: var(--grey);
-    color: var(--white);
-    /* padding: 1px; */
-    /* font-size: 24px; */
-    /* border: none; */
-    cursor: pointer;
-    width: 0%;
-    height: 10px;
-    /* border-radius: 3px; */
-}
-
-.toggle-btn:hover {
-    background-color: var(--charcoal);
 }
