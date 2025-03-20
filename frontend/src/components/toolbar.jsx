@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 
 function Toolbar({ isLoggedIn, setIsLoggedIn }) {
 
-    const [isToolbarCollapsed, setIsToolbarCollapsed] = useState(false);
+    const [isToolbarCollapsed, setIsToolbarCollapsed] = useState(true);
 
     const handleLogout = () => {
         // Clear the login token from localStorage and set isLoggedIn to false
@@ -21,7 +21,7 @@ function Toolbar({ isLoggedIn, setIsLoggedIn }) {
         <>
             <button id="toggle-drawer" onClick={toggleToolbar}>☰</button>
 
-            <div className={isToolbarCollapsed ? 'toolbar-collapsed' : 'toolbar'}>
+            <div className={`toolbar ${isToolbarCollapsed ? 'collapsed' : ''}`}>
                 <Link to="/" className="drawer-link" aria-label="Home">Home</Link>
     {/*             <Link to="/about" className="drawer-link" aria-label="About">About</Link> */}
     {/*             <Link to="/sumo" className="drawer-link" aria-label="Traffic simulation">Traffic Simulation</Link> */}
