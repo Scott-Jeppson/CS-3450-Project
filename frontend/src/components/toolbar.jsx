@@ -3,15 +3,31 @@ import { Link } from 'react-router-dom';
 import React, { useEffect, useState } from "react";
 
 function Toolbar({ isLoggedIn, setIsLoggedIn }) {
-    const handleGoingHome = () => {
-        navigate('/');
+
+    const [isToolbarCollapsed, setIsToolbarCollapsed] = useState(false);
+
+    const handleLogout = () => {
+        // Clear the login token from localStorage and set isLoggedIn to false
+        localStorage.removeItem('loginToken');
+        setIsLoggedIn(false);
+        setIsToolbarCollapsed(false);
+    };
+
+    const toggleToolbar = () => {
+        setIsToolbarCollapsed(!isToolbarCollapsed);
     };
 
     return (
-        <div className="toolbar">
-            <Link onClick={handleGoingHome}>Home</Link>
-            {/* tools go here */}
-        </div>
+        <>
+            <button id="toggle-drawer" onClick={toggleToolbar}>☰</button>
+
+            <div className={isToolbarCollapsed ? 'toolbar-collapsed' : 'toolbar'}>
+                <Link to="/" className="drawer-link" aria-label="Home">Home</Link>
+    {/*             <Link to="/about" className="drawer-link" aria-label="About">About</Link> */}
+    {/*             <Link to="/sumo" className="drawer-link" aria-label="Traffic simulation">Traffic Simulation</Link> */}
+                <Link to="/" className="drawer-link" aria-label="Log out" onClick={handleLogout}>Log Out</Link>
+            </div>
+        </>
     );
 }
 

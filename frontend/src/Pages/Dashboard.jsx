@@ -6,14 +6,14 @@ import Toolbar from "../components/toolbar.jsx";
 import "./dashboard.css";
 
 const Dashboard = ({ isLoggedIn, setIsLoggedIn }) => {
-    const navigate = useNavigate();
-
-    // const [isLoggedIn, setIsLoggedIn] = useState(true); // Example logged-in state
-    const [isToolbarCollapsed, setIsToolbarCollapsed] = useState(false); // State for toolbar collapse
-
-    const toggleToolbar = () => {
-        setIsToolbarCollapsed(!isToolbarCollapsed); // Toggle the toolbar state
-    };
+//     const navigate = useNavigate();
+//
+//     // const [isLoggedIn, setIsLoggedIn] = useState(true); // Example logged-in state
+//     const [isToolbarCollapsed, setIsToolbarCollapsed] = useState(false); // State for toolbar collapse
+//
+//     const toggleToolbar = () => {
+//         setIsToolbarCollapsed(!isToolbarCollapsed); // Toggle the toolbar state
+//     };
 
     return (
         <div className="page-div" style={{ backgroundColor: "var(--grey)", overflowY: "auto" }}>
@@ -24,13 +24,15 @@ const Dashboard = ({ isLoggedIn, setIsLoggedIn }) => {
             <div id="main-content">
                 {isLoggedIn ? (
                         <div className="dashboard-screen">
-                            {/* <div className="toolbar"></div> */}
-                            {/* <Toolbar /> */}
-                            <div className={`toolbar ${isToolbarCollapsed ? 'toolbar-collapsed' : ''}`} style={{ alignItems: "right" }}>
-                                <button className="toggle-btn" onClick={toggleToolbar}>
-                                    ☰
-                                </button>
-                            </div>
+
+                            <Toolbar />
+{/*                             <div className={`toolbar ${isToolbarCollapsed ? 'toolbar-collapsed' : ''}`} style={{ alignItems: "right" }}> */}
+{/*                                 <button className="toggle-btn" onClick={toggleToolbar}> */}
+{/*                                     ☰ */}
+{/*                                 </button> */}
+{/*                             </div> */}
+
+                            {/* Dashboard Cards */}
                             <div className="info-screen">
                                 <div className="stats">
                                     {/* <div className="stats-items">10%</div>
