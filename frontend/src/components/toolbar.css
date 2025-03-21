@@ -1,5 +1,5 @@
 .toolbar {
-    width: 18%;
+    width: 25%;
     height: 100%;
     background-color: #500866;
     opacity: 1;
@@ -19,19 +19,19 @@
 }
 
 .toolbar.collapsed {
-    left: -30%;
+    left: -38%;
 }
 
 #toggle-drawer {
     background-color: var(--purple);
     color: var(--white);
-    margin: 12px;
-    border-radius: 12px;
+    height: 28px;
+    width: 28px;
+    font-size: 16px;
+    margin: 8px;
+    border-radius: 8px;
     border: none;
     cursor: pointer;
-    height: 35px;
-    width: 35px;
-    font-size: 20px;
     font-weight: bold;
     position: absolute;
     top: 0;
@@ -57,7 +57,8 @@
     color: var(--white);
     text-decoration: none;
     cursor: pointer;
-    font-size: 22px;
+    font-size: 18px;
+    text-align: center;
     border-radius: 12px;
     padding: 5px 10px;
     transition: background-color 0.2s ease, transform 0.2s ease;
@@ -75,4 +76,39 @@
 .drawer-link:active {
     outline: none;
     transform: scale(0.9);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #toggle-drawer {
+        height: 30px;
+        width: 30px;
+        font-size: 18px;
+        margin: 10px;
+    }
+    .drawer-link {
+        font-size: 20px;
+    }
+    .toolbar {
+        width: 18%;
+    }
+    .toolbar.collapsed {
+        left: -30%;
+    }
+}
+@media (min-width: 1025px) {
+    #toggle-drawer {
+        height: 35px;
+        width: 35px;
+        font-size: 20px;
+        margin: 12px;
+    }
+    .drawer-link {
+        font-size: 22px;
+    }
+    .toolbar {
+        width: 18%;
+    }
+    .toolbar.collapsed {
+        left: -30%;
+    }
 }

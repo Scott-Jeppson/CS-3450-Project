@@ -1,34 +1,36 @@
 #main-content-dashboard {
-    height: 100%;
+    height: calc(100vh - 40px); /* Subtract navbar height */
     width: 100%;
     display: flex;
     position: relative;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
-    gap: 20px;
+    justify-content: flex-start;
+    gap: 10px;
+    box-sizing: border-box;
+    padding: 15px;
+    padding-top: 0px;
+    overflow: hidden;
 }
 
 .sumo-sim {
-    height: 45%;
+    height: 53%;
     width: 100%;
+    min-height: 0; /* Allows flex child to shrink */
+}
+
+.sim-tools {
+    height: 7%;
+    width: 100%;
+    background-color: var(--lavender);
+    min-height: 0; /* Allows flex child to shrink */
 }
 
 .stats {
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    margin: 15px;
-}
-
-.stats-items {
-    height: 100%;
     width: 100%;
-    display: flex;
-    background-color: var(--light-purple);
-    border-radius: 12px;
-    margin: 15px;
-    font-weight: bold;
+    height: 40%;
+    min-height: 0; /* Allows flex child to shrink */
+    overflow: hidden;
 }
 
 .tools {
