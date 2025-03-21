@@ -1,28 +1,27 @@
-import os
+import hypercorn.asyncio
 import asyncpg
 import asyncio
-import hypercorn.asyncio
-from quart import Quart, jsonify
+import base64
+import boto3
+import json
+import os
+from hypercorn.config import Config
+from botocore.exceptions import ClientError
+from quart import Quart
 from quart_cors import cors
 from dotenv import load_dotenv
-from hypercorn.config import Config
-import base64
-import urllib.parse
 
 from routes.user_routes import register_user_routes
 from routes.test_routes import register_test_routes
-
-import boto3
-from botocore.exceptions import ClientError
-import json
 
 load_dotenv()
 aws_access_key = os.getenv("AWS_ACCESS_KEY_ID")
 aws_secret_key = os.getenv("AWS_SECRET_ACCESS_KEY")
 secret_name=os.getenv("DB_SECRET_NAME")
 region_name=os.getenv("AWS_REGION")
-    # Create a Secrets Manager client
+
 session = boto3.session.Session()
+
 client = session.client(
     service_name='secretsmanager',
     region_name=region_name,
