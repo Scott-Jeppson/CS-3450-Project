@@ -16,25 +16,23 @@
 .sumo-sim {
     height: 53%;
     width: 100%;
-    min-height: 0; /* Allows flex child to shrink */
+    min-height: 0;
 }
 
 .sim-tools {
     height: 7%;
     width: 100%;
     background-color: var(--lavender);
-    min-height: 0; /* Allows flex child to shrink */
+    min-height: 0;
 }
 
 .stats {
     width: 100%;
     height: 40%;
-    min-height: 0; /* Allows flex child to shrink */
     overflow: hidden;
 }
 
 .tools {
-    /* height: 30%; */
     height: 300px;
     width: 100%;
     display: flex;
