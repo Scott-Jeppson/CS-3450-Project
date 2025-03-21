@@ -7,6 +7,8 @@
     align-items: center;
     justify-content: start;
     gap: 20px;
+    box-sizing: border-box;
+    padding: 15px;
 }
 
 .sumo-sim {
@@ -14,21 +16,15 @@
     width: 100%;
 }
 
-.stats {
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    margin: 15px;
+.sim-tools {
+    height: 5%;
+    width: 100%;
+    background-color: var(--lavender);
 }
 
-.stats-items {
-    height: 100%;
+.stats {
     width: 100%;
-    display: flex;
-    background-color: var(--light-purple);
-    border-radius: 12px;
-    margin: 15px;
-    font-weight: bold;
+    height: 37%;
 }
 
 .tools {
