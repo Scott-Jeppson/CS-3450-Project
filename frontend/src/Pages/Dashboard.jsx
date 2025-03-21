@@ -9,7 +9,7 @@ import "./dashboard.css";
 const Dashboard = ({ isLoggedIn, setIsLoggedIn }) => {
 
     return (
-        <div className="page-div" style={{ backgroundColor: "var(--grey)", overflowY: "auto" }}>
+        <div className="page-div" style={{ backgroundColor: "var(--grey)", height: "100vh" }}>
             <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
 
             <div id="main-content-dashboard">
