@@ -1,0 +1,28 @@
+.stats-box {
+    height: 100%;
+    width: 100%;
+    gap: 12px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    scrollbar-width: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: start;
+}
+
+.stats-item {
+    height: 50px;
+    width: 100%;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.stats-item:nth-child(4n + 1),
+.stats-item:nth-child(4n + 4) {
+    background-color: var(--light-purple);
+}
+
+.stats-item:nth-child(4n + 2),
+.stats-item:nth-child(4n + 3) {
+    background-color: var(--light-lavender);
+}
