@@ -1,4 +1,2 @@
-Flask
-Flask-SocketIO
-traci
-eventlet
+Quart==0.19.9
+traci==1.22.0
