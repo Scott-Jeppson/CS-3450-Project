@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import Navbar from "../components/navbar.jsx";
 import SumoSim from "../components/SumoSim.jsx";
 import Toolbar from "../components/toolbar.jsx";
+import Statistics from "../components/statistics.jsx";
 import "./dashboard.css";
 
 const Dashboard = ({ isLoggedIn, setIsLoggedIn }) => {
@@ -20,12 +21,13 @@ const Dashboard = ({ isLoggedIn, setIsLoggedIn }) => {
                             <SumoSim />
                         </div>
 
-{/*                                 <div className="stats"> */}
-{/*                                      */}{/* <div className="stats-items">10%</div> */}
-{/*                                     <div className="stats-items">20%</div> */}
-{/*                                     <div className="stats-items">30%</div> */}
-{/*                                     <div className="stats-items">40%</div> */}
-{/*                                 </div> */}
+                        <div className="sim-tools">
+                            Add simulation tools here (possible: play, pause, rewind, speed up, slow down, etc.)
+                        </div>
+
+                        <div className="stats">
+                            <Statistics />
+                        </div>
 {/*                                 <div className="tools"> */}
 {/*                                     <SumoSim /> */}
 {/*                                     <div className="tools-items">Tool 1</div> */}
