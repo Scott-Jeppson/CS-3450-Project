@@ -5,6 +5,7 @@ import SumoSim from "../components/SumoSim.jsx";
 import Toolbar from "../components/toolbar.jsx";
 import Statistics from "../components/statistics.jsx";
 import "./dashboard.css";
+import SimTools from '../components/SimTools';
 
 const Dashboard = ({ isLoggedIn, setIsLoggedIn }) => {
 
@@ -22,7 +23,7 @@ const Dashboard = ({ isLoggedIn, setIsLoggedIn }) => {
                         </div>
 
                         <div className="sim-tools">
-                            Add simulation tools here (possible: play, pause, rewind, speed up, slow down, etc.)
+                            <SimTools />
                         </div>
 
                         <div className="stats">
