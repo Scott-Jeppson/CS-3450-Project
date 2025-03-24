@@ -11,7 +11,7 @@ app = Flask(__name__)
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 # SUMO Configuration File
-SUMO_CFG_FILE = "orem.sumocfg"  # Ensure this file exists and is correctly set up
+SUMO_CFG_FILE = "osm.sumocfg"  # Ensure this file exists and is correctly set up
 
 # Global variable to track the SUMO simulation thread
 sumo_thread = None
