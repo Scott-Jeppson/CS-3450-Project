@@ -30,11 +30,11 @@ def sumo_simulation():
 
             # Animate each vehicle as they appear one by one
             socketio.emit('update', vehicles)
-            #time.sleep(0.1)  # Emit every second. Adjust here to reduce the overall vehicle speed.
+            time.sleep(0.01)  # Emit every second. Adjust here to reduce the overall vehicle speed.
 
         # Animate all in one shot
-        #socketio.emit('update', vehicles)
-        #time.sleep(0.1)  # Emit every second. Adjust here to reduce the overall vehicle speed.
+        socketio.emit('update', vehicles)
+        time.sleep(0.01)  # Emit every second. Adjust here to reduce the overall vehicle speed.
 
     traci.close()
 

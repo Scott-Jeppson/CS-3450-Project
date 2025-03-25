@@ -43,13 +43,7 @@
     <trip id="3_bus_862:0" type="pt_bus" depart="383.0" departLane="best" from="463704557#1" to="776681829#5">
         <stop busStop="9932608366" duration="30"/>  <!-- UVU Station -->
     </trip>
-    <trip id="4_train_750:0" type="pt_train" depart="406.0" departLane="best" from="100198877#2" to="100198877#2">
-        <stop busStop="3020209235" duration="30"/>  <!-- Orem Central -->
-    </trip>
     <trip id="5_bus_831:1" type="pt_bus" depart="441.0" departLane="best" from="932976224#0" to="1225221152#1">
         <stop busStop="9932608366" duration="30"/>  <!-- UVU Station -->
-    </trip>
-    <trip id="6_train_750:1" type="pt_train" depart="535.0" departLane="best" from="762329402#0" to="-298119548#0">
-        <stop busStop="3020209244" duration="30"/>  <!-- Orem Central -->
     </trip>
 </routes>
