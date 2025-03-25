@@ -2,7 +2,7 @@
 
     <input>
         <net-file value="osm.net.xml.gz"/>
-        <route-files value="osm_pt.rou.xml"/>  <!-- ✅ ONLY real transit routes -->
+        <route-files value="osm_pt.rou.xml"/>
         <additional-files value="osm.poly.xml.gz,osm_stops.add.xml"/>
     </input>
 
