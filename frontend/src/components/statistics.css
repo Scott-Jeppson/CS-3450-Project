@@ -1,18 +1,18 @@
 .stats-box {
     height: 100%;
     width: 100%;
-    gap: 15px;
+    gap: 12px;
     box-sizing: border-box;
     overflow-y: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-content: start;
-    padding: 15px;
-    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    padding-bottom: 80px;
 }
 
 .stats-item {
-    height: 60px;
+    height: 50px;
     width: 100%;
     border-radius: 12px;
     box-sizing: border-box;
@@ -20,9 +20,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 10px;
     align-items: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    flex-shrink: 0;
 }
 
 .stats-item:hover {
@@ -31,19 +33,17 @@
 }
 
 .stats-item b {
-    font-size: 0.95em;
+    font-size: 0.95rem;
     color: var(--dark-purple);
 }
 
 /* Alternating background colors */
-.stats-item:nth-child(4n + 1),
-.stats-item:nth-child(4n + 4) {
+.stats-item:nth-child(odd) {
     background-color: var(--light-purple);
     border: 1px solid rgba(80, 8, 102, 0.1);
 }
 
-.stats-item:nth-child(4n + 2),
-.stats-item:nth-child(4n + 3) {
+.stats-item:nth-child(even) {
     background-color: var(--lavender);
     border: 1px solid rgba(80, 8, 102, 0.1);
 }
@@ -75,4 +75,50 @@
 .stats-box {
   scrollbar-width: thin;
   scrollbar-color: var(--light-purple) rgba(80, 8, 102, 0.1);
+}
+
+/* Tablet and desktop screens; Same size for this page */
+@media (min-width: 768px) {
+    .stats-box {
+        height: 100%;
+        width: 100%;
+        gap: 15px;
+        box-sizing: border-box;
+        overflow-y: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-content: start;
+        padding: 15px;
+        padding-bottom: 100px;
+    }
+
+    .stats-item {
+        height: 60px;
+        width: 100%;
+        border-radius: 12px;
+        box-sizing: border-box;
+        padding: 0px 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .stats-item b {
+        font-size: 1rem;
+    }
+
+    .stats-item:nth-child(4n + 1),
+    .stats-item:nth-child(4n + 4) {
+        background-color: var(--light-purple);
+        border: 1px solid rgba(80, 8, 102, 0.1);
+    }
+
+    .stats-item:nth-child(4n + 2),
+    .stats-item:nth-child(4n + 3) {
+        background-color: var(--lavender);
+        border: 1px solid rgba(80, 8, 102, 0.1);
+    }
 }
