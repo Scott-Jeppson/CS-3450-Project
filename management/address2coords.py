@@ -1,18 +1,40 @@
 import sys
+import csv
 
 def main():
     # Check if the correct number of arguments is provided
     if len(sys.argv) != 3:
-        print("Usage: python address2coords.py <arg1> <arg2>")
+        print("Usage: python address2coords.py <Input CSV file name (located in input folder)> <Name of Text File Output>")
         sys.exit(1)
 
     # Retrieve arguments
-    arg1 = sys.argv[1]
-    arg2 = sys.argv[2]
+    input = sys.argv[1]
+    output = sys.argv[2]
 
-    # Placeholder for main logic
-    print(f"Argument 1: {arg1}")
-    print(f"Argument 2: {arg2}")
+    # Open the input file located in the input/ folder
+    try:
+        with open(f"input/{input}", mode='r', encoding='utf-8') as infile:
+            reader = csv.reader(infile)
+            # Process the CSV file as needed
+            # Open the output file in append mode, creating it if it doesn't exist
+            with open(f"output/{output}", mode='a', encoding='utf-8') as outfile:
+                # Example: Write a header to the output file
+                writer = csv.writer(outfile)
+                writer.writerow(["Name/Address", "Latitude", "Longitude", "Mode"])
 
+                # Skip the header row
+                next(reader)
+
+                for row in reader:
+                    # Check if the 15th column is "Bus"
+                    if len(row) > 14 and row[14] == "Bus":
+                        # Write the specified columns to the output file
+                        writer.writerow([row[4], row[8], row[9], row[14]])
+
+    except FileNotFoundError:
+        print(f"Error: The file 'input/{input}' does not exist.")
+        sys.exit(1)
+       
+            
 if __name__ == "__main__":
     main()
