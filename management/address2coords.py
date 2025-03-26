@@ -17,19 +17,20 @@ def main():
             reader = csv.reader(infile)
             # Process the CSV file as needed
             # Open the output file in append mode, creating it if it doesn't exist
-            with open(f"output/{output}", mode='a', encoding='utf-8') as outfile:
+            with open(f"output/{output}", mode='a', encoding='utf-8', newline="") as outfile:
                 # Example: Write a header to the output file
                 writer = csv.writer(outfile)
-                writer.writerow(["Name/Address", "Latitude", "Longitude", "Mode"])
+                writer.writerow(["Name/Address", "County", "Latitude", "Longitude", "Mode"])
 
                 # Skip the header row
                 next(reader)
 
                 for row in reader:
-                    # Check if the 15th column is "Bus"
-                    if len(row) > 14 and row[14] == "Bus":
-                        # Write the specified columns to the output file
-                        writer.writerow([row[4], row[8], row[9], row[14]])
+                    # Check for correct county and mode
+                    if len(row) > 6 and row[6] == "Utah":
+                        if len(row) > 14 and row[14] == "Bus":
+                            # Write the specified columns to the output file
+                            writer.writerow([row[4], row[6], row[8], row[9], row[14]])
 
     except FileNotFoundError:
         print(f"Error: The file 'input/{input}' does not exist.")
