@@ -29,11 +29,6 @@ const Dashboard = ({ isLoggedIn, setIsLoggedIn }) => {
                         <div className="stats">
                             <Statistics />
                         </div>
-{/*                                 <div className="tools"> */}
-{/*                                     <SumoSim /> */}
-{/*                                     <div className="tools-items">Tool 1</div> */}
-{/*                                     <div className="tools-items">Tool 2</div> */}
-{/*                                 </div> */}
                     </>
                     ) : (
                         <h1>You are not logged in</h1>
