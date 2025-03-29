@@ -43,7 +43,9 @@ const SignIn = ({ isLoggedIn, setIsLoggedIn }) => {
                     user_email: accountData.email,
                     user_password: accountData.password
                 }),
+                credentials: 'include'
             });
+            
             const result = await response.json();
             if (response.ok){
                 localStorage.setItem("loginToken", result.token);

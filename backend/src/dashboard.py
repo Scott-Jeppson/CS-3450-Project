@@ -36,7 +36,7 @@ app.secret_key = app_secret
 
 app = cors(
     app,
-    allow_origin=["http://localhost:5432", "http://localhost:5173", "http://localhost:8080"],
+    allow_origin=["http://localhost:5173", "http://localhost:8080"],
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
     allow_headers=[
