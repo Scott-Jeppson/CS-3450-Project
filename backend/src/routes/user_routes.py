@@ -61,7 +61,6 @@ async def register_user_routes(app):
 
             session['user_id'] = user['id']
             session['email'] = user['email']
-            # await session.save()
 
             print("User signed in successfully")
             return jsonify({"message": "User signed in successfully"}), 200
