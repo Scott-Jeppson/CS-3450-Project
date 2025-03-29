@@ -4,10 +4,18 @@ import React, { useEffect, useState } from "react";
 
 function Navbar({ isLoggedIn, setIsLoggedIn }) {
 
-    const handleLogout = () => {
-        // Clear the login token from localStorage and set isLoggedIn to false
-        localStorage.removeItem('loginToken');
-        setIsLoggedIn(false);
+    const handleLogout = async () => {
+        try {
+            await fetch("http://localhost:8080/api/signout", {
+                method: "POST",
+                credentials: "include",
+            });
+    
+            localStorage.removeItem("loginToken"); 
+            setIsLoggedIn(false);
+        } catch (error) {
+            console.error("Error logging out:", error);
+        }
     };
 
     return (

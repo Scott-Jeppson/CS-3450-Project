@@ -75,10 +75,33 @@ async def register_user_routes(app):
         
         return jsonify({"message": "This is a protected route"})
 
+    @user_routes.route("/api/is_logged_in", methods=["GET"])
+    async def is_logged_in():
+        if 'user_id' not in session:
+            return jsonify({"logged_in": False, "error": "User not logged in"}), 401
+
+        try:
+            async with app.db_pool.acquire() as conn:
+                user = await conn.fetchrow(
+                    'SELECT id, email FROM user_information WHERE id = $1', 
+                    session['user_id']
+                )
+
+                if not user:
+                    session.clear()
+                    return jsonify({"logged_in": False, "error": "Invalid session"}), 401
+
+            return jsonify({"logged_in": True, "user_id": user['id'], "email": user['email']}), 200
+        except Exception as e:
+            print(f"An error occurred: {str(e)}")
+            return jsonify({"error": f"An error occurred: {str(e)}"}), 500
+
     @user_routes.route("/api/signout", methods=["POST"])
     async def sign_out():
-        session.clear()
-        
+        session.pop("user_id", None)
+        session.pop("email", None)
+        await session.clear()
+
         return jsonify({"message": "User signed out successfully"}), 200
     
     @user_routes.route("/api/welcome", methods=["GET"])
