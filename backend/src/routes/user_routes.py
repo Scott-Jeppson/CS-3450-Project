@@ -2,12 +2,9 @@ import hashlib
 import secrets
 import asyncpg
 from quart import jsonify, request, session, Blueprint
-from quart_cors import cors
-
 
 async def register_user_routes(app):
-    app = cors(app)
-    user_routes = Blueprint('user_routes',__name__)
+    user_routes = Blueprint('user_routes', __name__)
 
     @user_routes.route("/api/createaccount", methods=["POST"])
     async def create_account():
@@ -84,4 +81,25 @@ async def register_user_routes(app):
         session.clear()
         
         return jsonify({"message": "User signed out successfully"}), 200
+    
+    @user_routes.route("/api/welcome", methods=["GET"])
+    async def welcome():
+        try:
+            if 'user_id' not in session:
+                return jsonify({"error": "Unauthorized"}), 401
+
+            async with app.db_pool.acquire() as conn:
+                user = await conn.fetchrow(
+                    'SELECT first_name FROM user_information WHERE id = $1', 
+                    session['user_id']
+                )
+                
+                if not user:
+                    return jsonify({"error": "User not found"}), 404
+
+            return jsonify({"message": f"Welcome, {user['first_name']}"}), 200
+        except Exception as e:
+            print(f"An error occurred: {str(e)}")
+            return jsonify({"error": f"An error occurred: {str(e)}"}), 500
+
     app.register_blueprint(user_routes)

@@ -1,9 +1,9 @@
+quart-sqlalchemy==3.0.4
 python-dotenv==1.0.1
 quart-cors==0.7.0
-Quart==0.19.9
 quart-db==0.9.0
-pyyaml==6.0.2
 asyncpg==0.29.0
-bcrypt
-quart-sqlalchemy
-boto3
+boto3==1.35.81
+Quart==0.19.9
+pyyaml==6.0.2
+bcrypt==4.3.0

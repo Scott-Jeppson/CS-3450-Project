@@ -43,7 +43,9 @@ const SignIn = ({ isLoggedIn, setIsLoggedIn }) => {
                     user_email: accountData.email,
                     user_password: accountData.password
                 }),
+                credentials: 'include'
             });
+            
             const result = await response.json();
             if (response.ok){
                 localStorage.setItem("loginToken", result.token);
@@ -66,15 +68,15 @@ const SignIn = ({ isLoggedIn, setIsLoggedIn }) => {
                 <div className="login-container">
                     <h3>Sign In</h3>
                     {errorMessage && <p aria-live="assertive" role="alert" style={{color:"white", textAlign:"center", backgroundColor: "var(--error-red)"}}>{errorMessage}</p>}
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit} autoComplete="on" method="post">
                         <div className="login-input">
                             <label htmlFor="email">Email</label>
-                            <input type="email" id="email" name="email" aria-required="true" value={accountData.email} onChange={handleChange} />
+                            <input type="email" id="email" name="email" aria-required="true" value={accountData.email} onChange={handleChange} autoComplete="username" required />
                             {errors.email && <p className="error" aria-live="assertive">{errors.email}</p>}
                         </div>
                         <div className="login-input">
                             <label htmlFor="password">Password</label>
-                            <input type="password" id="password" name="password" aria-required="true" value={accountData.password} onChange={handleChange} />
+                            <input type="password" id="password" name="password" aria-required="true" value={accountData.password} onChange={handleChange} autoComplete="current-password" required />
                             {errors.password && <p className="error" aria-live="assertive">{errors.password}</p>}
                         </div>
                         <div width="100%" style={{ color: "var(--white)", textAlign: "center" }}>
