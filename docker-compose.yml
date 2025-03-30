@@ -33,10 +33,10 @@ services:
 
   sumo:
     container_name: sumo
-    build:
-      context: ./sumo
-      dockerfile: Dockerfile
-    # image: camcottle341/smarttransit:sumo 
+    # build:
+    #   context: ./sumo
+    #   dockerfile: Dockerfile
+    image: camcottle341/smarttransit:sumo
     ports:
       - "5000:5000"
     volumes:
