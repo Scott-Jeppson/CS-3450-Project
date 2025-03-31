@@ -6,14 +6,9 @@ import threading
 app = Quart(__name__)
 app.config['SECRET_KEY'] = 'A34F6g7JK0c5N'
 
-<<<<<<< HEAD
 # Configurations
 SUMO_BINARY = "sumo"  # or "sumo-gui" for the GUI version
 SUMO_CFG_FILE = "OremConfig/osm.sumocfg" # path to sumo config file
-=======
-SUMO_BINARY = "sumo" # or "sumo-gui" for the GUI version
-SUMO_CFG_FILE = "sumo_config/osm.sumocfg" # path to sumo config file
->>>>>>> dev
 
 def sumo_simulation():
     # Start SUMO simulation
