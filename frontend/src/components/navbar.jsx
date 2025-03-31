@@ -20,18 +20,26 @@ function Navbar({ isLoggedIn, setIsLoggedIn }) {
 
     return (
         <nav id={isLoggedIn ? "navbar-logged-in" : "navbar"}>
+            <div id="nav-left">
             <Link to={isLoggedIn ? "/dashboard" : "/"} id="nav-brand" aria-label={isLoggedIn ? "StreamLine Dashboard" : "StreamLine Home"}>
                 <img id="logo" alt="" src={isLoggedIn ? "src/assets/Logo-White-Text-Purple-Background.svg" :
                     "src/assets/Logo-Light-Purple-Circle.svg"}
                 />
                 <h2 id="nav-name">StreamLine</h2>
             </Link>
+            <div id="nav-links">
+                <Link to="/about" classname="nav-link" id="nav-button" aria-label="About Us">About Us</Link>
+                <Link to="/optimization" className="nav-link" id="nav-button" aria-label="Optimization Metrics">Optimization Metrics</Link>
+            </div>
+            </div>
+            <div id="nav-right">
             {isLoggedIn ? (
                     <Link to="/" id="nav-button" aria-label="Log out" onClick={handleLogout}>Log Out</Link>
                 ) : (
                     <Link to="/signin" id="nav-button" aria-label="Sign in">Sign In</Link>
                 )
             }
+            </div>
         </nav>
     );
 }
