@@ -37,8 +37,8 @@
 " >
         <stop busStop="9932608366" duration="20" until="48.0"/> <!-- University Place Station (EB) -->
         <stop busStop="8927848924" duration="20" until="48.0"/> <!-- Fulton Library (EB) -->
-        <stop busStop="" duration="20" until="48.0"/> <!-- 919 N 980 W -->
-        <stop busStop="" duration="20" until="48.0"/> <!-- 1600 N & State St -->
+        <stop busStop="8544780328" duration="20" until="48.0"/> <!-- 919 N 980 W -->
+        <stop busStop="4145236918" duration="20" until="48.0"/> <!-- 1600 N & State St -->
         <stop busStop="" duration="20" until="48.0"/> <!-- Canyon Park Technology Center -->
         <stop busStop="" duration="20" until="48.0"/> <!-- Center St & 800 E -->
         <stop busStop="9246780410" duration="20" until="48.0"/> <!-- University Place Station (EB) -->
