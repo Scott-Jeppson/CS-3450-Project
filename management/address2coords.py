@@ -20,7 +20,7 @@ def main():
             with open(f"output/{output}", mode='a', encoding='utf-8', newline="") as outfile:
                 # Example: Write a header to the output file
                 writer = csv.writer(outfile)
-                writer.writerow(["Name/Address", "County", "Latitude", "Longitude", "Mode"])
+                writer.writerow(["Name/Address", "Latitude", "Longitude"])
 
                 # Skip the header row
                 next(reader)
@@ -30,7 +30,7 @@ def main():
                     if len(row) > 6 and row[6] == "Utah":
                         if len(row) > 14 and row[14] == "Bus":
                             # Write the specified columns to the output file
-                            writer.writerow([row[4], row[6], row[8], row[9], row[14]])
+                            writer.writerow([row[4], row[9], row[10]])
 
     except FileNotFoundError:
         print(f"Error: The file 'input/{input}' does not exist.")

@@ -10,7 +10,6 @@ app.config['SECRET_KEY'] = 'A34F6g7JK0c5N'
 SUMO_BINARY = "sumo"  # or "sumo-gui" for the GUI version
 SUMO_CFG_FILE = "OremConfig/osm.sumocfg" # path to sumo config file
 
-
 def sumo_simulation():
     # Start SUMO simulation
     traci.start([SUMO_BINARY, "-c", SUMO_CFG_FILE, "--start"])
