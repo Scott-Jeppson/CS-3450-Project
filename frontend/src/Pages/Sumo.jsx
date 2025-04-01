@@ -9,25 +9,29 @@ import "./Sumo.css";
 const Dashboard = ({ isLoggedIn, setIsLoggedIn }) => {
     const navigate = useNavigate();
     const socketRef = useRef(null);
-    const [isPlaying, setIsPlaying] = useState(false); // 🔹 NEW STATE
+    const [simulationStatus, setSimulationStatus] = useState('Play');
 
     useEffect(() => {
         socketRef.current = io("http://localhost:5000");
-
-        // Optional: Listen for server confirmation (if needed)
+    
         socketRef.current.on("simulationStarted", () => {
-            setIsPlaying(true);
+            setSimulationStatus("Playing");
         });
-
+    
+        socketRef.current.on("simulationEnded", () => {
+            setSimulationStatus("Play"); // ✅ Re-enable button
+        });
+    
         return () => {
             socketRef.current.disconnect();
         };
     }, []);
+    
 
     const handlePlay = () => {
-        if (socketRef.current && !isPlaying) {
+        if (socketRef.current) {
             socketRef.current.emit("play");
-            setIsPlaying(true); // 🔹 Assume it's playing unless server tells us otherwise
+            setSimulationStatus("Loading...");
         }
     };
 
@@ -43,9 +47,9 @@ const Dashboard = ({ isLoggedIn, setIsLoggedIn }) => {
                             <button
                                 onClick={handlePlay}
                                 className="play-button"
-                                disabled={isPlaying}
+                                disabled={simulationStatus === "Playing" || simulationStatus === "Loading..."}
                             >
-                                {isPlaying ? "Playing..." : "Play"}
+                                {simulationStatus}
                             </button>
                             <SumoSim />
                         </div>

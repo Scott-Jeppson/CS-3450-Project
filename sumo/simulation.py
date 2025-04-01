@@ -19,6 +19,7 @@ def sumo_simulation():
     # start SUMO simulation
     traci.start([SUMO_BINARY, "-c", SUMO_CFG_FILE, "--start"])
 
+    socketio.emit("simulationStarted")
     while traci.simulation.getMinExpectedNumber() > 0:
         traci.simulationStep()
         vehicles = []
@@ -38,11 +39,15 @@ def sumo_simulation():
         time.sleep(0.001)  # Emit every second. Adjust here to reduce the overall vehicle speed.
 
     traci.close()
+    socketio.emit("simulationEnded")
 
 @socketio.on('play')
 def handle_connect():
-    if not sumo_thread.is_alive():
+    global sumo_thread
+    if 'sumo_thread' not in globals() or not sumo_thread.is_alive():
+        sumo_thread = threading.Thread(target=sumo_simulation)
         sumo_thread.start()
+
 
 @app.route('/')
 def index():
