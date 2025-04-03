@@ -39,8 +39,8 @@
         <stop busStop="8927848924" duration="20" until="48.0"/> <!-- Fulton Library (EB) -->
         <stop busStop="8544780328" duration="20" until="48.0"/> <!-- 919 N 980 W -->
         <stop busStop="4145236918" duration="20" until="48.0"/> <!-- 1600 N & State St -->
-        <stop busStop="" duration="20" until="48.0"/> <!-- Canyon Park Technology Center -->
-        <stop busStop="" duration="20" until="48.0"/> <!-- Center St & 800 E -->
+        <stop busStop="8568339356" duration="20" until="48.0"/> <!-- Canyon Park Technology Center : Timpanogos Pkwy @ 655 E -->
+        <stop busStop="8551512663" duration="20" until="48.0"/> <!-- Center St & 800 E : 800 E @ 32 S -->
         <stop busStop="9246780410" duration="20" until="48.0"/> <!-- University Place Station (EB) -->
     </route>
     <flow id="pt_bus_862:0" type="pt_bus" route="pt_bus_862:0" begin="132.0" end="3732.0" period="600" line="862:0" >
