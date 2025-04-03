@@ -42,7 +42,7 @@ async def ws():
 
 @app.route('/')
 async def index():
-    return await render_template('index.html', mapbox_token="pk.eyJ1IjoiY2FtY290dGxlIiwiYSI6ImNtN2dscjZsbjBjcnEyc3B0cjd2NG5hdnAifQ.q2giKiZ15tBz3DXiBq3xew")
+    return await render_template('index.html', mapbox_token="")
 
 if __name__ == "__main__":
     sumo_thread = threading.Thread(target=sumo_simulation)
