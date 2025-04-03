@@ -5,6 +5,11 @@ from flask_socketio import SocketIO, emit
 import traci
 import time
 import threading
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+MAPBOX_TOKEN = os.getenv("MAPBOX_TOKEN")
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'A34F6g7JK0c5N'
@@ -51,7 +56,7 @@ def handle_connect():
 
 @app.route('/')
 def index():
-    return render_template('index.html', mapbox_token="pk.eyJ1IjoiY2FtY290dGxlIiwiYSI6ImNtN2dscjZsbjBjcnEyc3B0cjd2NG5hdnAifQ.q2giKiZ15tBz3DXiBq3xew") # Our mapbox token
+    return render_template('index.html', mapbox_token=MAPBOX_TOKEN)
 
 if __name__ == "__main__":
     sumo_thread = threading.Thread(target=sumo_simulation)
