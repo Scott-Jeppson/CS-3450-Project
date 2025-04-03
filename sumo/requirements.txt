@@ -1,2 +1,4 @@
-Quart==0.19.9
-traci==1.22.0
+Flask
+Flask-SocketIO
+traci
+python-dotenv

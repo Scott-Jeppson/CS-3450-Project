@@ -40,3 +40,6 @@ tsconfig.app.tsbuildinfo
 
 # Frontend
 node_modules/
+
+#sumo
+sumo/.env
