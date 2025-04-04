@@ -46,6 +46,7 @@ COPY static /sumo/static/
 COPY OremConfig /sumo/OremConfig/
 COPY templates /sumo/templates/
 COPY simulation.py /sumo/
+COPY .env /sumo/
 
 # run the simulation
 CMD ["python3", "/sumo/simulation.py"]
