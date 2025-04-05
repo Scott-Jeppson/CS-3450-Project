@@ -1,13 +1,18 @@
 import './statistics.css';
 import { Link } from 'react-router-dom';
 import React, { useEffect, useState, useRef } from "react";
+import { getTripStats } from '../api.js';
 
 function Statistics({ isLoggedIn, setIsLoggedIn }) {
+
+    const fetchStats = async () => {
+        const tripStats = await getTripStats();
+    };
 
     return (
         <>
             <h1>Statistics</h1>
-
+            <button onClick={fetchStats}>Fetch Trip Stats</button>
             <div className="stats-box" role="list">
                 <div className="stats-item" role="listitem">
                     <b> THESE ARE JUST PLACEHOLDERS FOR NOW: </b> :)))

@@ -2,7 +2,7 @@ volumes:
   frontend_node_modules:
   sumo_config:
   database_data:
-  sim-output:
+  shared-output:
 
 services:
   backend:
@@ -12,7 +12,7 @@ services:
       - "8080:8080"
     volumes:
       - ./backend:/app
-      - sim-output:/shared-output
+      - shared-output:/shared/output
     env_file:
       - ./backend/.env
     environment:
@@ -35,14 +35,14 @@ services:
 
   sumo:
     container_name: sumo
-    build:
-      context: ./sumo
-      dockerfile: Dockerfile
-    # image: camcottle341/smarttransit:sumo
+    # build:
+    #   context: ./sumo
+    #   dockerfile: Dockerfile
+    image: camcottle341/smarttransit:sumo
     ports:
       - "5000:5000"
     volumes:
-      - sim-output:/shared-output
+      - shared-output:/shared/output
       - ./sumo/templates:/sumo/templates
     depends_on:
       - backend

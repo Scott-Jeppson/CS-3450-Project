@@ -12,7 +12,8 @@
     </input>
 
     <output>
-        <tripinfo-output value="/app/shared-output/tripinfo.xml"/>
+        <tripinfo-output value="/shared/output/tripinfo.xml"/>
+        <summary-output value="/shared/output/summary.xml"/>
     </output>
 
     <processing>

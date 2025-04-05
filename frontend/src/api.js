@@ -13,3 +13,17 @@ export async function getHelloWorld() {
         return { message: "Error fetching data" };
     }
 }
+
+// getting sumo statistics
+export async function getTripStats() {
+    try {
+        const response = await fetch(`${API_URL}/tripstats`, { method: 'GET' });
+        if (!response.ok) {
+            throw new Error(`HTTP error: ${response.status}`);
+        }
+        return await response.json();
+    } catch (error) {
+        console.error("Error fetching trip stats:", error);
+        return { message: "Error fetching trip stats" };
+    }
+}
