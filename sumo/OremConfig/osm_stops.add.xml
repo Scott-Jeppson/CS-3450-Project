@@ -1211,7 +1211,7 @@
     <busStop id="9932608361" name="East Bay South" lane="684673720#3_0" startPos="72.45" endPos="87.45" friendlyPos="true" lines="UVX"/>
     <busStop id="9932608364" name="Towne Centre Boulevard" lane="1072819409#3_0" startPos="0.00" endPos="10.00" friendlyPos="true" lines="UVX"/>
     <busStop id="9932608365" name="Towne Centre Boulevard" lane="887681418#1_0" startPos="4.12" endPos="19.12" friendlyPos="true" lines="UVX"/>
-    <busStop id="9932608366" name="UVU Station" lane="477393514_0" startPos="37.47" endPos="52.47" friendlyPos="true" lines="UVX 805 807 822 862 831"/>
+    <busStop id="9932608366" name="UVU Station" lane="477393513#0_0" startPos="17.47" endPos="102.47" friendlyPos="true" lines="UVX 805 807 822 862 831"/>
     <busStop id="9932608367" name="UVU Station" lane="477393511_0" startPos="112.29" endPos="127.29" friendlyPos="true" lines="UVX 831 806 805"/>
     <busStop id="9932608368" name="Academy Square" lane="1028565365#14_0" startPos="105.41" endPos="120.41" friendlyPos="true" lines="UVX">
         <access lane="741957442#1_0" pos="0.20" length="16.41" friendlyPos="1"/>
