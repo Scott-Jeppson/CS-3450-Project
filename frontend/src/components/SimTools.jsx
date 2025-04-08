@@ -6,6 +6,7 @@ import './simtools.css';
 function SimTools() {
     const [simulationStatus, setSimulationStatus] = useState('Stopped'); // 'Stopped' | 'Playing' | 'Paused'
     const [speed, setSpeed] = useState(1);
+    const [trafficLevel, setTrafficLevel] = useState('medium');
     const socketRef = useRef(null);
 
     useEffect(() => {
@@ -53,6 +54,15 @@ function SimTools() {
         // TODO: emit reset/replay
     };
 
+    // three different levels of traffic: low, medium, high
+    const handleTrafficLevelChange = (e) => {
+        const level = e.target.value;
+        setTrafficLevel(level);
+        if (socketRef.current) {
+            socketRef.current.emit("setTrafficLevel", { level });
+        }
+    };
+
     const renderPlayPauseIcon = () => {
         if (simulationStatus === "Playing") return "pause";
         if (simulationStatus === "Paused" || simulationStatus === "Stopped") return "play_arrow";
@@ -61,6 +71,20 @@ function SimTools() {
 
     return (
         <div className="sim-tools-container">
+            <div className="traffic-level-selector">
+                <label htmlFor="trafficLevel" style={{ marginRight: '0.5rem' }}>Traffic Level:</label>
+                <select
+                    id="trafficLevel"
+                    disabled={simulationStatus !== 'Stopped'}
+                    onChange={handleTrafficLevelChange}
+                    value={trafficLevel}
+                >
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+
             <div className="control-buttons left">
                 <button className="control-btn speed-btn" onClick={() => handleSpeedChange(0.5)} title="Run simulation at half speed">
                     0.5x
