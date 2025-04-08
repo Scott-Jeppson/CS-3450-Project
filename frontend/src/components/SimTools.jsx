@@ -4,16 +4,27 @@ import { io } from 'socket.io-client';
 import './simtools.css';
 
 function SimTools() {
-    const [isPlaying, setIsPlaying] = useState(false);
+    const [simulationStatus, setSimulationStatus] = useState('Stopped'); // 'Stopped' | 'Playing' | 'Paused'
     const [speed, setSpeed] = useState(1);
     const socketRef = useRef(null);
 
-    // Connect to SUMO backend via Socket.IO (port 5000)
     useEffect(() => {
-        socketRef.current = io('http://localhost:5000');
+        socketRef.current = io("http://localhost:5000");
 
-        socketRef.current.on('connect', () => {
-            console.log('Connected to SUMO backend');
+        socketRef.current.on("simulationStarted", () => {
+            setSimulationStatus("Playing");
+        });
+
+        socketRef.current.on("simulationEnded", () => {
+            setSimulationStatus("Stopped");
+        });
+
+        socketRef.current.on("paused", () => {
+            setSimulationStatus("Paused");
+        });
+
+        socketRef.current.on("resumed", () => {
+            setSimulationStatus("Playing");
         });
 
         return () => {
@@ -23,26 +34,29 @@ function SimTools() {
 
     const handleSpeedChange = (newSpeed) => {
         setSpeed(newSpeed);
-        // Later: emit speed change
+        // TODO: emit speed change
     };
 
-    const handlePlay = () => {
-        setIsPlaying(true);
-        if (socketRef.current && socketRef.current.connected) {
-            socketRef.current.emit('play');
-            console.log('Play event sent to SUMO backend');
-        } else {
-            console.warn('Socket not connected to SUMO backend');
+    const handleTogglePlayPause = () => {
+        if (!socketRef.current) return;
+
+        if (simulationStatus === "Playing") {
+            socketRef.current.emit("pause");
+            setSimulationStatus("Loading...");
+        } else if (simulationStatus === "Paused" || simulationStatus === "Stopped") {
+            socketRef.current.emit("play");
+            setSimulationStatus("Loading...");
         }
     };
 
-    const handlePause = () => {
-        setIsPlaying(false);
-        // Later: emit pause
+    const handleReset = () => {
+        // TODO: emit reset/replay
     };
 
-    const handleReset = () => {
-        // Later: emit reset/replay
+    const renderPlayPauseIcon = () => {
+        if (simulationStatus === "Playing") return "pause";
+        if (simulationStatus === "Paused" || simulationStatus === "Stopped") return "play_arrow";
+        return "hourglass_empty"; // Loading
     };
 
     return (
@@ -67,11 +81,9 @@ function SimTools() {
                 <button className="control-btn" onClick={handleReset} title="Reset simulation">
                     <span className="material-symbols-outlined">refresh</span>
                 </button>
-                <button className="control-btn" onClick={handlePlay} title="Play simulation">
-                    <span className="material-symbols-outlined">play_arrow</span>
-                </button>
-                <button className="control-btn" onClick={handlePause} title="Pause simulation">
-                    <span className="material-symbols-outlined">pause</span>
+
+                <button className="control-btn" onClick={handleTogglePlayPause} title={simulationStatus === "Playing" ? "Pause" : "Play"}>
+                    <span className="material-symbols-outlined">{renderPlayPauseIcon()}</span>
                 </button>
             </div>
         </div>
