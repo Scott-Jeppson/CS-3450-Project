@@ -27,10 +27,6 @@ function Navbar({ isLoggedIn, setIsLoggedIn }) {
                 />
                 <h2 id="nav-name">StreamLine</h2>
             </Link>
-            <div id="nav-links">
-                <Link to="/about" classname="nav-link" id="nav-button" aria-label="About Us">About Us</Link>
-                <Link to="/optimization" className="nav-link" id="nav-button" aria-label="Optimization Metrics">Optimization Metrics</Link>
-            </div>
             </div>
             <div id="nav-right">
             {isLoggedIn ? (

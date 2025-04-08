@@ -38,6 +38,8 @@ function Toolbar({ isLoggedIn, setIsLoggedIn }) {
 
             <div className={`toolbar ${isToolbarCollapsed ? 'collapsed' : ''}`} ref={toolbarRef}>
                 <Link to="/" className="drawer-link" aria-label="Home">Home</Link>
+                <Link to="/about" classname="nav-link" id="nav-button" aria-label="About Us">About Us</Link>
+                <Link to="/optimization" className="nav-link" id="nav-button" aria-label="Optimization Metrics">Optimization Metrics</Link>
     {/*             <Link to="/about" className="drawer-link" aria-label="About">About</Link> */}
     {/*             <Link to="/sumo" className="drawer-link" aria-label="Traffic simulation">Traffic Simulation</Link> */}
                 <Link to="/" className="drawer-link" aria-label="Log out" onClick={handleLogout}>Log Out</Link>
