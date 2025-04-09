@@ -27,7 +27,6 @@
         <stop busStop="9932488272" duration="20"/> <!-- Orem Central Station (Bay F) -->
         <stop busStop="" duration="20"/> <!-- Wolverine Crossing (WB) -->
         <stop busStop="-9128347751" duration="20"/> <!-- Geneva Rd @ 1032 S -->
-        <stop busStop="-9124943047" duration="20"/> <!-- Uta Mt. Timpanogos Garage -->
         <stop busStop="8692170671" duration="20"/> <!-- University Pkwy @ 1255 W -->
         <stop busStop="" duration="20"/> <!-- UVU Station (adjacent bus stop EB) -->
         <stop busStop="-8929834914" duration="20"/> <!-- UVU Gunther Building (NB) -->
@@ -43,10 +42,11 @@
         <stop busStop="957769101" duration="20"/> <!-- 1200 W @ 404 N -->
         <stop busStop="957772651" duration="20"/> <!-- 1200 W @ 660 N -->
         <stop busStop="9105707076" duration="20"/> <!-- 1200 W @ 720 N -->
+        <stop busStop="8544780328" duration="20"/> <!-- 980 W @ 919 N -->
         <stop busStop="8672268996" duration="20"/> <!-- 1200 W @ 1086 N -->
         <stop busStop="8552063733" duration="20"/> <!-- 1200 W / 1200 N (1222 N) (NB) -->
-        <stop busStop="" duration="20"/> <!-- 1200 W / 1300 N (NB) -->
-        <stop busStop="" duration="20"/> <!-- 1200 W / 1420 (NB) -->
+        <stop busStop="957807876" duration="20"/> <!-- 1200 W / 1300 N (1320 N) (NB) -->
+        <stop busStop="957807879" duration="20"/> <!-- 1200 W / 1420 (1448 N) (NB) -->
         <stop busStop="2400947976" duration="20"/> <!-- 1200 W @ 1586 N -->
         <stop busStop="-366399825" duration="20"/> <!-- 1600 N @ 1035 W -->
         <stop busStop="-366466391" duration="20"/> <!-- 1600 N @ 755 W -->
@@ -54,7 +54,7 @@
         <stop busStop="8925324470" duration="20"/> <!-- 1600 N @ 445 W -->
         <stop busStop="-9103784641" duration="20"/> <!-- 1600 N @ 277 W -->
         <stop busStop="-8670297239" duration="20"/> <!-- 1600 N @ 97 W -->
-        <stop busStop="9138270623" duration="20"/> <!-- 1600 N @ 152 E -->
+        <stop busStop="9138270623" duration="20"/> <!-- 1600 N @ 108 E (152 E) -->
         <stop busStop="9124927231" duration="20"/> <!-- 1600 N @ 436 E -->
         <stop busStop="8584721658" duration="20"/> <!-- 1600 N @ 568 E -->
         <stop busStop="9105748140" duration="20"/> <!-- 1600 N @ 694 E -->
