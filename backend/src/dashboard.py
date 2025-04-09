@@ -12,7 +12,6 @@ from quart_cors import cors
 from dotenv import load_dotenv
 
 from routes.user_routes import register_user_routes
-from routes.test_routes import register_test_routes
 
 load_dotenv()
 aws_access_key = os.getenv("AWS_ACCESS_KEY_ID")
