@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 // import './SimulationMap.css';
+import "./SumoSim.css";
 
 const SimulationMap = () => {
   const [welcomeMessage, setWelcomeMessage] = useState("");
@@ -28,23 +29,12 @@ const SimulationMap = () => {
 
   return (
     <div id="sumo-sim" style={{ width: "100%", height: "100%", overflow: "hidden" }}>
-      <h1>Traffic Simulation</h1>
-      {welcomeMessage && (
-        <div style={{ padding: "10px", backgroundColor: "#f0f0f0", marginBottom: "10px" }}>
-          {welcomeMessage}
-        </div>
-      )}
-      {error && (
-        <div style={{ padding: "10px", backgroundColor: "#ffebee", color: "#d32f2f", marginBottom: "10px" }}>
-          {error}
-        </div>
-      )}
       <iframe
+        className="sumo-iframe"
         src="http://localhost:5000/"
         width="100%"
         height="100%"
         style={{ border: "none" }}
-        title="SUMO Simulation"
       />
     </div>
   );

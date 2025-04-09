@@ -12,7 +12,6 @@ from quart_cors import cors
 from dotenv import load_dotenv
 
 from routes.user_routes import register_user_routes
-from routes.test_routes import register_test_routes
 
 load_dotenv()
 aws_access_key = os.getenv("AWS_ACCESS_KEY_ID")
@@ -66,6 +65,23 @@ app.config.update(
     SESSION_COOKIE_SAMESITE='Lax',
     CORS_SUPPORTS_CREDENTIALS=True
 )
+
+# example of reading the tripinfo.xml file. the other file is called summary.xml
+@app.route('/tripstats', methods=['GET'])
+async def get_tripinfo():
+    print("Fetching tripinfo.xml")
+    # these file only exist after a simulation is run.
+    tripinfo_path = "/shared/output/tripinfo.xml"
+    if os.path.exists(tripinfo_path):
+        try:
+            with open(tripinfo_path, "r") as f:
+                content = f.read()
+            print(content)
+            return {}, 200
+        except Exception as e:
+            return {"error": str(e)}, 500
+    else:
+        return {"error": "File not found"}, 404
 
 async def create_db_pool():
     retries = 3
