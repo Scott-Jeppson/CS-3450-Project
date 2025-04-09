@@ -26,6 +26,8 @@ const CreateAccount = ({ isLoggedIn, setIsLoggedIn }) => {
                 if (response.ok && result.logged_in) {
                     setIsLoggedIn(true);
                     navigate('/dashboard');
+                } else{
+                    setIsLoggedIn(false);
                 }
             } catch (error) {
                 console.error("Error checking login status:", error);

@@ -16,6 +16,8 @@ const AboutUs = ({ isLoggedIn, setIsLoggedIn }) => {
                 const result = await response.json();
                 if (response.ok && result.logged_in) {
                     setIsLoggedIn(true);
+                } else{
+                    setIsLoggedIn(false);
                 }
             } catch (error) {
                 console.error("Error checking login status:", error);
