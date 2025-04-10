@@ -120,6 +120,33 @@
         <stop id="-9138268649" duration="20" until="48" /> <!-- University Ave @ 992 S -->
         <stop id="-9105784640" duration="20" until="48" /> <!-- University Ave @ 1190 S -->
         <stop id="8927876595" duration="20" until="48" /> <!-- East Bay Blvd @ 126 E -->
+        <stop id="8890815258" duration="20" until="48" /> <!-- 1860 S @ 502 E -->
+        <stop id="8546974522" duration="20" until="48" /> <!-- State St @ 1970 S -->
+        <stop id="8568351479" duration="20" until="48" /> <!-- State St @ 2390 S -->
+        <stop id="8542163782" duration="20" until="48" /> <!-- State St. @ 2931 S -->
+        <stop id="-8720267550" duration="20" until="48" /> <!-- Main St. @ 1375 N -->
+        <stop id="-8877427182" duration="20" until="48" /> <!-- Main St @ 1115 N -->
+        <stop id="-9103853850" duration="20" until="48" /> <!-- Main St @ 865 N -->
+        <stop id="-8665698013" duration="20" until="48" /> <!-- Main St @ 595 N -->
+        <stop id="8781421268" duration="20" until="48" /> <!-- 400 N @ 22 E -->
+        <stop id="8925246060" duration="20" until="48" /> <!-- 400 N @ 110 E -->
+        <stop id="8577309630" duration="20" until="48" /> <!-- 400 N @ 220 E -->
+        <stop id="8568321340" duration="20" until="48" /> <!-- 400 N @ 340 E -->
+        <stop id="-8551568936" duration="20" until="48" /> <!-- 400 E @ 245 N -->
+        <stop id="8783802172" duration="20" until="48" /> <!-- 400 E @ 20 S -->
+        <stop id="8544586280" duration="20" until="48" /> <!-- 400 E @ 212 S -->
+        <stop id="8600847693" duration="20" until="48" /> <!-- 400 E @ 390 S -->
+        <stop id="-8672436480" duration="20" until="48" /> <!-- 400 S @ 195 E -->
+        <stop id="8869895178" duration="20" until="48" /> <!-- Main St @ 444 S -->
+        <stop id="8604556870" duration="20" until="48" /> <!-- State Hwy @ 1796 S -->
+        <stop id="9118826142" duration="20" until="48" /> <!-- State Hwy @ 1095 N -->
+        <stop id="8891478327" duration="20" until="48" /> <!-- Express Way Lane @ 1211 E -->
+        <stop id="9123329638" duration="20" until="48" /> <!-- Expressway Lane @ 945 E -->
+        <stop id="8552049555" duration="20" until="48" /> <!-- 800 E @ 713 N -->
+        <stop id="8584726534" duration="20" until="48" /> <!-- 800 E @ 595 N -->
+        <stop id="8568357351" duration="20" until="48" /> <!-- 800 E @ 455 N -->
+        <stop id="8851418346" duration="20" until="48" /> <!-- 800 E @ 185 N -->
+        <stop id="8927895617" duration="20" until="48" /> <!-- Center St @ 745 E -->
         <stop id="" duration="20" until="48" /> <!--  -->
         <stop id="" duration="20" until="48" /> <!--  -->
         <stop id="" duration="20" until="48" /> <!--  -->
@@ -133,6 +160,35 @@
         <stop id="" duration="20" until="48" /> <!--  -->
         <stop id="" duration="20" until="48" /> <!--  -->
         <stop id="" duration="20" until="48" /> <!--  -->
+        <stop id="" duration="20" until="48" /> <!--  -->
+        <stop id="" duration="20" until="48" /> <!--  -->
+        <stop id="-8568334690" duration="20" until="48" /> <!-- 800 E @ 30 N -->
+        <stop id="-8790823509" duration="20" until="48" /> <!-- 800 E @ 190 N -->
+        <stop id="-8891466492" duration="20" until="48" /> <!-- 800 E @ 450 N -->
+        <stop id="-8577295330" duration="20" until="48" /> <!-- 800 E @ 558 N -->
+        <stop id="-8921186919" duration="20" until="48" /> <!-- 800 E @ 710 N -->
+        <stop id="-9138278748" duration="20" until="48" /> <!-- Expressway Ln @ 940 E -->
+        <stop id="-9103871477" duration="20" until="48" /> <!-- Express Way Lane @ 1212 E -->
+        <stop id="-8877136398" duration="20" until="48" /> <!-- State Hwy @ 1150 N -->
+        <stop id="-9138294655" duration="20" until="48" /> <!-- State Hwy @ 1793 S -->
+        <stop id="-8870097968" duration="20" until="48" /> <!-- Main St @ 451 S -->
+        <stop id="8886495439" duration="20" until="48" /> <!-- 400 S @ 210 E -->
+        <stop id="9105786005" duration="20" until="48" /> <!-- 400 S @ 350 E -->
+        <stop id="-8873772574" duration="20" until="48" /> <!-- 400 E @ 175 S -->
+        <stop id="9123355813" duration="20" until="48" /> <!-- 400 E @ 26 N -->
+        <stop id="9103878463" duration="20" until="48" /> <!-- 400 E @ 210 N -->
+        <stop id="-8542442230" duration="20" until="48" /> <!-- 400 N @ 351 E -->
+        <stop id="-8895649595" duration="20" until="48" /> <!-- 400 N @ 221 E -->
+        <stop id="-9139203036" duration="20" until="48" /> <!-- 400 N @ 101 E -->
+        <stop id="8990559356" duration="20" until="48" /> <!-- Main St @ 420 N -->
+        <stop id="8576378895" duration="20" until="48" /> <!-- Main St @ 670 N -->
+        <stop id="9124314974" duration="20" until="48" /> <!-- Main St @ 900 N -->
+        <stop id="8542951218" duration="20" until="48" /> <!-- Main St @ 1120 N -->
+        <stop id="-8584736832" duration="20" until="48" /> <!-- Main St @ 1456 N -->
+        <stop id="-9124927226" duration="20" until="48" /> <!-- State St @ 2855 S -->
+        <stop id="-8895677349" duration="20" until="48" /> <!-- State St @ 2301 S -->
+        <stop id="-9140197755" duration="20" until="48" /> <!-- State St @ 2051 S -->
+        <stop id="-8576324957" duration="20" until="48" /> <!-- 1860 S @ 519 E -->
         <stop id="9126864458" duration="20" until="48" /> <!-- East Bay Blvd @ 139 E -->
         <stop id="-8551597362" duration="20" until="48" /> <!-- University Ave @ 1235 S -->
     </route>
