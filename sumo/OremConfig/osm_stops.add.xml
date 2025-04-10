@@ -1135,7 +1135,7 @@
         <access lane="1326180649#2_0" pos="46.79" length="9.14" friendlyPos="1"/>
         <access lane="1326180649#4_0" pos="81.69" length="30.00" friendlyPos="1"/>
         <access lane="1326180649#5_0" pos="10.93" length="17.92" friendlyPos="1"/>
-        <access lane="463704566#0_0" pos="0.00" length="30.96" friendlyPos="1"/>
+        <access lane="463704566#2_0" pos="0.00" length="30.96" friendlyPos="1"/>
         <access lane="463704566#1_0" pos="26.47" length="26.00" friendlyPos="1"/>
     </busStop>
     <busStop id="9932488274" name="Orem Central Station" lane="463704557#1_0" startPos="51.43" endPos="66.43" friendlyPos="true">
