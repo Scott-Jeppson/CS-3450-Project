@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
 import { io } from 'socket.io-client';
+import { getTripStats } from '../api.js';
 import './simtools.css';
 
-function SimTools() {
-    const [simulationStatus, setSimulationStatus] = useState('Stopped'); // 'Stopped' | 'Playing' | 'Paused'
-    const [speed, setSpeed] = useState(1);
+function SimTools({ setStats }) {
+    const [simulationStatus, setSimulationStatus] = useState('Stopped');
     const [trafficLevel, setTrafficLevel] = useState('medium');
     const socketRef = useRef(null);
 
@@ -16,27 +15,25 @@ function SimTools() {
             setSimulationStatus("Playing");
         });
 
-        socketRef.current.on("simulationEnded", () => {
+        socketRef.current.on("simulationEnded", async () => {
             setSimulationStatus("Stopped");
+
+            try {
+                const data = await getTripStats();
+                console.log("Fetched trip stats after sim ended:", data);
+                setStats(data); // send stats to parent component
+            } catch (err) {
+                console.error("Failed to fetch trip stats:", err);
+            }
         });
 
-        socketRef.current.on("paused", () => {
-            setSimulationStatus("Paused");
-        });
-
-        socketRef.current.on("resumed", () => {
-            setSimulationStatus("Playing");
-        });
+        socketRef.current.on("paused", () => setSimulationStatus("Paused"));
+        socketRef.current.on("resumed", () => setSimulationStatus("Playing"));
 
         return () => {
             socketRef.current.disconnect();
         };
-    }, []);
-
-    const handleSpeedChange = (newSpeed) => {
-        setSpeed(newSpeed);
-        // TODO: emit speed change
-    };
+    }, [setStats]);
 
     const handleTogglePlayPause = () => {
         if (!socketRef.current) return;
@@ -51,10 +48,12 @@ function SimTools() {
     };
 
     const handleReset = () => {
-        // TODO: emit reset/replay
+        if (socketRef.current) {
+            socketRef.current.emit("reset");
+            setSimulationStatus("Loading...");
+        }
     };
 
-    // three different levels of traffic: low, medium, high
     const handleTrafficLevelChange = (e) => {
         const level = e.target.value;
         setTrafficLevel(level);
@@ -72,7 +71,7 @@ function SimTools() {
     return (
         <div className="sim-tools-container">
             <div className="traffic-level-selector">
-                <label htmlFor="trafficLevel" style={{ marginRight: '0.5rem' }}>Traffic Level:</label>
+                <label htmlFor="trafficLevel">Traffic:</label>
                 <select
                     id="trafficLevel"
                     disabled={simulationStatus !== 'Stopped'}
@@ -85,28 +84,16 @@ function SimTools() {
                 </select>
             </div>
 
-            <div className="control-buttons left">
-                <button className="control-btn speed-btn" onClick={() => handleSpeedChange(0.5)} title="Run simulation at half speed">
-                    0.5x
-                </button>
-                <button className="control-btn speed-btn" onClick={() => handleSpeedChange(1)} title="Run simulation at normal speed">
-                    1.0x
-                </button>
-                <button className="control-btn speed-btn" onClick={() => handleSpeedChange(1.5)} title="Run simulation at 1.5x speed">
-                    1.5x
-                </button>
-            </div>
-
-            <Link to="" className="expand-btn" title="Expand simulation">
-                Expand Simulation
-            </Link>
-
             <div className="control-buttons right">
                 <button className="control-btn" onClick={handleReset} title="Reset simulation">
                     <span className="material-symbols-outlined">refresh</span>
                 </button>
 
-                <button className="control-btn" onClick={handleTogglePlayPause} title={simulationStatus === "Playing" ? "Pause" : "Play"}>
+                <button
+                    className="control-btn"
+                    onClick={handleTogglePlayPause}
+                    title={simulationStatus === "Playing" ? "Pause" : "Play"}
+                >
                     <span className="material-symbols-outlined">{renderPlayPauseIcon()}</span>
                 </button>
             </div>

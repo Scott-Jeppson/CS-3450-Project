@@ -65,8 +65,8 @@ def sumo_simulation():
             angle = traci.vehicle.getAngle(vehicle_id)
             vehicles.append({'id': vehicle_id, 'x': gps_position[0], 'y': gps_position[1], 'angle': angle})
 
-        socketio.emit('update', vehicles)
-        time.sleep(0.001)  # Adjust this value to slow down or speed up simulation animation
+        # socketio.emit('update', vehicles)
+        # time.sleep(0.001)  # Adjust this value to slow down or speed up simulation animation
 
     traci.close()
     socketio.emit("simulationEnded")

@@ -8,6 +8,7 @@ import "./dashboard.css";
 import SimTools from '../components/SimTools';
 
 const Dashboard = ({ isLoggedIn, setIsLoggedIn }) => {
+    const [stats, setStats] = useState(null); // shared stats data
 
     return (
         <div className="page-div" style={{ backgroundColor: "var(--grey)", height: "100vh" }}>
@@ -16,27 +17,27 @@ const Dashboard = ({ isLoggedIn, setIsLoggedIn }) => {
             <div id="main-content-dashboard">
                 {isLoggedIn ? (
                     <>
-                        <Toolbar />
+                        {/* <Toolbar /> */}
 
-                        <div className="sumo-sim">
-                            <SumoSim />
-                        </div>
+                            <div className="sumo-sim">
+                                <SumoSim />
+                            </div>
+                            
+                            <div className="sim-tools">
+                                <SimTools setStats={setStats} />
+                            </div>
 
-                        <div className="sim-tools">
-                            <SimTools />
-                        </div>
+                            <div className="stats">
+                                <Statistics stats={stats} />
+                            </div>
 
-                        <div className="stats">
-                            <Statistics />
-                        </div>
                     </>
-                    ) : (
-                        <h1>You are not logged in</h1>
-                    )
-                }
+                ) : (
+                    <h1>You are not logged in</h1>
+                )}
             </div>
         </div>
     );
-}
+};
 
 export default Dashboard;
