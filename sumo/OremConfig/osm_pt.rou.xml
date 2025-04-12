@@ -43,10 +43,6 @@
         <stop busStop="957772651" duration="20"/> <!-- 1200 W @ 660 N -->
         <stop busStop="9105707076" duration="20"/> <!-- 1200 W @ 720 N -->
         <stop busStop="8544780328" duration="20"/> <!-- 980 W @ 919 N -->
-
-<!--        I need to fix the edges to do the loop around the UVU campus both ways.-->
-
-
         <stop busStop="8672268996" duration="20"/> <!-- 1200 W @ 1086 N -->
         <stop busStop="8552063733" duration="20"/> <!-- 1200 W / 1200 N (1222 N) (NB) -->
         <stop busStop="957807876" duration="20"/> <!-- 1200 W / 1300 N (1320 N) (NB) -->
@@ -65,20 +61,23 @@
         <stop busStop="-8783782792" duration="20"/> <!-- Timpanogos Pkwy @ 680 E -->
         <stop busStop="-8544564429" duration="20"/> <!-- Research Way @ 1243 N -->
 <!--        <stop busStop="" duration="20"/> &lt;!&ndash; 1200 N @ 762 E &ndash;&gt;-->
+<!--        This stop is not in our network yet-->
         <stop busStop="-8849388476" duration="20"/> <!-- 800 E @ 985 N -->
         <stop busStop="-8568349646" duration="20"/> <!-- 800 E / 800 N (SB) -->
         <stop busStop="-8544805026" duration="20"/> <!-- 800 E @ 579 N -->
         <stop busStop="-8927889017" duration="20"/> <!-- 800 E @ 375 N -->
         <stop busStop="8551512663" duration="20"/> <!-- 800 E @ 32 S -->
-<!--        <stop busStop="" duration="20"/> &lt;!&ndash; 800 E @ 220 S &ndash;&gt;-->
+        <stop busStop="5705821980" duration="20"/> <!-- 800 E @ 220 S -->
         <stop busStop="8577294457" duration="20"/> <!-- 800 E @ 442 S -->
         <stop busStop="5705821974" duration="20"/> <!-- 800 E @ 624 S -->
-<!--        <stop busStop="" duration="20"/> &lt;!&ndash; 800 E / 800 S (SB) &ndash;&gt;-->
-<!--        <stop busStop="" duration="20"/> &lt;!&ndash; 800 E @ 1000 S (SB) &ndash;&gt;-->
-<!--        <stop busStop="" duration="20"/> &lt;!&ndash; 800 E @ 1150 S (SB) &ndash;&gt;-->
+        <stop busStop="9105741116" duration="20"/> <!-- 800 E / 800 S (SB) -->
+        <stop busStop="8552058928" duration="20"/> <!-- 800 E @ 1000 S (SB) -->
+        <stop busStop="8544530509" duration="20"/> <!-- 800 E @ 1150 S (SB) -->
         <stop busStop="6863882459" duration="20"/> <!-- University Place Station (WB) -->
-<!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 1150 S &ndash;&gt;-->
+        <stop busStop="6863882459" duration="20"/> <!-- State St / 1150 S -->
 <!--        <stop busStop="" duration="20"/> &lt;!&ndash; 800 S / State St (EB) &ndash;&gt;-->
+<!--        This stop is not in our network yet-->
+        <stop busStop="8663676819" duration="20" /> <!-- 800 S / State St -->
         <stop busStop="-8849754095" duration="20"/> <!-- 800 E @ 775 S -->
         <stop busStop="-8669821743" duration="20"/> <!-- 800 E @ 621 S -->
         <stop busStop="-8663619702" duration="20"/> <!-- 800 E @ 525 S -->
@@ -90,10 +89,12 @@
         <stop busStop="9124266272" duration="20"/> <!-- 800 E @ 838 N -->
         <stop busStop="9126558985" duration="20"/> <!-- 800 E @ 984 N -->
 <!--        <stop busStop="" duration="20"/> &lt;!&ndash; 1200 N @ 761 E &ndash;&gt;-->
+<!--        This stop is not in our network yet-->
         <stop busStop="8544567239" duration="20"/> <!-- Research Way @ 1224 N -->
         <stop busStop="8568339356" duration="20"/> <!-- Timpanogos Pkwy @ 655 E -->
         <stop busStop="-8873358257" duration="20"/> <!-- 1600 N @ 695 E -->
         <stop busStop="-8577305880" duration="20"/> <!-- 1600 N @ 567 E -->
+<!--        880 might not be attached to the route-->
         <stop busStop="-8892910407" duration="20"/> <!-- 1600 N @ 381 E -->
         <stop busStop="-8780205855" duration="20"/> <!-- 1600 N @ 181 E -->
         <stop busStop="9105786888" duration="20"/> <!-- 1600 N @ 84 W -->
@@ -110,20 +111,20 @@
         <stop busStop="-9124916757" duration="20"/> <!-- 1200 W @ 759 N -->
         <stop busStop="-957772649" duration="20"/> <!-- 1200 W @ 707 N -->
         <stop busStop="-8877979573" duration="20"/> <!-- 1200 W @ 361 N -->
-<!--        <stop busStop="" duration="20"/> &lt;!&ndash; 1200 W / 150 N (SB) &ndash;&gt;-->
+        <stop busStop="-8790793881" duration="20"/> <!-- 1200 W / 150 N (SB) -->
         <stop busStop="-8779152327" duration="20"/> <!-- 1200 W @ 50 S -->
         <stop busStop="-8929856219" duration="20"/> <!-- 1200 W @ 270 S -->
-<!--        <stop busStop="" duration="20"/> &lt;!&ndash; 1200 W / 400 S (SB) &ndash;&gt;-->
+        <stop busStop="-366499660" duration="20"/> <!-- 1200 W / 400 S (SB) -->
         <stop busStop="-8600848947" duration="20"/> <!-- 1200 W @ 600 S (SB) -->
-<!--        <stop busStop="" duration="20"/> &lt;!&ndash; 1200 W @ 700 S (SB) &ndash;&gt;-->
-<!--        <stop busStop="" duration="20"/> &lt;!&ndash; UVU Testing Services (EB) &ndash;&gt;-->
-<!--        <stop busStop="" duration="20"/> &lt;!&ndash; UVU McKay Education Building (EB) &ndash;&gt;-->
+        <stop busStop="-8927875514" duration="20"/> <!-- 1200 W @ 700 S (SB) -->
+        <stop busStop="-8552032411" duration="20"/> <!-- UVU Testing Services (EB) -->
+        <stop busStop="-8869016085" duration="20"/> <!-- UVU McKay Education Building (EB) -->
         <stop busStop="8927848924" duration="20"/> <!-- UVU Fulton Library (EB) -->
         <stop busStop="8997251555" duration="20"/> <!-- UVU Institute (EB) -->
         <stop busStop="8921163101" duration="20"/> <!-- UVU Gunther Building (SB) -->
-<!--        <stop busStop="" duration="20"/> &lt;!&ndash; UVU Station (adjacent bus stop WB) &ndash;&gt;-->
+        <stop busStop="9932608367" duration="20"/> <!-- UVU Station (adjacent bus stop WB) -->
         <stop busStop="8542938977" duration="20"/> <!-- Geneva Rd @ 1161 S -->
-<!--        <stop busStop="" duration="20"/> &lt;!&ndash; Wolverine Crossing (EB) &ndash;&gt;-->
+        <stop busStop="8542938977" duration="20"/> <!-- Wolverine Crossing (EB) -->
         <stop busStop="9932488272" duration="20"/> <!-- Orem Central Station (Bay F) -->
     </route>
     <vehicle id="pt_bus_862:0" type="pt_bus" route="pt_bus_862:0" depart="0" line="862:0">
