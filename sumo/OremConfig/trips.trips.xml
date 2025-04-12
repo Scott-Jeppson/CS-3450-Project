@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-03-28 20:34:03.308856 by $Id: ptlines2flows.py v1_3_1+0313-ccb31df3eb jakob.erdmann@dlr.de 2019-09-02 13:26:32 +0200 $ UNKNOWN
+<!-- generated on 2025-04-09 17:45:07.677742 by $Id: ptlines2flows.py v1_3_1+0313-ccb31df3eb jakob.erdmann@dlr.de 2019-09-02 13:26:32 +0200 $ v1_22_0+0002-63e50f52594
 <configuration>
-    <net-file value="/home/cam/Sumo/2025-03-28-20-32-12/osm.net.xml.gz"/>
-    <ptlines-file value="/home/cam/Sumo/2025-03-28-20-32-12/osm_ptlines.xml"/>
-    <ptstops-file value="/home/cam/Sumo/2025-03-28-20-32-12/osm_stops.add.xml"/>
-    <output-file value="/home/cam/Sumo/2025-03-28-20-32-12/osm_pt.rou.xml"/>
-    <stopinfos-file value="/home/cam/Sumo/2025-03-28-20-32-12/stopinfos.xml"/>
-    <routes-file value="/home/cam/Sumo/2025-03-28-20-32-12/vehroutes.xml"/>
-    <trips-file value="/home/cam/Sumo/2025-03-28-20-32-12/trips.trips.xml"/>
+    <net-file value="D:\Program Files (x86)\Eclipse\Sumo\tools\2025-04-09-17-41-13\osm.net.xml.gz"/>
+    <ptlines-file value="D:\Program Files (x86)\Eclipse\Sumo\tools\2025-04-09-17-41-13\osm_ptlines.xml"/>
+    <ptstops-file value="D:\Program Files (x86)\Eclipse\Sumo\tools\2025-04-09-17-41-13\osm_stops.add.xml"/>
+    <output-file value="D:\Program Files (x86)\Eclipse\Sumo\tools\2025-04-09-17-41-13\osm_pt.rou.xml"/>
+    <stopinfos-file value="D:\Program Files (x86)\Eclipse\Sumo\tools\2025-04-09-17-41-13\stopinfos.xml"/>
+    <routes-file value="D:\Program Files (x86)\Eclipse\Sumo\tools\2025-04-09-17-41-13\vehroutes.xml"/>
+    <trips-file value="D:\Program Files (x86)\Eclipse\Sumo\tools\2025-04-09-17-41-13\trips.trips.xml"/>
     <min-stops value="0"/>
     <extend-to-fringe value="True"/>
     <random-begin value="True"/>
@@ -85,7 +85,10 @@
         <stop busStop="9932608365" duration="30"/>  <!-- Towne Centre Boulevard -->
         <stop busStop="9932513538" duration="30"/>  <!-- Provo Central Station (Bay J) -->
     </trip>
-    <trip id="4_bus_805:0" type="pt_bus" depart="52.0" departLane="best" from="467235001" to="477393514">
+    <trip id="4_bus_F514:0" type="pt_bus" depart="52.0" departLane="best" from="684494698#3" to="480973518#4">
+        <stop busStop="6413068452" duration="30"/>  <!-- Draper Station (Bay A) -->
+    </trip>
+    <trip id="5_bus_805:0" type="pt_bus" depart="55.0" departLane="best" from="467235001" to="477393514">
         <stop busStop="8584737276" duration="30"/>  <!-- 1270 W @ 779 S -->
         <stop busStop="8552049555" duration="30"/>  <!-- 800 E @ 713 N -->
         <stop busStop="-8551597362" duration="30"/>  <!-- University Ave @ 1235 S -->
@@ -94,48 +97,56 @@
         <stop busStop="-9105784640" duration="30"/>  <!-- University Ave @ 1190 S -->
         <stop busStop="9932608366" duration="30"/>  <!-- UVU Station -->
     </trip>
-    <trip id="5_bus_806:0" type="pt_bus" depart="55.0" departLane="best" from="477393511" to="197873638">
+    <trip id="6_bus_806:0" type="pt_bus" depart="58.0" departLane="best" from="477393511" to="1225214905">
         <stop busStop="9932608367" duration="30"/>  <!-- UVU Station -->
         <stop busStop="8577326192" duration="30"/>  <!-- Ashton Blvd / Triumph Blvd (NB) -->
         <stop busStop="8577296199" duration="30"/>  <!-- Lehi Station (Bay E) -->
+        <stop busStop="8990570102" duration="30"/>  <!-- Harvest Hills Blvd @ 478 W -->
+        <stop busStop="8551594056" duration="30"/>  <!-- Harvest Hills Blvd @ 224 -->
+        <stop busStop="9128349692" duration="30"/>  <!-- Redwood Rd @ 1461 N -->
+        <stop busStop="8542151400" duration="30"/>  <!-- Pony Express Pky @ 3917 E -->
+        <stop busStop="84766184" duration="30"/>  <!-- Sparrowhawk Way @ 7746 N -->
     </trip>
-    <trip id="6_bus_807:0" type="pt_bus" depart="58.0" departLane="best" from="477393514" to="231250765">
+    <trip id="7_bus_807:0" type="pt_bus" depart="93.0" departLane="best" from="477393514" to="231250765">
         <stop busStop="9932608366" duration="30"/>  <!-- UVU Station -->
         <stop busStop="11357516426" duration="30"/>  <!-- Lehi Station (Bay F) -->
     </trip>
-    <trip id="7_bus_821:0" type="pt_bus" depart="93.0" departLane="best" from="-244437926#0" to="1224483160">
+    <trip id="8_bus_821:0" type="pt_bus" depart="119.0" departLane="best" from="-244437926#0" to="1224483160">
         <stop busStop="-11361052134" duration="30"/>  <!-- 1270 W @ 780 S -->
         <stop busStop="9932513542" duration="30"/>  <!-- Provo Central Station (Bay C) -->
     </trip>
-    <trip id="8_bus_822:0" type="pt_bus" depart="119.0" departLane="best" from="477393514" to="-244437926#0">
+    <trip id="9_bus_822:0" type="pt_bus" depart="131.0" departLane="best" from="477393514" to="-244437926#0">
         <stop busStop="9932608366" duration="30"/>  <!-- UVU Station -->
         <stop busStop="-11361052134" duration="30"/>  <!-- 1270 W @ 780 S -->
     </trip>
-    <trip id="9_bus_834:0" type="pt_bus" depart="131.0" departLane="best" from="1095494532#2" to="684673673#1">
+    <trip id="10_bus_834:0" type="pt_bus" depart="132.0" departLane="best" from="1095494532#2" to="684673673#1">
         <stop busStop="11361153248" duration="30"/>  <!-- Vineyard Station (Bay A) -->
         <stop busStop="9932513537" duration="30"/>  <!-- Provo Central Station (Bay A) -->
     </trip>
-    <trip id="10_bus_862:0" type="pt_bus" depart="132.0" departLane="best" from="776681829#5" to="463704557#1">
+    <trip id="11_bus_862:0" type="pt_bus" depart="133.0" departLane="best" from="776681829#5" to="463704557#1">
         <stop busStop="6863882459" duration="30"/>  <!-- University Place Station (WB) -->
         <stop busStop="9932488272" duration="30"/>  <!-- Orem Central Station (Bay F) -->
     </trip>
-    <trip id="11_bus_871:0" type="pt_bus" depart="133.0" departLane="best" from="231250765" to="413504535">
+    <trip id="12_bus_871:0" type="pt_bus" depart="165.0" departLane="best" from="231250765" to="-1226967279#0">
+        <stop busStop="11362282291" duration="30"/>  <!-- Lehi Station (Bay B) -->
+        <stop busStop="8878017318" duration="30"/>  <!-- Draper Town Center Station (Bay B) -->
+        <stop busStop="11377872445" duration="30"/>  <!-- Draper Town Center Station (Bay A) -->
+    </trip>
+    <trip id="13_bus_871:1" type="pt_bus" depart="201.0" departLane="best" from="-1226967279#0" to="231250765">
+        <stop busStop="-11377872445" duration="30"/>  <!-- Draper Town Center Station (Bay A) -->
         <stop busStop="11362282291" duration="30"/>  <!-- Lehi Station (Bay B) -->
     </trip>
-    <trip id="12_bus_871:1" type="pt_bus" depart="165.0" departLane="best" from="1086871558" to="231250765">
-        <stop busStop="11362282291" duration="30"/>  <!-- Lehi Station (Bay B) -->
-    </trip>
-    <trip id="13_bus_880:0" type="pt_bus" depart="201.0" departLane="best" from="776681829#5" to="1227169322#1">
+    <trip id="14_bus_880:0" type="pt_bus" depart="204.0" departLane="best" from="776681829#5" to="1227169322#1">
         <stop busStop="6863882459" duration="30"/>  <!-- University Place Station (WB) -->
         <stop busStop="8781455725" duration="30"/>  <!-- Orem Palisade Park and Ride -->
         <stop busStop="10218747078" duration="30"/>  <!-- Sundance Mountain Resort -->
     </trip>
-    <trip id="14_bus_880:1" type="pt_bus" depart="204.0" departLane="best" from="1227169322#1" to="776681829#5">
+    <trip id="15_bus_880:1" type="pt_bus" depart="253.0" departLane="best" from="1227169322#1" to="776681829#5">
         <stop busStop="10218747078@16719450" duration="30"/>  <!-- Sundance Mountain Resort -->
         <stop busStop="8781455725" duration="30"/>  <!-- Orem Palisade Park and Ride -->
         <stop busStop="6863882459" duration="30"/>  <!-- University Place Station (WB) -->
     </trip>
-    <trip id="15_bus_850:0" type="pt_bus" depart="253.0" departLane="best" from="1224483160" to="231250765">
+    <trip id="16_bus_850:0" type="pt_bus" depart="303.0" departLane="best" from="1224483160" to="231250765">
         <stop busStop="9932513543" duration="30"/>  <!-- Provo Central Station (Bay B) -->
         <stop busStop="-8886452609" duration="30"/>  <!-- University Ave / 900 S (NB) -->
         <stop busStop="9103874877" duration="30"/>  <!-- University Ave / 450 S (NB) -->
@@ -221,11 +232,11 @@
         <stop busStop="8577326192" duration="30"/>  <!-- Ashton Blvd / Triumph Blvd (NB) -->
         <stop busStop="11360306139" duration="30"/>  <!-- Lehi Station (Bay A) -->
     </trip>
-    <trip id="16_bus_850:1" type="pt_bus" depart="303.0" departLane="best" from="231250765" to="1224483160">
+    <trip id="17_bus_850:1" type="pt_bus" depart="326.0" departLane="best" from="231250765" to="1224483160">
         <stop busStop="11360306139" duration="30"/>  <!-- Lehi Station (Bay A) -->
         <stop busStop="9932513543" duration="30"/>  <!-- Provo Central Station (Bay B) -->
     </trip>
-    <trip id="17_bus_862:1" type="pt_bus" depart="326.0" departLane="best" from="463704557#1" to="776681829#5">
+    <trip id="18_bus_862:1" type="pt_bus" depart="353.0" departLane="best" from="463704557#1" to="776681829#5">
         <stop busStop="9932488272" duration="30"/>  <!-- Orem Central Station (Bay F) -->
         <stop busStop="-8544776077" duration="30"/>  <!-- 1000 S @ 1418 W -->
         <stop busStop="-9128347751" duration="30"/>  <!-- Geneva Rd @ 1032 S -->
@@ -276,22 +287,21 @@
         <stop busStop="8544530509" duration="30"/>  <!-- 800 E @ 1146 S -->
         <stop busStop="6863882459" duration="30"/>  <!-- University Place Station (WB) -->
     </trip>
-    <trip id="18_bus_807:1" type="pt_bus" depart="353.0" departLane="best" from="231250765" to="477393511">
+    <trip id="19_bus_807:1" type="pt_bus" depart="383.0" departLane="best" from="231250765" to="477393511">
         <stop busStop="11357516426" duration="30"/>  <!-- Lehi Station (Bay F) -->
         <stop busStop="9932608367" duration="30"/>  <!-- UVU Station -->
     </trip>
-    <trip id="19_train_750:0" type="pt_train" depart="362.0" departLane="best" from="297896758" to="-298119477#5">
-        <stop busStop="6593866724" duration="30"/>  <!-- Lehi -->
-        <stop busStop="-7123084666" duration="30"/>  <!-- American Fork -->
-        <stop busStop="-3020209235" duration="30"/>  <!-- Orem Central -->
-        <stop busStop="-6341264446" duration="30"/>  <!-- Provo Central -->
-    </trip>
-    <trip id="20_bus_806:1" type="pt_bus" depart="383.0" departLane="best" from="197873645" to="477393514">
+    <trip id="20_bus_806:1" type="pt_bus" depart="389.0" departLane="best" from="1225214905" to="477393514">
+        <stop busStop="84766184" duration="30"/>  <!-- Sparrowhawk Way @ 7746 N -->
+        <stop busStop="8929850401" duration="30"/>  <!-- Pony Express Pky @ 3916 E -->
+        <stop busStop="8577290489" duration="30"/>  <!-- Redwood Rd @ 1418 N -->
+        <stop busStop="8990570102" duration="30"/>  <!-- Harvest Hills Blvd @ 478 W -->
+        <stop busStop="8551594056" duration="30"/>  <!-- Harvest Hills Blvd @ 224 -->
         <stop busStop="8577326192" duration="30"/>  <!-- Ashton Blvd / Triumph Blvd (NB) -->
         <stop busStop="8577296199" duration="30"/>  <!-- Lehi Station (Bay E) -->
         <stop busStop="9932608366" duration="30"/>  <!-- UVU Station -->
     </trip>
-    <trip id="21_bus_833:0" type="pt_bus" depart="389.0" departLane="best" from="684673673#1" to="684673673#1">
+    <trip id="21_bus_833:0" type="pt_bus" depart="406.0" departLane="best" from="684673673#1" to="684673673#1">
         <stop busStop="9932513540" duration="30"/>  <!-- Provo Central Station (Bay L) -->
         <stop busStop="8663447666" duration="30"/>  <!-- 920 S @ 328 W -->
         <stop busStop="-8849269922" duration="30"/>  <!-- 500 W @ 897 S -->
@@ -313,7 +323,7 @@
         <stop busStop="9128290350" duration="30"/>  <!-- 920 S @ 331 W -->
         <stop busStop="9932513540" duration="30"/>  <!-- Provo Central Station (Bay L) -->
     </trip>
-    <trip id="22_bus_831:1" type="pt_bus" depart="406.0" departLane="best" from="1224483160" to="1225221152#1">
+    <trip id="22_bus_831:1" type="pt_bus" depart="418.0" departLane="best" from="1224483160" to="1225221152#1">
         <stop busStop="2396515835" duration="30"/>  <!-- Provo Central Station (Bay D) -->
         <stop busStop="-8669789982" duration="30"/>  <!-- 900 N / 800 E (WB) -->
         <stop busStop="8544798609" duration="30"/>  <!-- 700 N / 200 E (WB) -->
@@ -326,22 +336,7 @@
         <stop busStop="-8542423137" duration="30"/>  <!-- UVU Fulton Library (WB) -->
         <stop busStop="9932488271" duration="30"/>  <!-- Orem Central Station (Bay E) -->
     </trip>
-    <trip id="23_train_California_Zephyr:0" type="pt_train" depart="418.0" departLane="best" from="-297896773#1" to="106649062#16">
-        <stop busStop="3020208745" duration="30"/>  <!-- Provo -->
-    </trip>
-    <trip id="24_train_California_Zephyr:1" type="pt_train" depart="441.0" departLane="best" from="298119461#9" to="298119461#9">
-        <stop busStop="3020208745" duration="30"/>  <!-- Provo -->
-    </trip>
-    <trip id="25_train_750:1" type="pt_train" depart="483.0" departLane="best" from="709757177" to="762329397">
-        <stop busStop="6341264443" duration="30"/>  <!-- Provo Central -->
-        <stop busStop="3020209244" duration="30"/>  <!-- Orem Central -->
-        <stop busStop="3017998930" duration="30"/>  <!-- American Fork -->
-        <stop busStop="3018001470" duration="30"/>  <!-- Lehi -->
-    </trip>
-    <trip id="26_train_Heber_Valley_Railroad:0" type="pt_train" depart="484.0" departLane="best" from="216231339" to="216231337#1">
-        <stop busStop="12359994676" duration="30"/>  <!-- None -->
-    </trip>
-    <trip id="27_bus_805:1" type="pt_bus" depart="485.0" departLane="best" from="477393511" to="1222979124">
+    <trip id="23_bus_805:1" type="pt_bus" depart="441.0" departLane="best" from="477393511" to="1222979124">
         <stop busStop="9932608367" duration="30"/>  <!-- UVU Station -->
         <stop busStop="5388433609" duration="30"/>  <!-- Provo Central Station (Bay N) -->
         <stop busStop="-9138268649" duration="30"/>  <!-- University Ave @ 992 S -->
@@ -349,18 +344,21 @@
         <stop busStop="-8552049555" duration="30"/>  <!-- 800 E @ 713 N -->
         <stop busStop="8584737276" duration="30"/>  <!-- 1270 W @ 779 S -->
     </trip>
-    <trip id="28_bus_834:1" type="pt_bus" depart="508.0" departLane="best" from="684673673#1" to="1095494532#2">
+    <trip id="24_bus_834:1" type="pt_bus" depart="483.0" departLane="best" from="684673673#1" to="1095494532#2">
         <stop busStop="5388433608" duration="30"/>  <!-- Provo Central Station (Bay M) -->
         <stop busStop="11361153248@9499501" duration="30"/>  <!-- Vineyard Station (Bay A) -->
     </trip>
-    <trip id="29_bus_822:1" type="pt_bus" depart="535.0" departLane="best" from="-244437926#0" to="477393511">
+    <trip id="25_bus_822:1" type="pt_bus" depart="485.0" departLane="best" from="-244437926#0" to="477393511">
         <stop busStop="-11361052134" duration="30"/>  <!-- 1270 W @ 780 S -->
         <stop busStop="8849397580" duration="30"/>  <!-- Hwy 198 @ 38 N -->
         <stop busStop="9932608367" duration="30"/>  <!-- UVU Station -->
     </trip>
-    <trip id="30_bus_821:1" type="pt_bus" depart="574.0" departLane="best" from="1224483160" to="-244437926#0">
+    <trip id="26_bus_821:1" type="pt_bus" depart="535.0" departLane="best" from="1224483160" to="-244437926#0">
         <stop busStop="9932513542" duration="30"/>  <!-- Provo Central Station (Bay C) -->
         <stop busStop="-8542612061" duration="30"/>  <!-- Hwy 198 @ 20 S -->
         <stop busStop="-11361052134" duration="30"/>  <!-- 1270 W @ 780 S -->
+    </trip>
+    <trip id="27_bus_F514:1" type="pt_bus" depart="574.0" departLane="best" from="-1296664197" to="684494698#3">
+        <stop busStop="6413068452@9501397" duration="30"/>  <!-- Draper Station (Bay A) -->
     </trip>
 </routes>
