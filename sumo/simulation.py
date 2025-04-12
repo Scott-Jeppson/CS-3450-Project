@@ -17,8 +17,9 @@ socketio = SocketIO(app, async_mode='threading', cors_allowed_origins="*")
 SUMO_BINARY = "sumo"  # or "sumo-gui" for the GUI version
 SUMO_CFG_FILE = "OremConfig/osm.sumocfg"  # path to sumo config file
 
+# Statistics directory and files
 output_dir = "/shared/output"
-output_files = ["summary.xml", "tripinfo.xml"]
+output_files = ["summary.xml", "tripinfo.xml", "emmisions.xml"]
 
 # Global control variables
 paused = False
@@ -26,7 +27,7 @@ pause_condition = threading.Condition()
 traffic_level = "medium"  # Default traffic level
 sumo_thread = None  # Track the simulation thread
 
-# Ensure output directory and files exist
+# Ensuring that output directory and files exist
 os.makedirs(output_dir, exist_ok=True)
 for file in output_files:
     full_path = os.path.join(output_dir, file)

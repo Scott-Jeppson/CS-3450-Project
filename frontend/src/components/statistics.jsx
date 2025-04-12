@@ -7,6 +7,7 @@ function Statistics({ isLoggedIn, setIsLoggedIn }) {
 
     const fetchStats = async () => {
         const tripStats = await getTripStats();
+        console.log(tripStats);
     };
 
     return (
