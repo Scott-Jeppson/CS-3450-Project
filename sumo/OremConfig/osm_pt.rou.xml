@@ -131,169 +131,167 @@
                 <stop busStop="-8886452609" duration="20"/> <!-- University Ave / 900 S (NB) -->
                 <stop busStop="9103874877" duration="20"/> <!-- University Ave / 450 S (NB) -->
                 <stop busStop="8542915352" duration="20"/> <!-- University Ave / 300 S (NB) -->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; University Ave / 100 S (NB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; 100 N / University Ave (WB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; 100 N @ 300 W (WB) &ndash;&gt;-->
-        <!--        <stop busStop="11493019591" duration="20"/> &lt;!&ndash; 500 W @ 180 N &ndash;&gt;-->
-        <!--        <stop busStop="8925359570" duration="20"/> &lt;!&ndash; 500 W @ 358 N &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; 500 W @ 500 N &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; 500 W @ 800 N (NB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; 500 W @ 940 N (NB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; Utah Valley Hospital (NB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / Cougar Blvd (NB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / Riverside Ave (NB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / Grandview Ln (NB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 1850 N (NB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 1950 N (NB) &ndash;&gt;-->
-        <!--        <stop busStop="-8551460894" duration="20"/> &lt;!&ndash; State St @ 1851 S (NB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 1700 S (NB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 1600 S (NB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / University Pkwy (NB) &ndash;&gt;-->
-        <!--        <stop busStop="8584734435" duration="20"/> &lt;!&ndash; University Place Station * (EB) &ndash;&gt;-->
-        <!--        <stop busStop="-11493019589" duration="20"/> &lt;!&ndash; 800 E @ 1169 S (NB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; 800 E / 1000 S (NB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; 800 E / 900 S (NB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 800 S (NB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 600 S (NB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 400 S (NB) &ndash;&gt;-->
-        <!--        <stop busStop="-9103807968" duration="20"/> &lt;!&ndash; State St @ 200 S (NB) &ndash;&gt;-->
-        <!--        <stop busStop="-8849261098" duration="20"/> &lt;!&ndash; State St @ 100 S (NB) &ndash;&gt;-->
-        <!--        <stop busStop="8572449564" duration="20"/> &lt;!&ndash; State St @ Center St (NB) &ndash;&gt;-->
-        <!--        <stop busStop="-9124305657" duration="20"/> &lt;!&ndash; State St @ 200 N (NB) &ndash;&gt;-->
-        <!--        <stop busStop="-9124890027" duration="20"/> &lt;!&ndash; State St @ 400 N (NB) &ndash;&gt;-->
-        <!--        <stop busStop="-9123291378" duration="20"/> &lt;!&ndash; State St @ 600 N (NB) &ndash;&gt;-->
-        <!--        <stop busStop="-8552050219" duration="20"/> &lt;!&ndash; State St / 800 N (NB) &ndash;&gt;-->
-        <!--        <stop busStop="8572464565" duration="20"/> &lt;!&ndash; State St / 1100 N (NB) &ndash;&gt;-->
-        <!--        <stop busStop="8849397578" duration="20"/> &lt;!&ndash; State St / 1200 N (NB) &ndash;&gt;-->
-        <!--        <stop busStop="4145236921" duration="20"/> &lt;!&ndash; State St / 1400 N (NB) &ndash;&gt;-->
-        <!--        <stop busStop="4145236918" duration="20"/> &lt;!&ndash; State St @ 1600 N (NB) &ndash;&gt;-->
-        <!--        <stop busStop="-9118813792" duration="20"/> &lt;!&ndash; State St / 1800 N (NB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 2000 N (NB) &ndash;&gt;-->
-        <!--        <stop busStop="-8544571432" duration="20"/> &lt;!&ndash; State St @ Lindon Main St (NB) &ndash;&gt;-->
-        <!--        <stop busStop="8779083155" duration="20"/> &lt;!&ndash; State St @ Lindon Center St (NB) &ndash;&gt;-->
-        <!--        <stop busStop="-9124305657" duration="20"/> &lt;!&ndash; State St / 200 N (NB) &ndash;&gt;-->
-        <!--        <stop busStop="8990574492" duration="20"/> &lt;!&ndash; State St @ 300 N (NB) &ndash;&gt;-->
-        <!--        <stop busStop="9138293030" duration="20"/> &lt;!&ndash; State St / 400 N (NB) &ndash;&gt;-->
-        <!--        <stop busStop="-9123291378" duration="20"/> &lt;!&ndash; State St / 600 N (NB) &ndash;&gt;-->
-        <!--        <stop busStop="-8552050219" duration="20"/> &lt;!&ndash; State Rd @ 800 N (NB) &ndash;&gt;-->
-        <!--        <stop busStop="-8870062512" duration="20"/> &lt;!&ndash; State Rd @ 790 S (NB) &ndash;&gt;-->
-        <!--        <stop busStop="-8927894153" duration="20"/> &lt;!&ndash; State Rd @ 700 S (NB) &ndash;&gt;-->
-        <!--        <stop busStop="-8877986508" duration="20"/> &lt;!&ndash; Main St @ 150 S (NB) &ndash;&gt;-->
-        <!--        <stop busStop="8544849774" duration="20"/> &lt;!&ndash; Main St @ 50 S (NB) &ndash;&gt;-->
-        <!--        <stop busStop="8552052405" duration="20"/> &lt;!&ndash; Center St @ 50 W (WB) &ndash;&gt;-->
-        <!--        <stop busStop="8573408531" duration="20"/> &lt;!&ndash; Center St @ 200 W (WB) &ndash;&gt;-->
-        <!--        <stop busStop="958983390" duration="20"/> &lt;!&ndash; State St @ Pleasant Grove Center St &ndash;&gt;-->
-        <!--        <stop busStop="2369125890" duration="20"/> &lt;!&ndash; State Rd @ 1300 W (WB) &ndash;&gt;-->
-        <!--        <stop busStop="-9123357236" duration="20"/> &lt;!&ndash; State St @ North County Blvd (WB) &ndash;&gt;-->
-        <!--        <stop busStop="-3530035888" duration="20"/> &lt;!&ndash; State St @ 860 E (WB) &ndash;&gt;-->
-        <!--        <stop busStop="-959019624" duration="20"/> &lt;!&ndash; State St @ 740 E (WB) &ndash;&gt;-->
-        <!--        <stop busStop="8783796050" duration="20"/> &lt;!&ndash; State St @ 700 E * (WB) &ndash;&gt;-->
-        <!--        <stop busStop="-8886451184" duration="20"/> &lt;!&ndash; State St @ 500 E (WB) &ndash;&gt;-->
-        <!--        <stop busStop="-8542170799" duration="20"/> &lt;!&ndash; State St @ 400 E (WB) &ndash;&gt;-->
-        <!--        <stop busStop="-959058612" duration="20"/> &lt;!&ndash; State St @ 300 E (WB) &ndash;&gt;-->
-        <!--        <stop busStop="-959058615" duration="20"/> &lt;!&ndash; Main St @ 100 E (WB) &ndash;&gt;-->
-        <!--        <stop busStop="8891356952" duration="20"/> &lt;!&ndash; Main St @ American Fork Center St (WB) &ndash;&gt;-->
-        <!--        <stop busStop="959058587" duration="20"/> &lt;!&ndash; Main St @ 100 W (WB) &ndash;&gt;-->
-        <!--        <stop busStop="959058595" duration="20"/> &lt;!&ndash; Main St @ 200 W (WB) &ndash;&gt;-->
-        <!--        <stop busStop="8542449501" duration="20"/> &lt;!&ndash; Main St @ 300 W (WB) &ndash;&gt;-->
-        <!--        <stop busStop="959058572" duration="20"/> &lt;!&ndash; Main St @ Columbia Village (WB) &ndash;&gt;-->
-        <!--        <stop busStop="9124296386" duration="20"/> &lt;!&ndash; State St / Green Spring Way (NB) &ndash;&gt;-->
-        <!--        <stop busStop="9105787934" duration="20"/> &lt;!&ndash; State St / Pacific Dr (NB) &ndash;&gt;-->
-        <!--        <stop busStop="8544541138" duration="20"/> &lt;!&ndash; State St / 900 W (WB) &ndash;&gt;-->
-        <!--        <stop busStop="8895668644" duration="20"/> &lt;!&ndash; State St / Lehi Main St (WB) &ndash;&gt;-->
-        <!--        <stop busStop="9126599778" duration="20"/> &lt;!&ndash; State St / 950 E (WB) &ndash;&gt;-->
-        <!--        <stop busStop="-9138293064" duration="20"/> &lt;!&ndash; State St / 700 E (WB) &ndash;&gt;-->
-        <!--        <stop busStop="9124273483" duration="20"/> &lt;!&ndash; State St / 100 E (WB) &ndash;&gt;-->
-        <!--        <stop busStop="-8542125054" duration="20"/> &lt;!&ndash; State St / 300 W (WB) &ndash;&gt;-->
-        <!--        <stop busStop="-9103863062" duration="20"/> &lt;!&ndash; State St / 500 W (WB) &ndash;&gt;-->
-        <!--        <stop busStop="-8561087916" duration="20"/> &lt;!&ndash; State St / 1500 N (WB) &ndash;&gt;-->
-        <!--        <stop busStop="-8886479202" duration="20"/> &lt;!&ndash; State St / 1870 N (WB) &ndash;&gt;-->
-        <!--        <stop busStop="8928578462" duration="20"/> &lt;!&ndash; Ashton Blvd / 1800 W (WB) &ndash;&gt;-->
-        <!--        <stop busStop="8577326192" duration="20"/> &lt;!&ndash; Ashton Blvd / Triumph Blvd (NB) &ndash;&gt;-->
-        <!--        <stop busStop="11360306139" duration="20"/> &lt;!&ndash; Lehi Station (Bay A) &ndash;&gt;-->
-        <!--        <stop busStop="11360306139" duration="20"/> &lt;!&ndash; Lehi Station (Bay A) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; Ashton Blvd / Triumph Blvd (EB) &ndash;&gt;-->
-        <!--        <stop busStop="-8542141482" duration="20"/> &lt;!&ndash; Ashton Blvd / 1800 W (1801 W) (EB) &ndash;&gt;-->
-        <!--        <stop busStop="8781411676" duration="20"/> &lt;!&ndash; State St / 1870 N (EB) &ndash;&gt;-->
-        <!--        <stop busStop="-4145236908" duration="20"/> &lt;!&ndash; State St / 1500 N (1545 N) (EB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 500 W (EB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 300 W (EB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 100 E (EB) &ndash;&gt;-->
-        <!--        <stop busStop="-9128351150" duration="20"/> &lt;!&ndash; State St / 600 E (632 E) (EB) &ndash;&gt;-->
-        <!--        <stop busStop="3530035887" duration="20"/> &lt;!&ndash; State St / 950 E (930 E) (EB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / Lehi Main St (EB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 900 W (EB) &ndash;&gt;-->
-        <!--        <stop busStop="-8577290573" duration="20"/> &lt;!&ndash; State St / Pacific Dr (183 N) (SB) &ndash;&gt;-->
-        <!--        <stop busStop="-8568338145" duration="20"/> &lt;!&ndash; State St / Green Spring Way (131 N) (SB) &ndash;&gt;-->
-        <!--        <stop busStop="8886449014" duration="20"/> &lt;!&ndash; State St / Columbia Village (465 W) (EB) &ndash;&gt;-->
-        <!--        <stop busStop="-8849402132" duration="20"/> &lt;!&ndash; Main St @ 300 W (EB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; Main St / 100 W (EB) &ndash;&gt;-->
-        <!--        <stop busStop="-8870127617" duration="20"/> &lt;!&ndash; Main St / American Fork Center St (1 W) (EB) &ndash;&gt;-->
-        <!--        <stop busStop="8692174519" duration="20"/> &lt;!&ndash; Main St / 100 E (EB) &ndash;&gt;-->
-        <!--        <stop busStop="959058608" duration="20"/> &lt;!&ndash; State St / 300 E (320 E) (EB) &ndash;&gt;-->
-        <!--        <stop busStop="959137212" duration="20"/> &lt;!&ndash; State St / 400 E (406 E) (EB) &ndash;&gt;-->
-        <!--        <stop busStop="959137206" duration="20"/> &lt;!&ndash; State St / 500 E (562 E) (EB) &ndash;&gt;-->
-        <!--        <stop busStop="8895646442" duration="20"/> &lt;!&ndash; State St / 700 E (720 E) (EB) &ndash;&gt;-->
-        <!--        <stop busStop="959137189" duration="20"/> &lt;!&ndash; State St / 740 E (750 E) (EB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 860 E (EB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / North County Blvd (EB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 1300 W (EB) &ndash;&gt;-->
-        <!--        <stop busStop="958983390" duration="20"/> &lt;!&ndash; Pleasant Grove Center St / State St &ndash;&gt;-->
-        <!--        <stop busStop="-8551499310" duration="20"/> &lt;!&ndash; Center St / 400 W (381 W) (EB) &ndash;&gt;-->
-        <!--        <stop busStop="-8604505796" duration="20"/> &lt;!&ndash; Center St / 200 W (195 W) (EB) &ndash;&gt;-->
-        <!--        <stop busStop="-8921201181" duration="20"/> &lt;!&ndash; Center St / 100 W (125 W) (EB) &ndash;&gt;-->
-        <!--        <stop busStop="8851724444" duration="20"/> &lt;!&ndash; Main St / 150 S (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 100 E (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 700 S (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 700 N (SB) &ndash;&gt;-->
-        <!--        <stop busStop="-8783823219" duration="20"/> &lt;!&ndash; State St / 600 N (611 N) (SB) &ndash;&gt;-->
-        <!--        <stop busStop="-8891482082" duration="20"/> &lt;!&ndash; State St / 500 N (521 N) (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 400 N (SB) &ndash;&gt;-->
-        <!--        <stop busStop="8604568108" duration="20"/> &lt;!&ndash; State St / 200 N (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / Lindon Center St (SB) &ndash;&gt;-->
-        <!--        <stop busStop="8544571433" duration="20"/> &lt;!&ndash; State St / 800 W (120 S) (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 2000 N (SB) &ndash;&gt;-->
-        <!--        <stop busStop="8927835402" duration="20"/> &lt;!&ndash; State St / 1800 N (1801 N) (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 1600 N (SB) &ndash;&gt;-->
-        <!--        <stop busStop="-4145236910" duration="20"/> &lt;!&ndash; State St / 1400 N (1369 N) (SB) &ndash;&gt;-->
-        <!--        <stop busStop="-3530106790" duration="20"/> &lt;!&ndash; State St / 1200 N (1185 N) (SB) &ndash;&gt;-->
-        <!--        <stop busStop="-9128351326" duration="20"/> &lt;!&ndash; State St / 1000 N (1001 N) (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 800 N (SB) &ndash;&gt;-->
-        <!--        <stop busStop="9105693229" duration="20"/> &lt;!&ndash; State St / 600 N (597 N) (SB) &ndash;&gt;-->
-        <!--        <stop busStop="8892914831" duration="20"/> &lt;!&ndash; State St / 500 N (497 N) (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 400 N (SB) &ndash;&gt;-->
-        <!--        <stop busStop="8665707329" duration="20"/> &lt;!&ndash; State St / 100 N (115 N) (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / Orem Center St (SB) &ndash;&gt;-->
-        <!--        <stop busStop="8869240352" duration="20"/> &lt;!&ndash; State St / 200 S (234 S) (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 400 S (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 600 S (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; 800 S / State St (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; 800 E / 800 S (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; 800 E / 1000 S (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; 800 E / 1150 S (SB) &ndash;&gt;-->
-        <!--        <stop busStop="6863882459" duration="20"/> &lt;!&ndash; University Place Station (WB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / University Pkwy (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 1500 S (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 1600 S (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 1700 S (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 1800 S (SB) &ndash;&gt;-->
-        <!--        <stop busStop="8784064050" duration="20"/> &lt;!&ndash; State St / 1950 N (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / 1850 N (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / Grandview Ln (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; State St / Riverside Ave (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; 500 W / Cougar Blvd (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; 500 W / 1050 N (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; 500 W / 940 N (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; 500 W / 800 N (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; 500 W / 500 N (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; 500 W / 200 N (SB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; 100 N / 500 W (EB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; 100 N / 300 W (EB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; 100 N / 100 W (EB) &ndash;&gt;-->
-        <!--        <stop busStop="" duration="20"/> &lt;!&ndash; University Ave / Center St (SB) &ndash;&gt;-->
-        <!--        <stop busStop="8928583686" duration="20"/> &lt;!&ndash; University Ave / 300 S (SB) &ndash;&gt;-->
-        <!--        <stop busStop="8886476371" duration="20"/> &lt;!&ndash; University Ave / 900 S (SB) &ndash;&gt;-->
-
+                <stop busStop="8783771089" duration="20"/> <!-- University Ave / 100 S (NB) -->
+                <stop busStop="8869089876" duration="20"/> <!-- 100 N / University Ave (WB) -->
+                <stop busStop="8790811499" duration="20"/> <!-- 100 N @ 300 W (WB) -->
+                <stop busStop="11493019591" duration="20"/> <!-- 500 W @ 180 N -->
+                <stop busStop="8925359570" duration="20"/> <!-- 500 W @ 358 N -->
+                <stop busStop="11493019590" duration="20"/> <!-- 500 W @ 500 N -->
+                <stop busStop="8672436476" duration="20"/> <!-- 500 W @ 800 N (NB) -->
+                <stop busStop="8929705824" duration="20"/> <!-- 500 W @ 940 N (NB) -->
+                <stop busStop="8921183207" duration="20"/> <!-- Utah Valley Hospital (NB) -->
+                <stop busStop="8849280836" duration="20"/> <!-- State St / Cougar Blvd (NB) -->
+                <stop busStop="8895635104" duration="20"/> <!-- State St / Riverside Ave (NB) -->
+                <stop busStop="8561017088" duration="20"/> <!-- State St / Grandview Ln (NB) -->
+                <stop busStop="8781411676" duration="20"/> <!-- State St / 1850 N (NB) -->
+                <stop busStop="8784064050" duration="20"/> <!-- State St / 1950 N (NB) -->
+                <stop busStop="-8551460894" duration="20"/> <!-- State St @ 1851 S (NB) -->
+                <stop busStop="9105907551" duration="20"/> <!-- State St / 1700 S (NB) -->
+                <stop busStop="-9124947647" duration="20"/> <!-- State St / 1600 S (NB) -->
+                <stop busStop="8542450930" duration="20"/> <!-- State St / University Pkwy (NB) -->
+                <stop busStop="8584734435" duration="20"/> <!-- University Place Station * (EB) -->
+                <stop busStop="-11493019589" duration="20"/> <!-- 800 E @ 1169 S (NB) -->
+                <stop busStop="-8568368617" duration="20"/> <!-- 800 E / 1000 S (NB) -->
+                <stop busStop="8568366820" duration="20"/> <!-- 800 E / 900 S (NB) -->
+                <stop busStop="-8576337203" duration="20"/> <!-- State St / 800 S (NB) -->
+                <stop busStop="-9105689127" duration="20"/> <!-- State St / 600 S (NB) -->
+                <stop busStop="-8869911047" duration="20"/> <!-- State St / 400 S (NB) -->
+                <stop busStop="-9103807968" duration="20"/> <!-- State St @ 200 S (NB) -->
+                <stop busStop="-8849261098" duration="20"/> <!-- State St @ 100 S (NB) -->
+                <stop busStop="8572449564" duration="20"/> <!-- State St @ Center St (NB) -->
+                <stop busStop="-9124305657" duration="20"/> <!-- State St @ 200 N (NB) -->
+                <stop busStop="-9124890027" duration="20"/> <!-- State St @ 400 N (NB) -->
+                <stop busStop="-9123291378" duration="20"/> <!-- State St @ 600 N (NB) -->
+                <stop busStop="8551528604" duration="20"/> <!-- State St / 800 N (NB) -->
+                <stop busStop="8572464565" duration="20"/> <!-- State St / 1100 N (NB) -->
+                <stop busStop="8849397578" duration="20"/> <!-- State St / 1200 N (NB) -->
+                <stop busStop="4145236921" duration="20"/> <!-- State St / 1400 N (NB) -->
+                <stop busStop="4145236918" duration="20"/> <!-- State St @ 1600 N (NB) -->
+                <stop busStop="-9118813792" duration="20"/> <!-- State St / 1800 N (NB) -->
+                <stop busStop="9118072814" duration="20"/> <!-- State St / 2000 N (NB) -->
+                <stop busStop="-8544571432" duration="20"/> <!-- State St @ Lindon Main St (NB) -->
+                <stop busStop="8779083155" duration="20"/> <!-- State St @ Lindon Center St (NB) -->
+                <stop busStop="8604568108" duration="20"/> <!-- State St / 200 N (NB) -->
+                <stop busStop="8990574492" duration="20"/> <!-- State St @ 300 N (NB) -->
+                <stop busStop="9138293030" duration="20"/> <!-- State St / 400 N (NB) -->
+                <stop busStop="9124266271" duration="20"/> <!-- State St / 600 N (NB) -->
+                <stop busStop="-8552050219" duration="20"/> <!-- State Rd @ 800 N (NB) -->
+                <stop busStop="-8870062512" duration="20"/> <!-- State Rd @ 790 S (NB) -->
+                <stop busStop="-8927894153" duration="20"/> <!-- State Rd @ 700 S (NB) -->
+                <stop busStop="-8877986508" duration="20"/> <!-- Main St @ 150 S (NB) -->
+                <stop busStop="8544849774" duration="20"/> <!-- Main St @ 50 S (NB) -->
+                <stop busStop="8552052405" duration="20"/> <!-- Center St @ 50 W (WB) -->
+                <stop busStop="8573408531" duration="20"/> <!-- Center St @ 200 W (WB) -->
+                <stop busStop="958983390" duration="20"/> <!-- State St @ Pleasant Grove Center St -->
+                <stop busStop="2369125890" duration="20"/> <!-- State Rd @ 1300 W (WB) -->
+                <stop busStop="-9123357236" duration="20"/> <!-- State St @ North County Blvd (WB) -->
+                <stop busStop="-3530035888" duration="20"/> <!-- State St @ 860 E (WB) -->
+                <stop busStop="-959019624" duration="20"/> <!-- State St @ 740 E (WB) -->
+                <stop busStop="-9138293064" duration="20"/> <!-- State St @ 700 E * (WB) -->
+                <stop busStop="-8886451184" duration="20"/> <!-- State St @ 500 E (WB) -->
+                <stop busStop="-8542170799" duration="20"/> <!-- State St @ 400 E (WB) -->
+                <stop busStop="-959058612" duration="20"/> <!-- State St @ 300 E (WB) -->
+                <stop busStop="-959058615" duration="20"/> <!-- Main St @ 100 E (WB) -->
+                <stop busStop="8891356952" duration="20"/> <!-- Main St @ American Fork Center St (WB) -->
+                <stop busStop="959058587" duration="20"/> <!-- Main St @ 100 W (WB) -->
+                <stop busStop="959058595" duration="20"/> <!-- Main St @ 200 W (WB) -->
+                <stop busStop="8542449501" duration="20"/> <!-- Main St @ 300 W (WB) -->
+                <stop busStop="959058572" duration="20"/> <!-- Main St @ Columbia Village (WB) -->
+                <stop busStop="9124296386" duration="20"/> <!-- State St / Green Spring Way (NB) -->
+                <stop busStop="9105787934" duration="20"/> <!-- State St / Pacific Dr (NB) -->
+                <stop busStop="8544541138" duration="20"/> <!-- State St / 900 W (WB) -->
+                <stop busStop="8895668644" duration="20"/> <!-- State St / Lehi Main St (WB) -->
+                <stop busStop="9126599778" duration="20"/> <!-- State St / 950 E (WB) -->
+                <stop busStop="8783796050" duration="20"/> <!-- State St / 700 E (WB) -->
+                <stop busStop="9124273483" duration="20"/> <!-- State St / 100 E (WB) -->
+                <stop busStop="-8542125054" duration="20"/> <!-- State St / 300 W (WB) -->
+                <stop busStop="-9103863062" duration="20"/> <!-- State St / 500 W (WB) -->
+                <stop busStop="-8561087916" duration="20"/> <!-- State St / 1500 N (WB) -->
+                <stop busStop="-8886479202" duration="20"/> <!-- State St / 1870 N (WB) -->
+                <stop busStop="8928578462" duration="20"/> <!-- Ashton Blvd / 1800 W (WB) -->
+                <stop busStop="8577326192" duration="20"/> <!-- Ashton Blvd / Triumph Blvd (NB) -->
+                <stop busStop="11360306139" duration="20"/> <!-- Lehi Station (Bay A) -->
+                <stop busStop="-8577326194" duration="20"/> <!-- Ashton Blvd / Triumph Blvd (EB) -->
+                <stop busStop="-8542141482" duration="20"/> <!-- Ashton Blvd / 1800 W (1801 W) (EB) -->
+                <stop busStop="8572501128" duration="20"/> <!-- State St / 1870 N (EB) -->
+                <stop busStop="8665635611" duration="20"/> <!-- State St / 1500 N (1545 N) (EB) -->
+                <stop busStop="9124310304" duration="20"/> <!-- State St / 500 W (EB) -->
+                <stop busStop="8886449014" duration="20"/> <!-- State St / 300 W (EB) -->
+                <stop busStop="-8672417470" duration="20"/> <!-- State St / 100 E (EB) -->
+                <stop busStop="-9128351150" duration="20"/> <!-- State St / 600 E (632 E) (EB) -->
+                <stop busStop="8849268955" duration="20"/> <!-- State St / 950 E (930 E) (EB) -->
+                <stop busStop="-8849729527" duration="20"/> <!-- State St / Lehi Main St (EB) -->
+                <stop busStop="-9103863063" duration="20"/> <!-- State St / 900 W (EB) -->
+                <stop busStop="-8577290573" duration="20"/> <!-- State St / Pacific Dr (183 N) (SB) -->
+                <stop busStop="-8568338145" duration="20"/> <!-- State St / Green Spring Way (131 N) (SB) -->
+                <stop busStop="-8783786816" duration="20"/> <!-- State St / Columbia Village (465 W) (EB) -->
+                <stop busStop="-8849402132" duration="20"/> <!-- Main St @ 300 W (EB) -->
+                <stop busStop="-9118824785" duration="20"/> <!-- Main St / 100 W (EB) -->
+                <stop busStop="-8870127617" duration="20"/> <!-- Main St / American Fork Center St (1 W) (EB) -->
+                <stop busStop="8692174519" duration="20"/> <!-- Main St / 100 E (EB) -->
+                <stop busStop="959058608" duration="20"/> <!-- State St / 300 E (320 E) (EB) -->
+                <stop busStop="959137212" duration="20"/> <!-- State St / 400 E (406 E) (EB) -->
+                <stop busStop="959137206" duration="20"/> <!-- State St / 500 E (562 E) (EB) -->
+                <stop busStop="8895646442" duration="20"/> <!-- State St / 700 E (720 E) (EB) -->
+                <stop busStop="959137189" duration="20"/> <!-- State St / 740 E (750 E) (EB) -->
+                <stop busStop="3530035887" duration="20"/> <!-- State St / 860 E (EB) -->
+                <stop busStop="-958993168" duration="20"/> <!-- State St / North County Blvd (EB) -->
+                <stop busStop="-2369125852" duration="20"/> <!-- State St / 1300 W (EB) -->
+                <stop busStop="-2369125908" duration="20"/> <!-- Pleasant Grove Center St / State St -->
+                <stop busStop="-8551499310" duration="20"/> <!-- Center St / 400 W (381 W) (EB) -->
+                <stop busStop="-8604505796" duration="20"/> <!-- Center St / 200 W (195 W) (EB) -->
+                <stop busStop="-8921201181" duration="20"/> <!-- Center St / 100 W (125 W) (EB) -->
+                <stop busStop="8851724444" duration="20"/> <!-- Main St / 150 S (SB) -->
+                <stop busStop="8542941842" duration="20"/> <!-- State St / 100 E (SB) -->
+                <stop busStop="8921178019" duration="20"/> <!-- State St / 700 S (SB) -->
+                <stop busStop="-8720263128" duration="20"/> <!-- State St / 700 N (SB) -->
+                <stop busStop="-8783823219" duration="20"/> <!-- State St / 600 N (611 N) (SB) -->
+                <stop busStop="-8891482082" duration="20"/> <!-- State St / 500 N (521 N) (SB) -->
+                <stop busStop="-8604560600" duration="20"/> <!-- State St / 400 N (SB) -->
+                <stop busStop="-8855654505" duration="20"/> <!-- State St / 200 N (SB) -->
+                <stop busStop="8925217680" duration="20"/> <!-- State St / Lindon Center St (SB) -->
+                <stop busStop="8544571433" duration="20"/> <!-- State St / 800 W (120 S) (SB) -->
+                <stop busStop="-8877811877" duration="20"/> <!-- State St / 2000 N (SB) -->
+                <stop busStop="8927835402" duration="20"/> <!-- State St / 1800 N (1801 N) (SB) -->
+                <stop busStop="-4145236908" duration="20"/> <!-- State St / 1600 N (SB) -->
+                <stop busStop="-4145236910" duration="20"/> <!-- State St / 1400 N (1369 N) (SB) -->
+                <stop busStop="-3530106790" duration="20"/> <!-- State St / 1200 N (1185 N) (SB) -->
+                <stop busStop="-9128351326" duration="20"/> <!-- State St / 1000 N (1001 N) (SB) -->
+                <stop busStop="8849219667" duration="20"/> <!-- State St / 800 N (SB) -->
+                <stop busStop="9105693229" duration="20"/> <!-- State St / 600 N (597 N) (SB) -->
+                <stop busStop="8892914831" duration="20"/> <!-- State St / 500 N (497 N) (SB) -->
+                <stop busStop="8542231801" duration="20"/> <!-- State St / 400 N (SB) -->
+                <stop busStop="8665707329" duration="20"/> <!-- State St / 100 N (115 N) (SB) -->
+                <stop busStop="8928506214" duration="20"/> <!-- State St / Orem Center St (SB) -->
+                <stop busStop="8869240352" duration="20"/> <!-- State St / 200 S (234 S) (SB) -->
+                <stop busStop="9126620960" duration="20"/> <!-- State St / 400 S (SB) -->
+                <stop busStop="8572511581" duration="20"/> <!-- State St / 600 S (SB) -->
+                <stop busStop="8663676819" duration="20"/> <!-- 800 S / State St (SB) -->
+                <stop busStop="9105741116" duration="20"/> <!-- 800 E / 800 S (SB) -->
+                <stop busStop="8552058928" duration="20"/> <!-- 800 E / 1000 S (SB) -->
+                <stop busStop="8544530509" duration="20"/> <!-- 800 E / 1150 S (SB) -->
+                <stop busStop="6863882459" duration="20"/> <!-- University Place Station (WB) -->
+                <stop busStop="9138289958" duration="20"/> <!-- State St / University Pkwy (SB) -->
+                <stop busStop="-8544785766" duration="20"/> <!-- State St / 1500 S (SB) -->
+                <stop busStop="-8576351956" duration="20"/> <!-- State St / 1600 S (SB) -->
+                <stop busStop="8921196484" duration="20"/> <!-- State St / 1700 S (SB) -->
+                <stop busStop="8542155914" duration="20"/> <!-- State St / 1800 S (SB) -->
+                <stop busStop="-8927895814" duration="20"/> <!-- State St / 1950 N (SB) -->
+                <stop busStop="-9118838679" duration="20"/> <!-- State St / 1850 N (SB) -->
+                <stop busStop="-8869926783" duration="20"/> <!-- State St / Grandview Ln (SB) -->
+                <stop busStop="-9126848710" duration="20"/> <!-- State St / Riverside Ave (SB) -->
+                <stop busStop="8568343065" duration="20"/> <!-- 500 W / Cougar Blvd (SB) -->
+                <stop busStop="-9124916759" duration="20"/> <!-- 500 W / 1050 N (SB) -->
+                <stop busStop="-8779102844" duration="20"/> <!-- 500 W / 940 N (SB) -->
+                <stop busStop="-8873332266" duration="20"/> <!-- 500 W / 800 N (SB) -->
+                <stop busStop="-8783823220" duration="20"/> <!-- 500 W / 500 N (SB) -->
+                <stop busStop="8564882903" duration="20"/> <!-- 500 W / 200 N (SB) -->
+                <stop busStop="-9140214632" duration="20"/> <!-- 100 N / 500 W (EB) -->
+                <stop busStop="-9138258562" duration="20"/> <!-- 100 N / 300 W (EB) -->
+                <stop busStop="-8542138901" duration="20"/> <!-- 100 N / 100 W (EB) -->
+                <stop busStop="8663633742" duration="20"/> <!-- University Ave / Center St (SB) -->
+                <stop busStop="8928583686" duration="20"/> <!-- University Ave / 300 S (SB) -->
+                <stop busStop="8886476371" duration="20"/> <!-- University Ave / 900 S (SB) -->
     </route>
     <vehicle id="pt_bus_850:0" type="pt_bus" route="pt_bus_850:0" depart="0" line="850:0">
         <param key="completeness" value="1"/>
