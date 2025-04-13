@@ -18,10 +18,12 @@ const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v11',
     center: [-111.692020, 40.296440], // Initialize with a central point
-    zoom: 9
+    zoom: 11
 });
 
 const markers = {};
+let vehicleScale = 1300;
+let mapZoom = Math.pow(2,11);
 
 const socket = io();
 socket.on('update', (vehicles) => {
@@ -33,33 +35,35 @@ socket.on('update', (vehicles) => {
             markers[vehicle.id] = new mapboxgl.Marker(el)
                 .setLngLat([vehicle.x, vehicle.y])
                 .addTo(map);
+                markers[vehicle.id].getElement().querySelector('img').dataset.scale=mapZoom/vehicleScale;
         } else {
             markers[vehicle.id].setLngLat([vehicle.x, vehicle.y]);
         }
         // Rotate the icon to match the vehicle's orientation
         const img = markers[vehicle.id].getElement().querySelector('img');
-        img.style.transform = `rotate(${vehicle.angle}deg)`;
+        img.dataset.rotation = vehicle.angle;
+        img.style.transform = `scale(${img.dataset.scale}) rotate(${vehicle.angle}deg)`;
     });
 });
 function updateMarkerSize() {
-    console.log("setting markers");
-    const zoom = map.getZoom();
-    const baseWidth = 8;
-    const baseHeight = 18;
-    const scaleFactor = zoom / 9;
-    const newWidth = baseWidth * scaleFactor;
-    const newHeight = baseHeight * scaleFactor;
-
+    const scaleFactor = mapZoom/vehicleScale;
     Object.values(markers).forEach(marker => {
         const img = marker.getElement().querySelector('img');
-        img.style.width = `${newWidth}px`;
-        img.style.height = `${newHeight}px`;
+        img.dataset.scale=scaleFactor;
+        img.style.transform= `scale(${scaleFactor}) rotate(${img.dataset.rotation || 0}deg)`;
     });
 }
 map.on('load', () => {
+    mapZoom=Math.pow(2,map.getZoom());
     updateMarkerSize();
 });
 map.on('zoom', () => {
+    mapZoom=Math.pow(2,map.getZoom());
     updateMarkerSize();
 });
+function changedScale(){
+    vehicleScale=12300-parseFloat(document.getElementById("scaling").value);
+    updateMarkerSize()
+}
+document.getElementById("scaling").addEventListener("input", changedScale);
 }
