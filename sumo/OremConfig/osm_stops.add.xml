@@ -259,7 +259,9 @@
     <busStop id="-8873772574" name="400 E @ 175 S" lane="-10234072#2_0" startPos="17.43" endPos="32.43" friendlyPos="true"/>
     <busStop id="-8873774863" name="Vestry Rd @ 1035 E" lane="-40722823#11_0" startPos="20.98" endPos="35.98" friendlyPos="true"/>
     <busStop id="-8873782804" name="1430 S / Sandhill Rd (EB)" lane="-10236886#6_0" startPos="36.48" endPos="51.48" friendlyPos="true"/>
-    <busStop id="-8873790336" name="Triumph Blvd / Ridge Dr (NB)" lane="-548611164#6_0" startPos="19.18" endPos="34.18" friendlyPos="true"/>
+    <busStop id="-8873790336" name="Triumph Blvd / 3400 N (NB)" lane="-548611164#6_0" startPos="19.18" endPos="34.18" friendlyPos="true"/>
+    <busStop id="-8873790337" name="Triumph Blvd / Ridge Dr (NB)" lane="-548611164#7_0" startPos="25.00" endPos="38.00" friendlyPos="true"/>
+    <busStop id="-8873790338" name="Adobe" lane="228440280#0_0" startPos="108.00" endPos="123.00" friendlyPos="true"/>
     <busStop id="-8877136398" name="State Hwy @ 1150 N" lane="-797917000#7_0" startPos="17.51" endPos="32.51" friendlyPos="true"/>
     <busStop id="-8877427182" name="Main St @ 1115 N" lane="-684673718#33_0" startPos="61.33" endPos="76.33" friendlyPos="true"/>
     <busStop id="-8877811877" name="State St @ 1975 N" lane="-119006832#3_0" startPos="2.92" endPos="17.92" friendlyPos="true"/>
