@@ -1,10 +1,25 @@
 import hashlib
 import secrets
 import asyncpg
+import os
 from quart import jsonify, request, session, Blueprint
+from dotenv import load_dotenv
+load_dotenv()
 
 async def register_user_routes(app):
     user_routes = Blueprint('user_routes', __name__)
+
+    @user_routes.route("/api/mapbox-token", methods=["GET", "POST"])
+    async def get_mapbox_token():
+        try:
+            mapbox_token = os.getenv("MAPBOX_TOKEN")
+            if mapbox_token:
+                return jsonify({"token": mapbox_token}), 200
+            else:
+                return jsonify({"error": "Token inaccessible"}), 404
+        except Exception as e:
+            print(f"An error occured: {str(e)}")
+            return jsonify({"error": f"An error occured here: {str(e)}"}, 500)
 
     @user_routes.route("/api/createaccount", methods=["POST"])
     async def create_account():

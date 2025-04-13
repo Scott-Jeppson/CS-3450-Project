@@ -44,5 +44,6 @@ services:
     volumes:
       - shared-output:/shared/output
       - ./sumo/templates:/sumo/templates
+      - ./sumo/static:/sumo/static
     depends_on:
       - backend

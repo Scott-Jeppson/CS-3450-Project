@@ -9,7 +9,7 @@ import os
 load_dotenv()
 MAPBOX_TOKEN = os.getenv("MAPBOX_TOKEN")
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 app.config['SECRET_KEY'] = 'A34F6g7JK0c5N'
 socketio = SocketIO(app, async_mode='threading', cors_allowed_origins="*")
 

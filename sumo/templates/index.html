@@ -7,6 +7,7 @@
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.min.js"></script>
+    <script src="/static/simulation.js" defer></script>
 
     <!-- <link rel="stylesheet" href="https://www.onemap.gov.sg/web-assets/libs/leaflet/leaflet.css" />
     <script src="https://www.onemap.gov.sg/web-assets/libs/leaflet/onemap-leaflet.js"></script> -->
@@ -22,38 +23,7 @@
     </style>
 </head>
 <body>
+    <div id="loading">Loadin456g map...</div>
     <div id="map"></div>
-    <script>
-        mapboxgl.accessToken = '{{ mapbox_token }}';
-        const map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/mapbox/streets-v11',
-            center: [-111.692020, 40.296440], // Initialize with a central point
-            zoom: 9
-        });
-
-        const markers = {};
-
-        const socket = io();
-        socket.on('update', (vehicles) => {
-            vehicles.forEach(vehicle => {
-                if (!markers[vehicle.id]) {
-                    const el = document.createElement('div');
-                    el.className = 'car-marker';
-                    el.innerHTML = `<img src="/static/bus-icon.png" alt="Car Icon">`;
-                    markers[vehicle.id] = new mapboxgl.Marker(el)
-                        .setLngLat([vehicle.x, vehicle.y])
-                        .addTo(map);
-                } else {
-                    markers[vehicle.id].setLngLat([vehicle.x, vehicle.y]);
-                }
-                // Rotate the icon to match the vehicle's orientation
-                const img = markers[vehicle.id].getElement().querySelector('img');
-                img.style.transform = `rotate(${vehicle.angle}deg)`;
-            });
-        });
-    </script>
-
-
 </body>
 </html>
