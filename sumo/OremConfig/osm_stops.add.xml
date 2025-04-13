@@ -203,7 +203,7 @@
     <busStop id="-8780205855" name="1600 N @ 139 E" lane="-10235902#6_0" startPos="5.00" endPos="21.00" friendlyPos="true"/>
     <busStop id="-8783782792" name="Timpanogos Pkwy @ 680 E" lane="-231247767_0" startPos="52.19" endPos="67.19" friendlyPos="true" lines="862"/>
     <busStop id="-8783786816" name="Main St @ 451 W" lane="-1353595025_0" startPos="12.03" endPos="27.03" friendlyPos="true"/>
-    <busStop id="-8783823219" name="State St @ 611 N" lane="-1103526528#3_0" startPos="0.00" endPos="4.30" friendlyPos="true"/>
+    <busStop id="-8783823219" name="State St @ 611 N" lane="-1103526525#0_0" startPos="23.00" endPos="35.00" friendlyPos="true"/>
     <busStop id="-8784145845" name="1430 S / 550 W (EB)" lane="-10236886#4_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="-8787362298" name="100 N @ 890 E" lane="-933030953#6_0" startPos="6.86" endPos="21.86" friendlyPos="true"/>
     <busStop id="-8787615473" name="200 W @ 98 S" lane="-10241290#5_0" startPos="13.31" endPos="28.31" friendlyPos="true"/>
