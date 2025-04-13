@@ -268,7 +268,7 @@
     <busStop id="-8877986508" name="Main St @ 150 S (NB)" lane="-684661233#0_0" startPos="0.00" endPos="15.00" friendlyPos="true" lines="850"/>
     <busStop id="-8886445007" name="Mill Rd @ 773 E" lane="-753605890#2_0" startPos="35.38" endPos="50.38" friendlyPos="true"/>
     <busStop id="-8886451184" name="State St @ 500 E (WB)" lane="-231764115#23_0" startPos="0.00" endPos="9.96" friendlyPos="true" lines="850"/>
-    <busStop id="-8886452609" name="University Ave / 900 S (NB)" lane="-749991160_0" startPos="0.00" endPos="0.20" friendlyPos="true" lines="850">
+    <busStop id="-8886452609" name="University Ave / 900 S (NB)" lane="-749991159_0" startPos="0.00" endPos="9.00" friendlyPos="true" lines="850">
         <access lane="-749991158#0_0" pos="0.00" length="15.34" friendlyPos="1"/>
         <access lane="-749991158#1_0" pos="92.30" length="15.79" friendlyPos="1"/>
         <access lane="721380520#1_0" pos="3.63" length="0.11" friendlyPos="1"/>
@@ -939,7 +939,7 @@
     <busStop id="9103830298" name="300 S / 400 E (WB)" lane="10246251#1_0" startPos="1.23" endPos="16.23" friendlyPos="true"/>
     <busStop id="9103852060" name="Main St / 1400 S (NB)" lane="229097623#7_0" startPos="0.00" endPos="13.29" friendlyPos="true" lines="831"/>
     <busStop id="9103862771" name="900 E / 450 N (NB)" lane="864013086#2_0" startPos="0.00" endPos="6.41" friendlyPos="true"/>
-    <busStop id="9103874877" name="University Ave / 450 S (NB)" lane="1001934332#0_0" startPos="0.00" endPos="0.20" friendlyPos="true" lines="850">
+    <busStop id="9103874877" name="University Ave / 450 S (NB)" lane="1001934332#1_0" startPos="0.00" endPos="12.00" friendlyPos="true" lines="850">
         <access lane="-856427364#0_0" pos="0.00" length="14.48" friendlyPos="1"/>
         <access lane="-856427364#1_0" pos="34.87" length="15.90" friendlyPos="1"/>
         <access lane="721381112#7_0" pos="3.34" length="2.82" friendlyPos="1"/>
