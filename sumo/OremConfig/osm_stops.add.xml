@@ -337,6 +337,7 @@
     <busStop id="-9103830595" name="800 S @ 705 W" lane="-105736330#12_0" startPos="19.36" endPos="34.36" friendlyPos="true"/>
     <busStop id="-9103853850" name="Main St @ 865 N" lane="-684673718#25_0" startPos="9.17" endPos="24.17" friendlyPos="true"/>
     <busStop id="-9103863062" name="State St / 500 W (WB)" lane="-172743649#34_0" startPos="10.72" endPos="25.72" friendlyPos="true" lines="850"/>
+    <busStop id="-9103863063" name="State St / 900 W (EB)" lane="-814302018#1_0" startPos="45.00" endPos="58.00" friendlyPos="true" lines="850"/>
     <busStop id="-9103871477" name="Express Way Lane @ 1212 E" lane="-10224670#4_0" startPos="148.96" endPos="163.96" friendlyPos="true"/>
     <busStop id="-9103876970" name="University Ave @ 3671 N" lane="-790916853#0_0" startPos="18.74" endPos="33.74" friendlyPos="true">
         <access lane="-10232859#1_0" pos="37.20" length="51.17" friendlyPos="1"/>
