@@ -159,7 +159,7 @@
     <busStop id="-8577290573" name="State St @ 183 N" lane="-814302009#5_0" startPos="23.55" endPos="38.55" friendlyPos="true"/>
     <busStop id="-8577295330" name="800 E @ 558 N" lane="-1035171895#3_0" startPos="21.59" endPos="36.59" friendlyPos="true"/>
     <busStop id="-8577305710" name="Pioneer Road / Fort Street (WB)" lane="-1225225153_0" startPos="7.66" endPos="22.66" friendlyPos="true"/>
-    <busStop id="-8577305880" name="1600 N @ 567 E" lane="-10243474#0_0" startPos="0.00" endPos="0.20" friendlyPos="true"/>
+    <busStop id="-8577305880" name="1600 N @ 567 E" lane="-10235902#18_0" startPos="10.00" endPos="25.00" friendlyPos="true"/>
     <busStop id="-8577326194" name="Ashton Blvd @ 2302 W" lane="-229735423#0_0" startPos="8.54" endPos="23.54" friendlyPos="true"/>
     <busStop id="-8584726315" name="3600 W @ 12907 S" lane="-1263892922_0" startPos="32.16" endPos="47.16" friendlyPos="true"/>
     <busStop id="-8584736832" name="Main St @ 1456 N" lane="-1373544366#2_0" startPos="2.29" endPos="17.29" friendlyPos="true"/>
@@ -200,7 +200,7 @@
     <busStop id="-8779090589" name="900 E / 150 S (NB)" lane="-10238463#3_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="-8779102844" name="500 W @ 931 N" lane="-231243105#18_0" startPos="10.49" endPos="25.49" friendlyPos="true"/>
     <busStop id="-8779152327" name="1200 W @ 50 S" lane="-28474650#14_0" startPos="42.14" endPos="57.14" friendlyPos="true"/>
-    <busStop id="-8780205855" name="1600 N @ 139 E" lane="-10235902#7_0" startPos="0.00" endPos="0.20" friendlyPos="true"/>
+    <busStop id="-8780205855" name="1600 N @ 139 E" lane="-10235902#6_0" startPos="5.00" endPos="21.00" friendlyPos="true"/>
     <busStop id="-8783782792" name="Timpanogos Pkwy @ 680 E" lane="-231247767_0" startPos="52.19" endPos="67.19" friendlyPos="true" lines="862"/>
     <busStop id="-8783786816" name="Main St @ 451 W" lane="-1353595025_0" startPos="12.03" endPos="27.03" friendlyPos="true"/>
     <busStop id="-8783823219" name="State St @ 611 N" lane="-1103526528#3_0" startPos="0.00" endPos="4.30" friendlyPos="true"/>
@@ -583,7 +583,9 @@
     <busStop id="8544532980" name="Geneva Road @ 499 S" lane="231364515#6_0" startPos="28.80" endPos="43.80" friendlyPos="true"/>
     <busStop id="8544534499" name="300 W @ 5132 N" lane="10236359#4_0" startPos="0.00" endPos="3.62" friendlyPos="true"/>
     <busStop id="8544541138" name="State St / 900 W (WB)" lane="1188525201#1_0" startPos="22.26" endPos="37.26" friendlyPos="true" lines="850"/>
-    <busStop id="8544567239" name="Research Way @ 1224 N" lane="10231865#1_0" startPos="18.95" endPos="33.95" friendlyPos="true"/>
+    <busStop id="8544567239" name="Research Way @ 1224 N" lane="10231865#1_0" startPos="12.00" endPos="28.00" friendlyPos="true"/>
+    <busStop id="8544567240" name="1200 N @ 762 E" lane="231247777#5_0" startPos="30.00" endPos="45.00" friendlyPos="true" />
+    <busStop id="8544567241" name="1200 N @ 761 E" lane="-231247777#5_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="8544571433" name="State St @ 120 S" lane="119006869#6_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="8544586280" name="400 E @ 212 S" lane="10234072#3_0" startPos="16.21" endPos="31.21" friendlyPos="true"/>
     <busStop id="8544586874" name="Freedom Blvd @ 1555 N" lane="684673708#13_0" startPos="0.00" endPos="11.63" friendlyPos="true"/>
@@ -600,6 +602,7 @@
     <busStop id="8544798609" name="700 N / 200 E (WB)" lane="742968416#1_0" startPos="10.43" endPos="25.43" friendlyPos="true" lines="831"/>
     <busStop id="8544806073" name="Main St / 1600 S (NB)" lane="229097623#1_0" startPos="16.20" endPos="31.20" friendlyPos="true"/>
     <busStop id="8544849774" name="Main St @ 50 S (NB)" lane="10248479#1_0" startPos="58.94" endPos="73.94" friendlyPos="true" lines="850"/>
+    <busStop id="8544849776" name="State St @ 1150 S" lane="231243098#0_0" startPos="6.00" endPos="22.00" friendlyPos="true"/>
     <busStop id="8546974522" name="State St @ 1970 S" lane="1373543024#0_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="8547249868" name="100 E @ 2148 N" lane="756120683#3_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="8547257037" name="Pioneer Road / Fort Street (EB)" lane="1225225154_0" startPos="39.82" endPos="54.82" friendlyPos="true"/>
