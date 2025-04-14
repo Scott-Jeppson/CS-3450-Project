@@ -22,8 +22,8 @@ function Navbar({ isLoggedIn, setIsLoggedIn }) {
         <nav id={isLoggedIn ? "navbar-logged-in" : "navbar"}>
             <div id="nav-left">
             <Link to={isLoggedIn ? "/dashboard" : "/"} id="nav-brand" aria-label={isLoggedIn ? "StreamLine Dashboard" : "StreamLine Home"}>
-                <img id="logo" alt="" src={isLoggedIn ? "src/assets/Logo-White-Text-Purple-Background.svg" :
-                    "src/assets/Logo-Light-Purple-Circle.svg"}
+                <img id="logo" alt="" src={isLoggedIn ? "/Logo-White-Text-Purple-Background.svg" :
+                    "/Logo-Light-Purple-Circle.svg"}
                 />
                 <h2 id="nav-name">StreamLine</h2>
             </Link>
