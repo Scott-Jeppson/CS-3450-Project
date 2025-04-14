@@ -17,10 +17,10 @@ from routes.user_routes import register_user_routes
 load_dotenv()
 aws_access_key = os.getenv("AWS_ACCESS_KEY_ID")
 aws_secret_key = os.getenv("AWS_SECRET_ACCESS_KEY")
-secret_name=os.getenv("DB_SECRET_NAME")
-region_name=os.getenv("AWS_REGION")
+secret_name = os.getenv("DB_SECRET_NAME")
+region_name = os.getenv("AWS_REGION")
 
-session = boto3.session.Session()
+session = boto3.Session()
 
 client = session.client(
     service_name='secretsmanager',
