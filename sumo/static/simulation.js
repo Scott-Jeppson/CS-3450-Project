@@ -31,12 +31,14 @@ socket.on('update', (vehicles) => {
         if (!markers[vehicle.id]) {
             const el = document.createElement('div');
             el.className = 'car-marker';
-            el.innerHTML = `<img src="/static/bus-icon.png" alt="Car Icon">`;
+            el.innerHTML = `<div class="vehicle-label" id="label-${vehicle.id}" style="display: ${document.getElementById("labels-visible").checked? 'block' : 'none'}">${vehicle.id}</div>
+                            <img src="/static/bus-icon.png" alt="Car Icon">`;
             markers[vehicle.id] = new mapboxgl.Marker(el)
                 .setLngLat([vehicle.x, vehicle.y])
                 .addTo(map);
                 markers[vehicle.id].getElement().querySelector('img').dataset.scale=mapZoom/vehicleScale;
-        } else {
+                
+            } else {
             markers[vehicle.id].setLngLat([vehicle.x, vehicle.y]);
         }
         // Rotate the icon to match the vehicle's orientation
@@ -66,4 +68,10 @@ function changedScale(){
     updateMarkerSize()
 }
 document.getElementById("scaling").addEventListener("input", changedScale);
+document.getElementById("labels-visible").addEventListener("change", function() {
+    const showing = this.checked;
+    document.querySelectorAll('.vehicle-label').forEach(label => {
+        label.style.display = showing ? 'block' : 'none';
+    });
+});
 }
