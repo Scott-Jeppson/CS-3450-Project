@@ -24,6 +24,31 @@ const map = new mapboxgl.Map({
 const markers = {};
 let vehicleScale = 1300;
 let mapZoom = Math.pow(2,11);
+let trackingId = null;
+let tracking = false;
+
+document.getElementById("cancel-follow").addEventListener("click", function() {
+    tracking = false;
+    trackingId = null;
+    document.getElementById("tracking-info").textContent = '';
+    const statusBar = document.getElementById("tracking-status");
+    statusBar.classList.remove('expanded');
+    statusBar.classList.add('collapsed');
+    map.dragPan.enable();
+});
+function startTracking(vehicle){
+    trackingId=vehicle.id;
+    tracking=true;
+    document.getElementById("tracking-info").textContent = vehicle.id;
+    const statusBar = document.getElementById("tracking-status");
+    statusBar.classList.remove('collapsed');
+    statusBar.classList.add('expanded');
+    map.dragPan.disable();
+    map.easeTo({
+        center: [vehicle.x, vehicle.y],
+        duration: 100
+    });
+}
 
 const socket = io();
 socket.on('update', (vehicles) => {
@@ -31,15 +56,17 @@ socket.on('update', (vehicles) => {
         if (!markers[vehicle.id]) {
             const el = document.createElement('div');
             el.className = 'car-marker';
-            el.innerHTML = `<div class="vehicle-label" id="label-${vehicle.id}" style="display: ${document.getElementById("labels-visible").checked? 'block' : 'none'}">${vehicle.id}</div>
+            el.innerHTML = `<div class="vehicle-label" style="display: ${document.getElementById("labels-visible").checked? 'block' : 'none'}">${vehicle.id}</div>
                             <img src="/static/bus-icon.png" alt="Car Icon">`;
             markers[vehicle.id] = new mapboxgl.Marker(el)
                 .setLngLat([vehicle.x, vehicle.y])
                 .addTo(map);
-                markers[vehicle.id].getElement().querySelector('img').dataset.scale=mapZoom/vehicleScale;
-                
+                const img = markers[vehicle.id].getElement().querySelector('img');
+                img.dataset.scale=mapZoom/vehicleScale;
+                img.addEventListener("click", ()=> startTracking(vehicle));
             } else {
             markers[vehicle.id].setLngLat([vehicle.x, vehicle.y]);
+
         }
         // Rotate the icon to match the vehicle's orientation
         const img = markers[vehicle.id].getElement().querySelector('img');
@@ -74,4 +101,14 @@ document.getElementById("labels-visible").addEventListener("change", function() 
         label.style.display = showing ? 'block' : 'none';
     });
 });
+map.dragPan.enable();
+setInterval(() => {
+    if (tracking && markers[trackingId]){
+        const lngLat = markers[trackingId].getLngLat();
+        map.easeTo({
+            center: [lngLat.lng, lngLat.lat],
+            duration: 200
+        });
+    }
+}, 200);
 }

@@ -14,8 +14,11 @@
     <link rel="stylesheet" href="/static/simulation.css">
 </head>
 <body>
-    <div id="loading">Loading map...</div>
     <div id="map"></div>
+    <div id="loading">Loading map...</div>
+    <div id="tracking-status" class="collapsed">
+        <span>Following Bus:  <span id="tracking-info"></span>  <button id="cancel-follow">Stop Following</button></span>
+    </div>
     <div id="sliderBox">
         <label>Vehicle Size:
             <input type="range" min="300" max="12000" value="10000" id="scaling">
