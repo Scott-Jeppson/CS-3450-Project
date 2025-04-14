@@ -15,10 +15,19 @@
         body { margin: 0; padding: 0; }
         #map { position: absolute; top: 0; bottom: 0; width: 100%; height: 100%; }
         .car-marker img {
-            width: 8px; /* Adjust vehicle size as needed */
-            height: 18px;
+            width: 6px;
+            height: 12px;
+            opacity: 0.3; /* Slightly faded */
             transform-origin: center;
+            z-index: 1;
         }
+        .bus-marker img {
+            width: 16px;
+            height: 28px;
+            transform-origin: center;
+            z-index: 10;
+        }
+
     </style>
 </head>
 <body>
@@ -28,31 +37,48 @@
         const map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/streets-v11',
-            center: [-111.692020, 40.296440], // Initialize with a central point
+            center: [-111.692020, 40.296440],
             zoom: 9
         });
-
+    
         const markers = {};
-
         const socket = io();
+    
         socket.on('update', (vehicles) => {
             vehicles.forEach(vehicle => {
                 if (!markers[vehicle.id]) {
                     const el = document.createElement('div');
-                    el.className = 'car-marker';
-                    el.innerHTML = `<img src="/static/bus-icon.png" alt="Car Icon">`;
+                    el.className = vehicle.type && vehicle.type.includes('bus') ? 'bus-marker' : 'car-marker';    
+                    const iconPath = vehicle.type && vehicle.type.includes('bus')
+                        ? '/static/bus-icon.png'
+                        : '/static/car-icon.PNG';
+    
+                    el.innerHTML = `<img src="${iconPath}" alt="Vehicle Icon" />`;
+    
                     markers[vehicle.id] = new mapboxgl.Marker(el)
                         .setLngLat([vehicle.x, vehicle.y])
                         .addTo(map);
                 } else {
                     markers[vehicle.id].setLngLat([vehicle.x, vehicle.y]);
                 }
-                // Rotate the icon to match the vehicle's orientation
+    
                 const img = markers[vehicle.id].getElement().querySelector('img');
                 img.style.transform = `rotate(${vehicle.angle}deg)`;
             });
         });
+    
+        function clearAllMarkers() {
+            for (let id in markers) {
+                markers[id].remove();
+            }
+            Object.keys(markers).forEach(id => delete markers[id]);
+        }
+    
+        socket.on('simulationEnded', () => {
+            clearAllMarkers();
+        });
     </script>
+    
 
 
 </body>

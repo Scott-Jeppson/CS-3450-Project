@@ -1,11 +1,20 @@
-.stats-box {
-    height: 100%;
-    width: 100%;
-    padding: 10px;
+.statistics-section {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    overflow-y: auto;
+    gap: 2rem;
+}
+
+.overall-stats-card, .bus-stats-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.overall-stats-card h2, .bus-stats-card h2 {
+    margin-top: 0;
+    font-size: 1.3rem;
+    color: var(--dark-purple);
 }
 
 .stats-item-wrapper {
@@ -21,14 +30,11 @@
     align-items: center;
     cursor: pointer;
     transition: background-color 0.2s ease;
+    margin: 10px;
 }
 
 .stats-item:hover {
     background-color: var(--light-purple);
-}
-
-.stats-item b {
-    font-size: 1rem;
 }
 
 .bus-details {
@@ -50,4 +56,11 @@
 .material-symbols-outlined {
     font-size: 22px;
     color: var(--dark-purple);
+}
+
+.no-stats-message {
+    font-size: 1rem;
+    color: #555;
+    padding: 1rem;
+    text-align: center;
 }

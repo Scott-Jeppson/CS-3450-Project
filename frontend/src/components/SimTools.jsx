@@ -1,3 +1,4 @@
+// SimTools.jsx
 import React, { useState, useEffect, useRef } from 'react';
 import { io } from 'socket.io-client';
 import { getTripStats } from '../api.js';
@@ -5,28 +6,23 @@ import './simtools.css';
 
 function SimTools({ setStats }) {
     const [simulationStatus, setSimulationStatus] = useState('Stopped');
-    const [trafficLevel, setTrafficLevel] = useState('medium');
+    const [trafficLevel, setTrafficLevel] = useState('none');
     const socketRef = useRef(null);
 
     useEffect(() => {
         socketRef.current = io("http://localhost:5000");
 
-        socketRef.current.on("simulationStarted", () => {
-            setSimulationStatus("Playing");
-        });
-
+        socketRef.current.on("simulationStarted", () => setSimulationStatus("Playing"));
         socketRef.current.on("simulationEnded", async () => {
             setSimulationStatus("Stopped");
-
             try {
                 const data = await getTripStats();
                 console.log("Fetched trip stats after sim ended:", data);
-                setStats(data); // send stats to parent component
+                setStats(data);
             } catch (err) {
                 console.error("Failed to fetch trip stats:", err);
             }
         });
-
         socketRef.current.on("paused", () => setSimulationStatus("Paused"));
         socketRef.current.on("resumed", () => setSimulationStatus("Playing"));
 
@@ -49,8 +45,9 @@ function SimTools({ setStats }) {
 
     const handleReset = () => {
         if (socketRef.current) {
-            socketRef.current.emit("reset");
-            setSimulationStatus("Loading...");
+            socketRef.current.emit("stop");
+            setSimulationStatus("Stopped");
+            setStats(null);
         }
     };
 
@@ -65,7 +62,7 @@ function SimTools({ setStats }) {
     const renderPlayPauseIcon = () => {
         if (simulationStatus === "Playing") return "pause";
         if (simulationStatus === "Paused" || simulationStatus === "Stopped") return "play_arrow";
-        return "hourglass_empty"; // Loading
+        return "hourglass_empty";
     };
 
     return (
@@ -78,22 +75,24 @@ function SimTools({ setStats }) {
                     onChange={handleTrafficLevelChange}
                     value={trafficLevel}
                 >
+                    <option value="none">None</option>
                     <option value="low">Low</option>
                     <option value="medium">Medium</option>
                     <option value="high">High</option>
                 </select>
+                {trafficLevel !== "none" && (
+        <div className="traffic-tip">
+            Higher traffic levels will increase simulation loading times.
+        </div>
+    )}
             </div>
 
-            <div className="control-buttons right">
+            <div className="control-buttons">
                 <button className="control-btn" onClick={handleReset} title="Reset simulation">
                     <span className="material-symbols-outlined">refresh</span>
                 </button>
 
-                <button
-                    className="control-btn"
-                    onClick={handleTogglePlayPause}
-                    title={simulationStatus === "Playing" ? "Pause" : "Play"}
-                >
+                <button className="control-btn" onClick={handleTogglePlayPause} title={simulationStatus === "Playing" ? "Pause" : "Play"}>
                     <span className="material-symbols-outlined">{renderPlayPauseIcon()}</span>
                 </button>
             </div>
