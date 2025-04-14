@@ -26,7 +26,7 @@ const CreateAccount = ({ isLoggedIn, setIsLoggedIn }) => {
                 if (response.ok && result.logged_in) {
                     setIsLoggedIn(true);
                     navigate('/dashboard');
-                } else{
+                } else {
                     setIsLoggedIn(false);
                 }
             } catch (error) {
