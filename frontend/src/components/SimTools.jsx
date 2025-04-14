@@ -11,7 +11,10 @@ function SimTools({ setStats }) {
 
     useEffect(() => {
         socketRef.current = io("http://localhost:5000");
-
+    
+        // Immediately sync traffic level
+        socketRef.current.emit("setTrafficLevel", { level: trafficLevel });
+    
         socketRef.current.on("simulationStarted", () => setSimulationStatus("Playing"));
         socketRef.current.on("simulationEnded", async () => {
             setSimulationStatus("Stopped");
@@ -25,11 +28,12 @@ function SimTools({ setStats }) {
         });
         socketRef.current.on("paused", () => setSimulationStatus("Paused"));
         socketRef.current.on("resumed", () => setSimulationStatus("Playing"));
-
+    
         return () => {
             socketRef.current.disconnect();
         };
     }, [setStats]);
+    
 
     const handleTogglePlayPause = () => {
         if (!socketRef.current) return;

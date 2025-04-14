@@ -137,7 +137,7 @@ def update_cfg_with_routes(cfg_file, route_files):
 def sumo_simulation():
     global traffic_level
     if (traffic_level != "none"):
-
+        print("Generating background traffic")
         # Determine traffic generation rate
         rate_map = {
             "low": {"binomial": 1, "period": 5},
@@ -175,7 +175,7 @@ def sumo_simulation():
             vehicles.append({'id': vehicle_id, 'x': gps_position[0], 'y': gps_position[1], 'angle': angle, 'type': vehicle_type})
 
         socketio.emit('update', vehicles)
-        time.sleep(0.0001)
+        time.sleep(0.00001)
 
     traci.close()
     socketio.emit("simulationEnded")
