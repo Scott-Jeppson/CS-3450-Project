@@ -71,33 +71,40 @@ app.config.update(
 
 async def create_db_pool():
     retries = 3
+
     retry = retries
-    while retry>=0:
+
+    while retry >= 0:
         try:
             try:
                 response = client.get_secret_value(SecretId=secret_name)
             except ClientError as e:
                 print(e)
+            
             if 'SecretString' in response:
                 secret = json.loads(response['SecretString'])
             else:
                 decoded_binary_secret = base64.b64decode(response['SecretBinary'])
                 secret = json.loads(decoded_binary_secret)
+            
             db_user = secret['username']
             db_password = secret['password']
             db_host = secret.get('host', 'streamline-database.c1m8wacs089y.us-west-2.rds.amazonaws.com')
             db_port=secret.get('port', 5432)
             db_name = secret.get('name', 'streamline-data')
+
             return await asyncpg.create_pool(
                 user=db_user,
                 password=db_password,
                 database=db_name,
                 host=db_host,
                 port=db_port)
+
         except Exception as e:
             print(f"Connection failed: {e}, {retry} attempts remaining.")
             await asyncio.sleep(10)
             retry-=1
+    
     raise Exception(f"Database connection failed after {retries} attempts.")
 
 @app.before_serving
