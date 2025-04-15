@@ -6,7 +6,6 @@ import CreateAccount from './Pages/CreateAccount.jsx';
 import Dashboard from './Pages/Dashboard.jsx';
 import Sumo from './Pages/Sumo.jsx';
 
-// Main component of the app where the routing and global state management is defined
 function App() {
 
     const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem("loginToken"));

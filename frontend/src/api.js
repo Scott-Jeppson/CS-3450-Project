@@ -1,6 +1,5 @@
 import { API_BASE_URL } from '@/constants'
 
-// this fucntion fetches a test message "Hello, World!" to test the connection between the frontend and the backend
 export async function getHelloWorld() {
     try {
         const response = await fetch(`${API_BASE_URL}/test`);
@@ -14,7 +13,6 @@ export async function getHelloWorld() {
     }
 }
 
-// getting sumo statistics
 export async function getTripStats() {
     try {
         const response = await fetch(`${API_BASE_URL}/tripstats`, { method: 'GET' });

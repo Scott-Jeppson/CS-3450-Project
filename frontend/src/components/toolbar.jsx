@@ -7,7 +7,6 @@ function Toolbar({ isLoggedIn, setIsLoggedIn }) {
     const [isToolbarCollapsed, setIsToolbarCollapsed] = useState(true);
 
     const handleLogout = () => {
-        // Clear the login token from localStorage and set isLoggedIn to false
         localStorage.removeItem('loginToken');
         setIsLoggedIn(false);
         setIsToolbarCollapsed(false);
@@ -17,7 +16,6 @@ function Toolbar({ isLoggedIn, setIsLoggedIn }) {
         setIsToolbarCollapsed(!isToolbarCollapsed);
     };
 
-    // Close the toolbar when the user clicks outside of it
     const toolbarRef = useRef(null);
 
     useEffect(() => {
