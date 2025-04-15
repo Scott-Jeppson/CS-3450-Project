@@ -4,7 +4,7 @@ import { io } from 'socket.io-client';
 import Navbar from "../components/navbar.jsx";
 import SumoSim from "../components/SumoSim.jsx";
 import "./Sumo.css";
-
+import { SUMO_BASE_URL } from '@/constants'
 
 const Dashboard = ({ isLoggedIn, setIsLoggedIn }) => {
     const navigate = useNavigate();
@@ -12,7 +12,7 @@ const Dashboard = ({ isLoggedIn, setIsLoggedIn }) => {
     const [simulationStatus, setSimulationStatus] = useState('Play');
 
     useEffect(() => {
-        socketRef.current = io("http://localhost:5000");
+        socketRef.current = io(`${SUMO_BASE_URL}`);
     
         socketRef.current.on("simulationStarted", () => {
             setSimulationStatus("Playing");
