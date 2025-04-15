@@ -167,6 +167,7 @@
     <busStop id="-8600838999" name="400 S @ 1357 W" lane="-10229824#2_0" startPos="4.80" endPos="19.80" friendlyPos="true"/>
     <busStop id="-8600848947" name="1200 W @ 600 S" lane="-566551615#0_0" startPos="13.64" endPos="28.64" friendlyPos="true"/>
     <busStop id="-8604505796" name="Center St @ 195 W" lane="-227602198#2_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="-8604510980" name="State St @ 200 N" lane="-1353184846#3_0" startPos="15.56" endPos="25.56" friendlyPos="true"/>
     <busStop id="-8604560600" name="State St @ 375 N" lane="-1103526531#2_0" startPos="0.56" endPos="15.56" friendlyPos="true"/>
     <busStop id="-8663241603" name="Main St @ 140 S" lane="-933017540#1_0" startPos="4.02" endPos="19.02" friendlyPos="true"/>
     <busStop id="-8663618404" name="13400 S @ 1780 W" lane="-489665542_0" startPos="41.41" endPos="56.41" friendlyPos="true"/>
