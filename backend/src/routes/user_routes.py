@@ -4,6 +4,7 @@ import asyncpg
 import os
 from quart import jsonify, request, session, Blueprint
 from dotenv import load_dotenv
+
 load_dotenv()
 
 async def register_user_routes(app):
