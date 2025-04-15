@@ -1,12 +1,13 @@
 import './navbar.css';
 import { Link } from 'react-router-dom';
 import React, { useEffect, useState } from "react";
+import { API_BASE_URL } from '@/constants'
 
 function Navbar({ isLoggedIn, setIsLoggedIn }) {
 
     const handleLogout = async () => {
         try {
-            await fetch("http://localhost:8080/api/signout", {
+            await fetch(`${API_BASE_URL}/api/signout`, {
                 method: "POST",
                 credentials: "include",
             });

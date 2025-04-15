@@ -1,8 +1,9 @@
 getMapboxToken();
+import { API_BASE_URL } from '@/constants'
 
 async function getMapboxToken() {
     try {
-        const response = await fetch('http://localhost:8080/api/mapbox-token');
+        const response = await fetch(`${API_BASE_URL}/api/mapbox-token`);
         if (!response.ok) {
             throw new Error(`Error: ${response.status} ${response.statusText}`);
         }

@@ -19,7 +19,7 @@ const Dashboard = ({ isLoggedIn, setIsLoggedIn }) => {
         });
     
         socketRef.current.on("simulationEnded", () => {
-            setSimulationStatus("Play"); // ✅ Re-enable button
+            setSimulationStatus("Play");
         });
     
         return () => {

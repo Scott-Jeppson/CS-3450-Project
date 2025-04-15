@@ -1,4 +1,3 @@
-// SimTools.jsx
 import React, { useState, useEffect, useRef } from 'react';
 import { io } from 'socket.io-client';
 import { getTripStats } from '../api.js';
