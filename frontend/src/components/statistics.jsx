@@ -20,8 +20,11 @@ function Statistics({ stats, trafficLevel }) {
 
         return Object.entries(emissions).map(([id, emission]) => {
             const trip = tripinfo.find(t => t.id === id) || {};
+            const routeNumber = id.match(/^pt_bus_(\w+):/)?.[1];
+
             return {
                 id,
+                routeNumber,
                 CO2: emission.CO2,
                 NOx: emission.NOx,
                 PMx: emission.PMx,
@@ -69,15 +72,14 @@ function Statistics({ stats, trafficLevel }) {
                             <div className="stats-item" onClick={() => toggleBus(bus.id)}>
                                 <b>
                                     <a
-                                        href={`https://www.rideuta.com/Rider-Tools/Vehicle-Locator/Map?route=${bus.id.match(/pt_bus_(\\d+):/)?.[1]}`}
+                                        href={`https://www.rideuta.com/Rider-Tools/Vehicle-Locator/Map?route=${bus.routeNumber}`}
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         onClick={(e) => e.stopPropagation()}
                                     >
-                                        Route {bus.id.match(/pt_bus_(\d+):/)?.[1] ?? bus.id}
+                                        Route {bus.routeNumber ?? bus.id}
                                     </a>
                                 </b>
-                            
                                 <span className="material-symbols-outlined">
                                     {openBusIds.has(bus.id) ? "expand_less" : "expand_more"}
                                 </span>
@@ -94,35 +96,7 @@ function Statistics({ stats, trafficLevel }) {
                                 </div>
                             )}
                         </div>
-                    ))}{combinedData.map((bus) => {
-                        const routeMatch = bus.id.match(/^pt_bus_(\d+):/);
-                        const routeNumber = routeMatch ? routeMatch[1] : null;
-                    
-                        return (
-                            <div key={bus.id} className="stats-item-wrapper">
-                                <div className="stats-item" onClick={() => toggleBus(bus.id)}>
-                                    <b>
-                                        <a
-                                            href={`https://www.rideuta.com/Rider-Tools/Vehicle-Locator/Map?route=${routeNumber}`}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
-                                            onClick={(e) => e.stopPropagation()}
-                                        >
-                                            Route {routeNumber ?? bus.id}
-                                        </a>
-                                    </b>
-                                    <span className="material-symbols-outlined">
-                                        {openBusIds.has(bus.id) ? "expand_less" : "expand_more"}
-                                    </span>
-                                </div>
-                                {openBusIds.has(bus.id) && (
-                                    <div className="bus-details">
-                                        {/* other details here */}
-                                    </div>
-                                )}
-                            </div>
-                        );
-                    })}                     
+                    ))}
                 </div>
             )}
         </div>

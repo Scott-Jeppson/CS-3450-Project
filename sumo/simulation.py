@@ -155,7 +155,13 @@ def sumo_simulation():
 
     # Start SUMO
     print('starting the sim!')
-    traci.start([SUMO_BINARY, "-c", SUMO_CFG_FILE, "--start"])
+    traci.start([
+    SUMO_BINARY,
+    "-c", SUMO_CFG_FILE,
+    "--start",
+    "--error-log", "/tmp/sumo_errors.log"
+])
+
     socketio.emit("simulationStarted")
 
     while traci.simulation.getMinExpectedNumber() > 0:

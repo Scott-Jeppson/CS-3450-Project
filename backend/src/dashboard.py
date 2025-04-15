@@ -77,7 +77,7 @@ async def get_tripinfo():
 
     results = {}
 
-    # Parse tripinfo.xml
+    # --- TRIPINFO FILTERED FOR BUSES ---
     if os.path.exists(tripinfo_path):
         try:
             tree = ET.parse(tripinfo_path)
@@ -86,6 +86,10 @@ async def get_tripinfo():
             total_duration = total_waiting = total_time_loss = total_stop_time = 0.0
 
             for trip in root.findall('tripinfo'):
+                vehicle_id = trip.get("id", "")
+                if "bus" not in vehicle_id:  # <-- Only process bus trips
+                    continue
+
                 try:
                     duration = float(trip.get("duration", 0))
                     waiting_time = float(trip.get("waitingTime", 0))
@@ -96,7 +100,7 @@ async def get_tripinfo():
                     waiting_count = int(trip.get("waitingCount", 0))
 
                     trips.append({
-                        "id": trip.get("id"),
+                        "id": vehicle_id,
                         "duration": duration,
                         "routeLength": route_length,
                         "waitingTime": waiting_time,
@@ -129,7 +133,7 @@ async def get_tripinfo():
     else:
         results['tripinfo'] = {"error": "tripinfo.xml not found"}
 
-    # Parse summary.xml
+    # --- SUMMARY: Leave this section as-is if it's not vehicle-specific ---
     if os.path.exists(summary_path):
         try:
             tree = ET.parse(summary_path)
@@ -181,7 +185,7 @@ async def get_tripinfo():
     else:
         results['summary'] = {"error": "summary.xml not found"}
 
-    # Parse emissions.xml
+    # --- EMISSIONS FILTERED FOR BUSES ---
     if os.path.exists(emissions_path):
         try:
             tree = ET.parse(emissions_path)
@@ -193,7 +197,10 @@ async def get_tripinfo():
 
             for timestep in root.findall('timestep'):
                 for vehicle in timestep.findall('vehicle'):
-                    vid = vehicle.get("id")
+                    vid = vehicle.get("id", "")
+                    if "bus" not in vid:  # <-- Only process buses
+                        continue
+
                     co2 = float(vehicle.get("CO2", 0))
                     hc = float(vehicle.get("HC", 0))
                     pmx = float(vehicle.get("PMx", 0))
@@ -220,7 +227,6 @@ async def get_tripinfo():
                     total_fuel += fuel
                     count += 1
 
-            # Optionally calculate averages per bus (if useful)
             for vid, data in per_vehicle_emissions.items():
                 n = data["count"]
                 data["averageCO2"] = data["CO2"] / n if n else 0
@@ -246,6 +252,8 @@ async def get_tripinfo():
         results['emissions'] = {"error": "emissions.xml not found"}
 
     return jsonify(results), 200
+
+
 
 
 async def create_db_pool():
