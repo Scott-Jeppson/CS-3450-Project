@@ -113,7 +113,7 @@ async def register_user_routes(app):
 
     @user_routes.route("/api/signout", methods=["POST"])
     async def sign_out():
-        await session.clear()
+        session.clear()
 
         return jsonify({"message": "User signed out successfully"}), 200
     
