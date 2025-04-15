@@ -10,13 +10,6 @@ import Sumo from './Pages/Sumo.jsx';
 function App() {
 
     const [isLoggedIn, setIsLoggedIn] = useState(!!localStorage.getItem("loginToken"));
-
-    /*
-        Updates the login status based on the loginToken in local storage that is set when the user logs in.
-        The isLoggedIn state is also manually updated when the user logs in/out because the storage event listener
-        does not pick up on changes to the local storage in the same window, only in other windows/tabs. It is
-        still important to have the event listener to update the login status if the user logs in/out in another tab.
-    */
     useEffect(() => {
         const handleStorageChange = () => {
             setIsLoggedIn(!!localStorage.getItem("loginToken"));

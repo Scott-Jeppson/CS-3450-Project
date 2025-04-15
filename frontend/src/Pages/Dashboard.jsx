@@ -1,5 +1,5 @@
-// Dashboard.jsx
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import Navbar from "../components/navbar.jsx";
 import SumoSim from "../components/SumoSim.jsx";
 import Toolbar from "../components/toolbar.jsx";
@@ -9,6 +9,13 @@ import "./dashboard.css";
 
 const Dashboard = ({ isLoggedIn, setIsLoggedIn }) => {
     const [stats, setStats] = useState(null);
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (!isLoggedIn) {
+            navigate('/');
+        }
+    }, [isLoggedIn, navigate]);
 
     return (
         <div className="page-div">

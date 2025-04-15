@@ -4,20 +4,30 @@ import React, { useEffect, useState } from "react";
 
 function Navbar({ isLoggedIn, setIsLoggedIn }) {
 
-    const handleLogout = () => {
-        // Clear the login token from localStorage and set isLoggedIn to false
-        localStorage.removeItem('loginToken');
-        setIsLoggedIn(false);
+    const handleLogout = async () => {
+        try {
+            await fetch("http://localhost:8080/api/signout", {
+                method: "POST",
+                credentials: "include",
+            });
+    
+            localStorage.removeItem("loginToken"); 
+            setIsLoggedIn(false);
+        } catch (error) {
+            console.error("Error logging out:", error);
+        }
     };
 
     return (
         <nav id={isLoggedIn ? "navbar-logged-in" : "navbar"}>
+            <div id="nav-left">
             <Link to={isLoggedIn ? "/dashboard" : "/"} id="nav-brand" aria-label={isLoggedIn ? "StreamLine Dashboard" : "StreamLine Home"}>
-                <img id="logo" alt="" src={isLoggedIn ? "src/assets/Logo-White-Text-Purple-Background.svg" :
-                    "src/assets/Logo-Light-Purple-Circle.svg"}
+                <img id="logo" alt="" src={isLoggedIn ? "/Logo-White-Text-Purple-Background.svg" :
+                    "/Logo-Light-Purple-Circle.svg"}
                 />
                 <h2 id="nav-name">StreamLine</h2>
             </Link>
+            </div>
             <div>
             {isLoggedIn ? (
                     <Link to="/" id="nav-button" aria-label="Log out" onClick={handleLogout}>Log Out</Link>

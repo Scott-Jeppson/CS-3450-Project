@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { Link, useNavigate } from 'react-router-dom';
 import Navbar from "../components/navbar.jsx";
 import './signin.css';
-import { useNavigate } from 'react-router-dom';
 
 const CreateAccount = ({ isLoggedIn, setIsLoggedIn }) => {
     const navigate = useNavigate();
@@ -15,12 +14,34 @@ const CreateAccount = ({ isLoggedIn, setIsLoggedIn }) => {
     });
     const [errors, setErrors] = useState({});
     const [errorMessage, setMessage] = useState("");
+
+    useEffect(() => {
+        const checkLoginStatus = async () => {
+            try {
+                const response = await fetch("http://localhost:8080/api/is_logged_in", {
+                    method: "GET",
+                    credentials: "include",
+                });
+                const result = await response.json();
+                if (response.ok && result.logged_in) {
+                    setIsLoggedIn(true);
+                    navigate('/dashboard');
+                } else {
+                    setIsLoggedIn(false);
+                }
+            } catch (error) {
+                console.error("Error checking login status:", error);
+            }
+        };
+        checkLoginStatus();
+    }, [navigate, setIsLoggedIn]);
+
     const handleChange = (e) => {
         setAccountData({ ...accountData, [e.target.name]: e.target.value });
     };
+
     const validateAccount = () => {
         let newErrors = {};
-
         if (!accountData.firstName) newErrors.firstName = "First name is required.";
         if (!accountData.lastName) newErrors.lastName = "Last name is required.";
         if (!accountData.email) {
@@ -38,9 +59,11 @@ const CreateAccount = ({ isLoggedIn, setIsLoggedIn }) => {
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
     };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (!validateAccount()) return;
+
         try {
             const response = await fetch("http://localhost:8080/api/createaccount", {
                 method: "POST",
@@ -52,34 +75,34 @@ const CreateAccount = ({ isLoggedIn, setIsLoggedIn }) => {
                     user_password: accountData.password
                 }),
             });
+
             const result = await response.json();
             if (response.ok) {
-                //Automatically log user in or just clear form and notify them the account was created???
-                const loginResponse = await fetch("http://localhost:8080/api/signin",{
+                const loginResponse = await fetch("http://localhost:8080/api/signin", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
                         user_email: accountData.email,
                         user_password: accountData.password
                     }),
+                    credentials: "include",
                 });
+
                 const loginResult = await loginResponse.json();
-                if (loginResponse.ok){
-                    localStorage.setItem("loginToken", loginResult.token);
+                if (loginResponse.ok) {
                     setIsLoggedIn(true);
                     navigate('/dashboard');
-                }
-                else{
+                } else {
                     setMessage(loginResult.message || "Error logging in.");
                 }
             } else {
                 setMessage(result.error || "Error creating account.");
             }
-        } 
-        catch (error) {
+        } catch (error) {
             setMessage("Network error. Please try again later.");
         }
     };
+
     return (
         <div className="page-div" style={{ backgroundColor: "var(--charcoal)" }}>
             <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
@@ -88,7 +111,7 @@ const CreateAccount = ({ isLoggedIn, setIsLoggedIn }) => {
                     <h3>Create Account</h3>
                     {errorMessage && <p aria-live="assertive" role="alert" style={{color:"white", textAlign:"center", backgroundColor: "var(--error-red)"}}>{errorMessage}</p>}
                     <form onSubmit={handleSubmit}>
-                    <div className="login-input">
+                        <div className="login-input">
                             <label htmlFor="firstName">First Name</label>
                             <input type="text" id="firstName" name="firstName" aria-required="true" value={accountData.firstName} onChange={handleChange} />
                             {errors.firstName && <p className="error" role="alert" aria-live="assertive">{errors.firstName}</p>}

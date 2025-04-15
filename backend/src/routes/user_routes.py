@@ -1,10 +1,25 @@
 import hashlib
 import secrets
 import asyncpg
+import os
 from quart import jsonify, request, session, Blueprint
+from dotenv import load_dotenv
+load_dotenv()
 
 async def register_user_routes(app):
     user_routes = Blueprint('user_routes', __name__)
+
+    @user_routes.route("/api/mapbox-token", methods=["GET", "POST"])
+    async def get_mapbox_token():
+        try:
+            mapbox_token = os.getenv("MAPBOX_TOKEN")
+            if mapbox_token:
+                return jsonify({"token": mapbox_token}), 200
+            else:
+                return jsonify({"error": "Token inaccessible"}), 404
+        except Exception as e:
+            print(f"An error occured: {str(e)}")
+            return jsonify({"error": f"An error occured here: {str(e)}"}, 500)
 
     @user_routes.route("/api/createaccount", methods=["POST"])
     async def create_account():
@@ -61,7 +76,6 @@ async def register_user_routes(app):
 
             session['user_id'] = user['id']
             session['email'] = user['email']
-            # await session.save()
 
             print("User signed in successfully")
             return jsonify({"message": "User signed in successfully"}), 200
@@ -76,10 +90,31 @@ async def register_user_routes(app):
         
         return jsonify({"message": "This is a protected route"})
 
+    @user_routes.route("/api/is_logged_in", methods=["GET"])
+    async def is_logged_in():
+        if 'user_id' not in session:
+            return jsonify({"logged_in": False, "error": "User not logged in"}), 401
+
+        try:
+            async with app.db_pool.acquire() as conn:
+                user = await conn.fetchrow(
+                    'SELECT id, email FROM user_information WHERE id = $1', 
+                    session['user_id']
+                )
+
+                if not user:
+                    session.clear()
+                    return jsonify({"logged_in": False, "error": "Invalid session"}), 401
+
+            return jsonify({"logged_in": True, "user_id": user['id'], "email": user['email']}), 200
+        except Exception as e:
+            print(f"An error occurred: {str(e)}")
+            return jsonify({"error": f"An error occurred: {str(e)}"}), 500
+
     @user_routes.route("/api/signout", methods=["POST"])
     async def sign_out():
-        session.clear()
-        
+        await session.clear()
+
         return jsonify({"message": "User signed out successfully"}), 200
     
     @user_routes.route("/api/welcome", methods=["GET"])

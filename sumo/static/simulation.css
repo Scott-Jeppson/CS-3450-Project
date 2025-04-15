@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+#sliderBox {
+    position: absolute;
+    bottom: 0px;
+    left:50%;
+    transform: translateX(-50%);
+    background: rgba(255,255,255, 0.8);
+    padding: 8px 12px;
+    border-radius: 8px;
+    z-index: 10;
+    width: 25%;
+}
+.car-marker img {
+    width: 8px;
+    height: 18px;
+    transform-origin: center;
+    transition: transform 0.01s linear;
+}
+.vehicle-label {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-2px);
+    background: rgba(255,255,255,0.8);
+    font-size: 10px;
+    padding: 1px 4px;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 1;
+}
+#tracking-status{
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px 15px;
+    border-radius: 8px;
+    display:none;
+    z-index: 10;
+    transition: max-height 0.6s ease, padding 0.6s ease;
+}
+#tracking-status.collapsed{
+    max-height: 0;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+}
+#tracking-status.expanded{
+    max-height: 100px;
+    padding: 10px 15px;
+    display:block;
+}
+#cancel-follow{
+    background-color: rgb(200,50,80);
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#cancel-follow:hover{
+    background-color: rgb(130,30,50);
+}
+#tracking-info{
+    font-weight: bold;
+}
+@media (max-width: 480px) {
+    #tracking-status {
+        width: 90%;
+        font-size: 14px;
+    }
+}

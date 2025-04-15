@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from "../components/navbar.jsx";
 import './home.css';
@@ -5,12 +6,28 @@ import './home.css';
 const Home = ({ isLoggedIn, setIsLoggedIn }) => {
     const navigate = useNavigate();
 
-    const handleSignInClick = () => {
-        navigate('/signin');
-    };
+    useEffect(() => {
+        const checkLoginStatus = async () => {
+            try {
+                const response = await fetch("http://localhost:8080/api/is_logged_in", {
+                    method: "GET",
+                    credentials: "include",
+                });
+                const result = await response.json();
+                if (response.ok && result.logged_in) {
+                    setIsLoggedIn(true);
+                } else{
+                    setIsLoggedIn(false);
+                }
+            } catch (error) {
+                console.error("Error checking login status:", error);
+            }
+        };
+        checkLoginStatus();
+    }, [setIsLoggedIn]);
 
-    const handleCreateAccountClick = () => {
-        navigate('/createaccount');
+    const handleButtonClick = () => {
+        navigate(isLoggedIn ? '/dashboard' : '/signin');
     };
 
     return (
@@ -19,18 +36,34 @@ const Home = ({ isLoggedIn, setIsLoggedIn }) => {
             <main id="main-content">
                 <div id="welcome-box">
                     <h1>Welcome to StreamLine!</h1>
-                    <p> StreamLine is a traffic simulation and optimization tool designed to help traffic managers in
-                        Utah County analyze and improve traffic flow.
-                    </p>
+                    <p>StreamLine is a traffic simulation and optimization tool designed to help traffic managers in
+                        Utah County analyze and improve traffic flow.</p>
+                    
                     <div className="divider">
-                      <h4>Please sign in to continue:</h4>
+                        <h4>{isLoggedIn ? "Continue to your dashboard:" : "Please sign in to continue:"}</h4>
                     </div>
-                    <button className="home-button" aria-label="Sign in" onClick={handleSignInClick}>Sign In</button>
-                    <button className="home-button" aria-label="Create account" onClick={handleCreateAccountClick}>Create Account</button>
+
+                    <button 
+                        className="home-button" 
+                        aria-label={isLoggedIn ? "Go to dashboard" : "Sign in"} 
+                        onClick={handleButtonClick}
+                    >
+                        {isLoggedIn ? "Go to Dashboard" : "Sign In"}
+                    </button>
+
+                    {!isLoggedIn && (
+                        <button 
+                            className="home-button" 
+                            aria-label="Create account" 
+                            onClick={() => navigate('/createaccount')}
+                        >
+                            Create Account
+                        </button>
+                    )}
                 </div>
             </main>
         </div>
     );
-}
+};
 
 export default Home;
