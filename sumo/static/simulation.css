@@ -21,10 +21,17 @@ body {
     width: 25%;
 }
 .car-marker img {
-    width: 8px;
-    height: 18px;
+    width: 6px;
+    height: 12px;
+    opacity: 0.3; /* Slightly faded */
     transform-origin: center;
-    transition: transform 0.01s linear;
+    z-index: 1;
+}
+.bus-marker img {
+    width: 16px;
+    height: 28px;
+    transform-origin: center;
+    z-index: 10;
 }
 .vehicle-label {
     position: absolute;

@@ -1,13 +1,14 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import Navbar from "../components/navbar.jsx";
 import SumoSim from "../components/SumoSim.jsx";
 import Toolbar from "../components/toolbar.jsx";
 import Statistics from "../components/statistics.jsx";
+import SimTools from "../components/SimTools.jsx";
 import "./dashboard.css";
-import SimTools from '../components/SimTools';
 
 const Dashboard = ({ isLoggedIn, setIsLoggedIn }) => {
+    const [stats, setStats] = useState(null);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -17,26 +18,23 @@ const Dashboard = ({ isLoggedIn, setIsLoggedIn }) => {
     }, [isLoggedIn, navigate]);
 
     return (
-        <div className="page-div" style={{ backgroundColor: "var(--grey)", height: "100vh" }}>
+        <div className="page-div">
             <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
 
-            {isLoggedIn && (
-                <div id="main-content-dashboard">
-                    <Toolbar />
+            <div id="main-content-dashboard">
+                {isLoggedIn ? (
+                    <>
+                        <div className="sumo-section">
+                            <SumoSim />
+                            <SimTools setStats={setStats} />
+                        </div>
 
-                    <div className="sumo-sim">
-                        <SumoSim />
-                    </div>
-
-                    <div className="sim-tools">
-                        <SimTools />
-                    </div>
-
-                    <div className="stats">
-                        <Statistics />
-                    </div>
-                </div>
-            )}
+                        <Statistics stats={stats} />
+                    </>
+                ) : (
+                    <h1>You are not logged in</h1>
+                )}
+            </div>
         </div>
     );
 };

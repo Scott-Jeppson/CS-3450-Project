@@ -1,42 +1,39 @@
+// SimTools.jsx
 import React, { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
 import { io } from 'socket.io-client';
+import { getTripStats } from '../api.js';
 import './simtools.css';
 
-function SimTools() {
-    const [simulationStatus, setSimulationStatus] = useState('Stopped'); // 'Stopped' | 'Playing' | 'Paused'
-    const [speed, setSpeed] = useState(1);
-    const [trafficLevel, setTrafficLevel] = useState('medium');
+function SimTools({ setStats }) {
+    const [simulationStatus, setSimulationStatus] = useState('Stopped');
+    const [trafficLevel, setTrafficLevel] = useState('none');
     const socketRef = useRef(null);
 
     useEffect(() => {
         socketRef.current = io("http://localhost:5000");
-
-        socketRef.current.on("simulationStarted", () => {
-            setSimulationStatus("Playing");
-        });
-
-        socketRef.current.on("simulationEnded", () => {
+    
+        // Immediately sync traffic level
+        socketRef.current.emit("setTrafficLevel", { level: trafficLevel });
+    
+        socketRef.current.on("simulationStarted", () => setSimulationStatus("Playing"));
+        socketRef.current.on("simulationEnded", async () => {
             setSimulationStatus("Stopped");
+            try {
+                const data = await getTripStats();
+                console.log("Fetched trip stats after sim ended:", data);
+                setStats(data);
+            } catch (err) {
+                console.error("Failed to fetch trip stats:", err);
+            }
         });
-
-        socketRef.current.on("paused", () => {
-            setSimulationStatus("Paused");
-        });
-
-        socketRef.current.on("resumed", () => {
-            setSimulationStatus("Playing");
-        });
-
+        socketRef.current.on("paused", () => setSimulationStatus("Paused"));
+        socketRef.current.on("resumed", () => setSimulationStatus("Playing"));
+    
         return () => {
             socketRef.current.disconnect();
         };
-    }, []);
-
-    const handleSpeedChange = (newSpeed) => {
-        setSpeed(newSpeed);
-        // TODO: emit speed change
-    };
+    }, [setStats]);
+    
 
     const handleTogglePlayPause = () => {
         if (!socketRef.current) return;
@@ -51,10 +48,13 @@ function SimTools() {
     };
 
     const handleReset = () => {
-        // TODO: emit reset/replay
+        if (socketRef.current) {
+            socketRef.current.emit("stop");
+            setSimulationStatus("Stopped");
+            setStats(null);
+        }
     };
 
-    // three different levels of traffic: low, medium, high
     const handleTrafficLevelChange = (e) => {
         const level = e.target.value;
         setTrafficLevel(level);
@@ -66,42 +66,32 @@ function SimTools() {
     const renderPlayPauseIcon = () => {
         if (simulationStatus === "Playing") return "pause";
         if (simulationStatus === "Paused" || simulationStatus === "Stopped") return "play_arrow";
-        return "hourglass_empty"; // Loading
+        return "hourglass_empty";
     };
 
     return (
         <div className="sim-tools-container">
             <div className="traffic-level-selector">
-                <label htmlFor="trafficLevel" style={{ marginRight: '0.5rem' }}>Traffic Level:</label>
+                <label htmlFor="trafficLevel">Traffic:</label>
                 <select
                     id="trafficLevel"
                     disabled={simulationStatus !== 'Stopped'}
                     onChange={handleTrafficLevelChange}
                     value={trafficLevel}
                 >
+                    <option value="none">None</option>
                     <option value="low">Low</option>
                     <option value="medium">Medium</option>
                     <option value="high">High</option>
                 </select>
+                {trafficLevel !== "none" && (
+        <div className="traffic-tip">
+            Higher traffic levels will increase simulation loading times.
+        </div>
+    )}
             </div>
 
-            <div className="control-buttons left">
-                <button className="control-btn speed-btn" onClick={() => handleSpeedChange(0.5)} title="Run simulation at half speed">
-                    0.5x
-                </button>
-                <button className="control-btn speed-btn" onClick={() => handleSpeedChange(1)} title="Run simulation at normal speed">
-                    1.0x
-                </button>
-                <button className="control-btn speed-btn" onClick={() => handleSpeedChange(1.5)} title="Run simulation at 1.5x speed">
-                    1.5x
-                </button>
-            </div>
-
-            <Link to="" className="expand-btn" title="Expand simulation">
-                Expand Simulation
-            </Link>
-
-            <div className="control-buttons right">
+            <div className="control-buttons">
                 <button className="control-btn" onClick={handleReset} title="Reset simulation">
                     <span className="material-symbols-outlined">refresh</span>
                 </button>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-03-28 20:33:42 by Eclipse SUMO netconvert Version 1.22.0
+<!-- generated on 2025-04-09 17:44:21 by Eclipse SUMO netconvert Version 1.22.0
 <netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
 
     <input>
-        <type-files value="${SUMO_HOME}/data/typemap/osmNetconvert.typ.xml,${SUMO_HOME}/data/typemap/osmNetconvertAerialway.typ.xml"/>
+        <type-files value="${SUMO_HOME}\data\typemap\osmNetconvert.typ.xml,${SUMO_HOME}\data\typemap\osmNetconvertAerialway.typ.xml"/>
         <osm-files value="osm_bbox.osm.xml.gz"/>
     </input>
 
@@ -49,34 +49,20 @@
 -->
 
 <additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
-    <busStop id="-11361052134" name="1270 W @ 780 S" lane="-244437926#0_0" startPos="28.29" endPos="43.29" friendlyPos="true" lines="821 822"/>
+    <busStop id="-11361052134" name="1270 W @ 780 S" lane="-244437926#0_0" startPos="28.38" endPos="43.38" friendlyPos="true" lines="821 822"/>
+    <busStop id="-11377872445" name="Draper Town Center Station (Bay A)" lane="-1226967279#0_0" startPos="35.78" endPos="50.78" friendlyPos="true" lines="871"/>
     <busStop id="-11493019589" name="800 E @ 1169 S" lane="-231243108#9_0" startPos="4.92" endPos="19.92" friendlyPos="true" lines="850"/>
+    <busStop id="-11654936773" name="13490 South / 372 West" lane="-346010940#3_0" startPos="158.54" endPos="173.54" friendlyPos="true"/>
+    <busStop id="-11654936776" name="220 West / 13051 South" lane="-754530519#1_0" startPos="125.26" endPos="140.26" friendlyPos="true"/>
+    <busStop id="-11654936780" name="Vista Station Boulevard / 13465 South" lane="-608198483#1_0" startPos="55.14" endPos="70.14" friendlyPos="true"/>
+    <busStop id="-11654936781" name="125 West / 12655 South" lane="-441618074#2_0" startPos="134.68" endPos="149.68" friendlyPos="true"/>
+    <busStop id="-11654936783" name="200 West / 13354 South" lane="-790186205#3_0" startPos="83.02" endPos="98.02" friendlyPos="true"/>
+    <busStop id="-11654936784" name="IKEA Way / 13268 South" lane="-36316204#2_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="-2369125852" name="State Rd @ 1291 W" lane="-82331528#2_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
-    <busStop id="-2369125908" name="Center St @ 585 W" lane="-724266822#5_0" startPos="4.24" endPos="19.24" friendlyPos="true"/>
+    <busStop id="-2369125908" name="Center St @ 585 W" lane="-724266822#4_0" startPos="4.24" endPos="19.24" friendlyPos="true"/>
     <busStop id="-2400947965" name="1600 N @ 525 W" lane="-600788076#0_0" startPos="27.43" endPos="42.43" friendlyPos="true" lines="862"/>
     <busStop id="-2400947970" name="1200 W @ 1575 N" lane="-568219148#24_0" startPos="43.29" endPos="58.29" friendlyPos="true"/>
     <busStop id="-2959472284" name="Wyview Creamery" lane="-1088324289#0_0" startPos="0.00" endPos="1.66" friendlyPos="true"/>
-    <busStop id="-3017998930" name="American Fork" lane="-626822759_0" startPos="198.64" endPos="398.64" friendlyPos="true">
-        <access lane="723498874#0_0" pos="0.00" length="12.85" friendlyPos="1"/>
-        <access lane="723498874#1_0" pos="0.00" length="18.34" friendlyPos="1"/>
-        <access lane="723498874#2_0" pos="0.00" length="21.26" friendlyPos="1"/>
-        <access lane="723498874#3_0" pos="3.99" length="28.23" friendlyPos="1"/>
-        <access lane="723498885_0" pos="0.00" length="19.71" friendlyPos="1"/>
-    </busStop>
-    <busStop id="-3020208745" name="Provo" lane="-298119461#9_0" startPos="30.49" endPos="230.49" friendlyPos="true">
-        <access lane="-723321011_0" pos="22.14" length="29.46" friendlyPos="1"/>
-        <access lane="1323464476#1_0" pos="0.99" length="41.13" friendlyPos="1"/>
-        <access lane="1323464478#1_0" pos="10.80" length="35.21" friendlyPos="1"/>
-        <access lane="1323464478#2_0" pos="0.00" length="39.01" friendlyPos="1"/>
-        <access lane="723321011_0" pos="34.17" length="34.26" friendlyPos="1"/>
-    </busStop>
-    <busStop id="-3020209235" name="Orem Central" lane="-298119547#2_0" startPos="62.26" endPos="262.26" friendlyPos="true">
-        <access lane="-463704562#0_0" pos="67.63" length="26.25" friendlyPos="1"/>
-        <access lane="463704562#0_0" pos="7.59" length="21.45" friendlyPos="1"/>
-        <access lane="908255821#0_0" pos="2.97" length="23.36" friendlyPos="1"/>
-        <access lane="908255821#1_0" pos="0.00" length="25.29" friendlyPos="1"/>
-        <access lane="908255828#0_0" pos="10.96" length="8.20" friendlyPos="1"/>
-    </busStop>
     <busStop id="-3530035888" name="State St @ 860 E (WB)" lane="-231974869#9_0" startPos="41.28" endPos="56.28" friendlyPos="true" lines="850"/>
     <busStop id="-3530106790" name="State St @ 1185 N" lane="-1103213872#0_0" startPos="26.31" endPos="41.31" friendlyPos="true"/>
     <busStop id="-366399825" name="1600 N @ 1035 W" lane="-36872255#0_0" startPos="4.50" endPos="19.50" friendlyPos="true" lines="862"/>
@@ -86,30 +72,10 @@
     <busStop id="-4145236910" name="State St @ 1369 N" lane="-229715468#10_0" startPos="7.77" endPos="22.77" friendlyPos="true"/>
     <busStop id="-4608150627" name="100 N @ 520 E" lane="-10246516#0_0" startPos="5.62" endPos="20.62" friendlyPos="true"/>
     <busStop id="-6324127493" name="Wilkinson Center" lane="-1077847903#0_0" startPos="12.70" endPos="27.70" friendlyPos="true"/>
-    <busStop id="-6341264443" name="Provo Central" lane="-681588641#0_0" startPos="46.67" endPos="246.67" friendlyPos="true">
-        <access lane="1302060449#1_0" pos="21.24" length="30.51" friendlyPos="1"/>
-        <access lane="558675799#4_0" pos="21.01" length="24.63" friendlyPos="1"/>
-        <access lane="558675799#5_0" pos="0.00" length="23.89" friendlyPos="1"/>
-        <access lane="558675801#2_0" pos="0.20" length="26.67" friendlyPos="1"/>
-        <access lane="558675830_0" pos="21.51" length="30.17" friendlyPos="1"/>
-    </busStop>
-    <busStop id="-6341264446" name="Provo Central" lane="-298119477#5_0" startPos="0.00" endPos="185.28" friendlyPos="true">
-        <access lane="558675799#4_0" pos="21.01" length="10.37" friendlyPos="1"/>
-        <access lane="558675799#5_0" pos="0.00" length="9.28" friendlyPos="1"/>
-        <access lane="558675801#1_0" pos="44.89" length="18.30" friendlyPos="1"/>
-        <access lane="558675801#2_0" pos="0.20" length="11.77" friendlyPos="1"/>
-        <access lane="558675830_0" pos="21.51" length="15.52" friendlyPos="1"/>
-    </busStop>
     <busStop id="-6343896806" name="450 North (King Henry)" lane="-10239582#12_0" startPos="21.18" endPos="36.18" friendlyPos="true"/>
-    <busStop id="-7123084666" name="American Fork" lane="-297896760#1_0" startPos="0.00" endPos="165.39" friendlyPos="true">
-        <access lane="723498873#0_0" pos="0.20" length="28.55" friendlyPos="1"/>
-        <access lane="723498873#1_0" pos="0.00" length="28.46" friendlyPos="1"/>
-        <access lane="723498873#3_0" pos="0.00" length="30.28" friendlyPos="1"/>
-        <access lane="723498874#4_0" pos="49.20" length="7.46" friendlyPos="1"/>
-        <access lane="723498884_0" pos="3.55" length="19.77" friendlyPos="1"/>
-    </busStop>
     <busStop id="-737435777" name="11000 N @ 5800 W" lane="-1225016883_0" startPos="131.64" endPos="146.64" friendlyPos="true"/>
     <busStop id="-737435788" name="11000 N @ 6350 W" lane="-1225016890#1_0" startPos="313.72" endPos="328.72" friendlyPos="true"/>
+    <busStop id="-8542122458" name="1300 E @ 12771 S" lane="-346317149#14_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="-8542125054" name="State St / 300 W (WB)" lane="-172743649#38_0" startPos="49.95" endPos="64.95" friendlyPos="true" lines="850"/>
     <busStop id="-8542138901" name="100 N @ 95 W" lane="-10233539#6_0" startPos="2.84" endPos="17.84" friendlyPos="true"/>
     <busStop id="-8542141482" name="Ashton Blvd @ 1801 W" lane="-231366549#2_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
@@ -117,30 +83,36 @@
     <busStop id="-8542170799" name="State St @ 400 E (WB)" lane="-231764115#13_0" startPos="0.00" endPos="9.44" friendlyPos="true" lines="850"/>
     <busStop id="-8542185743" name="100 E @ 1453 N" lane="-566465492#1_0" startPos="46.78" endPos="61.78" friendlyPos="true"/>
     <busStop id="-8542221102" name="Highway 198 @ 1902 W" lane="-933030945#0_0" startPos="82.18" endPos="97.18" friendlyPos="true"/>
-    <busStop id="-8542230766" name="State St @ 1449 S" lane="-684673719#4_0" startPos="0.00" endPos="6.72" friendlyPos="true"/>
+    <busStop id="-8542230766" name="State St @ 1449 S" lane="-684673719#4_0" startPos="0.00" endPos="6.71" friendlyPos="true"/>
     <busStop id="-8542423137" name="UVU Fulton Library (WB)" lane="-346646696#0_0" startPos="13.09" endPos="28.09" friendlyPos="true" lines="862 831"/>
     <busStop id="-8542442230" name="400 N @ 351 E" lane="-10226563#7_0" startPos="17.44" endPos="32.44" friendlyPos="true"/>
+    <busStop id="-8542612059" name="3600 W @ 12448 S" lane="-107507748#13_0" startPos="34.80" endPos="49.80" friendlyPos="true"/>
     <busStop id="-8542612060" name="100 W @ 420 S" lane="-97124322#8_0" startPos="13.30" endPos="28.30" friendlyPos="true"/>
     <busStop id="-8542612061" name="Hwy 198 @ 20 S" lane="-933030940_0" startPos="7.22" endPos="22.22" friendlyPos="true" lines="821"/>
     <busStop id="-8542895969" name="1460 N / 1900 W (EB)" lane="-10241074#7_0" startPos="3.34" endPos="18.34" friendlyPos="true"/>
     <busStop id="-8542938978" name="Freedom Blvd @ 1386 N" lane="-1334321128#4_0" startPos="10.22" endPos="25.22" friendlyPos="true"/>
     <busStop id="-8542952483" name="100 N @ 40 E" lane="-1358485924#3_0" startPos="0.00" endPos="1.43" friendlyPos="true"/>
     <busStop id="-8542953531" name="1720 N / 550 W (WB)" lane="-10237309#5_0" startPos="40.26" endPos="55.26" friendlyPos="true"/>
-    <busStop id="-8544520371" name="Thanksgiving Station Business Park" lane="-887743950#7_0" startPos="28.31" endPos="43.31" friendlyPos="true"/>
+    <busStop id="-8544520371" name="Thanksgiving Station Business Park" lane="-887743950#8_0" startPos="28.31" endPos="43.31" friendlyPos="true"/>
     <busStop id="-8544564428" name="Research Way @ 1241 N" lane="-10231865#1_0" startPos="10.83" endPos="25.83" friendlyPos="true"/>
     <busStop id="-8544564429" name="Research Way @ 1243 N" lane="-10231865#1_0" startPos="6.61" endPos="21.61" friendlyPos="true" lines="862"/>
     <busStop id="-8544571432" name="State St @ Lindon Main St. (NB)" lane="-119006869#6_0" startPos="39.87" endPos="54.87" friendlyPos="true" lines="850"/>
+    <busStop id="-8544605769" name="13400 S @ 2360 W" lane="-684787379#3_0" startPos="9.59" endPos="24.59" friendlyPos="true"/>
+    <busStop id="-8544774957" name="4000 W @ 12174 S" lane="-820337499#1_0" startPos="12.75" endPos="27.75" friendlyPos="true"/>
     <busStop id="-8544776077" name="1000 S @ 1418 W" lane="-262148878#2_0" startPos="11.59" endPos="26.59" friendlyPos="true" lines="862"/>
     <busStop id="-8544785766" name="State St @ 1532 S" lane="-1103204103#0_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="-8544793482" name="Main St @ 326 S" lane="-933026921#0_0" startPos="13.98" endPos="28.98" friendlyPos="true"/>
     <busStop id="-8544805026" name="800 E @ 579 N" lane="-10236172#33_0" startPos="22.58" endPos="37.58" friendlyPos="true" lines="862"/>
     <busStop id="-8547215699" name="1200 S @ 430 W" lane="-39255600#0_0" startPos="0.00" endPos="5.92" friendlyPos="true"/>
     <busStop id="-8547218308" name="State Rd @ 742 S" lane="-682287085#1_0" startPos="110.67" endPos="125.67" friendlyPos="true"/>
+    <busStop id="-8547221378" name="2700 W @ 12777 S" lane="-566119615#14_0" startPos="16.48" endPos="31.48" friendlyPos="true"/>
     <busStop id="-8547244957" name="300 W @ 5154 N" lane="-10236359#7_0" startPos="54.69" endPos="69.69" friendlyPos="true"/>
     <busStop id="-8547265319" name="500 E @ 597 S" lane="-684838294_0" startPos="28.20" endPos="43.20" friendlyPos="true"/>
     <busStop id="-8551460894" name="State St @ 1851 S" lane="-1098862378#1_0" startPos="0.00" endPos="15.00" friendlyPos="true" lines="850"/>
     <busStop id="-8551499310" name="Center St @ 381 W" lane="-227602198#8_0" startPos="2.89" endPos="17.89" friendlyPos="true"/>
+    <busStop id="-8551523749" name="4000 W @ 12507 S" lane="-681783217#7_0" startPos="20.66" endPos="35.66" friendlyPos="true"/>
     <busStop id="-8551568936" name="400 E @ 245 N" lane="-1300052613#0_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="-8551583397" name="Pioneer Road / 700 East (WB)" lane="-10132385#1_0" startPos="11.18" endPos="26.18" friendlyPos="true"/>
     <busStop id="-8551597362" name="University Ave @ 1235 S" lane="-533097177#0_0" startPos="20.30" endPos="35.30" friendlyPos="true" lines="805">
         <access lane="-780731643#0_0" pos="4.55" length="29.05" friendlyPos="1"/>
         <access lane="45055154#7_0" pos="39.80" length="31.46" friendlyPos="1"/>
@@ -156,6 +128,7 @@
     <busStop id="-8552050331" name="2100 W / 1730 N (SB)" lane="-413237519#3_0" startPos="154.10" endPos="169.10" friendlyPos="true"/>
     <busStop id="-8561087916" name="State St / 1500 N (WB)" lane="-172743649#23_0" startPos="9.01" endPos="24.01" friendlyPos="true" lines="850"/>
     <busStop id="-8561291396" name="2230 N @ 175 W" lane="-10224360#1_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="-8561293381" name="1300 W @ 12160 S" lane="-684787399#13_0" startPos="8.05" endPos="23.05" friendlyPos="true"/>
     <busStop id="-8561295198" name="University Ave @ 4181 N" lane="-790916856#0_0" startPos="11.02" endPos="26.02" friendlyPos="true">
         <access lane="-932976219_0" pos="17.67" length="27.41" friendlyPos="1"/>
         <access lane="721386828#1_0" pos="9.73" length="30.81" friendlyPos="1"/>
@@ -164,6 +137,8 @@
         <access lane="932976219_0" pos="48.59" length="24.41" friendlyPos="1"/>
     </busStop>
     <busStop id="-8566102185" name="Geneva Rd @ 26 S" lane="-1210607053#0_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="-8566123428" name="Redwood Rd @ 13181 S" lane="-1097280753#3_0" startPos="15.74" endPos="30.74" friendlyPos="true"/>
+    <busStop id="-8568291204" name="1300 E @ 13297 S" lane="-346317149#36_0" startPos="13.49" endPos="28.49" friendlyPos="true"/>
     <busStop id="-8568334690" name="800 E @ 30 N" lane="-10236163#10_0" startPos="35.24" endPos="50.24" friendlyPos="true"/>
     <busStop id="-8568338145" name="State St @ 131 N" lane="-814302009#1_0" startPos="25.67" endPos="40.67" friendlyPos="true"/>
     <busStop id="-8568343946" name="1200 W @ 1209 N" lane="-568219148#12_0" startPos="42.23" endPos="57.23" friendlyPos="true"/>
@@ -173,25 +148,30 @@
     <busStop id="-8568370617" name="1000 S @ 1379 W" lane="-262148878#5_0" startPos="89.45" endPos="104.45" friendlyPos="true"/>
     <busStop id="-8570339851" name="900 E / 450 N (SB)" lane="-864013087_0" startPos="0.00" endPos="10.34" friendlyPos="true"/>
     <busStop id="-8570339852" name="100 W @ 170 S" lane="-97124322#15_0" startPos="50.62" endPos="65.62" friendlyPos="true"/>
-    <busStop id="-8570374809" name="900 E @ 575 S" lane="-413237550#10_0" startPos="96.46" endPos="111.46" friendlyPos="true"/>
+    <busStop id="-8570374809" name="900 E @ 575 S" lane="-413237550#10_0" startPos="85.03" endPos="100.03" friendlyPos="true"/>
     <busStop id="-8572443146" name="Mt Timpanogos Blvd @ 899 N" lane="-1341102055#0_0" startPos="212.99" endPos="227.99" friendlyPos="true"/>
     <busStop id="-8572460966" name="Main St @ 1056 S" lane="-933026926_0" startPos="31.51" endPos="46.51" friendlyPos="true"/>
     <busStop id="-8573405535" name="Main St / 1600 S (SB)" lane="-10248521#5_0" startPos="44.52" endPos="59.52" friendlyPos="true"/>
     <busStop id="-8576324957" name="1860 S @ 519 E" lane="-10233281#2_0" startPos="4.43" endPos="19.43" friendlyPos="true"/>
     <busStop id="-8576337203" name="State St @ 785 S" lane="-1103213888#0_0" startPos="1.58" endPos="16.58" friendlyPos="true" lines="850"/>
     <busStop id="-8576351956" name="State St @ 1632 S" lane="-1103204109#0_0" startPos="0.00" endPos="6.85" friendlyPos="true"/>
+    <busStop id="-8576369779" name="Redwood Rd @ 13377 S" lane="-1097280752#4_0" startPos="44.18" endPos="59.18" friendlyPos="true"/>
     <busStop id="-8577290573" name="State St @ 183 N" lane="-814302009#5_0" startPos="23.55" endPos="38.55" friendlyPos="true"/>
     <busStop id="-8577295330" name="800 E @ 558 N" lane="-1035171895#3_0" startPos="21.59" endPos="36.59" friendlyPos="true"/>
+    <busStop id="-8577305710" name="Pioneer Road / Fort Street (WB)" lane="-1225225153_0" startPos="7.66" endPos="22.66" friendlyPos="true"/>
     <busStop id="-8577305880" name="1600 N @ 567 E" lane="-10243474#0_0" startPos="0.00" endPos="0.20" friendlyPos="true"/>
-    <busStop id="-8577326194" name="Ashton Blvd @ 2302 W" lane="-229735423#0_0" startPos="6.20" endPos="21.20" friendlyPos="true"/>
-    <busStop id="-8584736832" name="Main St @ 1456 N" lane="-933008266#3_0" startPos="2.29" endPos="17.29" friendlyPos="true"/>
+    <busStop id="-8577326194" name="Ashton Blvd @ 2302 W" lane="-229735423#0_0" startPos="8.54" endPos="23.54" friendlyPos="true"/>
+    <busStop id="-8584726315" name="3600 W @ 12907 S" lane="-1263892922_0" startPos="32.16" endPos="47.16" friendlyPos="true"/>
+    <busStop id="-8584736832" name="Main St @ 1456 N" lane="-1373544366#2_0" startPos="2.29" endPos="17.29" friendlyPos="true"/>
     <busStop id="-8600782797" name="900 E / 300 N (SB)" lane="-10228265#7_0" startPos="35.32" endPos="50.32" friendlyPos="true"/>
     <busStop id="-8600838999" name="400 S @ 1357 W" lane="-10229824#2_0" startPos="4.80" endPos="19.80" friendlyPos="true"/>
     <busStop id="-8600848947" name="1200 W @ 600 S" lane="-566551615#0_0" startPos="13.64" endPos="28.64" friendlyPos="true"/>
     <busStop id="-8604505796" name="Center St @ 195 W" lane="-227602198#2_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="-8604560600" name="State St @ 375 N" lane="-1103526531#2_0" startPos="0.56" endPos="15.56" friendlyPos="true"/>
     <busStop id="-8663241603" name="Main St @ 140 S" lane="-933017540#1_0" startPos="4.02" endPos="19.02" friendlyPos="true"/>
+    <busStop id="-8663618404" name="13400 S @ 1780 W" lane="-489665542_0" startPos="41.41" endPos="56.41" friendlyPos="true"/>
     <busStop id="-8663619702" name="800 E @ 525 S" lane="-599894831#1_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="-8663676048" name="2700 W @ 13395 S" lane="-801714842#2_0" startPos="18.96" endPos="33.96" friendlyPos="true"/>
     <busStop id="-8665698013" name="Main St @ 595 N" lane="-684673718#12_0" startPos="9.24" endPos="24.24" friendlyPos="true"/>
     <busStop id="-8669789982" name="900 N / 800 E (WB)" lane="-10246981#0_0" startPos="28.23" endPos="43.23" friendlyPos="true" lines="831"/>
     <busStop id="-8669810953" name="100 N @ 640 E" lane="-933030954#0_0" startPos="15.05" endPos="30.05" friendlyPos="true"/>
@@ -215,6 +195,8 @@
     <busStop id="-8720290440" name="Main St @ 480 S" lane="-432599175#7_0" startPos="5.56" endPos="20.56" friendlyPos="true"/>
     <busStop id="-8720293880" name="4800 W @ 10892 N" lane="-228527368#3_0" startPos="26.59" endPos="41.59" friendlyPos="true"/>
     <busStop id="-8720294827" name="Main St / University Pkwy (SB)" lane="-229097623#11_0" startPos="32.89" endPos="47.89" friendlyPos="true" lines="831"/>
+    <busStop id="-8730095481" name="13400 S @ 3378 W" lane="-203942593#4_0" startPos="142.80" endPos="157.80" friendlyPos="true"/>
+    <busStop id="-8779070649" name="3600 W @ 12151 S" lane="-107507748#2_0" startPos="31.20" endPos="46.20" friendlyPos="true"/>
     <busStop id="-8779090589" name="900 E / 150 S (NB)" lane="-10238463#3_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="-8779102844" name="500 W @ 931 N" lane="-231243105#18_0" startPos="10.49" endPos="25.49" friendlyPos="true"/>
     <busStop id="-8779152327" name="1200 W @ 50 S" lane="-28474650#14_0" startPos="42.14" endPos="57.14" friendlyPos="true"/>
@@ -226,6 +208,8 @@
     <busStop id="-8787362298" name="100 N @ 890 E" lane="-933030953#6_0" startPos="6.86" endPos="21.86" friendlyPos="true"/>
     <busStop id="-8787615473" name="200 W @ 98 S" lane="-10241290#5_0" startPos="13.31" endPos="28.31" friendlyPos="true"/>
     <busStop id="-8790793881" name="1200 W @ 117 N" lane="-45877227#6_0" startPos="10.78" endPos="25.78" friendlyPos="true"/>
+    <busStop id="-8790811504" name="13400 S @ 2010 W" lane="-684787379#12_0" startPos="66.10" endPos="81.10" friendlyPos="true"/>
+    <busStop id="-8790816146" name="Vestry Rd @ 657 E" lane="-40722823#2_0" startPos="87.82" endPos="102.82" friendlyPos="true"/>
     <busStop id="-8790823509" name="800 E @ 190 N" lane="-10236163#6_0" startPos="12.12" endPos="27.12" friendlyPos="true"/>
     <busStop id="-8790835829" name="1460 N / 1500 W (EB)" lane="-885055011#1_0" startPos="131.22" endPos="146.22" friendlyPos="true"/>
     <busStop id="-8849261098" name="State St @ 100 S (NB)" lane="-1352100039_0" startPos="0.00" endPos="15.00" friendlyPos="true" lines="850"/>
@@ -245,7 +229,8 @@
     <busStop id="-8855639650" name="Sandhill Rd / 1350 S (NB)" lane="-230345099#1_0" startPos="19.74" endPos="34.74" friendlyPos="true"/>
     <busStop id="-8855654505" name="State St @ 199 N" lane="-10237320#10_0" startPos="47.38" endPos="62.38" friendlyPos="true"/>
     <busStop id="-8855659464" name="300 W @ 4984 N" lane="-10226514#5_0" startPos="35.24" endPos="50.24" friendlyPos="true"/>
-    <busStop id="-8869016085" name="800 S @ 931 W" lane="-346646690#2_0" startPos="14.42" endPos="29.42" friendlyPos="true"/>
+    <busStop id="-8855662750" name="3600 W @ 13373 S" lane="-1263892925#0_0" startPos="27.22" endPos="42.22" friendlyPos="true"/>
+    <busStop id="-8869016085" name="800 S @ 931 W" lane="-1376073308#0_0" startPos="14.42" endPos="29.42" friendlyPos="true"/>
     <busStop id="-8869051099" name="Main St / 1450 S (SB)" lane="-229097623#3_0" startPos="0.00" endPos="9.74" friendlyPos="true"/>
     <busStop id="-8869862102" name="Geneva Road @ 450 S" lane="-1210607051#0_0" startPos="33.56" endPos="48.56" friendlyPos="true"/>
     <busStop id="-8869911047" name="State St @ 371 S" lane="-1103213882#1_0" startPos="6.74" endPos="21.74" friendlyPos="true" lines="850"/>
@@ -272,10 +257,13 @@
         <access lane="774633959#5_0" pos="68.04" length="22.63" friendlyPos="1"/>
     </busStop>
     <busStop id="-8873772574" name="400 E @ 175 S" lane="-10234072#2_0" startPos="17.43" endPos="32.43" friendlyPos="true"/>
+    <busStop id="-8873774863" name="Vestry Rd @ 1035 E" lane="-40722823#11_0" startPos="20.98" endPos="35.98" friendlyPos="true"/>
     <busStop id="-8873782804" name="1430 S / Sandhill Rd (EB)" lane="-10236886#6_0" startPos="36.48" endPos="51.48" friendlyPos="true"/>
-    <busStop id="-8873790336" name="Triumph Blvd / Ridge Dr (NB)" lane="-548611164#6_0" startPos="19.18" endPos="34.18" friendlyPos="true"/>
+    <busStop id="-8873790336" name="Triumph Blvd / 3400 N (NB)" lane="-548611164#6_0" startPos="19.18" endPos="34.18" friendlyPos="true"/>
+    <busStop id="-8873790337" name="Triumph Blvd / Ridge Dr (NB)" lane="-548611164#7_0" startPos="25.00" endPos="38.00" friendlyPos="true"/>
+    <busStop id="-8873790338" name="Adobe" lane="228440280#0_0" startPos="108.00" endPos="123.00" friendlyPos="true"/>
     <busStop id="-8877136398" name="State Hwy @ 1150 N" lane="-797917000#7_0" startPos="17.51" endPos="32.51" friendlyPos="true"/>
-    <busStop id="-8877427182" name="Main St @ 1115 N" lane="-684673718#33_0" startPos="34.57" endPos="49.57" friendlyPos="true"/>
+    <busStop id="-8877427182" name="Main St @ 1115 N" lane="-684673718#33_0" startPos="61.33" endPos="76.33" friendlyPos="true"/>
     <busStop id="-8877811877" name="State St @ 1975 N" lane="-119006832#3_0" startPos="2.92" endPos="17.92" friendlyPos="true"/>
     <busStop id="-8877833898" name="Highway 198 @ 385 N" lane="-933026947#0_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="-8877979573" name="1200 W @ 361 N" lane="-45877227#16_0" startPos="5.58" endPos="20.58" friendlyPos="true"/>
@@ -289,6 +277,7 @@
         <access lane="749991158#0_0" pos="4.44" length="10.70" friendlyPos="1"/>
         <access lane="749991158#1_0" pos="0.00" length="11.33" friendlyPos="1"/>
     </busStop>
+    <busStop id="-8886458975" name="12600 S @ 2191 W" lane="-684787421#1_0" startPos="12.35" endPos="27.35" friendlyPos="true"/>
     <busStop id="-8886461645" name="Freedom Blvd / 1950 N (NB)" lane="-346673260#3_0" startPos="125.71" endPos="140.71" friendlyPos="true" lines="831"/>
     <busStop id="-8886469655" name="800 E @ 225 S" lane="-10232468#7_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="-8886479202" name="State St / 1870 N (WB)" lane="-172743649#0_0" startPos="0.00" endPos="15.00" friendlyPos="true" lines="850"/>
@@ -297,12 +286,15 @@
     <busStop id="-8891477123" name="Temple Hill Dr @ 2085 N" lane="-10239304#1_0" startPos="0.65" endPos="15.65" friendlyPos="true"/>
     <busStop id="-8891482082" name="State St @ 521 N" lane="-119006768#4_0" startPos="17.56" endPos="32.56" friendlyPos="true"/>
     <busStop id="-8892910407" name="1600 N @ 381 E" lane="-10235902#12_0" startPos="35.74" endPos="50.74" friendlyPos="true"/>
+    <busStop id="-8895626963" name="Redwood Rd @ 12851 S" lane="-131754213#4_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="-8895649595" name="400 N @ 221 E" lane="-10226563#5_0" startPos="17.36" endPos="32.36" friendlyPos="true"/>
+    <busStop id="-8895656523" name="13400 S @ 2780 W" lane="-1097271625#1_0" startPos="9.55" endPos="24.55" friendlyPos="true"/>
     <busStop id="-8895668641" name="500 W @ 344 S" lane="-10241562#1_0" startPos="59.84" endPos="74.84" friendlyPos="true" lines="833"/>
     <busStop id="-8895668642" name="100 W @ 680 S" lane="-97124322#0_0" startPos="0.28" endPos="15.28" friendlyPos="true"/>
     <busStop id="-8895670485" name="800 S @ 1199 W" lane="-684661300#4_0" startPos="0.00" endPos="6.00" friendlyPos="true"/>
+    <busStop id="-8895670870" name="12600 S @ 2487 W" lane="-684787421#9_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="-8895671306" name="Freedom Blvd @ 1550 N" lane="-684673708#14_0" startPos="0.00" endPos="13.09" friendlyPos="true"/>
-    <busStop id="-8895677349" name="State St @ 2301 S" lane="-933008263#10_0" startPos="24.70" endPos="39.70" friendlyPos="true"/>
+    <busStop id="-8895677349" name="State St @ 2301 S" lane="-1373543025#0_0" startPos="24.83" endPos="39.83" friendlyPos="true"/>
     <busStop id="-8920987663" name="2600 N @ 549 W" lane="-10245765#6_0" startPos="15.35" endPos="30.35" friendlyPos="true"/>
     <busStop id="-8921009763" name="Triumph Blvd / 3400 N (NB)" lane="-548611164#4_0" startPos="30.84" endPos="45.84" friendlyPos="true"/>
     <busStop id="-8921186919" name="800 E @ 710 N" lane="-1037870374#1_0" startPos="1.28" endPos="16.28" friendlyPos="true"/>
@@ -315,6 +307,8 @@
     </busStop>
     <busStop id="-8921201181" name="Center St @ 125 W" lane="-227602198#1_0" startPos="4.70" endPos="19.70" friendlyPos="true"/>
     <busStop id="-8925330146" name="2230 N / 350 W (EB)" lane="-1030777448#5_0" startPos="15.69" endPos="30.69" friendlyPos="true" lines="831"/>
+    <busStop id="-8925335050" name="3600 W @ 13273 S" lane="-277166427#2_0" startPos="31.07" endPos="46.07" friendlyPos="true"/>
+    <busStop id="-8925337546" name="Lone Peak Parkway @ 12236 South" lane="-480973518#0_0" startPos="7.42" endPos="22.42" friendlyPos="true"/>
     <busStop id="-8925340334" name="University Ave @ 3291 N" lane="-790916850#0_0" startPos="13.42" endPos="28.42" friendlyPos="true">
         <access lane="-10236019#1_0" pos="92.73" length="29.71" friendlyPos="1"/>
         <access lane="-115822350#8_0" pos="21.70" length="6.24" friendlyPos="1"/>
@@ -336,6 +330,7 @@
     <busStop id="-8929834914" name="UVU Gunther Building (NB)" lane="-10242245#6_0" startPos="27.34" endPos="42.34" friendlyPos="true" lines="862"/>
     <busStop id="-8929856219" name="1200 W @ 270 S" lane="-28474650#6_0" startPos="4.05" endPos="19.05" friendlyPos="true"/>
     <busStop id="-8929861150" name="Center St @ 46 E" lane="-608189886#28_0" startPos="49.77" endPos="64.77" friendlyPos="true"/>
+    <busStop id="-8931408238" name="Draper Pkwy @ 1165 E" lane="-1354138283_0" startPos="20.04" endPos="35.04" friendlyPos="true"/>
     <busStop id="-8990579885" name="11000 N @ 5320 W" lane="-1225016876_0" startPos="6.74" endPos="21.74" friendlyPos="true"/>
     <busStop id="-9103784641" name="1600 N @ 277 W" lane="-10234805#11_0" startPos="7.11" endPos="22.11" friendlyPos="true" lines="862"/>
     <busStop id="-9103792514" name="Main St @ 60 S" lane="-933017538_0" startPos="21.22" endPos="36.22" friendlyPos="true"/>
@@ -355,6 +350,8 @@
     <busStop id="-9103879669" name="Main St / 2000 S (SB)" lane="-1298202268_0" startPos="87.69" endPos="102.69" friendlyPos="true"/>
     <busStop id="-9105689127" name="State St @ 575 S" lane="-919107643#15_0" startPos="39.70" endPos="54.70" friendlyPos="true" lines="850"/>
     <busStop id="-9105710531" name="Canyon Rd @ 1599 N" lane="-1031069190#6_0" startPos="8.30" endPos="23.30" friendlyPos="true"/>
+    <busStop id="-9105777908" name="13400 S @ 2562 W" lane="-684787379#0_0" startPos="65.27" endPos="80.27" friendlyPos="true"/>
+    <busStop id="-9105784021" name="3600 W @ 12345 S" lane="-107507748#9_0" startPos="14.69" endPos="29.69" friendlyPos="true"/>
     <busStop id="-9105784640" name="University Ave @ 1190 S" lane="-117922059#12_0" startPos="0.00" endPos="15.00" friendlyPos="true" lines="805">
         <access lane="-856341314#1_0" pos="5.66" length="19.90" friendlyPos="1"/>
         <access lane="-856341317#0_0" pos="33.00" length="32.30" friendlyPos="1"/>
@@ -363,19 +360,22 @@
         <access lane="856341314#1_0" pos="0.00" length="15.86" friendlyPos="1"/>
     </busStop>
     <busStop id="-9105786889" name="100 N @ 444 E" lane="-10246516#7_0" startPos="9.37" endPos="24.37" friendlyPos="true"/>
+    <busStop id="-9116997489" name="Vestry Rd @ 13918 S" lane="-40722823#22_0" startPos="26.55" endPos="41.55" friendlyPos="true"/>
     <busStop id="-9117041781" name="Main St / 1600 N (SB)" lane="-413237519#1_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="-9118090936" name="500 W @ 281 S" lane="-10231591#8_0" startPos="26.99" endPos="41.99" friendlyPos="true" lines="833"/>
     <busStop id="-9118813792" name="State St @ 1800 N (NB)" lane="-634107312#1_0" startPos="0.00" endPos="15.00" friendlyPos="true" lines="850"/>
     <busStop id="-9118824785" name="Main Street @ 101 West" lane="-32878196#5_0" startPos="3.98" endPos="18.98" friendlyPos="true"/>
+    <busStop id="-9118831045" name="3600 W @ 12681 S" lane="-1263892921#1_0" startPos="14.47" endPos="29.47" friendlyPos="true"/>
     <busStop id="-9118838679" name="State St @ 1825 N" lane="-31838249#18_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="-9123291378" name="State St @ 600 N (NB)" lane="-10237317#8_0" startPos="4.97" endPos="19.97" friendlyPos="true" lines="850"/>
     <busStop id="-9123357236" name="State St @ North County Blvd. (WB)" lane="-231974869#14_0" startPos="27.75" endPos="42.75" friendlyPos="true" lines="850"/>
+    <busStop id="-9123370537" name="State St @ 12156 S" lane="-39335762#0_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="-9124296538" name="200 W @ 810 N" lane="-809051520#2_0" startPos="7.80" endPos="22.80" friendlyPos="true"/>
     <busStop id="-9124305657" name="State St @ 200 N (NB)" lane="-842663974#12_0" startPos="23.82" endPos="38.82" friendlyPos="true" lines="850"/>
     <busStop id="-9124890027" name="State St @ 400 N (NB)" lane="-1103213876#2_0" startPos="6.55" endPos="21.55" friendlyPos="true" lines="850"/>
     <busStop id="-9124916757" name="1200 W @ 759 N" lane="-45877229#1_0" startPos="39.39" endPos="54.39" friendlyPos="true"/>
     <busStop id="-9124916759" name="500 W @ 1055 N" lane="-231243105#25_0" startPos="22.03" endPos="37.03" friendlyPos="true"/>
-    <busStop id="-9124927226" name="State St @ 2855 S" lane="-567935147#3_0" startPos="692.72" endPos="707.72" friendlyPos="true"/>
+    <busStop id="-9124927226" name="State St @ 2855 S" lane="-567935147#1_0" startPos="692.72" endPos="707.72" friendlyPos="true"/>
     <busStop id="-9124927227" name="Center St @ 749 E" lane="-231365239#16_0" startPos="66.04" endPos="81.04" friendlyPos="true"/>
     <busStop id="-9124943047" name="Uta Mt. Timpanogos Garage" lane="-413212997#4_0" startPos="49.95" endPos="64.95" friendlyPos="true" lines="862"/>
     <busStop id="-9124947647" name="State St @ 1587 S" lane="-1103204105#3_0" startPos="3.78" endPos="18.78" friendlyPos="true" lines="850"/>
@@ -388,7 +388,9 @@
     </busStop>
     <busStop id="-9126848710" name="State St @ 1335 N" lane="-31838249#3_0" startPos="24.25" endPos="39.25" friendlyPos="true"/>
     <busStop id="-9128290349" name="800 S @ 947 W" lane="-105736330#20_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="-9128324879" name="2700 W @ 12385 S" lane="-566119616#10_0" startPos="28.05" endPos="43.05" friendlyPos="true"/>
     <busStop id="-9128347751" name="Geneva Rd @ 1032 S" lane="-1210607046#0_0" startPos="16.25" endPos="31.25" friendlyPos="true" lines="862"/>
+    <busStop id="-9128349864" name="13400 S @ 3062 W" lane="-1097271626#1_0" startPos="60.17" endPos="75.17" friendlyPos="true"/>
     <busStop id="-9128351150" name="State St @ 632 E" lane="-814301987#1_0" startPos="0.00" endPos="3.73" friendlyPos="true"/>
     <busStop id="-9128351326" name="State St @ 1001 N" lane="-1103213873#11_0" startPos="3.38" endPos="18.38" friendlyPos="true"/>
     <busStop id="-9138218448" name="Sandalwood Dr / Slipstream Ave (WB)" lane="-891693090#1_0" startPos="26.94" endPos="41.94" friendlyPos="true"/>
@@ -404,9 +406,11 @@
     <busStop id="-9138278748" name="Expressway Ln @ 940 E" lane="-10224670#7_0" startPos="28.42" endPos="43.42" friendlyPos="true"/>
     <busStop id="-9138293064" name="State St @ 700 E (WB)" lane="-82362079#18_0" startPos="20.32" endPos="35.32" friendlyPos="true" lines="850"/>
     <busStop id="-9138294655" name="State Hwy @ 1793 S" lane="-10240820#5_0" startPos="42.32" endPos="57.32" friendlyPos="true"/>
+    <busStop id="-9138298825" name="Redwood Rd @ 13035 S" lane="-131754213#7_0" startPos="14.50" endPos="29.50" friendlyPos="true"/>
+    <busStop id="-9139177655" name="1000 E @ 12040 S" lane="-10138678_0" startPos="20.38" endPos="35.38" friendlyPos="true"/>
     <busStop id="-9139203036" name="400 N @ 101 E" lane="-10226563#3_0" startPos="0.00" endPos="1.78" friendlyPos="true"/>
     <busStop id="-9140154339" name="550 W / 1800 N (NB)" lane="-44815893#3_0" startPos="11.37" endPos="26.37" friendlyPos="true"/>
-    <busStop id="-9140197755" name="State St @ 2051 S" lane="-933008263#2_0" startPos="36.90" endPos="51.90" friendlyPos="true"/>
+    <busStop id="-9140197755" name="State St @ 2051 S" lane="-1373543024#2_0" startPos="36.90" endPos="51.90" friendlyPos="true"/>
     <busStop id="-9140214632" name="100 N @ 485 W" lane="-10233539#26_0" startPos="9.46" endPos="24.46" friendlyPos="true"/>
     <busStop id="-957772649" name="1200 W @ 707 N" lane="-1237615510#12_0" startPos="28.11" endPos="43.11" friendlyPos="true"/>
     <busStop id="-958993168" name="State Rd @ 1909 W" lane="809890791#2_0" startPos="20.45" endPos="35.45" friendlyPos="true"/>
@@ -421,16 +425,16 @@
     <busStop id="11361153248" name="Vineyard Station (Bay A)" lane="1095494532#2_0" startPos="51.58" endPos="66.58" friendlyPos="true" lines="834"/>
     <busStop id="11361153248@9499501" name="Vineyard Station (Bay A)" lane="1095494532#2_0" startPos="51.58" endPos="66.58" friendlyPos="true" lines="834"/>
     <busStop id="11362282291" name="Lehi Station (Bay B)" lane="231250765_0" startPos="46.73" endPos="61.73" friendlyPos="true" lines="871"/>
+    <busStop id="11377872445" name="Draper Town Center Station (Bay A)" lane="1225225156_0" startPos="88.70" endPos="103.70" friendlyPos="true" lines="871"/>
     <busStop id="11463381201" name="Provo Airport" lane="1087202049#7_0" startPos="12.80" endPos="27.80" friendlyPos="true" lines="833"/>
     <busStop id="11493019590" name="500 W @ 508 N" lane="816689128#1_0" startPos="28.40" endPos="43.40" friendlyPos="true" lines="850"/>
     <busStop id="11493019591" name="500 W @ 180 N" lane="1195524524#3_0" startPos="0.00" endPos="13.67" friendlyPos="true" lines="850"/>
-    <busStop id="12359994676" lane="216231337#1_0" startPos="132.89" endPos="132.89" friendlyPos="true" lines="Heber Valley Railroad">
-        <access lane="-10232810#0_0" pos="133.85" length="102.51" friendlyPos="1"/>
-        <access lane="-1336281816#0_0" pos="1226.60" length="29.30" friendlyPos="1"/>
-        <access lane="10232810#0_0" pos="32.37" length="107.38" friendlyPos="1"/>
-        <access lane="216231341#3_0" pos="70.23" length="26.30" friendlyPos="1"/>
-        <access lane="216231352_0" pos="8.15" length="98.01" friendlyPos="1"/>
-    </busStop>
+    <busStop id="11654936774" name="IKEA Way / 13263 South" lane="36316204#6_0" startPos="36.83" endPos="51.83" friendlyPos="true"/>
+    <busStop id="11654936775" name="13490 South / 428 West" lane="346010940#1_0" startPos="79.27" endPos="94.27" friendlyPos="true"/>
+    <busStop id="11654936777" name="125 West / 12652 South" lane="441618074#1_0" startPos="14.03" endPos="29.03" friendlyPos="true"/>
+    <busStop id="11654936778" name="Vista Station Boulevard / 13470 South" lane="608198483#2_0" startPos="17.62" endPos="32.62" friendlyPos="true"/>
+    <busStop id="11654936779" name="220 West / 13064 South" lane="754530519#1_0" startPos="48.87" endPos="63.87" friendlyPos="true"/>
+    <busStop id="11654936782" name="200 West / 13352 South" lane="790186205#3_0" startPos="9.57" endPos="24.57" friendlyPos="true"/>
     <busStop id="2369125890" name="State Rd @ 1300 W (WB)" lane="346410603#0_0" startPos="22.43" endPos="37.43" friendlyPos="true" lines="850"/>
     <busStop id="2396515835" name="Provo Central Station (Bay D)" lane="1224483160_0" startPos="49.60" endPos="64.60" friendlyPos="true" lines="831">
         <access lane="1030581532_0" pos="10.92" length="20.73" friendlyPos="1"/>
@@ -441,41 +445,6 @@
     </busStop>
     <busStop id="2400947974" name="1600 N @ 526 W" lane="1133136673_0" startPos="6.59" endPos="21.59" friendlyPos="true"/>
     <busStop id="2400947976" name="1200 W @ 1586 N" lane="568219148#24_0" startPos="10.13" endPos="25.13" friendlyPos="true" lines="862"/>
-    <busStop id="3017998930" name="American Fork" lane="626822759_0" startPos="402.51" endPos="602.51" friendlyPos="true" lines="750">
-        <access lane="723498874#0_0" pos="0.00" length="12.85" friendlyPos="1"/>
-        <access lane="723498874#1_0" pos="0.00" length="18.34" friendlyPos="1"/>
-        <access lane="723498874#2_0" pos="0.00" length="21.26" friendlyPos="1"/>
-        <access lane="723498874#3_0" pos="3.99" length="28.23" friendlyPos="1"/>
-        <access lane="723498885_0" pos="0.00" length="19.71" friendlyPos="1"/>
-    </busStop>
-    <busStop id="3018001470" name="Lehi" lane="762329397_0" startPos="350.88" endPos="550.88" friendlyPos="true" lines="750">
-        <access lane="-556029120#6_0" pos="24.67" length="55.28" friendlyPos="1"/>
-        <access lane="-556029120#7_0" pos="5.01" length="76.09" friendlyPos="1"/>
-        <access lane="1064115642_0" pos="33.94" length="61.41" friendlyPos="1"/>
-        <access lane="295410275_0" pos="6.10" length="72.75" friendlyPos="1"/>
-        <access lane="556029120#6_0" pos="66.40" length="50.48" friendlyPos="1"/>
-    </busStop>
-    <busStop id="3020208745" name="Provo" lane="298119461#9_0" startPos="185.13" endPos="385.13" friendlyPos="true" lines="California Zephyr">
-        <access lane="-723321011_0" pos="22.14" length="29.46" friendlyPos="1"/>
-        <access lane="1323464476#1_0" pos="0.99" length="41.13" friendlyPos="1"/>
-        <access lane="1323464478#1_0" pos="10.80" length="35.21" friendlyPos="1"/>
-        <access lane="1323464478#2_0" pos="0.00" length="39.01" friendlyPos="1"/>
-        <access lane="723321011_0" pos="34.17" length="34.26" friendlyPos="1"/>
-    </busStop>
-    <busStop id="3020209235" name="Orem Central" lane="100198877#5_0" startPos="2386.87" endPos="2586.87" friendlyPos="true" lines="750">
-        <access lane="-463704562#0_0" pos="67.63" length="26.25" friendlyPos="1"/>
-        <access lane="463704562#0_0" pos="7.59" length="21.45" friendlyPos="1"/>
-        <access lane="908255821#0_0" pos="2.97" length="23.36" friendlyPos="1"/>
-        <access lane="908255821#1_0" pos="0.00" length="25.29" friendlyPos="1"/>
-        <access lane="908255828#0_0" pos="10.96" length="8.20" friendlyPos="1"/>
-    </busStop>
-    <busStop id="3020209244" name="Orem Central" lane="762329402#5_0" startPos="2546.35" endPos="2746.35" friendlyPos="true" lines="750">
-        <access lane="1326180649#2_0" pos="62.01" length="31.52" friendlyPos="1"/>
-        <access lane="1326180649#4_0" pos="79.13" length="17.80" friendlyPos="1"/>
-        <access lane="1326180649#5_0" pos="0.00" length="21.03" friendlyPos="1"/>
-        <access lane="1326180650#0_0" pos="0.20" length="18.22" friendlyPos="1"/>
-        <access lane="1326180650#1_0" pos="0.20" length="12.74" friendlyPos="1"/>
-    </busStop>
     <busStop id="3106292298" name="Xactware" lane="346640511#3_0" startPos="102.77" endPos="117.77" friendlyPos="true"/>
     <busStop id="3530035887" name="State St @ 930 E" lane="231974869#9_0" startPos="49.99" endPos="64.99" friendlyPos="true"/>
     <busStop id="366399249" name="1600 N @ 260 W" lane="36872255#0_0" startPos="4.49" endPos="19.49" friendlyPos="true"/>
@@ -518,7 +487,7 @@
     </busStop>
     <busStop id="605205962" name="Center Street" lane="1001934331#10_0" startPos="110.67" endPos="125.67" friendlyPos="true" lines="UVX">
         <access lane="431239718#0_0" pos="0.00" length="30.31" friendlyPos="1"/>
-        <access lane="517707070#18_0" pos="22.58" length="25.31" friendlyPos="1"/>
+        <access lane="517707070#16_0" pos="22.58" length="25.31" friendlyPos="1"/>
         <access lane="551523351_0" pos="0.00" length="26.51" friendlyPos="1"/>
         <access lane="741957439_0" pos="24.12" length="0.00" friendlyPos="1"/>
         <access lane="832629240#4_0" pos="45.75" length="27.02" friendlyPos="1"/>
@@ -547,20 +516,6 @@
         <access lane="749759592#0_0" pos="35.81" length="29.93" friendlyPos="1"/>
         <access lane="749759592#1_0" pos="0.44" length="28.79" friendlyPos="1"/>
     </busStop>
-    <busStop id="6341264443" name="Provo Central" lane="709757177_0" startPos="127.84" endPos="327.84" friendlyPos="true" lines="750">
-        <access lane="1302060449#1_0" pos="21.24" length="30.51" friendlyPos="1"/>
-        <access lane="558675799#4_0" pos="21.01" length="24.63" friendlyPos="1"/>
-        <access lane="558675799#5_0" pos="0.00" length="23.89" friendlyPos="1"/>
-        <access lane="558675801#2_0" pos="0.20" length="26.67" friendlyPos="1"/>
-        <access lane="558675830_0" pos="21.51" length="30.17" friendlyPos="1"/>
-    </busStop>
-    <busStop id="6341264446" name="Provo Central" lane="681588640#0_0" startPos="0.00" endPos="185.28" friendlyPos="true" lines="750">
-        <access lane="558675799#4_0" pos="21.01" length="10.37" friendlyPos="1"/>
-        <access lane="558675799#5_0" pos="0.00" length="9.28" friendlyPos="1"/>
-        <access lane="558675801#1_0" pos="44.89" length="18.30" friendlyPos="1"/>
-        <access lane="558675801#2_0" pos="0.20" length="11.77" friendlyPos="1"/>
-        <access lane="558675830_0" pos="21.51" length="15.52" friendlyPos="1"/>
-    </busStop>
     <busStop id="6342422973" name="Health Center" lane="10248919#9_0" startPos="0.00" endPos="9.17" friendlyPos="true"/>
     <busStop id="6342422974" name="Missionary Training Center" lane="1088622549#1_0" startPos="10.92" endPos="25.92" friendlyPos="true"/>
     <busStop id="6343896643" name="Academy Square" lane="1037188591#2_0" startPos="7.96" endPos="22.96" friendlyPos="true" lines="UVX">
@@ -578,13 +533,8 @@
         <access lane="749484458#0_0" pos="37.04" length="37.21" friendlyPos="1"/>
         <access lane="749484458#1_0" pos="0.00" length="33.23" friendlyPos="1"/>
     </busStop>
-    <busStop id="6593866724" name="Lehi" lane="297896758_0" startPos="0.00" endPos="200.00" friendlyPos="true" lines="750">
-        <access lane="-614959237#4_0" pos="41.78" length="20.64" friendlyPos="1"/>
-        <access lane="295410282_0" pos="65.49" length="18.92" friendlyPos="1"/>
-        <access lane="614959237#4_0" pos="394.67" length="15.84" friendlyPos="1"/>
-        <access lane="791938237#1_0" pos="7.78" length="36.56" friendlyPos="1"/>
-        <access lane="791938238_0" pos="0.49" length="35.76" friendlyPos="1"/>
-    </busStop>
+    <busStop id="6413068452" name="Draper Station (Bay A)" lane="684494698#3_0" startPos="65.03" endPos="80.03" friendlyPos="true" lines="F514"/>
+    <busStop id="6413068452@9501397" name="Draper Station (Bay A)" lane="684494698#3_0" startPos="65.03" endPos="80.03" friendlyPos="true" lines="F514"/>
     <busStop id="6863882459" name="University Place Station (WB)" lane="776681829#5_0" startPos="84.15" endPos="99.15" friendlyPos="true" lines="862 880"/>
     <busStop id="6863882533" name="Main Street" lane="1001619396#1_0" startPos="9.42" endPos="24.42" friendlyPos="true" lines="UVX">
         <access lane="1036894567#2_0" pos="0.20" length="29.50" friendlyPos="1"/>
@@ -600,15 +550,13 @@
         <access lane="684673675#2_0" pos="264.43" length="27.69" friendlyPos="1"/>
         <access lane="776681829#5_0" pos="23.63" length="20.75" friendlyPos="1"/>
     </busStop>
-    <busStop id="7123084666" name="American Fork" lane="297896760#1_0" startPos="0.00" endPos="165.39" friendlyPos="true" lines="750">
-        <access lane="723498873#0_0" pos="0.20" length="28.55" friendlyPos="1"/>
-        <access lane="723498873#1_0" pos="0.00" length="28.46" friendlyPos="1"/>
-        <access lane="723498873#3_0" pos="0.00" length="30.28" friendlyPos="1"/>
-        <access lane="723498874#4_0" pos="49.20" length="7.46" friendlyPos="1"/>
-        <access lane="723498884_0" pos="3.55" length="19.77" friendlyPos="1"/>
-    </busStop>
+    <busStop id="84766184" name="Sparrowhawk Way @ 7746 N" lane="1225214905_0" startPos="6.93" endPos="21.93" friendlyPos="true" lines="806"/>
+    <busStop id="8542135580" name="700 East / 12300 South (SB)" lane="749749377_0" startPos="0.27" endPos="15.27" friendlyPos="true"/>
+    <busStop id="8542151400" name="Pony Express Pky @ 3917 E" lane="783533841#2_0" startPos="225.69" endPos="240.69" friendlyPos="true" lines="806"/>
+    <busStop id="8542153941" name="13400 S @ 2361 W" lane="684787379#3_0" startPos="28.68" endPos="43.68" friendlyPos="true"/>
     <busStop id="8542155914" name="State St @ 1900 S" lane="1098862378#2_0" startPos="45.78" endPos="60.78" friendlyPos="true"/>
-    <busStop id="8542163782" name="State St. @ 2931 S" lane="567935147#2_0" startPos="54.61" endPos="69.61" friendlyPos="true"/>
+    <busStop id="8542163782" name="State St. @ 2931 S" lane="1373544365#2_0" startPos="54.61" endPos="69.61" friendlyPos="true"/>
+    <busStop id="8542188963" name="12600 S @ 1340 W" lane="684787395#3_0" startPos="11.77" endPos="26.77" friendlyPos="true"/>
     <busStop id="8542231801" name="State St @ 381 N" lane="1103213880#4_0" startPos="0.00" endPos="9.65" friendlyPos="true"/>
     <busStop id="8542238751" name="Pleasant Grove Blvd. @ 287 S" lane="810567742#1_0" startPos="26.54" endPos="41.54" friendlyPos="true"/>
     <busStop id="8542420375" name="11000 N @ 5799 W" lane="1225016883_0" startPos="131.50" endPos="146.50" friendlyPos="true"/>
@@ -632,6 +580,7 @@
     <busStop id="8542953438" name="Center St @ 2906 W" lane="1225108307#5_0" startPos="3.99" endPos="18.99" friendlyPos="true" lines="833"/>
     <busStop id="8542953439" name="Center St @ 2915 W" lane="1225108307#8_0" startPos="0.00" endPos="15.00" friendlyPos="true" lines="833"/>
     <busStop id="8542953530" name="1720 N / 550 W (EB)" lane="10237309#5_0" startPos="59.69" endPos="74.69" friendlyPos="true"/>
+    <busStop id="8544520931" name="1300 W @ 12145 S" lane="684787399#13_0" startPos="25.10" endPos="40.10" friendlyPos="true"/>
     <busStop id="8544530509" name="800 E @ 1146 S" lane="231243108#8_0" startPos="7.35" endPos="22.35" friendlyPos="true" lines="862"/>
     <busStop id="8544532980" name="Geneva Road @ 499 S" lane="231364515#6_0" startPos="28.80" endPos="43.80" friendlyPos="true"/>
     <busStop id="8544534499" name="300 W @ 5132 N" lane="10236359#4_0" startPos="0.00" endPos="3.62" friendlyPos="true"/>
@@ -647,20 +596,27 @@
         <access lane="463704566#4_0" pos="17.60" length="18.57" friendlyPos="1"/>
         <access lane="908255828#1_0" pos="13.35" length="38.07" friendlyPos="1"/>
     </busStop>
+    <busStop id="8544774956" name="4000 W @ 12183 S" lane="820337499#1_0" startPos="11.92" endPos="26.92" friendlyPos="true"/>
     <busStop id="8544780328" name="980 W @ 919 N" lane="44740447#0_0" startPos="119.73" endPos="134.73" friendlyPos="true" lines="862"/>
+    <busStop id="8544780330" name="1300 E @ 13360 S" lane="346317149#37_0" startPos="21.88" endPos="36.88" friendlyPos="true"/>
     <busStop id="8544798609" name="700 N / 200 E (WB)" lane="742968416#1_0" startPos="10.43" endPos="25.43" friendlyPos="true" lines="831"/>
     <busStop id="8544806073" name="Main St / 1600 S (NB)" lane="229097623#1_0" startPos="16.20" endPos="31.20" friendlyPos="true"/>
     <busStop id="8544849774" name="Main St @ 50 S (NB)" lane="10248479#1_0" startPos="58.94" endPos="73.94" friendlyPos="true" lines="850"/>
-    <busStop id="8546974522" name="State St @ 1970 S" lane="933008263#0_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="8546974522" name="State St @ 1970 S" lane="1373543024#0_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="8547249868" name="100 E @ 2148 N" lane="756120683#3_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="8547257037" name="Pioneer Road / Fort Street (EB)" lane="1225225154_0" startPos="39.82" endPos="54.82" friendlyPos="true"/>
     <busStop id="8551512663" name="800 E @ 32 S" lane="10232468#2_0" startPos="0.00" endPos="15.00" friendlyPos="true" lines="862"/>
     <busStop id="8551514740" name="300 S / 200 E (EB)" lane="741957435#1_0" startPos="21.65" endPos="36.65" friendlyPos="true"/>
     <busStop id="8551528604" name="State St @ 830 N" lane="1103213873#1_0" startPos="0.00" endPos="15.00" friendlyPos="true" lines="850"/>
     <busStop id="8551552307" name="1720 N / State St (EB)" lane="10237309#1_0" startPos="8.41" endPos="23.41" friendlyPos="true"/>
     <busStop id="8551589148" name="100 N @ 395 E" lane="10246516#11_0" startPos="5.41" endPos="20.41" friendlyPos="true"/>
+    <busStop id="8551594056" name="Harvest Hills Blvd @ 224" lane="10231933#5_0" startPos="229.49" endPos="244.49" friendlyPos="true" lines="806"/>
+    <busStop id="8551645077" name="Vestry Rd @ 1038 E" lane="40722823#11_0" startPos="24.67" endPos="39.67" friendlyPos="true"/>
     <busStop id="8552049555" name="800 E @ 713 N" lane="1037870374#1_0" startPos="7.24" endPos="22.24" friendlyPos="true" lines="805"/>
     <busStop id="8552052405" name="Center St @ 50 W (WB)" lane="10233792#1_0" startPos="42.23" endPos="57.23" friendlyPos="true" lines="850"/>
+    <busStop id="8552058915" name="12300 South / 210 East (EB)" lane="808665577#1_0" startPos="12.04" endPos="27.04" friendlyPos="true"/>
     <busStop id="8552058928" name="800 E @ 1020 S" lane="231243108#1_0" startPos="34.11" endPos="49.11" friendlyPos="true" lines="862"/>
+    <busStop id="8552059664" name="Redwood Rd @ 13054 S" lane="1097280753#1_0" startPos="9.03" endPos="24.03" friendlyPos="true"/>
     <busStop id="8552063733" name="1200 W @ 1222 N" lane="568219148#12_0" startPos="6.53" endPos="21.53" friendlyPos="true" lines="862"/>
     <busStop id="8561017088" name="State St @ 1730 N" lane="31838249#18_0" startPos="0.00" endPos="15.00" friendlyPos="true" lines="850"/>
     <busStop id="8561294593" name="1460 N / 1500 W (WB)" lane="885055011#1_0" startPos="17.47" endPos="32.47" friendlyPos="true"/>
@@ -678,12 +634,15 @@
     </busStop>
     <busStop id="8568339356" name="Timpanogos Pkwy @ 655 E" lane="231247767_0" startPos="49.37" endPos="64.37" friendlyPos="true"/>
     <busStop id="8568343065" name="500 W @ 1145 N" lane="1029191655#3_0" startPos="2.23" endPos="17.23" friendlyPos="true"/>
-    <busStop id="8568351479" name="State St @ 2390 S" lane="933008263#11_0" startPos="19.98" endPos="34.98" friendlyPos="true"/>
+    <busStop id="8568351479" name="State St @ 2390 S" lane="1373543025#1_0" startPos="19.87" endPos="34.87" friendlyPos="true"/>
     <busStop id="8568357351" name="800 E @ 455 N" lane="1035171895#9_0" startPos="8.29" endPos="23.29" friendlyPos="true"/>
     <busStop id="8568366820" name="800 E @ 905 S" lane="909694983_0" startPos="20.46" endPos="35.46" friendlyPos="true" lines="850"/>
     <busStop id="8568369284" name="Main St. @ 1401 E" lane="814301991#2_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="8570320809" name="Center St @ 970 W" lane="1192673080#1_0" startPos="40.41" endPos="55.41" friendlyPos="true" lines="833"/>
+    <busStop id="8570353669" name="Chapel Ridge Dr / 4100 N" lane="306787687#2_0" startPos="24.91" endPos="39.91" friendlyPos="true"/>
+    <busStop id="8570355540" name="Redwood Rd @ 12830 S" lane="131754213#3_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="8570361681" name="1600 N @ 278 W" lane="10234805#12_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="8572426245" name="3600 W @ 12750 S" lane="1263892923#0_0" startPos="20.10" endPos="35.10" friendlyPos="true"/>
     <busStop id="8572449564" name="State St @ Center St. (NB)" lane="1098897323#1_0" startPos="8.82" endPos="23.82" friendlyPos="true" lines="850"/>
     <busStop id="8572464565" name="State St @ 1100 N (NB)" lane="1103213873#19_0" startPos="9.01" endPos="24.01" friendlyPos="true" lines="850"/>
     <busStop id="8572501128" name="State St @ 1859 N" lane="172743649#1_0" startPos="16.92" endPos="31.92" friendlyPos="true"/>
@@ -691,26 +650,29 @@
     <busStop id="8573405534" name="Center St @ 369 E" lane="608189886#16_0" startPos="25.74" endPos="40.74" friendlyPos="true"/>
     <busStop id="8573408531" name="Center St @ 200 W (WB)" lane="227602198#4_0" startPos="6.00" endPos="21.00" friendlyPos="true" lines="850"/>
     <busStop id="8576378895" name="Main St @ 670 N" lane="684673718#14_0" startPos="24.15" endPos="39.15" friendlyPos="true"/>
+    <busStop id="8577290489" name="Redwood Rd @ 1418 N" lane="247341669#1_0" startPos="34.56" endPos="49.56" friendlyPos="true" lines="806"/>
     <busStop id="8577294255" name="2230 N / 400 W (WB)" lane="1030777448#3_0" startPos="7.06" endPos="22.06" friendlyPos="true" lines="831"/>
     <busStop id="8577294457" name="800 E @ 442 S" lane="599894831#0_0" startPos="5.60" endPos="20.60" friendlyPos="true" lines="862"/>
+    <busStop id="8577296125" name="2700 W @ 12810 S" lane="566119615#14_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="8577296196" name="Lehi Station (Bay C)" lane="231250765_0" startPos="24.16" endPos="39.16" friendlyPos="true"/>
     <busStop id="8577296199" name="Lehi Station (Bay E)" lane="231250765_0" startPos="150.50" endPos="165.50" friendlyPos="true" lines="806"/>
     <busStop id="8577309630" name="400 N @ 220 E" lane="10226563#5_0" startPos="12.57" endPos="27.57" friendlyPos="true"/>
-    <busStop id="8577326192" name="Ashton Blvd / Triumph Blvd (NB)" lane="346479769#1_0" startPos="10.92" endPos="25.92" friendlyPos="true" lines="806 850"/>
+    <busStop id="8577326192" name="Ashton Blvd / Triumph Blvd (NB)" lane="346479769#1_0" startPos="13.42" endPos="28.42" friendlyPos="true" lines="806 850"/>
     <busStop id="8577326193" name="Triumph Blvd / Ashton Blvd (NB)" lane="10245147#1_0" startPos="15.43" endPos="30.43" friendlyPos="true"/>
+    <busStop id="8584705558" name="2700 W @ 13370 S" lane="801714842#2_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="8584721658" name="1600 N @ 568 E" lane="10235902#18_0" startPos="0.00" endPos="15.00" friendlyPos="true" lines="862"/>
     <busStop id="8584726534" name="800 E @ 595 N" lane="1035171895#2_0" startPos="17.47" endPos="32.47" friendlyPos="true"/>
     <busStop id="8584731137" name="American Fork Station (Bay F)" lane="413241223_0" startPos="520.41" endPos="535.41" friendlyPos="true">
         <access lane="-228329656#3_0" pos="48.48" length="10.37" friendlyPos="1"/>
         <access lane="228329656#3_0" pos="8.48" length="5.57" friendlyPos="1"/>
-        <access lane="723498874#6_0" pos="3.18" length="7.67" friendlyPos="1"/>
+        <access lane="723498874#5_0" pos="3.18" length="7.67" friendlyPos="1"/>
         <access lane="723498881#1_0" pos="7.55" length="17.62" friendlyPos="1"/>
         <access lane="723498883#0_0" pos="0.20" length="20.34" friendlyPos="1"/>
     </busStop>
     <busStop id="8584734435" name="University Place Station (EB)" lane="684673675#6_0" startPos="18.69" endPos="33.69" friendlyPos="true" lines="850"/>
     <busStop id="8584737276" name="1270 W @ 779 S" lane="1225096172#3_0" startPos="20.19" endPos="35.19" friendlyPos="true" lines="805"/>
     <busStop id="8584738109" name="State Rd @ 1076 N" lane="933972044#3_0" startPos="68.36" endPos="83.36" friendlyPos="true"/>
-    <busStop id="8600838041" name="Adobe" lane="413241847#1_0" startPos="576.35" endPos="591.35" friendlyPos="true">
+    <busStop id="8600838041" name="Adobe" lane="413241847#1_0" startPos="576.46" endPos="591.46" friendlyPos="true">
         <access lane="1091120359_0" pos="7.56" length="1.86" friendlyPos="1"/>
         <access lane="1091120360#1_0" pos="0.20" length="15.11" friendlyPos="1"/>
         <access lane="305661029#3_0" pos="60.81" length="5.28" friendlyPos="1"/>
@@ -718,15 +680,17 @@
         <access lane="684661214#0_0" pos="3.24" length="14.19" friendlyPos="1"/>
     </busStop>
     <busStop id="8600847693" name="400 E @ 390 S" lane="10234072#6_0" startPos="79.81" endPos="94.81" friendlyPos="true"/>
+    <busStop id="8604540114" name="13200 S @ 3740 W" lane="153853896#2_0" startPos="58.61" endPos="73.61" friendlyPos="true"/>
     <busStop id="8604554015" name="550 W / 1800 N (SB)" lane="44815893#3_0" startPos="24.92" endPos="39.92" friendlyPos="true"/>
     <busStop id="8604556870" name="State Hwy @ 1796 S" lane="10240820#5_0" startPos="15.77" endPos="30.77" friendlyPos="true"/>
     <busStop id="8604568108" name="State St @ 198 N" lane="10237320#10_0" startPos="69.70" endPos="84.70" friendlyPos="true" lines="850"/>
     <busStop id="8663443138" name="Main St / 1820 S (NB)" lane="10248521#1_0" startPos="166.09" endPos="181.09" friendlyPos="true"/>
     <busStop id="8663445783" name="100 N @ 601 E" lane="933030954#0_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="8663447666" name="920 S @ 328 W" lane="60747906#5_0" startPos="0.00" endPos="15.00" friendlyPos="true" lines="833"/>
+    <busStop id="8663466727" name="12600 S @ 2468 W" lane="1053353224#0_0" startPos="0.00" endPos="0.41" friendlyPos="true"/>
     <busStop id="8663618669" name="800 E @ 574 N" lane="10236172#33_0" startPos="44.73" endPos="59.73" friendlyPos="true"/>
     <busStop id="8663633742" name="University Ave @ 20 S" lane="10244664#1_0" startPos="13.07" endPos="28.07" friendlyPos="true">
-        <access lane="517707070#18_0" pos="19.23" length="4.48" friendlyPos="1"/>
+        <access lane="517707070#16_0" pos="19.23" length="4.48" friendlyPos="1"/>
         <access lane="517707095#4_0" pos="6.24" length="33.38" friendlyPos="1"/>
         <access lane="517707100#1_0" pos="15.19" length="27.31" friendlyPos="1"/>
         <access lane="551523365_0" pos="0.00" length="33.62" friendlyPos="1"/>
@@ -742,11 +706,14 @@
     <busStop id="8663676819" name="800 S @ 334 E" lane="686158892#3_0" startPos="13.89" endPos="28.89" friendlyPos="true"/>
     <busStop id="8665635611" name="State St @ 655 W" lane="172743649#27_0" startPos="19.27" endPos="34.27" friendlyPos="true"/>
     <busStop id="8665707329" name="State St @ 115 N" lane="1336931741_0" startPos="11.08" endPos="26.08" friendlyPos="true"/>
+    <busStop id="8665732693" name="Draper Pkwy @ 1180 E" lane="661060074#7_0" startPos="26.88" endPos="41.88" friendlyPos="true"/>
     <busStop id="8666291830" name="Main St / 2000 S (NB)" lane="1298202269#2_0" startPos="66.03" endPos="81.03" friendlyPos="true"/>
+    <busStop id="8666305528" name="13400 S @ 3075 W" lane="1097271626#1_0" startPos="6.48" endPos="21.48" friendlyPos="true"/>
     <busStop id="8666313261" name="4800 West @ 10080 N" lane="229203440#14_0" startPos="11.91" endPos="26.91" friendlyPos="true"/>
     <busStop id="8669822588" name="900 E / 50 S (SB)" lane="10238463#3_0" startPos="3.08" endPos="18.08" friendlyPos="true"/>
     <busStop id="8670267209" name="Main St @ 295 S" lane="933017543#1_0" startPos="10.95" endPos="25.95" friendlyPos="true"/>
     <busStop id="8672268996" name="1200 W @ 1086 N" lane="568219148#5_0" startPos="8.04" endPos="23.04" friendlyPos="true" lines="862"/>
+    <busStop id="8672400488" name="3600 W @ 12154 S" lane="107507748#2_0" startPos="4.54" endPos="19.54" friendlyPos="true"/>
     <busStop id="8672405948" name="State St @ 1090 S" lane="933008256#5_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="8672436476" name="500 W @ 852 N" lane="231243105#15_0" startPos="0.00" endPos="12.48" friendlyPos="true" lines="850"/>
     <busStop id="8674693707" name="11000 N @ 5331 W" lane="1225016875_0" startPos="16.81" endPos="31.81" friendlyPos="true"/>
@@ -773,11 +740,11 @@
     <busStop id="8779176830" name="700 N / 600 E (EB)" lane="742968431#2_0" startPos="29.23" endPos="44.23" friendlyPos="true"/>
     <busStop id="8780206510" name="800 S @ 680 W" lane="105736330#9_0" startPos="46.56" endPos="61.56" friendlyPos="true"/>
     <busStop id="8781411676" name="State St @ 1870 N" lane="31838249#23_0" startPos="6.28" endPos="21.28" friendlyPos="true" lines="850"/>
-    <busStop id="8781421268" name="400 N @ 22 E" lane="10226563#1_0" startPos="3.65" endPos="18.65" friendlyPos="true"/>
+    <busStop id="8781421268" name="400 N @ 22 E" lane="10226563#1_0" startPos="6.10" endPos="21.10" friendlyPos="true"/>
     <busStop id="8781451335" name="300 S / State St (EB)" lane="567917981#2_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="8781455725" name="Orem Palisade Park and Ride" lane="10244417#2_0" startPos="18.62" endPos="33.62" friendlyPos="true" lines="880"/>
     <busStop id="8783754381" name="Center St @ 548 W" lane="673875825#1_0" startPos="41.33" endPos="56.33" friendlyPos="true" lines="833"/>
-    <busStop id="8783760864" name="Cabela`s Blvd / Outlet Pkwy (EB)" lane="306787686#4_0" startPos="70.81" endPos="85.81" friendlyPos="true"/>
+    <busStop id="8783760864" name="Cabela`s Blvd / Outlet Pkwy (EB)" lane="306787686#4_0" startPos="70.93" endPos="85.93" friendlyPos="true"/>
     <busStop id="8783771089" name="University Ave @ 95 S" lane="845552832#7_0" startPos="16.79" endPos="31.79" friendlyPos="true" lines="850">
         <access lane="431239717#9_0" pos="16.32" length="34.57" friendlyPos="1"/>
         <access lane="551527731_0" pos="15.17" length="15.80" friendlyPos="1"/>
@@ -791,6 +758,7 @@
     <busStop id="8783828420" name="Mt Timpanogos Blvd @ 898 N" lane="10224384_0" startPos="14.55" endPos="29.55" friendlyPos="true"/>
     <busStop id="8784064050" name="State St @ 1950 N" lane="31838249#29_0" startPos="52.16" endPos="67.16" friendlyPos="true" lines="850"/>
     <busStop id="8784089616" name="Grandview Ln / State St (WB)" lane="413237565#1_0" startPos="12.03" endPos="27.03" friendlyPos="true"/>
+    <busStop id="8784112687" name="13400 S @ 3435 W" lane="203942593#3_0" startPos="150.45" endPos="165.45" friendlyPos="true"/>
     <busStop id="8790743509" name="University Ave. @ 4858 N" lane="790916864#1_0" startPos="22.55" endPos="37.55" friendlyPos="true">
         <access lane="-464123687_0" pos="802.85" length="60.50" friendlyPos="1"/>
         <access lane="298203118#1_0" pos="0.20" length="61.97" friendlyPos="1"/>
@@ -799,6 +767,7 @@
         <access lane="566737515#5_0" pos="74.36" length="1.89" friendlyPos="1"/>
     </busStop>
     <busStop id="8790811499" name="100 N @ 280 W" lane="10233539#16_0" startPos="19.40" endPos="34.40" friendlyPos="true" lines="850"/>
+    <busStop id="8790821469" name="13400 S @ 2827 W" lane="1097271625#1_0" startPos="104.11" endPos="119.11" friendlyPos="true"/>
     <busStop id="8849219667" name="State St @ 763 N" lane="10237317#0_0" startPos="0.00" endPos="10.35" friendlyPos="true"/>
     <busStop id="8849261097" name="University Ave @ 322 N" lane="742964750#1_0" startPos="4.91" endPos="19.91" friendlyPos="true">
         <access lane="1018574636#2_0" pos="6.33" length="14.31" friendlyPos="1"/>
@@ -808,7 +777,7 @@
         <access lane="560442749#0_0" pos="2.34" length="28.18" friendlyPos="1"/>
     </busStop>
     <busStop id="8849261141" name="Center St @ 621 E" lane="608189886#6_0" startPos="99.13" endPos="114.13" friendlyPos="true"/>
-    <busStop id="8849268955" name="State St @ 936 E" lane="1188521676#1_0" startPos="41.71" endPos="56.71" friendlyPos="true"/>
+    <busStop id="8849268955" name="State St @ 936 E" lane="1188521676#1_0" startPos="40.21" endPos="55.21" friendlyPos="true"/>
     <busStop id="8849280836" name="State St @ 1248 N" lane="1029191646#1_0" startPos="16.69" endPos="31.69" friendlyPos="true" lines="850"/>
     <busStop id="8849282117" name="900 E / 300 N (NB)" lane="10228265#6_0" startPos="5.43" endPos="20.43" friendlyPos="true"/>
     <busStop id="8849385097" name="1430 W / Sandhill Rd (WB)" lane="10236886#6_0" startPos="107.60" endPos="122.60" friendlyPos="true"/>
@@ -826,6 +795,7 @@
         <access lane="721386821#2_0" pos="0.00" length="34.59" friendlyPos="1"/>
     </busStop>
     <busStop id="8855661906" name="1460 N / 1220 W (WB)" lane="885055009#6_0" startPos="18.34" endPos="33.34" friendlyPos="true"/>
+    <busStop id="8861700382" name="Redwood Rd @ 13324 S" lane="1097280752#2_0" startPos="12.38" endPos="27.38" friendlyPos="true"/>
     <busStop id="8869089876" name="100 N @ 30 W" lane="10233539#1_0" startPos="15.94" endPos="30.94" friendlyPos="true" lines="850"/>
     <busStop id="8869240352" name="State St @ 234 S" lane="1103213887#3_0" startPos="1.77" endPos="16.77" friendlyPos="true"/>
     <busStop id="8869240353" name="University Ave @ 691 N" lane="413213008#2_0" startPos="4.91" endPos="19.91" friendlyPos="true">
@@ -842,6 +812,7 @@
     <busStop id="8873354748" name="Temple Hill Dr @ 2120 N" lane="1035900440#1_0" startPos="78.04" endPos="93.04" friendlyPos="true"/>
     <busStop id="8873355421" name="Center St @ 139 E" lane="608189886#24_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="8873767502" name="Center St @ 1767 W" lane="228562182#3_0" startPos="85.39" endPos="100.39" friendlyPos="true" lines="833"/>
+    <busStop id="8873784677" name="Redwood Rd @ 12640 S" lane="1075993920#2_0" startPos="23.25" endPos="38.25" friendlyPos="true"/>
     <busStop id="8876621715" name="University Ave @ 510 N" lane="742964962#1_0" startPos="13.93" endPos="28.93" friendlyPos="true">
         <access lane="1018632352#13_0" pos="0.00" length="36.30" friendlyPos="1"/>
         <access lane="220747890#0_0" pos="20.76" length="25.56" friendlyPos="1"/>
@@ -850,6 +821,7 @@
         <access lane="220747905#2_0" pos="20.95" length="8.84" friendlyPos="1"/>
     </busStop>
     <busStop id="8878005725" name="2100 W / 1730 N (NB)" lane="413237519#2_0" startPos="87.72" endPos="102.72" friendlyPos="true"/>
+    <busStop id="8878017318" name="Draper Town Center Station (Bay B)" lane="753230393_0" startPos="15.47" endPos="30.47" friendlyPos="true" lines="871"/>
     <busStop id="8878017584" name="1200 W @ 707 S" lane="566551616#1_0" startPos="4.81" endPos="19.81" friendlyPos="true" lines="862"/>
     <busStop id="8881604599" name="Lakeview" lane="882705687#1_0" startPos="17.97" endPos="32.97" friendlyPos="true" lines="UVX">
         <access lane="1036114787_0" pos="25.41" length="0.68" friendlyPos="1"/>
@@ -861,6 +833,7 @@
     <busStop id="8881619340" name="University Pkwy/University Ave (WB)" lane="1001839200#1_0" startPos="40.30" endPos="55.30" friendlyPos="true"/>
     <busStop id="8886449014" name="State St @ 465 W" lane="172743649#38_0" startPos="197.82" endPos="212.82" friendlyPos="true"/>
     <busStop id="8886452608" name="Main St @ 195 S" lane="933017541_0" startPos="6.59" endPos="21.59" friendlyPos="true"/>
+    <busStop id="8886458973" name="3600 W @ 12452 S" lane="107507748#13_0" startPos="25.81" endPos="40.81" friendlyPos="true"/>
     <busStop id="8886476371" name="University Ave / 900 S (SB)" lane="749991159_0" startPos="0.00" endPos="10.78" friendlyPos="true">
         <access lane="-749991151#0_0" pos="1.31" length="28.67" friendlyPos="1"/>
         <access lane="-749991151#1_0" pos="5.84" length="30.25" friendlyPos="1"/>
@@ -877,21 +850,25 @@
     <busStop id="8891478327" name="Express Way Lane @ 1211 E" lane="10224670#4_0" startPos="57.23" endPos="72.23" friendlyPos="true"/>
     <busStop id="8892914831" name="State St @ 497 N" lane="842663977#3_0" startPos="28.21" endPos="43.21" friendlyPos="true"/>
     <busStop id="8892924944" name="Ashton Blvd @ 3406 N" lane="231366548#8_0" startPos="22.36" endPos="37.36" friendlyPos="true"/>
-    <busStop id="8892928232" name="900 E @ 534 S" lane="413237550#8_0" startPos="29.80" endPos="44.80" friendlyPos="true"/>
+    <busStop id="8892928232" name="900 E @ 534 S" lane="413237550#9_0" startPos="29.81" endPos="44.81" friendlyPos="true"/>
     <busStop id="8892952111" name="Center St @ 812 E" lane="231365239#19_0" startPos="9.23" endPos="24.23" friendlyPos="true"/>
     <busStop id="8895635104" name="State St @ 1460 N" lane="31838249#5_0" startPos="15.06" endPos="30.06" friendlyPos="true" lines="850"/>
     <busStop id="8895637332" name="200 W @ 491 N" lane="1084988467#1_0" startPos="9.61" endPos="24.61" friendlyPos="true"/>
     <busStop id="8895646442" name="State St @ 720 E" lane="82362079#21_0" startPos="3.99" endPos="18.99" friendlyPos="true"/>
+    <busStop id="8895662945" name="12600 S @ 1605 W" lane="432579072_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="8895668644" name="State St / Lehi Main St (WB)" lane="1188525200#0_0" startPos="29.77" endPos="44.77" friendlyPos="true" lines="850"/>
-    <busStop id="8895668833" name="800 S @ 940 W" lane="346646690#2_0" startPos="8.10" endPos="23.10" friendlyPos="true" lines="862"/>
+    <busStop id="8895668833" name="800 S @ 940 W" lane="1376073308#0_0" startPos="8.10" endPos="23.10" friendlyPos="true" lines="862"/>
     <busStop id="8921163101" name="UVU Gunther Building (SB)" lane="10187232#1_0" startPos="87.14" endPos="102.14" friendlyPos="true"/>
     <busStop id="8921178019" name="State Rd @ 312 E" lane="1103526521#1_0" startPos="13.51" endPos="28.51" friendlyPos="true"/>
     <busStop id="8921178587" name="Freedom Blvd @ 370 S" lane="157871220#2_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="8921183207" name="500 W @ 1078 N" lane="231243105#26_0" startPos="9.55" endPos="24.55" friendlyPos="true" lines="850"/>
+    <busStop id="8921183208" name="1300 E @ 13556 S" lane="346317149#42_0" startPos="16.97" endPos="31.97" friendlyPos="true"/>
     <busStop id="8921196484" name="State St @ 1738 S" lane="1098862379#0_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="8921196947" name="1200 W @ 148 N" lane="45877227#6_0" startPos="3.67" endPos="18.67" friendlyPos="true" lines="862"/>
     <busStop id="8921198604" name="Main St / 1450 S (NB)" lane="229097623#3_0" startPos="0.00" endPos="9.74" friendlyPos="true"/>
     <busStop id="8921201186" name="800 S @ 1150 W" lane="541635286#1_0" startPos="12.19" endPos="27.19" friendlyPos="true" lines="862"/>
+    <busStop id="8921203344" name="12600 S @ 3779 W" lane="1352474559_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="8921206021" name="12600 S @ 1283 W" lane="136354514#1_0" startPos="56.89" endPos="71.89" friendlyPos="true"/>
     <busStop id="8921214624" name="100 N @ 875 E" lane="933030953#7_0" startPos="9.56" endPos="24.56" friendlyPos="true"/>
     <busStop id="8925217680" name="State St @ 44 S" lane="1103526535#1_0" startPos="4.75" endPos="19.75" friendlyPos="true"/>
     <busStop id="8925246060" name="400 N @ 110 E" lane="10226563#4_0" startPos="20.39" endPos="35.39" friendlyPos="true"/>
@@ -907,26 +884,33 @@
     <busStop id="8927835402" name="State St @ 1801 N" lane="634107312#2_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="8927848924" name="UVU Fulton Library (EB)" lane="346646696#0_0" startPos="10.52" endPos="25.52" friendlyPos="true" lines="831"/>
     <busStop id="8927876595" name="East Bay Blvd @ 126 E" lane="10247300#3_0" startPos="87.32" endPos="102.32" friendlyPos="true"/>
+    <busStop id="8927892817" name="Redwood Rd @ 13166 S" lane="1097280753#3_0" startPos="14.91" endPos="29.91" friendlyPos="true"/>
     <busStop id="8927895617" name="Center St @ 745 E" lane="10236163#10_0" startPos="102.30" endPos="117.30" friendlyPos="true"/>
     <busStop id="8928023746" name="Hwy 198 @ 742 N" lane="933026942#4_0" startPos="2.79" endPos="17.79" friendlyPos="true"/>
-    <busStop id="8928074764" name="Triumph Blvd / 3400 N (SB)" lane="548611164#4_0" startPos="19.35" endPos="34.35" friendlyPos="true"/>
+    <busStop id="8928074764" name="Triumph Blvd / 3400 N (SB)" lane="548611164#4_0" startPos="12.74" endPos="27.74" friendlyPos="true"/>
     <busStop id="8928506214" name="State St @ 20 S" lane="634119796#1_0" startPos="11.42" endPos="26.42" friendlyPos="true"/>
     <busStop id="8928528432" name="100 N @ 985 E" lane="933030952#1_0" startPos="5.51" endPos="20.51" friendlyPos="true"/>
     <busStop id="8928528433" name="100 E @ 1446 N" lane="566465492#1_0" startPos="3.18" endPos="18.18" friendlyPos="true"/>
+    <busStop id="8928536361" name="State St @ 12123 S" lane="39335762#1_0" startPos="48.00" endPos="63.00" friendlyPos="true"/>
     <busStop id="8928543975" name="200 W @ 781 N" lane="684673709#1_0" startPos="23.53" endPos="38.53" friendlyPos="true"/>
+    <busStop id="8928575786" name="4000 W @ 12544 S" lane="681783217#7_0" startPos="2.11" endPos="17.11" friendlyPos="true"/>
     <busStop id="8928578461" name="State Rd @ 763 S" lane="682287085#1_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="8928578462" name="Ashton Blvd / 1800 W (WB)" lane="231366549#2_0" startPos="64.05" endPos="79.05" friendlyPos="true" lines="850"/>
     <busStop id="8928579472" name="State St @ 2099 N" lane="887743994#0_0" startPos="12.43" endPos="27.43" friendlyPos="true"/>
     <busStop id="8928583686" name="University Ave / 300 S (SB)" lane="117922102#1_0" startPos="23.13" endPos="38.13" friendlyPos="true">
         <access lane="-751493490#0_0" pos="1.34" length="43.27" friendlyPos="1"/>
-        <access lane="721381118#7_0" pos="23.19" length="50.16" friendlyPos="1"/>
+        <access lane="1373541787_0" pos="77.53" length="10.31" friendlyPos="1"/>
         <access lane="721381118#8_0" pos="0.00" length="48.53" friendlyPos="1"/>
         <access lane="751493490#0_0" pos="0.00" length="42.80" friendlyPos="1"/>
         <access lane="751493491#1_0" pos="1.56" length="48.04" friendlyPos="1"/>
     </busStop>
     <busStop id="8929705824" name="500 W @ 988 N" lane="231243105#21_0" startPos="15.47" endPos="30.47" friendlyPos="true" lines="850"/>
-    <busStop id="8990559356" name="Main St @ 420 N" lane="933008271#1_0" startPos="12.99" endPos="27.99" friendlyPos="true"/>
+    <busStop id="8929832500" name="1300 E @ 12760 S" lane="346317149#15_0" startPos="31.10" endPos="46.10" friendlyPos="true"/>
+    <busStop id="8929850401" name="Pony Express Pky @ 3916 E" lane="783533880#4_0" startPos="4.83" endPos="19.83" friendlyPos="true" lines="806"/>
+    <busStop id="8990375755" name="12600 S @ 2685 W" lane="808449158#0_0" startPos="38.81" endPos="53.81" friendlyPos="true"/>
+    <busStop id="8990559356" name="Main St @ 420 N" lane="933008271#1_0" startPos="13.10" endPos="28.10" friendlyPos="true"/>
     <busStop id="8990565205" name="100 W @ 397 S" lane="97124322#11_0" startPos="0.50" endPos="15.50" friendlyPos="true"/>
+    <busStop id="8990570102" name="Harvest Hills Blvd @ 478 W" lane="10231933#1_0" startPos="7.44" endPos="22.44" friendlyPos="true" lines="806"/>
     <busStop id="8990571021" name="2230 N / Freedom Blvd (WB)" lane="1030777447#1_0" startPos="8.02" endPos="23.02" friendlyPos="true"/>
     <busStop id="8990574492" name="State St @ 300 N (NB)" lane="1103526533#2_0" startPos="9.58" endPos="24.58" friendlyPos="true" lines="850"/>
     <busStop id="8990592930" name="University Ave / 960 N (NB)" lane="932976230#0_0" startPos="0.00" endPos="15.00" friendlyPos="true" lines="831">
@@ -938,7 +922,7 @@
     </busStop>
     <busStop id="8997251555" name="UVU Institute (EB)" lane="1036428683#1_0" startPos="32.77" endPos="47.77" friendlyPos="true"/>
     <busStop id="9103703414" name="800 S @ 996 W" lane="105736330#20_0" startPos="20.61" endPos="35.61" friendlyPos="true"/>
-    <busStop id="9103745759" name="State St @ 1444 S" lane="684673719#4_0" startPos="0.00" endPos="6.72" friendlyPos="true"/>
+    <busStop id="9103745759" name="State St @ 1444 S" lane="684673719#4_0" startPos="0.00" endPos="6.71" friendlyPos="true"/>
     <busStop id="9103750365" name="Pleasant Grove Blvd @ 506 S" lane="810567743#1_0" startPos="18.80" endPos="33.80" friendlyPos="true"/>
     <busStop id="9103755350" name="800 N / 800 E (EB)" lane="793138983#1_0" startPos="37.16" endPos="52.16" friendlyPos="true">
         <access lane="-471834559#0_0" pos="0.00" length="30.03" friendlyPos="1"/>
@@ -947,7 +931,10 @@
         <access lane="471834559#1_0" pos="0.00" length="34.38" friendlyPos="1"/>
         <access lane="471834572#2_0" pos="55.29" length="10.34" friendlyPos="1"/>
     </busStop>
+    <busStop id="9103781142" name="12600 S @ 2260 W" lane="684787421#4_0" startPos="13.99" endPos="28.99" friendlyPos="true"/>
+    <busStop id="9103828050" name="12300 South / 210 East (WB)" lane="684787424#0_0" startPos="32.32" endPos="47.32" friendlyPos="true"/>
     <busStop id="9103829667" name="700 N / 600 E (WB)" lane="742968432#1_0" startPos="8.73" endPos="23.73" friendlyPos="true"/>
+    <busStop id="9103829668" name="12600 S @ 1825 W" lane="136354515#1_0" startPos="22.94" endPos="37.94" friendlyPos="true"/>
     <busStop id="9103830298" name="300 S / 400 E (WB)" lane="10246251#1_0" startPos="1.23" endPos="16.23" friendlyPos="true"/>
     <busStop id="9103852060" name="Main St / 1400 S (NB)" lane="229097623#7_0" startPos="0.00" endPos="13.29" friendlyPos="true" lines="831"/>
     <busStop id="9103862771" name="900 E / 450 N (NB)" lane="864013086#2_0" startPos="0.00" endPos="6.41" friendlyPos="true"/>
@@ -960,7 +947,9 @@
     </busStop>
     <busStop id="9103875793" name="Executive Pkwy/Thanksgiving Way(EB)" lane="803586162#8_0" startPos="33.96" endPos="48.96" friendlyPos="true"/>
     <busStop id="9103878463" name="400 E @ 210 N" lane="1300052614#1_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="9105691148" name="2700 W @ 12570 S" lane="566119616#16_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="9105693229" name="State St @ 597 N" lane="10237317#9_0" startPos="20.71" endPos="35.71" friendlyPos="true"/>
+    <busStop id="9105698639" name="Lone Peak Parkway @ 12249 South" lane="1075805933_0" startPos="13.55" endPos="28.55" friendlyPos="true"/>
     <busStop id="9105701981" name="University Ave @ 3302 N" lane="790916851#1_0" startPos="11.64" endPos="26.64" friendlyPos="true">
         <access lane="660600086#2_0" pos="111.74" length="37.25" friendlyPos="1"/>
         <access lane="660600086#3_0" pos="18.30" length="8.26" friendlyPos="1"/>
@@ -994,6 +983,7 @@
     <busStop id="9118072814" name="State St @ 1960 N" lane="1103526540#3_0" startPos="14.49" endPos="29.49" friendlyPos="true" lines="850"/>
     <busStop id="9118081577" name="100 N @ 185 E" lane="10246516#21_0" startPos="0.00" endPos="13.01" friendlyPos="true"/>
     <busStop id="9118790712" name="Center Street @ 1981 W" lane="228562182#6_0" startPos="0.00" endPos="10.89" friendlyPos="true" lines="833"/>
+    <busStop id="9118790714" name="12600 S @ 1802 W" lane="1053332282#0_0" startPos="19.80" endPos="34.80" friendlyPos="true"/>
     <busStop id="9118826142" name="State Hwy @ 1095 N" lane="797917000#8_0" startPos="48.01" endPos="63.01" friendlyPos="true"/>
     <busStop id="9118842419" name="900 E @ 390 S" lane="413237550#3_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="9118850498" name="Center St @ 875 W" lane="1192673079#1_0" startPos="11.07" endPos="26.07" friendlyPos="true" lines="833"/>
@@ -1001,6 +991,7 @@
     <busStop id="9123295956" name="Lakeview Parkway / Mike Jense Parkway" lane="1031006750#11_0" startPos="43.06" endPos="58.06" friendlyPos="true" lines="833"/>
     <busStop id="9123295976" name="1200 S @ 480 W" lane="39255600#1_0" startPos="43.36" endPos="58.36" friendlyPos="true"/>
     <busStop id="9123317804" name="Highway 198 @ 380 N" lane="933972046#2_0" startPos="5.25" endPos="20.25" friendlyPos="true"/>
+    <busStop id="9123325230" name="Vestry Rd @ 13919 S" lane="40722823#22_0" startPos="5.67" endPos="20.67" friendlyPos="true"/>
     <busStop id="9123329638" name="Expressway Lane @ 945 E" lane="10224670#7_0" startPos="43.14" endPos="58.14" friendlyPos="true"/>
     <busStop id="9123329639" name="River Park Dr @ 119 W" lane="791097225#0_0" startPos="41.90" endPos="56.90" friendlyPos="true"/>
     <busStop id="9123329901" name="920 S @ 471 W" lane="60747906#7_0" startPos="49.08" endPos="64.08" friendlyPos="true" lines="833"/>
@@ -1018,15 +1009,18 @@
     <busStop id="9124266271" name="State St @ 600 N (NB)" lane="1103526528#2_0" startPos="0.00" endPos="14.36" friendlyPos="true" lines="850"/>
     <busStop id="9124266272" name="800 E @ 838 N" lane="684690130#1_0" startPos="21.24" endPos="36.24" friendlyPos="true"/>
     <busStop id="9124273483" name="State St / 100 E (WB)" lane="814301987#20_0" startPos="0.00" endPos="15.00" friendlyPos="true" lines="850"/>
+    <busStop id="9124293713" name="Vestry Rd @ 648 E" lane="40722823#2_0" startPos="10.59" endPos="25.59" friendlyPos="true"/>
     <busStop id="9124296386" name="State St @ Green Spring Way (NB)" lane="814302009#2_0" startPos="11.37" endPos="26.37" friendlyPos="true" lines="850"/>
     <busStop id="9124310304" name="State St @ 553 W" lane="172743649#33_0" startPos="0.60" endPos="15.60" friendlyPos="true"/>
     <busStop id="9124314974" name="Main St @ 900 N" lane="684673718#25_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
+    <busStop id="9124327404" name="3600 W @ 12360 S" lane="107507748#9_0" startPos="14.60" endPos="29.60" friendlyPos="true"/>
     <busStop id="9124338188" name="300 W @ 4919 N" lane="10226514#3_0" startPos="32.27" endPos="47.27" friendlyPos="true"/>
     <busStop id="9124338579" name="1200 W @ 40 S" lane="28474650#14_0" startPos="13.06" endPos="28.06" friendlyPos="true" lines="862"/>
     <busStop id="9124917204" name="Main St @ 475 S" lane="432599175#9_0" startPos="7.59" endPos="22.59" friendlyPos="true"/>
     <busStop id="9124927231" name="1600 N @ 436 E" lane="10235902#15_0" startPos="48.97" endPos="63.97" friendlyPos="true" lines="862"/>
     <busStop id="9124934108" name="1460 N / Grand Ave (WB)" lane="1340394994#2_0" startPos="23.05" endPos="38.05" friendlyPos="true"/>
     <busStop id="9124941936" name="1460 N / 1900 W (WB)" lane="10241074#6_0" startPos="0.00" endPos="12.57" friendlyPos="true"/>
+    <busStop id="9124951247" name="1000 E @ 12121 S" lane="10138678_0" startPos="119.61" endPos="134.61" friendlyPos="true"/>
     <busStop id="9124954631" name="1200 W / 400 S (NB)" lane="566551615#4_0" startPos="27.00" endPos="42.00" friendlyPos="true" lines="862"/>
     <busStop id="9126558985" name="800 E @ 984 N" lane="684690130#6_0" startPos="10.88" endPos="25.88" friendlyPos="true"/>
     <busStop id="9126599778" name="State St / 950 E (WB)" lane="413241572#4_0" startPos="237.81" endPos="252.81" friendlyPos="true" lines="850"/>
@@ -1036,6 +1030,7 @@
     <busStop id="9128311407" name="550 W / University Pkwy (SB)" lane="1343092601_0" startPos="16.69" endPos="31.69" friendlyPos="true"/>
     <busStop id="9128321854" name="300 S / 400 E (EB)" lane="740642093#1_0" startPos="22.69" endPos="37.69" friendlyPos="true"/>
     <busStop id="9128342922" name="300 S / 600 E (EB)" lane="740642093#6_0" startPos="7.04" endPos="22.04" friendlyPos="true"/>
+    <busStop id="9128349692" name="Redwood Rd @ 1461 N" lane="801435853#1_0" startPos="112.65" endPos="127.65" friendlyPos="true" lines="806"/>
     <busStop id="9128351582" name="900 E / 200 N (NB)" lane="10228265#2_0" startPos="61.70" endPos="76.70" friendlyPos="true"/>
     <busStop id="9128355161" name="100 W @ 143 S" lane="97124322#15_0" startPos="50.18" endPos="65.18" friendlyPos="true"/>
     <busStop id="9138270623" name="1600 N @ 152 E" lane="10235902#8_0" startPos="6.11" endPos="21.11" friendlyPos="true" lines="862"/>
@@ -1051,13 +1046,14 @@
     <busStop id="9138293030" name="State St @ 400 N (NB)" lane="1103526530#1_0" startPos="22.07" endPos="37.07" friendlyPos="true" lines="850"/>
     <busStop id="9138294885" name="Triumph Blvd / Ridge Dr (SB)" lane="684661257#0_0" startPos="18.42" endPos="33.42" friendlyPos="true"/>
     <busStop id="9139177656" name="400 South" lane="1028565369#8_0" startPos="88.39" endPos="103.39" friendlyPos="true" lines="UVX">
-        <access lane="1001934328#0_0" pos="6.79" length="27.80" friendlyPos="1"/>
         <access lane="1001934328#1_0" pos="1.17" length="24.95" friendlyPos="1"/>
         <access lane="1001934328#2_0" pos="0.00" length="23.33" friendlyPos="1"/>
         <access lane="1001934328#3_0" pos="0.00" length="23.43" friendlyPos="1"/>
         <access lane="1001934328#4_0" pos="0.00" length="26.38" friendlyPos="1"/>
+        <access lane="1373541787_0" pos="12.44" length="27.63" friendlyPos="1"/>
     </busStop>
     <busStop id="9139190175" name="Center St. @ 373 E" lane="10232780#1_0" startPos="36.10" endPos="51.10" friendlyPos="true"/>
+    <busStop id="9139203034" name="13400 S @ 1895 W" lane="388769993#1_0" startPos="27.34" endPos="42.34" friendlyPos="true"/>
     <busStop id="9139976604" name="Freedom Blvd @ 1435 N" lane="1334321128#4_0" startPos="13.28" endPos="28.28" friendlyPos="true"/>
     <busStop id="9140138277" name="Main St @ 1292 E" lane="814302037#2_0" startPos="2.94" endPos="17.94" friendlyPos="true"/>
     <busStop id="9246780410" name="University Place Station (EB)" lane="684673675#6_0" startPos="24.95" endPos="39.95" friendlyPos="true"/>
@@ -1076,10 +1072,10 @@
         <access lane="932244398#1_0" pos="0.00" length="17.61" friendlyPos="1"/>
     </busStop>
     <busStop id="9247517723" name="400 South" lane="1001934331#3_0" startPos="12.82" endPos="27.82" friendlyPos="true" lines="UVX">
-        <access lane="1001934328#0_0" pos="6.79" length="35.62" friendlyPos="1"/>
         <access lane="1001934328#1_0" pos="1.17" length="34.46" friendlyPos="1"/>
         <access lane="1001934328#2_0" pos="0.00" length="34.82" friendlyPos="1"/>
         <access lane="1001934328#3_0" pos="0.00" length="35.16" friendlyPos="1"/>
+        <access lane="1373541787_0" pos="19.83" length="32.83" friendlyPos="1"/>
         <access lane="721381118#9_0" pos="35.59" length="24.35" friendlyPos="1"/>
     </busStop>
     <busStop id="9247517740" name="400 South" lane="1028565369#8_0" startPos="94.06" endPos="109.06" friendlyPos="true">
@@ -1087,7 +1083,7 @@
         <access lane="1001934328#2_0" pos="1.31" length="13.77" friendlyPos="1"/>
         <access lane="1001934328#3_0" pos="0.20" length="13.71" friendlyPos="1"/>
         <access lane="1001934328#4_0" pos="0.00" length="14.13" friendlyPos="1"/>
-        <access lane="1323466461#0_0" pos="0.00" length="25.15" friendlyPos="1"/>
+        <access lane="1373541787_0" pos="5.48" length="20.96" friendlyPos="1"/>
     </busStop>
     <busStop id="9247517820" name="Academy Square" lane="1037188591#2_0" startPos="15.60" endPos="30.60" friendlyPos="true">
         <access lane="-749759594#0_0" pos="0.70" length="22.59" friendlyPos="1"/>
@@ -1141,7 +1137,7 @@
         <access lane="1326180649#2_0" pos="46.79" length="9.14" friendlyPos="1"/>
         <access lane="1326180649#4_0" pos="81.69" length="30.00" friendlyPos="1"/>
         <access lane="1326180649#5_0" pos="10.93" length="17.92" friendlyPos="1"/>
-        <access lane="1326180650#0_0" pos="0.00" length="28.34" friendlyPos="1"/>
+        <access lane="463704566#2_0" pos="0.00" length="30.96" friendlyPos="1"/>
         <access lane="463704566#1_0" pos="26.47" length="26.00" friendlyPos="1"/>
     </busStop>
     <busStop id="9932488274" name="Orem Central Station" lane="463704557#1_0" startPos="51.43" endPos="66.43" friendlyPos="true">
@@ -1211,7 +1207,7 @@
     <busStop id="9932608361" name="East Bay South" lane="684673720#3_0" startPos="72.45" endPos="87.45" friendlyPos="true" lines="UVX"/>
     <busStop id="9932608364" name="Towne Centre Boulevard" lane="1072819409#3_0" startPos="0.00" endPos="10.00" friendlyPos="true" lines="UVX"/>
     <busStop id="9932608365" name="Towne Centre Boulevard" lane="887681418#1_0" startPos="4.12" endPos="19.12" friendlyPos="true" lines="UVX"/>
-    <busStop id="9932608366" name="UVU Station" lane="477393513#0_0" startPos="17.47" endPos="102.47" friendlyPos="true" lines="UVX 805 807 822 862 831"/>
+    <busStop id="9932608366" name="UVU Station" lane="477393514_0" startPos="37.47" endPos="52.47" friendlyPos="true" lines="UVX 805 807 822 862 831"/>
     <busStop id="9932608367" name="UVU Station" lane="477393511_0" startPos="112.29" endPos="127.29" friendlyPos="true" lines="UVX 831 806 805"/>
     <busStop id="9932608368" name="Academy Square" lane="1028565365#14_0" startPos="105.41" endPos="120.41" friendlyPos="true" lines="UVX">
         <access lane="741957442#1_0" pos="0.20" length="16.41" friendlyPos="1"/>
@@ -1235,8 +1231,8 @@
         <access lane="741957441_0" pos="12.26" length="5.48" friendlyPos="1"/>
     </busStop>
     <busStop id="9932608372" name="Center Street" lane="1028565369#1_0" startPos="22.82" endPos="37.82" friendlyPos="true" lines="UVX">
-        <access lane="517707070#18_0" pos="28.86" length="18.17" friendlyPos="1"/>
-        <access lane="517707070#19_0" pos="0.00" length="32.81" friendlyPos="1"/>
+        <access lane="517707070#16_0" pos="28.86" length="18.17" friendlyPos="1"/>
+        <access lane="517707070#17_0" pos="0.00" length="32.81" friendlyPos="1"/>
         <access lane="517707086#3_0" pos="12.78" length="32.19" friendlyPos="1"/>
         <access lane="741957439_0" pos="24.12" length="11.82" friendlyPos="1"/>
         <access lane="832629240#4_0" pos="43.22" length="33.74" friendlyPos="1"/>

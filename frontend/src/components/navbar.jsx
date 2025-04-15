@@ -29,9 +29,6 @@ function Navbar({ isLoggedIn, setIsLoggedIn }) {
             </Link>
             </div>
             <div>
-            {isLoggedIn && (
-                <Link to="/sumo" id="nav-button" aria-label="Sumo">Sumo</Link>
-            )}
             {isLoggedIn ? (
                     <Link to="/" id="nav-button" aria-label="Log out" onClick={handleLogout}>Log Out</Link>
                 ) : (
