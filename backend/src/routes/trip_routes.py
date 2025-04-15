@@ -2,7 +2,7 @@
 
 # async def register_trip_routes(app):
 
-#     @app.route('/tripstats', methods=['GET'])
+#     @app.route('/tripstatsnotright', methods=['GET'])
 #     async def get_tripinfo():
 #         print("Fetching tripinfo.xml")
 #         tripinfo_path = "/shared/output/tripinfo.xml"

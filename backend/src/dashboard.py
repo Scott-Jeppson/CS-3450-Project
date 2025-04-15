@@ -12,7 +12,7 @@ from quart import Quart, jsonify
 from quart_cors import cors
 from dotenv import load_dotenv
 
-from routes.trip_routes import register_trip_routes
+# from routes.trip_routes import register_trip_routes
 from routes.user_routes import register_user_routes
 
 load_dotenv()
@@ -301,7 +301,7 @@ async def create_db_pool():
 async def startup():
     app.db_pool = await create_db_pool()
 
-    await register_trip_routes(app)
+    # await register_trip_routes(app)
     await register_user_routes(app)
 
 if __name__ == "__main__":
