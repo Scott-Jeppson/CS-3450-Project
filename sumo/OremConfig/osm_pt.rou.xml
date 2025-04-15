@@ -320,16 +320,15 @@
         <stop busStop="9124338188" duration="20"/> <!-- 300 W / 4900 N (SB) -->
         <stop busStop="-9124927227" duration="20"/> <!-- Center St / 800 E (WB) -->
         <stop busStop="9139190175" duration="20"/> <!-- Center St / 400 E (WB) -->
-        <stop busStop="" duration="20"/> <!-- Center St / State St (WB) -->
-        <stop busStop="" duration="20"/> <!-- Center St / Orem Blvd (WB) -->
-        <stop busStop="" duration="20"/> <!-- Center St / 600 W (WB) -->
-        <stop busStop="" duration="20"/> <!-- Center St / 1200 W (WB) -->
-        <stop busStop="" duration="20"/> <!-- Mill Rd / Geneva Rd (WB) -->
-        <stop busStop="" duration="20"/> <!-- Center St / Vineyard Route (WB) -->
-        <stop busStop="" duration="20"/> <!-- Center St / 150 E (WB) -->
-        <stop busStop="" duration="20"/> <!-- Main St / 110 N (NB) -->
-        <stop busStop="" duration="20"/> <!-- Main St / 400 N (NB) -->
-        <stop busStop="" duration="20"/> <!-- Main St / Vineyard Loop Rd (NB) -->
+        <stop busStop="-8604510980" duration="20"/> <!-- Center St / Orem Blvd (WB) -->
+        <stop busStop="-8604510981" duration="20"/> <!-- Center St / 600 W (WB) -->
+        <stop busStop="-8604510982" duration="20"/> <!-- Center St / 1200 W (WB) -->
+        <stop busStop="-8886445007" duration="20"/> <!-- Mill Rd / Geneva Rd (WB) -->
+        <stop busStop="-8604510983" duration="20"/> <!-- Center St / Vineyard Route (WB) -->
+        <stop busStop="-8604510984" duration="20"/> <!-- Center St / 150 E (WB) -->
+        <stop busStop="-8604510985" duration="20"/> <!-- Main St / 110 N (NB) -->
+        <stop busStop="-8604510986" duration="20"/> <!-- Main St / 400 N (NB) -->
+        <stop busStop="-8604510987" duration="20"/> <!-- Main St / Vineyard Loop Rd (NB) -->
         <stop busStop="11361153248" duration="20"/> <!-- Vineyard Station (Bay A) -->
         <stop busStop="" duration="20"/> <!-- Main St / Vineyard Loop Rd (SB) -->
         <stop busStop="" duration="20"/> <!-- Main St / 400 N (SB) -->
