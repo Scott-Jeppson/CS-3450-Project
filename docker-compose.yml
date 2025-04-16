@@ -10,6 +10,7 @@ services:
       context: .
       dockerfile: backend/Dockerfile
     container_name: backend
+    working_dir: /app/src
     ports:
       - "8080:8080"
     volumes:
@@ -19,8 +20,7 @@ services:
       - ./backend/.env
     environment:
       - QUART_ENV=development
-      - PYTHONPATH=/app/src
-    command: ["hypercorn", "src.dashboard:app", "--bind", "0.0.0.0:8080", "--workers", "1"]
+    command: ["hypercorn", "dashboard:app", "--bind", "0.0.0.0:8080", "--workers", "1"]
 
   frontend:
     build:

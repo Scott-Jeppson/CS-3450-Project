@@ -1,15 +1,17 @@
 FROM python:3.12-slim
 
-WORKDIR /backend
+WORKDIR /app
 
 COPY requirements.txt /requirements.txt
 
 RUN pip install --no-cache-dir -r /requirements.txt
 
-COPY . .
+COPY backend/ .
+
+WORKDIR /app/src
 
 EXPOSE 8080
 
 ENV PYTHONUNBUFFERED=1
 
-CMD ["python", "src/dashboard.py"]
+CMD ["python", "dashboard.py"]
