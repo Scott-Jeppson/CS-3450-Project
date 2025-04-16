@@ -6,7 +6,7 @@ aiohttp==3.11.16
 quart-db==0.9.0
 asyncpg==0.30.0
 boto3==1.37.34
-quart==0.20.0
+quart==0.19.0
 bcrypt==4.3.0
 pytest==8.3.5
 traci==1.22.0
