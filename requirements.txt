@@ -10,4 +10,4 @@ quart==0.19.0
 bcrypt==4.3.0
 pytest==8.3.5
 traci==1.22.0
-flask==3.1.0
+flask==3.0.3
