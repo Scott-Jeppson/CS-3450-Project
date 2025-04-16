@@ -43,7 +43,6 @@ tsconfig.app.tsbuildinfo
 
 # Frontend
 node_modules/
-package-lock.json
 
 #sumo
 sumo/.env
