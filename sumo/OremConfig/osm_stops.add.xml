@@ -49,7 +49,7 @@
 -->
 
 <additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
-    <busStop id="-11361052134" name="1270 W @ 780 S" lane="-244437926#0_0" startPos="28.29" endPos="43.29" friendlyPos="true" lines="821 822"/>
+    <busStop id="-11361052134" name="1270 W @ 780 S" lane="-244437926#0_0" startPos="28.29" endPos="43.29" friendlyPos="true" lines="821 822"></busStop>
     <busStop id="-11493019589" name="800 E @ 1169 S" lane="-231243108#9_0" startPos="4.92" endPos="19.92" friendlyPos="true" lines="850"/>
     <busStop id="-2369125852" name="State Rd @ 1291 W" lane="-82331528#2_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="-2369125908" name="Center St @ 585 W" lane="-724266822#5_0" startPos="4.24" endPos="19.24" friendlyPos="true"/>
@@ -355,7 +355,7 @@
     <busStop id="-9103879669" name="Main St / 2000 S (SB)" lane="-1298202268_0" startPos="87.69" endPos="102.69" friendlyPos="true"/>
     <busStop id="-9105689127" name="State St @ 575 S" lane="-919107643#15_0" startPos="39.70" endPos="54.70" friendlyPos="true" lines="850"/>
     <busStop id="-9105710531" name="Canyon Rd @ 1599 N" lane="-1031069190#6_0" startPos="8.30" endPos="23.30" friendlyPos="true"/>
-    <busStop id="-9105784640" name="University Ave @ 1190 S" lane="-117922059#12_0" startPos="0.00" endPos="15.00" friendlyPos="true" lines="805">
+    <busStop id="-9105784640" name="University Ave @ 1190 S" lane="117922059#12_0" startPos="0.00" endPos="15.00" friendlyPos="true" lines="805">
         <access lane="-856341314#1_0" pos="5.66" length="19.90" friendlyPos="1"/>
         <access lane="-856341317#0_0" pos="33.00" length="32.30" friendlyPos="1"/>
         <access lane="1337009041#18_0" pos="28.04" length="5.15" friendlyPos="1"/>
@@ -393,7 +393,7 @@
     <busStop id="-9128351326" name="State St @ 1001 N" lane="-1103213873#11_0" startPos="3.38" endPos="18.38" friendlyPos="true"/>
     <busStop id="-9138218448" name="Sandalwood Dr / Slipstream Ave (WB)" lane="-891693090#1_0" startPos="26.94" endPos="41.94" friendlyPos="true"/>
     <busStop id="-9138258562" name="100 N @ 273 W" lane="-10233539#16_0" startPos="15.44" endPos="30.44" friendlyPos="true"/>
-    <busStop id="-9138268649" name="University Ave @ 992 S" lane="-117922059#4_0" startPos="15.30" endPos="30.30" friendlyPos="true" lines="805">
+    <busStop id="-9138268649" name="University Ave @ 992 S" lane="117922059#4_0" startPos="15.30" endPos="30.30" friendlyPos="true" lines="805">
         <access lane="-762812061#2_0" pos="27.46" length="28.98" friendlyPos="1"/>
         <access lane="1337009041#11_0" pos="16.26" length="6.63" friendlyPos="1"/>
         <access lane="762812061#2_0" pos="11.28" length="33.78" friendlyPos="1"/>
