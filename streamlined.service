@@ -1,6 +1,7 @@
 [Unit]
-Description=Streamlined Dashboard and Simulation Service
+Description=Streamlined Dashboard, Frontend & Simulation Suite
 After=network.target
+Wants=network-online.target
 
 [Service]
 Type=simple
