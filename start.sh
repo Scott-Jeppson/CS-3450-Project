@@ -1,3 +1,4 @@
+#!/bin/bash
 handle_exit() {
     kill -TERM "$dashboard_pid" "$simulation_pid" 2>/dev/null
 }
