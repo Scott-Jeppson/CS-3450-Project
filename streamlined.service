@@ -4,12 +4,13 @@ After=network.target
 
 [Service]
 Type=simple
-User=kamek
+User=root
+Group=root
 WorkingDirectory=/streamlined
-ExecStart=/streamlined/start.sh
+ExecStart=/bin/bash /streamlined/start.sh
 Restart=on-failure
-StandardOutput=journal
-StandardError=journal
+RestartSec=5
+TimeoutStartSec=infinity
 
 [Install]
 WantedBy=multi-user.target

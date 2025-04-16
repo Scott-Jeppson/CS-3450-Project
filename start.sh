@@ -15,7 +15,7 @@ ERROR_LOGFILE="/streamlined/logs/error.log"
 source /streamlined/venv/bin/activate || echo "Failed to activate venv" >> "$ERROR_LOGFILE"
 
 echo "Starting dashboard.py..."
-/streamlined/venv/bin/python /streamlined/backend/dashboard.py >"$DASHBOARD_LOGFILE" 2>&1 &
+/streamlined/venv/bin/python /streamlined/backend/src/dashboard.py >"$DASHBOARD_LOGFILE" 2>&1 &
 dashboard_pid=$!
 
 echo "Starting simulation.py..."
