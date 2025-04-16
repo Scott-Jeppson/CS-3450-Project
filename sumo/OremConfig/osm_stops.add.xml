@@ -99,7 +99,7 @@
     <busStop id="-8544571432" name="State St @ Lindon Main St. (NB)" lane="-119006869#6_0" startPos="39.87" endPos="54.87" friendlyPos="true" lines="850"/>
     <busStop id="-8544605769" name="13400 S @ 2360 W" lane="-684787379#3_0" startPos="9.59" endPos="24.59" friendlyPos="true"/>
     <busStop id="-8544774957" name="4000 W @ 12174 S" lane="-820337499#1_0" startPos="12.75" endPos="27.75" friendlyPos="true"/>
-    <busStop id="-8544776077" name="1000 S @ 1418 W" lane="-262148878#2_0" startPos="11.59" endPos="26.59" friendlyPos="true" lines="862"/>
+    <busStop id="-8544776077" name="Wolverine Crossing (EB)" lane="262148878#5_0" startPos="10.52" endPos="26.00" friendlyPos="true" lines="862"/>
     <busStop id="-8544785766" name="State St @ 1532 S" lane="-1103204103#0_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="-8544793482" name="Main St @ 326 S" lane="-933026921#0_0" startPos="13.98" endPos="28.98" friendlyPos="true"/>
     <busStop id="-8544805026" name="800 E @ 579 N" lane="-10236172#33_0" startPos="22.58" endPos="37.58" friendlyPos="true" lines="862"/>
@@ -145,13 +145,17 @@
     <busStop id="-8568349646" name="800 E / 800 N (SB)" lane="-10236172#39_0" startPos="43.32" endPos="58.32" friendlyPos="true" lines="862"/>
     <busStop id="-8568357594" name="1460 N / 1220 W (EB)" lane="-885055009#7_0" startPos="80.18" endPos="95.18" friendlyPos="true"/>
     <busStop id="-8568368617" name="800 E @ 983 S" lane="-599894822#0_0" startPos="16.82" endPos="31.82" friendlyPos="true" lines="850"/>
-    <busStop id="-8568370617" name="1000 S @ 1379 W" lane="-262148878#5_0" startPos="89.45" endPos="104.45" friendlyPos="true"/>
+    <busStop id="-8568370617" name="Wolvering Crossing (EB)" lane="262148878#5_0" startPos="10.52" endPos="27.00" friendlyPos="true"/>
+    <busStop id="-8568370618" name="Wolverine Crossing (WB)" lane="-262148878#5_0" startPos="81.35" endPos="98.00" friendlyPos="true"/>
     <busStop id="-8570339851" name="900 E / 450 N (SB)" lane="-864013087_0" startPos="0.00" endPos="10.34" friendlyPos="true"/>
     <busStop id="-8570339852" name="100 W @ 170 S" lane="-97124322#15_0" startPos="50.62" endPos="65.62" friendlyPos="true"/>
     <busStop id="-8570374809" name="900 E @ 575 S" lane="-413237550#10_0" startPos="85.03" endPos="100.03" friendlyPos="true"/>
+    <busStop id="-8570374812" name="900 E @ 300 S (NB)" lane="-10238463#6_0" startPos="28.00" endPos="42.00" friendlyPos="true"/>
+    <busStop id="-8570374810" name="900 E / 300 S (SB)" lane="10238463#5_0" startPos="78.14" endPos="88.14" friendlyPos="true" />
     <busStop id="-8572443146" name="Mt Timpanogos Blvd @ 899 N" lane="-1341102055#0_0" startPos="212.99" endPos="227.99" friendlyPos="true"/>
     <busStop id="-8572460966" name="Main St @ 1056 S" lane="-933026926_0" startPos="31.51" endPos="46.51" friendlyPos="true"/>
     <busStop id="-8573405535" name="Main St / 1600 S (SB)" lane="-10248521#5_0" startPos="44.52" endPos="59.52" friendlyPos="true"/>
+    <busStop id="-8573405536" name="Geneva Rd / 800 S" lane="-1210607049#0_0" startPos="29.95" endPos="41.00" friendlyPos="true"/>
     <busStop id="-8576324957" name="1860 S @ 519 E" lane="-10233281#2_0" startPos="4.43" endPos="19.43" friendlyPos="true"/>
     <busStop id="-8576337203" name="State St @ 785 S" lane="-1103213888#0_0" startPos="1.58" endPos="16.58" friendlyPos="true" lines="850"/>
     <busStop id="-8576351956" name="State St @ 1632 S" lane="-1103204109#0_0" startPos="0.00" endPos="6.85" friendlyPos="true"/>
