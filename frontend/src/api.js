@@ -25,3 +25,24 @@ export async function getTripStats() {
         return { message: "Error fetching trip stats" };
     }
 }
+
+export async function getWelcomeMessage() {
+    try {
+        const response = await fetch(`${API_BASE_URL}/api/welcome`, {
+            method: 'GET',
+            credentials: 'include', // Ensures session cookie is sent
+        });
+
+        const contentType = response.headers.get("content-type");
+        if (contentType && contentType.includes("application/json")) {
+            return await response.json();
+        } else {
+            const text = await response.text();
+            console.warn("Unexpected response from /api/welcome:", text);
+            return { message: "Welcome, user" };
+        }
+    } catch (error) {
+        console.error("Error fetching welcome message:", error);
+        return { message: "Welcome, user" };
+    }
+}

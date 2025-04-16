@@ -44,13 +44,6 @@ const Dashboard = ({ isLoggedIn, setIsLoggedIn }) => {
                     <>
                         <div className="sumo-header">SUMO Simulation</div>
                         <div className="sumo-container">
-                            <button
-                                onClick={handlePlay}
-                                className="play-button"
-                                disabled={simulationStatus === "Playing" || simulationStatus === "Loading..."}
-                            >
-                                {simulationStatus}
-                            </button>
                             <SumoSim />
                         </div>
                     </>

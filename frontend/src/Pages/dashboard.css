@@ -10,7 +10,7 @@
   padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .sumo-section {
@@ -26,4 +26,10 @@
   height: 70vh;
   width: 100%;
   border-radius: 12px 12px 0 0;
+}
+.welcome-banner {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--purple);
+  margin-top: 1rem;
 }
