@@ -92,8 +92,8 @@
         <stop id="8552049555" duration="20" until="48" /> <!-- 800 E @ 713 N -->
         <stop id="-8551597362" duration="20" until="48" /> <!-- University Ave @ 1235 S -->
         <stop id="5388433609" duration="20" until="48" /> <!-- Provo Central Station (Bay N) -->
-        <stop id="9932608366" duration="20" until="48" /> <!-- UVU Station -->
-        <stop id="9932608367" duration="20" until="48" /> <!-- UVU Station -->
+        <stop id="9932608366" duration="20" until="48" /> <!-- UVU Station (EB) -->
+        <stop id="9932608367" duration="20" until="48" /> <!-- UVU Station (WB) -->
     </route>
     <vehicle id="pt_bus_805:0" type="pt_bus" route="pt_bus_805:0" depart="0" line="805:0">
         <param key="completeness" value="1"/>
