@@ -1,0 +1,15 @@
+[Unit]
+Description=Streamlined Dashboard and Simulation Service
+After=network.target
+
+[Service]
+Type=simple
+User=kamek
+WorkingDirectory=/streamlined
+ExecStart=/streamlined/start.sh
+Restart=on-failure
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
