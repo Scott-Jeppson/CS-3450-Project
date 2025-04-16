@@ -167,7 +167,7 @@
     <busStop id="-8600838999" name="400 S @ 1357 W" lane="-10229824#2_0" startPos="4.80" endPos="19.80" friendlyPos="true"/>
     <busStop id="-8600848947" name="1200 W @ 600 S" lane="-566551615#0_0" startPos="13.64" endPos="28.64" friendlyPos="true"/>
     <busStop id="-8604505796" name="Center St @ 195 W" lane="-227602198#2_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
-    <busStop id="-8604510980" name="Center St / Orem Blvd (WB)" lane="1365128635#1" startPos="15.56" endPos="25.56" friendlyPos="true"/>
+    <busStop id="-8604510980" name="Center St / Orem Blvd (WB)" lane="-1353184846#3_0" startPos="15.56" endPos="25.56" friendlyPos="true"/>
     <busStop id="-8604510981" name="Center St / 600 W (WB)" lane="-10233749#6_0" startPos="47.76" endPos="57.76" friendlyPos="true"/>
     <busStop id="-8604510982" name="Center St / 1200 W (WB)" lane="571154404#2_0" startPos="26.98" endPos="36.98" friendlyPos="true"/>
     <busStop id="-8604510983" name="Center St / Vineyard Rd (WB)" lane="32836395#1_0" startPos="46.29" endPos="56.29" friendlyPos="true"/>
@@ -620,7 +620,7 @@
     <busStop id="8544810988" name="Center St / Orem Blvd (EB)" lane="1352502202_0" startPos="8.68" endPos="18.68" friendlyPos="true"/>
     <busStop id="8544810989" name="Center St / State St (EB)" lane="634119788#2_0" startPos="90.74" endPos="100.74" friendlyPos="true"/>
     <busStop id="8544807123" name="Mill Rd / Center St (EB)" lane="753605890#1_0" startPos="43.49" endPos="53.49" friendlyPos="true"/>
-    <busStop id="8544810986" name="Center St / Vineyard Rd (EB)" lane="32836394#2_0" startPos="136.37" endPos="146.37" friendlyPos="true"/>
+    <busStop id="8544811243" name="Center St / Vineyard Rd (EB)" lane="32836394#2_0" startPos="136.37" endPos="146.37" friendlyPos="true"/>
     <busStop id="8544849774" name="Main St @ 50 S (NB)" lane="10248479#1_0" startPos="58.94" endPos="73.94" friendlyPos="true" lines="850"/>
     <busStop id="8544849776" name="State St @ 1150 S" lane="231243098#0_0" startPos="6.00" endPos="22.00" friendlyPos="true"/>
     <busStop id="8546974522" name="State St @ 1970 S" lane="1373543024#0_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
