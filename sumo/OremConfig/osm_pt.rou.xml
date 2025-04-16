@@ -324,44 +324,44 @@
         <stop busStop="-8604510981" duration="20"/> <!-- Center St / 600 W (WB) -->
         <stop busStop="-8604510982" duration="20"/> <!-- Center St / 1200 W (WB) -->
         <stop busStop="-8886445007" duration="20"/> <!-- Mill Rd / Geneva Rd (WB) -->
-        <stop busStop="-8604510983" duration="20"/> <!-- Center St / Vineyard Route (WB) -->
+        <stop busStop="-8604510983" duration="20"/> <!-- Center St / Vineyard Rd (WB) -->
         <stop busStop="-8604510984" duration="20"/> <!-- Center St / 150 E (WB) -->
         <stop busStop="-8604510985" duration="20"/> <!-- Main St / 110 N (NB) -->
         <stop busStop="-8604510986" duration="20"/> <!-- Main St / 400 N (NB) -->
         <stop busStop="-8604510987" duration="20"/> <!-- Main St / Vineyard Loop Rd (NB) -->
         <stop busStop="11361153248" duration="20"/> <!-- Vineyard Station (Bay A) -->
-        <stop busStop="" duration="20"/> <!-- Main St / Vineyard Loop Rd (SB) -->
-        <stop busStop="" duration="20"/> <!-- Main St / 400 N (SB) -->
-        <stop busStop="" duration="20"/> <!-- Main St / 110 N (SB) -->
-        <stop busStop="" duration="20"/> <!-- Center St / 150 E (EB) -->
-        <stop busStop="" duration="20"/> <!-- Center St / Vineyard Route (EB) -->
-        <stop busStop="" duration="20"/> <!-- Mill Rd / Center St (EB) -->
-        <stop busStop="" duration="20"/> <!-- Center St / 1200 W (EB) -->
-        <stop busStop="" duration="20"/> <!-- Center St / 600 W (EB) -->
-        <stop busStop="" duration="20"/> <!-- Center St / Orem Blvd (EB) -->
-        <stop busStop="" duration="20"/> <!-- Center St / State St (EB) -->
-        <stop busStop="" duration="20"/> <!-- Center St / 400 E (EB) -->
-        <stop busStop="" duration="20"/> <!-- Center St / 800 E (EB) -->
-        <stop busStop="" duration="20"/> <!-- 300 W / 4900 N (NB) -->
-        <stop busStop="" duration="20"/> <!-- 300 W / River Park Dr (NB) -->
-        <stop busStop="" duration="20"/> <!-- River Park Dr / Edgewood Dr (EB) -->
-        <stop busStop="" duration="20"/> <!-- University Ave / 4800 N (SB) -->
-        <stop busStop="" duration="20"/> <!-- University Ave / 4200 N (SB) -->
-        <stop busStop="" duration="20"/> <!-- University Ave / 3700 N (SB) -->
-        <stop busStop="" duration="20"/> <!-- University Ave / 3300 N (SB) -->
-        <stop busStop="" duration="20"/> <!-- University Ave / 2680 N (SB) -->
-        <stop busStop="" duration="20"/> <!-- 2300 N / Freedom Blvd (WB) -->
-        <stop busStop="" duration="20"/> <!-- 2300 N / 400 W (WB) -->
-        <stop busStop="" duration="20"/> <!-- University Pkwy / 2230 N (SB) -->
+        <stop busStop="8544810982" duration="20"/> <!-- Main St / Vineyard Loop Rd (SB) -->
+        <stop busStop="8544810983" duration="20"/> <!-- Main St / 400 N (SB) -->
+        <stop busStop="8544810984" duration="20"/> <!-- Main St / 110 N (SB) -->
+        <stop busStop="8544810985" duration="20"/> <!-- Center St / 150 E (EB) -->
+        <stop busStop="8544810986" duration="20"/> <!-- Center St / Vineyard Rd (EB) -->
+        <stop busStop="8544807123" duration="20"/> <!-- Mill Rd / Center St (EB) -->
+        <stop busStop="8544810986" duration="20"/> <!-- Center St / 1200 W (EB) -->
+        <stop busStop="8544810987" duration="20"/> <!-- Center St / 600 W (EB) -->
+        <stop busStop="8544810988" duration="20"/> <!-- Center St / Orem Blvd (EB) -->
+        <stop busStop="8544810989" duration="20"/> <!-- Center St / State St (EB) -->
+        <stop busStop="9105774455" duration="20"/> <!-- Center St / 400 E (EB) -->
+        <stop busStop="8892952111" duration="20"/> <!-- Center St / 800 E (EB) -->
+        <stop busStop="-8855659464" duration="20"/> <!-- 300 W / 4900 N (NB) -->
+        <stop busStop="8544534499" duration="20"/> <!-- 300 W / River Park Dr (NB) -->
+        <stop busStop="9123329639" duration="20"/> <!-- River Park Dr / Edgewood Dr (EB) -->
+        <stop busStop="8568334692" duration="20"/> <!-- University Ave / 4800 N (SB) -->
+        <stop busStop="-8561295198" duration="20"/> <!-- University Ave / 4200 N (SB) -->
+        <stop busStop="-9103876970" duration="20"/> <!-- University Ave / 3700 N (SB) -->
+        <stop busStop="-8925340334" duration="20"/> <!-- University Ave / 3300 N (SB) -->
+        <stop busStop="-8873366835" duration="20"/> <!-- University Ave / 2680 N (SB) -->
+        <stop busStop="8990571021" duration="20"/> <!-- 2300 N / Freedom Blvd (WB) -->
+        <stop busStop="8577294255" duration="20"/> <!-- 2300 N / 400 W (WB) -->
+        <stop busStop="9932608382" duration="20"/> <!-- University Pkwy / 2230 N (SB) -->
         <stop busStop="8544586874" duration="20"/> <!-- Freedom Blvd / 1550 N (1555 N) (SB) * -->
-        <stop busStop="" duration="20"/> <!-- Freedom Blvd / Paul Ream Ave (SB) -->
-        <stop busStop="" duration="20"/> <!-- Freedom Blvd / Cougar Blvd (SB) -->
-        <stop busStop="" duration="20"/> <!-- Freedom Blvd / 800 N (SB) -->
-        <stop busStop="" duration="20"/> <!-- Freedom Blvd / 500 N (SB) -->
-        <stop busStop="" duration="20"/> <!-- Freedom Blvd / 300 N (SB) -->
-        <stop busStop="" duration="20"/> <!-- Freedom Blvd / 100 N (SB) -->
-        <stop busStop="" duration="20"/> <!-- Freedom Blvd / 100 S (SB) -->
-        <stop busStop="" duration="20"/> <!-- Freedom Blvd / 350 S (SB) -->
+        <stop busStop="9139976604" duration="20"/> <!-- Freedom Blvd / Paul Ream Ave (SB) -->
+        <stop busStop="8873332267" duration="20"/> <!-- Freedom Blvd / Cougar Blvd (SB) -->
+        <stop busStop="8928543975" duration="20"/> <!-- Freedom Blvd / 800 N (SB) -->
+        <stop busStop="8895637332" duration="20"/> <!-- Freedom Blvd / 500 N (SB) -->
+        <stop busStop="9123341443" duration="20"/> <!-- Freedom Blvd / 300 N (SB) -->
+        <stop busStop="8730077666" duration="20"/> <!-- Freedom Blvd / 100 N (SB) -->
+        <stop busStop="9117026905" duration="20"/> <!-- Freedom Blvd / 100 S (SB) -->
+        <stop busStop="8921178587" duration="20"/> <!-- Freedom Blvd / 350 S (SB) -->
         <stop busStop="9932513537" duration="20"/> <!-- Provo Central Station (Bay A) -->
     </route>
     <vehicle id="pt_bus_834:0" type="pt_bus" route="pt_bus_834:0" depart="0" line="834:0">

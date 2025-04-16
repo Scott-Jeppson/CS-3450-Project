@@ -591,7 +591,7 @@
     <busStop id="8544520931" name="1300 W @ 12145 S" lane="684787399#13_0" startPos="25.10" endPos="40.10" friendlyPos="true"/>
     <busStop id="8544530509" name="800 E @ 1146 S" lane="231243108#8_0" startPos="7.35" endPos="22.35" friendlyPos="true" lines="862"/>
     <busStop id="8544532980" name="Geneva Road @ 499 S" lane="231364515#6_0" startPos="28.80" endPos="43.80" friendlyPos="true"/>
-    <busStop id="8544534499" name="300 W @ 5132 N" lane="10236359#4_0" startPos="0.00" endPos="3.62" friendlyPos="true"/>
+    <busStop id="8544534499" name="300 W @ 5132 N" lane="10236359#4_0" startPos="0.00" endPos="8.60" friendlyPos="true"/>
     <busStop id="8544541138" name="State St / 900 W (WB)" lane="1188525201#1_0" startPos="22.26" endPos="37.26" friendlyPos="true" lines="850"/>
     <busStop id="8544567239" name="Research Way @ 1224 N" lane="10231865#1_0" startPos="12.00" endPos="28.00" friendlyPos="true"/>
     <busStop id="8544567240" name="1200 N @ 762 E" lane="231247777#5_0" startPos="30.00" endPos="45.00" friendlyPos="true" />
@@ -611,6 +611,16 @@
     <busStop id="8544780330" name="1300 E @ 13360 S" lane="346317149#37_0" startPos="21.88" endPos="36.88" friendlyPos="true"/>
     <busStop id="8544798609" name="700 N / 200 E (WB)" lane="742968416#1_0" startPos="10.43" endPos="25.43" friendlyPos="true" lines="831"/>
     <busStop id="8544806073" name="Main St / 1600 S (NB)" lane="229097623#1_0" startPos="16.20" endPos="31.20" friendlyPos="true"/>
+    <busStop id="8544810982" name="Main St / Vineyard Loop Rd (SB)" lane="753157006#3_0" startPos="10.03" endPos="20.03" friendlyPos="true"/>
+    <busStop id="8544810983" name="Main St / 400 N (SB)" lane="753157007#1_0" startPos="15.37" endPos="25.37" friendlyPos="true"/>
+    <busStop id="8544810984" name="Main St / 110 N (SB)" lane="753157007#8_0" startPos="19.05" endPos="29.05" friendlyPos="true"/>
+    <busStop id="8544810985" name="Center St / 150 E (EB)" lane="10242228#1_0" startPos="8.40" endPos="18.40" friendlyPos="true"/>
+    <busStop id="8544810986" name="Center St / 1200 W (EB)" lane="-571154404#3_0" startPos="12.81" endPos="22.81" friendlyPos="true"/>
+    <busStop id="8544810987" name="Center St / 600 W (EB)" lane="10233749#6_0" startPos="71.88" endPos="81.88" friendlyPos="true"/>
+    <busStop id="8544810988" name="Center St / Orem Blvd (EB)" lane="1352502202_0" startPos="8.68" endPos="18.68" friendlyPos="true"/>
+    <busStop id="8544810989" name="Center St / State St (EB)" lane="634119788#2_0" startPos="90.74" endPos="100.74" friendlyPos="true"/>
+    <busStop id="8544807123" name="Mill Rd / Center St (EB)" lane="753605890#1_0" startPos="43.49" endPos="53.49" friendlyPos="true"/>
+    <busStop id="8544810986" name="Center St / Vineyard Rd (EB)" lane="32836394#2_0" startPos="136.37" endPos="146.37" friendlyPos="true"/>
     <busStop id="8544849774" name="Main St @ 50 S (NB)" lane="10248479#1_0" startPos="58.94" endPos="73.94" friendlyPos="true" lines="850"/>
     <busStop id="8544849776" name="State St @ 1150 S" lane="231243098#0_0" startPos="6.00" endPos="22.00" friendlyPos="true"/>
     <busStop id="8546974522" name="State St @ 1970 S" lane="1373543024#0_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
