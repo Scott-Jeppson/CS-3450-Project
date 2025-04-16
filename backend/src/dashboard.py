@@ -42,7 +42,9 @@ app = cors(
         "http://localhost:8080",
         "http://localhost:5000",
         "https://sapi.servicesx.net",
-        "https://ssapi.servicesx.net"
+        "https://ssapi.servicesx.net",
+        "https://sapi.ticketsx.xyz",
+        "https://ssapi.ticketsx.xyz"
     ],
     allow_credentials=True,
     allow_methods=[
