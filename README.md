@@ -2,9 +2,9 @@
 
 ## Overview
 The StreamLine Smart Transit Optimizer is a **traffic simulation and optimization tool** designed to help traffic managers in Utah 
-County analyze and improve traffic flow. Using real-time and historical traffic data, along with an AI-powered simulation
+County analyze and improve traffic flow. Using traffic data, along with an AI-powered simulation
 model, it allows users to:
-- **Visualize** real-time traffic data through an interactive simulation.
+- **Visualize** traffic data through an interactive simulation.
 - **Simulate** route changes and traffic light adjustments to assess their impact.
 - **Analyze** historical traffic trends in a clear and concise format.
 - **Optimize** traffic flow efficiency through data-driven decision-making.
@@ -44,7 +44,7 @@ communication, and manages database interactions.
 ## Features
 
 ### Priority 1 - Mission Critical Features
-- Interactive traffic simulation of real-time data
+- Interactive traffic simulation
 - Data processing for the simulation
 - API connections
 
