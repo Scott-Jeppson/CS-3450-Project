@@ -1,2 +1,2 @@
-export const API_BASE_URL = process.env.NODE_ENV === 'development' ? 'http://127.0.0.1:8080' : 'https://sapi.ticketsx.xyz'
-export const SUMO_BASE_URL = process.env.NODE_ENV === 'development' ? 'http://127.0.0.1:5000' : 'https://ssapi.ticketsx.xyz'
+export const API_BASE_URL = process.env.NODE_ENV === 'development' ? 'http://localhost:8080' : 'https://sapi.ticketsx.xyz'
+export const SUMO_BASE_URL = process.env.NODE_ENV === 'development' ? 'http://localhost:5000' : 'https://ssapi.ticketsx.xyz'

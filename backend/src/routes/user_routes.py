@@ -93,7 +93,6 @@ async def register_user_routes(app):
 
     @user_routes.route("/api/is_logged_in", methods=["GET"])
     async def is_logged_in():
-        print(session)
         if 'user_id' not in session:
             return jsonify({"logged_in": False, "error": "User not logged in"}), 401
 
