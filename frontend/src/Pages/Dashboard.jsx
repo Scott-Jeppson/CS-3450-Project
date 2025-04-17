@@ -24,6 +24,7 @@ const Dashboard = ({ isLoggedIn, setIsLoggedIn }) => {
             <div id="main-content-dashboard">
                 {isLoggedIn ? (
                     <>
+                        <div style={{ alignItems: "left" }}><h2>Dashboard</h2></div>
                         <div className="sumo-section">
                             <SumoSim />
                             <SimTools setStats={setStats} />

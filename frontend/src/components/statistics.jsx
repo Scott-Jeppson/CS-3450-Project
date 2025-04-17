@@ -41,9 +41,10 @@ function Statistics({ stats, trafficLevel }) {
 
     return (
         <div className="statistics-section">
-            <h2>Overall Statistics</h2>
-            
-            <div className="statistics-group">
+            {/* <h2>Overall Statistics</h2> */}
+            <div style={{ alignItems: "left" }}><h2>Overall Statistics</h2></div>
+
+            <div className="overall-stats-card">
                 
                 <div className="statistics-row">
                     <div className="statistics-item" style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
@@ -92,8 +93,10 @@ function Statistics({ stats, trafficLevel }) {
 
             </div>
 
-            <div className="bus-stats-card">
-                <h2>Bus Statistics</h2>
+            {/* <div className="bus-stats-card"> */}
+            <div>
+                {/* <h2>Bus Statistics</h2> */}
+                <div style={{ alignItems: "left" }}><h2>Bus Statistics</h2></div>
                 {combinedData.map((bus) => (
                     <div key={bus.id} className="stats-item-wrapper">
                         <div className="stats-item" onClick={() => toggleBus(bus.id)}>
@@ -114,7 +117,7 @@ function Statistics({ stats, trafficLevel }) {
                         </div>
                         {openBusIds.has(bus.id) && (
 
-                            <div className="statistics-group" style={{ color: "var(--light-purple)"}}>
+                            <div className="bus-stats-card" style={{ color: "var(--light-purple)"}}>
 
                                 <div className="statistics-row" style={{ height: "40px" }}>
                                     <div className="statistics-item">
