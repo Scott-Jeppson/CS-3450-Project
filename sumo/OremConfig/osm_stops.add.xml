@@ -49,7 +49,7 @@
 -->
 
 <additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
-    <busStop id="-11361052134" name="1270 W @ 780 S" lane="-244437926#0_0" startPos="28.29" endPos="43.29" friendlyPos="true" lines="821 822"></busStop>
+    <busStop id="-11361052134" name="1270 W @ 780 S" lane="-244437926#0_0" startPos="28.29" endPos="43.29" friendlyPos="true" lines="821 822" />
     <busStop id="-11493019589" name="800 E @ 1169 S" lane="-231243108#9_0" startPos="4.92" endPos="19.92" friendlyPos="true" lines="850"/>
     <busStop id="-2369125852" name="State Rd @ 1291 W" lane="-82331528#2_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="-2369125908" name="Center St @ 585 W" lane="-724266822#5_0" startPos="4.24" endPos="19.24" friendlyPos="true"/>
