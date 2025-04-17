@@ -1,8 +1,59 @@
 .statistics-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
 }
+
+.statistics-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    background-color: var(--purple);
+    width: 95%;
+    /* margin: 10px; */
+    color: var(--white);
+    padding: 5px;
+}
+
+.statistics-row {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    /* width: 100%; */
+    padding: 15px;
+}
+
+.statistics-item {
+    display: flex;
+    flex-direction: column;
+    /* gap: 1rem; */
+    background-color: var(--white);
+    /* border-radius: 10px; */
+    padding: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    color: black;
+    width: 100%;
+    align-items: center;
+}
+
+.statistics-item h2, h3, h4, body {
+    line-height: 2;
+    margin: 0.25rem 0;
+}
+
+/* .statistics-item h2 {
+    line-height: 0.5;
+}
+
+.statistics-item body {
+    line-height: 0.5;
+} */
+
+/* :root {
+    --dark-purple: var(--dark-purple);
+} */
+
 
 .overall-stats-card, .bus-stats-card {
     background-color: white;
@@ -14,7 +65,8 @@
 .overall-stats-card h2, .bus-stats-card h2 {
     margin-top: 0;
     font-size: 1.3rem;
-    color: var(--dark-purple);
+    /* color: var(--dark-purple); */
+    color: var(--white);
 }
 
 .stats-item-wrapper {
