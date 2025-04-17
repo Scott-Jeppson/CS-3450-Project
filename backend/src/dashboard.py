@@ -40,7 +40,7 @@ app = cors(
     allow_origin=[
         "http://localhost:5173",
         "http://localhost:8080",
-        "http://localhost:5000",
+        "http://localhost:8081",
         "http://129.123.153.13:5173",
         "https://sapi.servicesx.net",
         "https://ssapi.servicesx.net",
