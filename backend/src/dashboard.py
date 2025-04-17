@@ -41,13 +41,17 @@ app = cors(
         "http://localhost:5173",
         "http://localhost:8080",
         "http://localhost:8081",
+        "http://127.0.0.1:5173",
+        "http://127.0.0.1:8080",
+        "http://127.0.0.1:8081",
         "http://129.123.153.13:5173",
         "https://sapi.servicesx.net",
         "https://ssapi.servicesx.net",
         "https://sapi.ticketsx.xyz",
-        "https://ssapi.ticketsx.xyz"
+        "https://ssapi.ticketsx.xyz",
         "https://streamlined.pages.dev",
-        "https://streamlined.servicesx.net"
+        "https://streamlined.servicesx.net",
+        "https://streamline.servicesx.net",
     ],
     allow_credentials=True,
     allow_methods=[
@@ -80,9 +84,9 @@ app = cors(
 )
 
 app.config.update(
-    SESSION_COOKIE_SECURE=False,
+    SESSION_COOKIE_SECURE=True,
     SESSION_COOKIE_HTTPONLY=True,
-    SESSION_COOKIE_SAMESITE='Lax',
+    SESSION_COOKIE_SAMESITE='None',
     CORS_SUPPORTS_CREDENTIALS=True
 )
 
