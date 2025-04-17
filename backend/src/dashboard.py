@@ -49,8 +49,8 @@ app = cors(
         "https://ssapi.servicesx.net",
         "https://sapi.ticketsx.xyz",
         "https://ssapi.ticketsx.xyz",
-        "https://streamline.pages.dev",
-        "https://streamline.servicesx.net"
+        "https://streamlined.pages.dev",
+        "https://streamlined.servicesx.net"
     ],
     allow_credentials=True,
     allow_methods=[
