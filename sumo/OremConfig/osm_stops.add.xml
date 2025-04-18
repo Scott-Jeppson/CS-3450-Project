@@ -149,7 +149,7 @@
     <busStop id="-8568370618" name="Wolverine Crossing (WB)" lane="-262148878#5_0" startPos="81.35" endPos="98.00" friendlyPos="true"/>
     <busStop id="-8570339851" name="900 E / 450 N (SB)" lane="-864013087_0" startPos="0.00" endPos="10.34" friendlyPos="true"/>
     <busStop id="-8570339852" name="100 W @ 170 S" lane="-97124322#15_0" startPos="50.62" endPos="65.62" friendlyPos="true"/>
-    <busStop id="-8570374809" name="900 E @ 575 S" lane="-413237550#10_0" startPos="85.03" endPos="100.03" friendlyPos="true"/>
+    <busStop id="-8570374809" name="900 E @ 575 S" lane="-413237550#10_0" startPos="2.00" endPos="20.00" friendlyPos="true"/>
     <busStop id="-8570374812" name="900 E @ 300 S (NB)" lane="-10238463#6_0" startPos="28.00" endPos="42.00" friendlyPos="true"/>
     <busStop id="-8570374810" name="900 E / 300 S (SB)" lane="10238463#5_0" startPos="78.14" endPos="88.14" friendlyPos="true" />
     <busStop id="-8572443146" name="Mt Timpanogos Blvd @ 899 N" lane="-1341102055#0_0" startPos="212.99" endPos="227.99" friendlyPos="true"/>
@@ -272,7 +272,7 @@
     <busStop id="-8873772574" name="400 E @ 175 S" lane="-10234072#2_0" startPos="17.43" endPos="32.43" friendlyPos="true"/>
     <busStop id="-8873774863" name="Vestry Rd @ 1035 E" lane="-40722823#11_0" startPos="20.98" endPos="35.98" friendlyPos="true"/>
     <busStop id="-8873782804" name="1430 S / Sandhill Rd (EB)" lane="-10236886#6_0" startPos="36.48" endPos="51.48" friendlyPos="true"/>
-    <busStop id="-8873790336" name="Triumph Blvd / 3400 N (NB)" lane="-548611164#6_0" startPos="19.18" endPos="34.18" friendlyPos="true"/>
+    <busStop id="-8873790336" name="Triumph Blvd / 3400 N (NB)" lane="-548611164#6_0" startPos="10.00" endPos="40.00" friendlyPos="true"/>
     <busStop id="-8873790337" name="Triumph Blvd / Ridge Dr (NB)" lane="-548611164#7_0" startPos="25.00" endPos="38.00" friendlyPos="true"/>
     <busStop id="-8873790338" name="Adobe" lane="228440280#0_0" startPos="108.00" endPos="123.00" friendlyPos="true"/>
     <busStop id="-8877136398" name="State Hwy @ 1150 N" lane="-797917000#7_0" startPos="17.51" endPos="32.51" friendlyPos="true"/>
