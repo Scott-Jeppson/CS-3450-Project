@@ -40,6 +40,6 @@ COPY templates ./templates/
 COPY simulation.py .
 COPY .env .
 
-EXPOSE 2052
+EXPOSE 8080
 
 CMD ["python3", "/sumo/simulation.py"]
