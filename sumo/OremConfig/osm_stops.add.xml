@@ -304,7 +304,7 @@
     <busStop id="-8895656523" name="13400 S @ 2780 W" lane="-1097271625#1_0" startPos="9.55" endPos="24.55" friendlyPos="true"/>
     <busStop id="-8895668641" name="500 W @ 344 S" lane="10241562#1_0" startPos="47.00" endPos="62.00" friendlyPos="true" lines="833"/>
     <busStop id="-8895668642" name="100 W @ 680 S" lane="-97124322#0_0" startPos="0.28" endPos="15.28" friendlyPos="true"/>
-    <busStop id="-8895670485" name="800 S @ 1199 W" lane="-684661300#5" startPos="0.00" endPos="12.00" friendlyPos="true"/>
+    <busStop id="-8895670485" name="800 S @ 1199 W" lane="-684661300#5_0" startPos="0.00" endPos="12.00" friendlyPos="true"/>
     <busStop id="-8895670870" name="12600 S @ 2487 W" lane="-684787421#9_0" startPos="0.00" endPos="15.00" friendlyPos="true"/>
     <busStop id="-8895671306" name="Freedom Blvd @ 1550 N" lane="-684673708#14_0" startPos="0.00" endPos="13.09" friendlyPos="true"/>
     <busStop id="-8895677349" name="State St @ 2301 S" lane="-1373543025#0_0" startPos="24.83" endPos="39.83" friendlyPos="true"/>
