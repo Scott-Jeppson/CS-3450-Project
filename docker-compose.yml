@@ -42,7 +42,7 @@ services:
       dockerfile: Dockerfile
     #image: camcottle341/smarttransit:sumo
     ports:
-      - "2083:2083"
+      - "2052:2052"
     volumes:
       - shared-output:/shared/output
       - ./sumo/templates:/sumo/templates
