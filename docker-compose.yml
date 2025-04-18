@@ -12,7 +12,7 @@ services:
     container_name: backend
     working_dir: /app/src
     ports:
-      - "8080:8080"
+      - "8081:8081"
     volumes:
       - ./backend:/app
       - shared-output:/shared/output
@@ -20,7 +20,7 @@ services:
       - ./backend/.env
     environment:
       - QUART_ENV=development
-    command: ["hypercorn", "dashboard:app", "--bind", "0.0.0.0:8080", "--workers", "1"]
+    command: ["hypercorn", "dashboard:app", "--bind", "0.0.0.0:8081", "--workers", "1"]
 
   frontend:
     build:
@@ -42,7 +42,7 @@ services:
       dockerfile: Dockerfile
     #image: camcottle341/smarttransit:sumo
     ports:
-      - "8081:8081"
+      - "8008:8080"
     volumes:
       - shared-output:/shared/output
       - ./sumo/templates:/sumo/templates

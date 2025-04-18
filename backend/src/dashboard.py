@@ -137,5 +137,5 @@ async def startup():
 
 if __name__ == "__main__":
     config = Config()
-    config.bind = ["0.0.0.0:8080"]
+    config.bind = ["0.0.0.0:8081"]
     asyncio.run(hypercorn.asyncio.serve(app, config))
