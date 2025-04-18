@@ -4,6 +4,7 @@ import asyncpg
 import os
 from quart import jsonify, request, session, Blueprint
 from dotenv import load_dotenv
+
 load_dotenv()
 
 async def register_user_routes(app):
@@ -113,7 +114,7 @@ async def register_user_routes(app):
 
     @user_routes.route("/api/signout", methods=["POST"])
     async def sign_out():
-        await session.clear()
+        session.clear()
 
         return jsonify({"message": "User signed out successfully"}), 200
     

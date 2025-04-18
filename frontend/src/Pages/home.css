@@ -2,7 +2,6 @@
     overflow: hidden;
 }
 
-/* Allows for opacity of background image to be 0.7 without changing the opacity of the whole page */
 #home-page::before {
     content: "";
     position: absolute;

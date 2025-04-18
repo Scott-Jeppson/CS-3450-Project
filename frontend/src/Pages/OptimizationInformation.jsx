@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Navbar from "../components/navbar.jsx";
 import './OptimizationInformation.css';
+import { API_BASE_URL } from '@/constants.js';
 
 const Optimization = ({ isLoggedIn, setIsLoggedIn }) => {
     const navigate = useNavigate();
@@ -9,7 +10,7 @@ const Optimization = ({ isLoggedIn, setIsLoggedIn }) => {
     useEffect(() => {
         const checkLoginStatus = async () => {
             try {
-                const response = await fetch("http://localhost:8080/api/is_logged_in", {
+                const response = await fetch(`${API_BASE_URL}/api/is_logged_in`, {
                     method: "GET",
                     credentials: "include",
                 });

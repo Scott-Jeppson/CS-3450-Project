@@ -1,8 +1,8 @@
-// SimTools.jsx
 import React, { useState, useEffect, useRef } from 'react';
 import { io } from 'socket.io-client';
 import { getTripStats } from '../api.js';
 import './simtools.css';
+import { SUMO_BASE_URL } from '@/constants'
 
 function SimTools({ setStats }) {
     const [simulationStatus, setSimulationStatus] = useState('Stopped');
@@ -10,9 +10,8 @@ function SimTools({ setStats }) {
     const socketRef = useRef(null);
 
     useEffect(() => {
-        socketRef.current = io("http://localhost:5000");
+        socketRef.current = io(SUMO_BASE_URL);
     
-        // Immediately sync traffic level
         socketRef.current.emit("setTrafficLevel", { level: trafficLevel });
     
         socketRef.current.on("simulationStarted", () => setSimulationStatus("Playing"));

@@ -5,18 +5,17 @@ import base64
 import boto3
 import json
 import os
-import xml.etree.ElementTree as ET
 from hypercorn.config import Config
 from botocore.exceptions import ClientError
-from quart import Quart, jsonify
+from quart import Quart
 from quart_cors import cors
 from dotenv import load_dotenv
 
-# from routes.trip_routes import register_trip_routes
 from routes.user_routes import register_user_routes
 from routes.trip_routes import register_trip_routes
 
 load_dotenv()
+
 aws_access_key = os.getenv("AWS_ACCESS_KEY_ID")
 aws_secret_key = os.getenv("AWS_SECRET_ACCESS_KEY")
 secret_name = os.getenv("DB_SECRET_NAME")
@@ -38,11 +37,31 @@ app.secret_key = app_secret
 
 app = cors(
     app,
-    allow_origin=["http://localhost:5173",
-                  "http://localhost:8080",
-                  "http://localhost:5000"],
+    allow_origin=[
+        "http://localhost:5173",
+        "http://localhost:8080",
+        "http://localhost:8081",
+        "http://127.0.0.1:5173",
+        "http://127.0.0.1:8080",
+        "http://127.0.0.1:8081",
+        "http://129.123.153.13:5173",
+        "https://sapi.servicesx.net",
+        "https://ssapi.servicesx.net",
+        "https://sapi.ticketsx.xyz",
+        "https://ssapi.ticketsx.xyz",
+        "https://streamlined.pages.dev",
+        "https://streamlined.servicesx.net",
+        "https://streamline.servicesx.net",
+    ],
     allow_credentials=True,
-    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
+    allow_methods=[
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE",
+        "OPTIONS",
+        "PATCH"
+    ],
     allow_headers=[
         "Content-Type", 
         "Authorization", 
@@ -65,9 +84,9 @@ app = cors(
 )
 
 app.config.update(
-    SESSION_COOKIE_SECURE=False,
+    SESSION_COOKIE_SECURE=True,
     SESSION_COOKIE_HTTPONLY=True,
-    SESSION_COOKIE_SAMESITE='Lax',
+    SESSION_COOKIE_SAMESITE='None',
     CORS_SUPPORTS_CREDENTIALS=True
 )
 
@@ -113,7 +132,6 @@ async def create_db_pool():
 async def startup():
     app.db_pool = await create_db_pool()
 
-    # await register_trip_routes(app)
     await register_user_routes(app)
     await register_trip_routes(app)
 

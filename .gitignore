@@ -8,6 +8,9 @@ venv/
 .env
 logs/
 __pycache__
+.pytest_cache/
+.clj-kondo/
+.lsp/
 
 # Logs
 frontend/logs
@@ -43,3 +46,4 @@ node_modules/
 
 #sumo
 sumo/.env
+shared/
