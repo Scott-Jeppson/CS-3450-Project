@@ -41,13 +41,15 @@ function Statistics({ stats, trafficLevel }) {
 
     return (
         <div className="statistics-section">
-            {/* <h2>Overall Statistics</h2> */}
-            <div style={{ alignItems: "left" }}><h2>Overall Statistics</h2></div>
+
+            <div style={{ width: "100%", textAlign: "left" }}>
+                <h2>Overall Statistics</h2>
+            </div>
 
             <div className="overall-stats-card">
                 
-                <div className="statistics-row">
-                    <div className="statistics-item" style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+                <div className="stat-box-row">
+                    <div className="stat-box-unit" style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
                         <div style={{ flex: 1, textAlign: "left" }}>
                             <body>Total Vehicles:</body>
                         </div>
@@ -57,35 +59,35 @@ function Statistics({ stats, trafficLevel }) {
                     </div>
                 </div>
 
-                <div className="statistics-row">
-                    <div className="statistics-item" style={{ padding: "2rem" }}>
+                <div className="stat-box-row">
+                    <div className="stat-box-unit" style={{ padding: "2rem" }}>
                         <body>Average Speed</body>
                         <h3>{overall.meanSpeed?.toFixed(2) ?? "N/A"} km/h</h3>
                     </div>
-                    <div className="statistics-item" style={{ padding: "2rem" }}>
+                    <div className="stat-box-unit" style={{ padding: "2rem" }}>
                         <body>Average Travel Time</body>
                         <h3>{(overall.meanTravelTime / 60)?.toFixed(1) ?? "N/A"} min</h3>
                     </div>
-                    <div className="statistics-item" style={{ padding: "2rem" }}>
+                    <div className="stat-box-unit" style={{ padding: "2rem" }}>
                         <body>Average Waiting Time</body>
                         <h3>{overall.meanWaitingTime?.toFixed(1) ?? "N/A"} sec</h3>
                     </div>            
                 </div>
 
-                <div className="statistics-row">
-                    <div className="statistics-item" style={{ padding: "1rem" }}>
+                <div className="stat-box-row">
+                    <div className="stat-box-unit" style={{ padding: "1rem" }}>
                         <body>Average Fuel</body>
                         <h3>{(totals.averageFuel ?? 0).toFixed(2)} ml</h3>
                     </div>
-                    <div className="statistics-item" style={{ padding: "1rem" }}>
+                    <div className="stat-box-unit" style={{ padding: "1rem" }}>
                         <body>Average CO₂</body>
                         <h3>{Math.round(totals.averageCO2 ?? 0).toLocaleString()} g</h3>
                     </div>
-                    <div className="statistics-item" style={{ padding: "1rem" }}>
+                    <div className="stat-box-unit" style={{ padding: "1rem" }}>
                         <body>Average NOx</body>
                         <h3>{(totals.averageNOx ?? 0).toFixed(2)} g</h3>
                     </div>
-                    <div className="statistics-item" style={{ padding: "1rem" }}>
+                    <div className="stat-box-unit" style={{ padding: "1rem" }}>
                         <body>Average PMx</body>
                         <h3>{(totals.averagePMx ?? 0).toFixed(2)} g</h3>
                     </div>
@@ -93,14 +95,17 @@ function Statistics({ stats, trafficLevel }) {
 
             </div>
 
-            {/* <div className="bus-stats-card"> */}
-            <div>
-                {/* <h2>Bus Statistics</h2> */}
-                <div style={{ alignItems: "left" }}><h2>Bus Statistics</h2></div>
+            <div className="bus-section">
+                
+                <div style={{ width: "100%", textAlign: "left" , marginBottom: "15px" }}>
+                    <h2>Bus Statistics</h2>
+                </div>
+
                 {combinedData.map((bus) => (
-                    <div key={bus.id} className="stats-item-wrapper">
-                        <div className="stats-item" onClick={() => toggleBus(bus.id)}>
-                        {/* <div className="statistics-group" onClick={() => toggleBus(bus.id)}> */}
+                    <div key={bus.id} className="dropdown-wrapper">
+
+                        <div className="dropdown-bar" onClick={() => toggleBus(bus.id)}>
+
                             <b>
                                 <a
                                     href={`https://www.rideuta.com/Rider-Tools/Vehicle-Locator/Map?route=${bus.routeNumber}`}
@@ -115,39 +120,39 @@ function Statistics({ stats, trafficLevel }) {
                                 {openBusIds.has(bus.id) ? "expand_less" : "expand_more"}
                             </span>
                         </div>
+
                         {openBusIds.has(bus.id) && (
+                            <div className="bus-stats-card" style={{ backgroundColor: "var(--light-purple)"}}>
 
-                            <div className="bus-stats-card" style={{ color: "var(--light-purple)"}}>
-
-                                <div className="statistics-row" style={{ height: "40px" }}>
-                                    <div className="statistics-item">
+                                <div className="stat-box-row">
+                                    <div className="stat-box-unit" style={{ padding: "2rem" }}>
                                         <body>Average Speed</body>
                                         <h3>{bus.speed} km/h</h3>
                                     </div>
-                                    <div className="statistics-item">
+                                    <div className="stat-box-unit" style={{ padding: "2rem" }}>
                                         <body>Travel Time</body>
                                         <h3>{bus.duration} sec</h3>
                                     </div>
-                                    <div className="statistics-item">
+                                    <div className="stat-box-unit" style={{ padding: "2rem" }}>
                                         <body>Waiting Time</body>
                                         <h3>{bus.waitTime} sec</h3>
                                     </div>
                                 </div>
 
-                                <div className="statistics-row" style={{ height: "30px" }}>
-                                    <div className="statistics-item">
+                                <div className="stat-box-row">
+                                    <div className="stat-box-unit" style={{ padding: "1rem" }}>
                                         <body>Average Fuel</body>
                                         <h3>{bus.avgFuel.toFixed(2)} ml</h3>
                                     </div>
-                                    <div className="statistics-item">
+                                    <div className="stat-box-unit" style={{ padding: "1rem" }}>
                                         <body>CO₂</body>
                                         <h3>{Math.round(bus.CO2).toLocaleString()} g</h3>
                                     </div>
-                                    <div className="statistics-item">
+                                    <div className="stat-box-unit" style={{ padding: "1rem" }}>
                                         <body>NOx</body>
                                         <h3>{Math.round(bus.NOx)} g</h3>
                                     </div>
-                                    <div className="statistics-item">
+                                    <div className="stat-box-unit" style={{ padding: "1rem" }}>
                                         <body>PMx</body>
                                         <h3>{Math.round(bus.PMx)} g</h3>
                                     </div>
@@ -155,14 +160,18 @@ function Statistics({ stats, trafficLevel }) {
 
                             </div>
                         )}
+
                     </div>
                 ))}
+
             </div>
         </div>
     );
 }
 
 export default Statistics;
+
+// ****************************************************************************
 
 
 // import "./statistics.css";
@@ -219,6 +228,67 @@ export default Statistics;
 //             )}
 
 //             {hasStats && (
+
+
+
+
+
+            //     <div style={{ width: "100%", textAlign: "left" }}>
+                //     <h2>Overall Statistics</h2>
+                // </div>
+
+                // <div className="overall-stats-card">
+                    
+                //     <div className="stat-box-row">
+                //         <div className="stat-box-unit" style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
+                //             <div style={{ flex: 1, textAlign: "left" }}>
+                //                 <body>Total Vehicles:</body>
+                //             </div>
+                //             <div style={{ flex: 1, textAlign: "left" }}>
+                //                 <h3>{ totals.totalVehiclesMeasured?.toLocaleString() ?? "N/A"}</h3>
+                //             </div>
+                //         </div>
+                //     </div>
+
+                //     <div className="stat-box-row">
+                //         <div className="stat-box-unit" style={{ padding: "2rem" }}>
+                //             <body>Average Speed</body>
+                //             <h3>{overall.meanSpeed?.toFixed(2) ?? "N/A"} km/h</h3>
+                //         </div>
+                //         <div className="stat-box-unit" style={{ padding: "2rem" }}>
+                //             <body>Average Travel Time</body>
+                //             <h3>{(overall.meanTravelTime / 60)?.toFixed(1) ?? "N/A"} min</h3>
+                //         </div>
+                //         <div className="stat-box-unit" style={{ padding: "2rem" }}>
+                //             <body>Average Waiting Time</body>
+                //             <h3>{overall.meanWaitingTime?.toFixed(1) ?? "N/A"} sec</h3>
+                //         </div>            
+                //     </div>
+
+                //     <div className="stat-box-row">
+                //         <div className="stat-box-unit" style={{ padding: "1rem" }}>
+                //             <body>Average Fuel</body>
+                //             <h3>{(totals.averageFuel ?? 0).toFixed(2)} ml</h3>
+                //         </div>
+                //         <div className="stat-box-unit" style={{ padding: "1rem" }}>
+                //             <body>Average CO₂</body>
+                //             <h3>{Math.round(totals.averageCO2 ?? 0).toLocaleString()} g</h3>
+                //         </div>
+                //         <div className="stat-box-unit" style={{ padding: "1rem" }}>
+                //             <body>Average NOx</body>
+                //             <h3>{(totals.averageNOx ?? 0).toFixed(2)} g</h3>
+                //         </div>
+                //         <div className="stat-box-unit" style={{ padding: "1rem" }}>
+                //             <body>Average PMx</body>
+                //             <h3>{(totals.averagePMx ?? 0).toFixed(2)} g</h3>
+                //         </div>
+                //     </div>
+
+                // </div>
+
+
+
+
 //                 <div className="overall-stats-card">
 //                     <h2>Overall Statistics</h2>
 //                     <p><b>Avg Speed:</b> {overall.meanSpeed.toFixed(2)} km/h</p>
@@ -233,6 +303,92 @@ export default Statistics;
 //             )}
 
 //             {hasStats && (
+
+
+
+
+
+{/*                 <div className="bus-section">
+                
+                        <div style={{ width: "100%", textAlign: "left" , marginBottom: "15px" }}>
+                            <h2>Bus Statistics</h2>
+                        </div>
+
+                        {combinedData.map((bus) => (
+                            <div key={bus.id} className="dropdown-wrapper">
+
+                                <div className="dropdown-bar" onClick={() => toggleBus(bus.id)}>
+
+                                    <b>
+                                        <a
+                                            href={`https://www.rideuta.com/Rider-Tools/Vehicle-Locator/Map?route=${bus.routeNumber}`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            onClick={(e) => e.stopPropagation()}
+                                        >
+                                            Route {bus.routeNumber ?? bus.id}
+                                        </a>
+                                    </b>
+                                    <span className="material-symbols-outlined">
+                                        {openBusIds.has(bus.id) ? "expand_less" : "expand_more"}
+                                    </span>
+                                </div>
+
+                                {openBusIds.has(bus.id) && (
+                                    <div className="bus-stats-card" style={{ backgroundColor: "var(--light-purple)"}}>
+
+                                        <div className="stat-box-row">
+                                            <div className="stat-box-unit" style={{ padding: "2rem" }}>
+                                                <body>Average Speed</body>
+                                                <h3>{bus.speed} km/h</h3>
+                                            </div>
+                                            <div className="stat-box-unit" style={{ padding: "2rem" }}>
+                                                <body>Travel Time</body>
+                                                <h3>{bus.duration} sec</h3>
+                                            </div>
+                                            <div className="stat-box-unit" style={{ padding: "2rem" }}>
+                                                <body>Waiting Time</body>
+                                                <h3>{bus.waitTime} sec</h3>
+                                            </div>
+                                        </div>
+
+                                        <div className="stat-box-row">
+                                            <div className="stat-box-unit" style={{ padding: "1rem" }}>
+                                                <body>Average Fuel</body>
+                                                <h3>{bus.avgFuel.toFixed(2)} ml</h3>
+                                            </div>
+                                            <div className="stat-box-unit" style={{ padding: "1rem" }}>
+                                                <body>CO₂</body>
+                                                <h3>{Math.round(bus.CO2).toLocaleString()} g</h3>
+                                            </div>
+                                            <div className="stat-box-unit" style={{ padding: "1rem" }}>
+                                                <body>NOx</body>
+                                                <h3>{Math.round(bus.NOx)} g</h3>
+                                            </div>
+                                            <div className="stat-box-unit" style={{ padding: "1rem" }}>
+                                                <body>PMx</body>
+                                                <h3>{Math.round(bus.PMx)} g</h3>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                )}
+
+                            </div>
+                        ))}
+
+                    </div> */}
+
+
+
+
+
+
+
+
+
+
+
 //                 <div className="bus-stats-card">
 //                     <h2>Bus Statistics</h2>
 //                     {combinedData.map((bus) => (
