@@ -83,7 +83,7 @@
     <busStop id="-8542170799" name="State St @ 400 E (WB)" lane="-231764115#13_0" startPos="0.00" endPos="9.44" friendlyPos="true" lines="850"/>
     <busStop id="-8542185743" name="100 E @ 1453 N" lane="-566465492#1_0" startPos="46.78" endPos="61.78" friendlyPos="true"/>
     <busStop id="-8542221102" name="Highway 198 @ 1902 W" lane="-933030945#0_0" startPos="82.18" endPos="97.18" friendlyPos="true"/>
-    <busStop id="-8542230766" name="State St @ 1449 S" lane="-684673719#4_0" startPos="0.00" endPos="6.71" friendlyPos="true"/>
+    <busStop id="-8542230766" name="State St @ 1449 S" lane="-684673719#3_0" startPos="0.00" endPos="10.00" friendlyPos="true"/>
     <busStop id="-8542423137" name="UVU Fulton Library (WB)" lane="-346646696#0_0" startPos="13.09" endPos="28.09" friendlyPos="true" lines="862 831"/>
     <busStop id="-8542442230" name="400 N @ 351 E" lane="-10226563#7_0" startPos="17.44" endPos="32.44" friendlyPos="true"/>
     <busStop id="-8542612059" name="3600 W @ 12448 S" lane="-107507748#13_0" startPos="34.80" endPos="49.80" friendlyPos="true"/>
@@ -150,7 +150,7 @@
     <busStop id="-8570339851" name="900 E / 450 N (SB)" lane="-864013087_0" startPos="0.00" endPos="10.34" friendlyPos="true"/>
     <busStop id="-8570339852" name="100 W @ 170 S" lane="-97124322#15_0" startPos="50.62" endPos="65.62" friendlyPos="true"/>
     <busStop id="-8570374809" name="900 E @ 575 S" lane="-413237550#10_0" startPos="2.00" endPos="20.00" friendlyPos="true"/>
-    <busStop id="-8570374812" name="900 E @ 300 S (NB)" lane="-10238463#6_0" startPos="28.00" endPos="42.00" friendlyPos="true"/>
+    <busStop id="-8570374812" name="900 E @ 300 S (NB)" lane="-10238463#6_0" startPos="22.00" endPos="40.00" friendlyPos="true"/>
     <busStop id="-8570374810" name="900 E / 300 S (SB)" lane="10238463#5_0" startPos="78.14" endPos="88.14" friendlyPos="true" />
     <busStop id="-8572443146" name="Mt Timpanogos Blvd @ 899 N" lane="-1341102055#0_0" startPos="212.99" endPos="227.99" friendlyPos="true"/>
     <busStop id="-8572460966" name="Main St @ 1056 S" lane="-933026926_0" startPos="31.51" endPos="46.51" friendlyPos="true"/>
@@ -950,7 +950,7 @@
     </busStop>
     <busStop id="8997251555" name="UVU Institute (EB)" lane="1036428683#1_0" startPos="32.77" endPos="47.77" friendlyPos="true"/>
     <busStop id="9103703414" name="800 S @ 996 W" lane="105736330#20_0" startPos="20.61" endPos="35.61" friendlyPos="true"/>
-    <busStop id="9103745759" name="State St @ 1444 S" lane="684673719#4_0" startPos="0.00" endPos="6.71" friendlyPos="true"/>
+    <busStop id="9103745759" name="State St @ 1444 S" lane="684673719#5_0" startPos="0.00" endPos="13.00" friendlyPos="true"/>
     <busStop id="9103750365" name="Pleasant Grove Blvd @ 506 S" lane="810567743#1_0" startPos="18.80" endPos="33.80" friendlyPos="true"/>
     <busStop id="9103755350" name="800 N / 800 E (EB)" lane="793138983#1_0" startPos="37.16" endPos="52.16" friendlyPos="true">
         <access lane="-471834559#0_0" pos="0.00" length="30.03" friendlyPos="1"/>
@@ -965,7 +965,7 @@
     <busStop id="9103829668" name="12600 S @ 1825 W" lane="136354515#1_0" startPos="22.94" endPos="37.94" friendlyPos="true"/>
     <busStop id="9103830298" name="300 S / 400 E (WB)" lane="10246251#1_0" startPos="1.23" endPos="16.23" friendlyPos="true"/>
     <busStop id="9103852060" name="Main St / 1400 S (NB)" lane="229097623#7_0" startPos="0.00" endPos="13.29" friendlyPos="true" lines="831"/>
-    <busStop id="9103862771" name="900 E / 450 N (NB)" lane="864013086#2_0" startPos="0.00" endPos="6.41" friendlyPos="true"/>
+    <busStop id="9103862771" name="900 E / 450 N (NB)" lane="864013086#5_0" startPos="0.00" endPos="12.00" friendlyPos="true"/>
     <busStop id="9103874877" name="University Ave / 450 S (NB)" lane="1001934332#1_0" startPos="0.00" endPos="12.00" friendlyPos="true" lines="850">
         <access lane="-856427364#0_0" pos="0.00" length="14.48" friendlyPos="1"/>
         <access lane="-856427364#1_0" pos="34.87" length="15.90" friendlyPos="1"/>
