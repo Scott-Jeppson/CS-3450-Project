@@ -230,4 +230,4 @@ def index():
     return render_template('index.html', mapbox_token=MAPBOX_TOKEN)
 
 if __name__ == "__main__":
-    socketio.run(app, debug=True, use_reloader=False, host="0.0.0.0", port=443, allow_unsafe_werkzeug=True)
+    socketio.run(app, debug=True, use_reloader=False, host="0.0.0.0", port=25578, allow_unsafe_werkzeug=True)
