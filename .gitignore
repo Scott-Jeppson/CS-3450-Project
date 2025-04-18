@@ -46,3 +46,4 @@ node_modules/
 
 #sumo
 sumo/.env
+shared/
