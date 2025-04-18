@@ -717,16 +717,15 @@
         <stop busStop="8663445783" duration="20" until="48" /> <!-- 100 N @ 601 E -->
         <stop busStop="8551589148" duration="20" until="48" /> <!-- 100 N @ 395 E -->
         <stop busStop="9118081577" duration="20" until="48" /> <!-- 100 N @ 185 E -->
-        <!-- 100 N @ 64 W -->
+        <stop busStop="8892924945" duration="20" /> <!-- 100 N @ 64 W -->
         <stop busStop="-8570339852" duration="20" until="48" /> <!-- 100 W @ 170 S -->
         <stop busStop="-8542612060" duration="20" until="48" /> <!-- 100 W @ 420 S -->
         <stop busStop="-8895668642" duration="20" until="48" /> <!-- 100 W @ 680 S -->
         <stop busStop="-8547218308" duration="20" until="48" /> <!-- State Rd @ 742 S -->
         <stop busStop="8780206510" duration="20" until="48" /> <!-- 800 S @ 680 W -->
         <stop busStop="9103703414" duration="20" until="48" /> <!-- 800 S @ 996 W -->
-        <!-- South Payson P+R (Bay A) -->
-        <stop busStop="-11361052134" duration="20" until="48" /> <!-- 1270 W @ 780 S -->
-        <!-- 800 S @ 1199 W -->
+        <stop busStop="-11361052134" duration="20" until="48" /> <!-- South Payson P+R (Bay A) -->
+        <stop busStop="-8895670485" duration="20" /> <!-- 800 S @ 1199 W -->
         <stop busStop="-9128290349" duration="20" until="48" /> <!-- 800 S @ 947 W -->
         <stop busStop="-9103830595" duration="20" until="48" /> <!-- 800 S @ 705 W -->
         <stop busStop="8928578461" duration="20" until="48" /> <!-- State Rd @ 763 S -->
