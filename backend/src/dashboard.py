@@ -40,10 +40,10 @@ app = cors(
     allow_origin=[
         "http://localhost:5173",
         "http://localhost:8080",
-        "http://localhost:8081",
+        "http://localhost:8880",
         "http://127.0.0.1:5173",
         "http://127.0.0.1:8080",
-        "http://127.0.0.1:8081",
+        "http://127.0.0.1:8880",
         "http://129.123.153.13:5173",
         "https://sapi.servicesx.net",
         "https://ssapi.servicesx.net",
@@ -137,5 +137,5 @@ async def startup():
 
 if __name__ == "__main__":
     config = Config()
-    config.bind = ["0.0.0.0:8081"]
+    config.bind = ["0.0.0.0:8080"]
     asyncio.run(hypercorn.asyncio.serve(app, config))
