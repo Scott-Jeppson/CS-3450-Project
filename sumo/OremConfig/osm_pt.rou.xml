@@ -918,13 +918,13 @@
         <stop busStop="-8895649595" duration="20" /> <!-- 400 N @ 221 E -->
         <stop busStop="-9139203036" duration="20" /> <!-- 400 N @ 101 E -->
         <stop busStop="8990559356" duration="20" /> <!-- Main St @ 420 N -->
-        <stop busStop="8576378895" duration="20" until="48" /> <!-- Main St / 700 N (NB) -->
-        <stop busStop="9124314974" duration="20" until="48" /> <!-- Main St / 900 N (NB) -->
-        <stop busStop="8542951218" duration="20" until="48" /> <!-- Main St / 1100 N (NB) -->
-        <stop busStop="-8584736832" duration="20" until="48" /> <!-- Main St / 1400 N (NB) -->
-        <stop busStop="-9124927226" duration="20" until="48" /> <!-- State St / 2900 S (NB) -->
-        <stop busStop="-8895677349" duration="20" until="48" /> <!-- State St / 2300 S (NB) -->
-        <stop busStop="-9140197755" duration="20" until="48" /> <!-- State St / California Ave (NB) -->
+        <stop busStop="8576378895" duration="20" /> <!-- Main St / 700 N (NB) -->
+        <stop busStop="9124314974" duration="20" /> <!-- Main St / 900 N (NB) -->
+        <stop busStop="8542951218" duration="20" /> <!-- Main St / 1100 N (NB) -->
+        <stop busStop="-8584736832" duration="20" /> <!-- Main St / 1400 N (NB) -->
+        <stop busStop="-9124927226" duration="20" /> <!-- State St / 2900 S (NB) -->
+        <stop busStop="-8895677349" duration="20" /> <!-- State St / 2300 S (NB) -->
+        <stop busStop="-9140197755" duration="20" /> <!-- State St / California Ave (NB) -->
     </route>
     <vehicle id="pt_bus_822:0" type="pt_bus" route="pt_bus_822:0" depart="0" line="822:0">
         <param key="completeness" value="1"/>
