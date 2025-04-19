@@ -1272,14 +1272,14 @@
         <access lane="551523362#3_0" pos="0.00" length="24.30" friendlyPos="1"/>
         <access lane="741957439_0" pos="12.86" length="4.92" friendlyPos="1"/>
     </busStop>
-    <busStop id="9932608374" name="BYU South Campus" lane="1001845740#0_0" startPos="41.21" endPos="56.21" friendlyPos="true" lines="UVX">
+    <busStop id="9932608374" name="BYU South Campus" lane="1001845742#0_0" startPos="0.00" endPos="15.00" friendlyPos="true" lines="UVX">
         <access lane="-1001845742#0_0" pos="1.24" length="12.40" friendlyPos="1"/>
         <access lane="1001845742#0_0" pos="28.01" length="2.80" friendlyPos="1"/>
         <access lane="1030541357#7_0" pos="75.74" length="7.74" friendlyPos="1"/>
         <access lane="1039136077#0_0" pos="0.20" length="14.64" friendlyPos="1"/>
         <access lane="1039136077#1_0" pos="0.20" length="12.41" friendlyPos="1"/>
     </busStop>
-    <busStop id="9932608375" name="BYU South Campus" lane="1001845739#1_0" startPos="15.63" endPos="30.63" friendlyPos="true" lines="UVX">
+    <busStop id="9932608375" name="BYU South Campus" lane="-1001845742#0_0" startPos="15.00" endPos="29.00" friendlyPos="true" lines="UVX">
         <access lane="-1001845742#0_0" pos="25.76" length="11.05" friendlyPos="1"/>
         <access lane="-1029808320_0" pos="0.00" length="20.90" friendlyPos="1"/>
         <access lane="1001845737#1_0" pos="30.72" length="10.51" friendlyPos="1"/>
