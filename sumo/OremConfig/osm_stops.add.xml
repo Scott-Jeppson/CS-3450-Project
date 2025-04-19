@@ -597,6 +597,8 @@
     <busStop id="8544520931" name="1300 W @ 12145 S" lane="684787399#13_0" startPos="25.10" endPos="40.10" friendlyPos="true"/>
     <busStop id="8544530509" name="800 E @ 1146 S" lane="231243108#8_0" startPos="7.35" endPos="22.35" friendlyPos="true" lines="862"/>
     <busStop id="8544532980" name="Geneva Road @ 499 S" lane="231364515#6_0" startPos="28.80" endPos="43.80" friendlyPos="true"/>
+    <busStop id="8544532981" name="Mill Rd @ 238 N" lane="362127372#11_0" startPos="2.00" endPos="19.00" friendlyPos="true"/>
+    <busStop id="8544532982" name="4800 West @ 10080 N" lane="-229203440#14_0" startPos="30.00" endPos="46.26" friendlyPos="true" />
     <busStop id="8544534499" name="300 W @ 5132 N" lane="10236359#3_0" startPos="56.00" endPos="69.00" friendlyPos="true"/>
     <busStop id="8544541138" name="State St / 900 W (WB)" lane="1188525201#1_0" startPos="22.26" endPos="37.26" friendlyPos="true" lines="850"/>
     <busStop id="8544567239" name="Research Way @ 1224 N" lane="10231865#1_0" startPos="12.00" endPos="28.00" friendlyPos="true"/>
