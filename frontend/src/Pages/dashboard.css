@@ -13,6 +13,10 @@
   gap: 1rem;
 }
 
+#dashboard-page {
+  overflow-x: hidden
+}
+
 .sumo-section {
   background-color: white;
   border-radius: 12px;
