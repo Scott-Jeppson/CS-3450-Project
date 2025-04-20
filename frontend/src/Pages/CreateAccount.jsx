@@ -105,7 +105,7 @@ const CreateAccount = ({ isLoggedIn, setIsLoggedIn }) => {
     };
 
     return (
-        <div className="page-div" style={{ backgroundColor: "var(--charcoal)" }}>
+        <div className="page-div" style={{ overflow: "hidden" }}>
             <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>
             <div className="login-form">
                 <div className="login-container">

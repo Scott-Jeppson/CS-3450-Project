@@ -40,7 +40,7 @@ function Navbar({ isLoggedIn, setIsLoggedIn }) {
           <h2 id="nav-name">StreamLine</h2>
         </Link>
       </div>
-      <div>
+      <div id="nav-right">
         {isLoggedIn ? (
           <Link
             to="/"

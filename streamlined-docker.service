@@ -1,0 +1,15 @@
+[Unit]
+Description=Bring up Streamlined stack
+After=docker.service
+Requires=docker.service
+
+[Service]
+Type=oneshot
+WorkingDirectory=/streamlined
+ExecStart=/usr/bin/docker-compose up --build -d
+RemainAfterExit=yes
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

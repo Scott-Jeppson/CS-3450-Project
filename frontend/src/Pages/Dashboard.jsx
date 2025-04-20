@@ -24,7 +24,7 @@ useEffect(() => {
 }, [isLoggedIn, navigate]);
 
     return (
-        <div className="page-div">
+        <div className="page-div" id="dashboard-page">
             <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
 
             <div id="main-content-dashboard">
