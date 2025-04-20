@@ -2,6 +2,7 @@ getMapboxToken();
 
 async function getMapboxToken() {
     try {
+        //const response = await fetch(`https://sapi.ticketsx.xyz/api/mapbox-token`);
         const response = await fetch(`http://localhost:8080/api/mapbox-token`);
         if (!response.ok) {
             throw new Error(`Error: ${response.status} ${response.statusText}`);
