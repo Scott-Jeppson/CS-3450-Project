@@ -6,7 +6,7 @@ const convertToMPH = (kmh) => {
 };
 
 const convertToGallons = (ml) => {
-    return (ml * 0.000264172).toFixed(2);
+    return (ml * 2 / 1000 / 0.745 / 3.78541).toFixed(2);
 };
 
 const convertToPounds = (mg) => {
