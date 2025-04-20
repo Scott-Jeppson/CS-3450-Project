@@ -1,15 +1,21 @@
 volumes:
   frontend_node_modules:
+  sumo_config:
   database_data:
+  shared-output:
 
 services:
   backend:
-    build: ./backend
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
     container_name: backend
+    working_dir: /app/src
     ports:
       - "8080:8080"
     volumes:
       - ./backend:/app
+      - shared-output:/shared/output
     env_file:
       - ./backend/.env
     environment:
@@ -28,15 +34,18 @@ services:
     environment:
       - CHOKIDAR_USEPOLLING=true
     command: ["npm", "run", "dev"]
-  
-  database:
-    image: postgres:latest
-    container_name: database
-    env_file:
-      - ./database/.env
-    volumes:
-      - database_data:/var/lib/postgresql/data
-      - ./database/schema.sql:/docker-entrypoint-initdb.d/schema.sql
-      - ./database/test_data.sql:/docker-entrypoint-initdb.d/test_data.sql
+
+  sumo:
+    container_name: sumo
+    build:
+      context: ./sumo
+      dockerfile: Dockerfile
+    #image: camcottle341/smarttransit:sumo
     ports:
-      - "5432:5432"
+      - "80:80"
+    volumes:
+      - shared-output:/shared/output
+      - ./sumo/templates:/sumo/templates
+      - ./sumo/static:/sumo/static
+    depends_on:
+      - backend

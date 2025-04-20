@@ -1,0 +1,26 @@
+Warning: At actuated tlLogic '469479908', linkIndex 7,8,9 has no controlling detector.
+Warning: At actuated tlLogic '84454975', linkIndex 0,1,2,3 has no controlling detector.
+Warning: At actuated tlLogic '84765512', linkIndex 4,5,6,7,8 has no controlling detector.
+Warning: At actuated tlLogic '84813962', linkIndex 11,12,13 has no controlling detector.
+Warning: At actuated tlLogic '84822912', linkIndex 8,9,10,11 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_12061809211_12061809259_12061840636_84721463', actuated phase 4 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_1733659866_1733659868_2024806155_6767967265_#5more', actuated phase 2 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_6945754731_84812243_9247475803_9247475804_#8more', actuated phase 6 has no controlling detector.
+Warning: At actuated tlLogic 'cluster_7011275435_84835599_9851297488_9851297489_#3more', actuated phase 2 has no controlling detector.
+Warning: No connection between edge '10244417#2' and edge '1227169322#1' found.
+Warning: Vehicle '13_bus_880:0' has no valid route from edge '10244417#2' to stop edge '1227169322#1'.
+Warning: No connection between edge '1227169322#1' and edge '10244417#2' found.
+Warning: Vehicle '14_bus_880:1' has no valid route from edge '1227169322#1' to stop edge '10244417#2'.
+Warning: busStop '-8886452609' on lane '-749991160_0' is too short for vehicle '15_bus_850:0'.
+Warning: busStop '9103874877' on lane '1001934332#0_0' is too short for vehicle '15_bus_850:0'.
+Warning: Block after insertion lane '297896758_0' exceeds maximum length (stopped searching after edge ':cluster_3017999164_7890437092_7890437093_5' (length=21419.43m).
+Warning: busStop '12359994676' on lane '216231337#1_0' is too short for vehicle '26_train_Heber_Valley_Railroad:0'.
+Warning: Block after insertion lane '-297896773#1_0' exceeds maximum length (stopped searching after edge ':3017999171_3' (length=21341.04m).
+Warning: Block after rail signal junction '11582289224', link 0 exceeds maximum length (stopped searching after edge ':cluster_3020208923_84862175_5' (length=20271.32m).
+Warning: Block after rail signal junction '11399383568', link 0 exceeds maximum length (stopped searching after edge ':cluster_9499823191_9499823192_9499823193_5' (length=20112.60m).
+Warning: Block after insertion lane '709757177_0' exceeds maximum length (stopped searching after edge ':11399390459_0' (length=20619.37m).
+Warning: Teleporting vehicle '14_bus_880:1'; waited too long (wrong lane), lane='1227169322#1_0', time=537.00.
+Warning: Vehicle '14_bus_880:1' ends teleporting on edge '10244417#2', time=537.00.
+Warning: Teleporting vehicle '13_bus_880:0'; waited too long (wrong lane), lane='10244417#2_0', time=1066.00.
+Warning: Vehicle '13_bus_880:0' ends teleporting on edge '1227169322#1', time=1066.00.
+Warning: 60 total messages of type: At actuated tlLogic '%', linkIndex % has no controlling detector.

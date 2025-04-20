@@ -1,0 +1,114 @@
+.toolbar {
+    width: 25%;
+    height: 100%;
+    background-color: #500866;
+    opacity: 1;
+    background: linear-gradient(135deg, #3d054e55 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(225deg, #3d054e 25%, transparent 25%) -40px 0/ 80px 80px, linear-gradient(315deg, #3d054e55 25%, transparent 25%) 0px 0/ 80px 80px, linear-gradient(45deg, #3d054e 25%, #500866 25%) 0px 0/ 80px 80px;
+    position: fixed;
+    left: 0;
+    padding: 20px;
+    padding-top: 60px;
+    color: white;
+    z-index: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: left 0.5s ease;
+}
+
+.toolbar.collapsed {
+    left: -38%;
+}
+
+#toggle-drawer {
+    background-color: var(--purple);
+    color: var(--white);
+    height: 28px;
+    width: 28px;
+    font-size: 16px;
+    margin: 8px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+#toggle-drawer:focus-visible {
+    outline: 3px solid var(--light-purple);
+}
+
+#toggle-drawer:hover {
+    background-color: rgb(80, 0, 102, 0.8);
+}
+
+#toggle-drawer:active {
+    outline: none;
+    transform: scale(0.9);
+}
+
+.drawer-link {
+    color: var(--white);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 12px;
+    padding: 5px 10px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.drawer-link:focus-visible {
+    outline: 3px solid var(--light-purple);
+}
+
+.drawer-link:hover {
+    color: var(--white);
+    background-color: rgb(120, 120, 120, 0.25);
+}
+
+.drawer-link:active {
+    outline: none;
+    transform: scale(0.9);
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #toggle-drawer {
+        height: 30px;
+        width: 30px;
+        font-size: 18px;
+        margin: 10px;
+    }
+    .drawer-link {
+        font-size: 20px;
+    }
+    .toolbar {
+        width: 18%;
+    }
+    .toolbar.collapsed {
+        left: -30%;
+    }
+}
+@media (min-width: 1025px) {
+    #toggle-drawer {
+        height: 35px;
+        width: 35px;
+        font-size: 20px;
+        margin: 12px;
+    }
+    .drawer-link {
+        font-size: 22px;
+    }
+    .toolbar {
+        width: 18%;
+    }
+    .toolbar.collapsed {
+        left: -30%;
+    }
+}

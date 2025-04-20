@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Movements</title>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.min.js"></script>
+    <script src="/static/simulation.js" defer></script>
+    <link rel="stylesheet" href="/static/simulation.css">
+
+    <!-- <link rel="stylesheet" href="https://www.onemap.gov.sg/web-assets/libs/leaflet/leaflet.css" />
+    <script src="https://www.onemap.gov.sg/web-assets/libs/leaflet/onemap-leaflet.js"></script> -->
+</head>
+<body>
+    <div id="map"></div>
+    <div id="loading">Loading map...</div>
+    <div id="tracking-status" class="collapsed">
+        <span>Following Bus:  <span id="tracking-info"></span>  <button id="cancel-follow">Stop Following</button></span>
+    </div>
+    <div id="sliderBox">
+        <label>Vehicle Size:
+            <input type="range" min="300" max="12000" value="10000" id="scaling">
+        </label>
+        <br>
+        <label>
+            Vehicle Labels:
+            <input type="checkbox" id="labels-visible">
+        </label>
+    </div>
+</body>
+</html>

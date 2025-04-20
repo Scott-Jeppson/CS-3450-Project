@@ -8,6 +8,9 @@ venv/
 .env
 logs/
 __pycache__
+.pytest_cache/
+.clj-kondo/
+.lsp/
 
 # Logs
 frontend/logs
@@ -40,3 +43,7 @@ tsconfig.app.tsbuildinfo
 
 # Frontend
 node_modules/
+
+#sumo
+sumo/.env
+shared/
