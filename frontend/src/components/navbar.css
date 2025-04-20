@@ -7,11 +7,7 @@
     justify-content: space-between;
     background-color: var(--light-purple);
     color: var(--white);
-    z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    left: 0;
 }
 #navbar-logged-in {
     width: 100%;
@@ -23,10 +19,6 @@
     background-color: var(--light-charcoal);
     color: var(--white);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1000;
 }
 #nav-left {
     display: flex;
