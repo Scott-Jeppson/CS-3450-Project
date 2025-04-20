@@ -9,8 +9,8 @@ const convertToGallons = (ml) => {
     return (ml * 0.000264172).toFixed(2);
 };
 
-const convertToPounds = (g) => {
-    return (g * 0.00220462).toFixed(2);
+const convertToPounds = (mg) => {
+    return (mg / 1000 * 0.00220462).toFixed(2);
 };
 
 const convertToMinutes = (seconds) => {
@@ -107,7 +107,7 @@ function Statistics({ stats, trafficLevel }) {
                         <div className="stat-box-row">
                             <div className="stat-box-unit">
                                 <body>Average Fuel</body>
-                                <h4 id="h4-here">{convertToGallons(totals.averageFuel)} gal</h4>
+                                <h4 id="h4-here">{totals.averageFuel} gal</h4>
                             </div>
                             <div className="stat-box-unit">
                                 <body>Average CO₂</body>
