@@ -1,13 +1,11 @@
 # Smart Transit Optimizer
 
 ## Overview
-The StreamLine Smart Transit Optimizer is a **traffic simulation and optimization tool** designed to help traffic managers in Utah 
-County analyze and improve traffic flow. Using traffic data, along with an AI-powered simulation
-model, it allows users to:
-- **Visualize** traffic data through an interactive simulation.
-- **Simulate** route changes and traffic light adjustments to assess their impact.
-- **Analyze** historical traffic trends in a clear and concise format.
-- **Optimize** traffic flow efficiency through data-driven decision-making.
+The StreamLine Transit Optimizer is a **traffic visualization and analysis tool** built to assist Utah County transit managers
+in understanding and improving public bus transit systems. Using real-world data, users can:
+- **Visualize** active bus routes, stops, and traffic patterns across Utah County.
+- **Analyze** route performance and efficiency using clear, accessible statistics.
+- **Plan** a more efficient transit system through StreamLine provided, data-driven decision-making.
 
 ## Table of Contents
 1. [Tech Stack](#tech-stack)
@@ -17,12 +15,11 @@ model, it allows users to:
 
 ## Tech Stack
 The StreamLine Smart Transit Optimizer is built with the following technologies:
-- **Frontend:** React.js
-- **Backend:** Quart
-- **Database:** PostgreSQL
-- **Simulation:** SUMO
+- **Frontend:** React.js (hosted on Cloudflare)
+- **Backend:** Quart (hosted on USU server)
+- **Database:** PostgreSWL (hosted on AWS)
+- **Simulation:** SUMO (Simulation of Urban Mobility)
 - **Containerization:** Docker
-- **Optimization:** Ray (RLlib)
 
 ## Architecture
 The StreamLine Smart Transit Optimizer is built using a microservices architecture to ensure scalability, flexibility, and 
@@ -31,47 +28,50 @@ function both independently and cohesively. By leveraging microservices, each co
 maintained independently, which leads to greater modularity and flexibility in the overall system.
 
 #### Key Components:
-- **Frontend:** Presents real-time traffic data through the simulation, displays an analysis of historical traffic data,
+- **Frontend:** Presents real-world transit data through the simulation, displays an analysis of the transit data,
 and handles user interactions.
-- **Backend:** Processes traffic data, facilitates communication between the frontend and other services, handles API
-communication, and manages database interactions.
-- **Database:** Stores critical data for the system such as route configurations, simulations results, etc.
-	- We will use two databases, one that comes form the Utah Valley transit authority through an API. We won't be
-		able to edit this database, so a secondary one exists to store any data that the program
-		will create that we want to keep track of (logs, past simulation results, user data).
-- **Simulation:** Runs traffic flow simulations based on real-time input data and proposed route changes.
+- **Backend:** Serves SUMO data to the frontend, manages user sessions, communicates with the servers.
+- **Database:** Stores authentication data.
+- **Simulation:** Runs traffic flow simulations based on real-world input data.
 
-## Features
+## MVP Features
 
 ### Priority 1 - Mission Critical Features
-- Interactive traffic simulation
-- Data processing for the simulation
-- API connections
+- Visual map of Utah County that shows real-world data on bus routes, bus stops, and bus positions relative to each other.
+- Integration of real-world transit data directly into SUMO.
 
 ### Priority 2 - Important but Non-Critical Features
-- Historical traffic data
-- Traffic demand and congestion projection model
+- Bus data processing that presents transit managers with clear, accessible statistics on route performance and efficiency.
+- User authentication and session management.
 
 ### Priority 3 - Nice to Have Features
-- Traffic route and light optimization AI model
-- Adaptive traffic patterns for emergency response vehicles
-- Trouble ticket system
+- Traffic route optimization AI model
+- Passenger demand prediction AI model
 
 ## Usage
 
-### Enter Homepage
-- To access the home page in the browser: [Home](http://localhost:5173/)
+### Accessing the Application
+- To access the website via Docker:
+  - Run `docker compose up --build` in the root directory of the project.
+  - Navigate to `localhost:5173` in your web browser.
+- To access the website via Cloudfare:
+  - Navigate to [StreamLine](https://streamlined.pages.dev/) in your web browser.
 
 ### Access the Dashboard
-- Open the dashboard in your browser: [Dashboard](http://localhost:5173/dashboard)
+- On the home page, click on `Create Account` or `Sign In` to access the dashboard.
+- Once logged in, you will be redirected to the dashboard where you can view the simulation map.
 
 ### Run a Traffic Simulation
-- User must create an account or signin then they will be redirected to the dashboard where the simulation will be accessible.
+- While on the dashboard, click the play icon on the bottom right of the simulation map.
+- Wait for up to 30 seconds for the simulation to load.
+- Once the simulation is loaded, you will see buses moving along their routes on the map.
 
-### View Historical Data
-``` insert instructions later```
+### View Route Data
+- Run the simulation as described above.
+- Once the simulation has completely ended, the statistics will pop up below the simulation map.
+- A dark purple box contains the overall statistics for the simulation.
+- The lighter purple box contain statistics for each bus route.
 
-### Running Server
-- To run the containerized server, an .env file must be present in the backend folder.
-- This will include IAM user access key with permissions to automatically get database credentials from a remote database.
-- Without these credentials there will not be any functionality because the server will not have database permissions.
+### Running via Docker Notes
+- To run the containerized server, an .env file must be present in the backend folder containing the database credentials, the SUMO credentials, and 
+	the Mapbox API key.
