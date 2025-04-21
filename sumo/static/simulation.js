@@ -2,16 +2,18 @@ getMapboxToken();
 
 async function getMapboxToken() {
     try {
-        //const response = await fetch(`https://sapi.ticketsx.xyz/api/mapbox-token`);
-        const response = await fetch(`http://localhost:8080/api/mapbox-token`);
-        if (!response.ok) {
-            throw new Error(`Error: ${response.status} ${response.statusText}`);
+        const token = import.meta.env.VITE_MAPBOX_API;
+
+        if (!token) {
+            throw new Error(
+                'MAPBOX_API token not found in environment variables. '
+            );
         }
-        const data = await response.json();
-        mapboxgl.accessToken = data.token;
+
+        mapboxgl.accessToken = token;
         initializeMap();
-    } catch(error){
-        console.error("Error fetching mapbox token:", error);
+    } catch (error) {
+        console.error('Error loading Mapbox token:', error);
     }
 }
 
@@ -41,7 +43,9 @@ function initializeMap() {
                 el.className = isBus ? 'bus-marker' : 'car-marker';
 
                 const labelHTML = isBus
-                    ? `<div class="vehicle-label" style="display: ${document.getElementById("labels-visible").checked ? 'block' : 'none'}">${vehicle.id}</div>`
+                    ? `<div class="vehicle-label" style="display: ${
+                          document.getElementById('labels-visible').checked ? 'block' : 'none'
+                      }">${vehicle.id}</div>`
                     : '';
 
                 el.innerHTML = `
@@ -55,7 +59,7 @@ function initializeMap() {
 
                 const img = markers[vehicle.id].getElement().querySelector('img');
                 img.dataset.scale = mapZoom / vehicleScale;
-                img.addEventListener("click", () => startTracking(vehicle));
+                img.addEventListener('click', () => startTracking(vehicle));
             } else {
                 markers[vehicle.id].setLngLat([vehicle.x, vehicle.y]);
             }
@@ -73,15 +77,13 @@ function initializeMap() {
         Object.keys(markers).forEach(id => delete markers[id]);
     }
 
-    socket.on('simulationEnded', () => {
-        clearAllMarkers();
-    });
+    socket.on('simulationEnded', clearAllMarkers);
 
-    document.getElementById("cancel-follow").addEventListener("click", function () {
+    document.getElementById('cancel-follow').addEventListener('click', () => {
         tracking = false;
         trackingId = null;
-        document.getElementById("tracking-info").textContent = '';
-        const statusBar = document.getElementById("tracking-status");
+        document.getElementById('tracking-info').textContent = '';
+        const statusBar = document.getElementById('tracking-status');
         statusBar.classList.remove('expanded');
         statusBar.classList.add('collapsed');
         map.dragPan.enable();
@@ -90,8 +92,8 @@ function initializeMap() {
     function startTracking(vehicle) {
         trackingId = vehicle.id;
         tracking = true;
-        document.getElementById("tracking-info").textContent = vehicle.id;
-        const statusBar = document.getElementById("tracking-status");
+        document.getElementById('tracking-info').textContent = vehicle.id;
+        const statusBar = document.getElementById('tracking-status');
         statusBar.classList.remove('collapsed');
         statusBar.classList.add('expanded');
         map.dragPan.disable();
@@ -106,7 +108,9 @@ function initializeMap() {
         Object.values(markers).forEach(marker => {
             const img = marker.getElement().querySelector('img');
             img.dataset.scale = scaleFactor;
-            img.style.transform = `scale(${scaleFactor}) rotate(${img.dataset.rotation || 0}deg)`;
+            img.style.transform = `scale(${scaleFactor}) rotate(${
+                img.dataset.rotation || 0
+            }deg)`;
         });
     }
 
@@ -121,13 +125,13 @@ function initializeMap() {
     });
 
     function changedScale() {
-        vehicleScale = 12300 - parseFloat(document.getElementById("scaling").value);
+        vehicleScale = 12300 - parseFloat(document.getElementById('scaling').value);
         updateMarkerSize();
     }
 
-    document.getElementById("scaling").addEventListener("input", changedScale);
+    document.getElementById('scaling').addEventListener('input', changedScale);
 
-    document.getElementById("labels-visible").addEventListener("change", function () {
+    document.getElementById('labels-visible').addEventListener('change', function () {
         const showing = this.checked;
         document.querySelectorAll('.vehicle-label').forEach(label => {
             label.style.display = showing ? 'block' : 'none';
